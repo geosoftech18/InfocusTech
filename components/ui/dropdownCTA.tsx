@@ -1,0 +1,36 @@
+
+import React from "react";
+import { DropDownCTAProps } from "../navbar";
+import { Button } from "./button";
+
+const DropdownCTA: React.FC<DropDownCTAProps> = ({
+  heading,
+  description,
+  buttonLabel,
+  buttonLink,
+  bgImagePath,
+}) => {
+  return (
+    <div className="relative bg-cover bg-center  rounded-lg shadow-md">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url('${bgImagePath}')`,
+          opacity: 0.3,
+        }}
+        aria-hidden="true"
+      />
+      {/* Content Overlay */}
+      <div className="relative z-10 flex flex-col items-center justify-around bg-black h-full bg-opacity-50 text-white p-4 rounded-md text-center">
+        <h2 className="text-2xl font-bold mb-4">{heading}</h2>
+        <p className="text-base mb-6 text-wrap">{description}</p>
+        <Button variant={"default"} size={"lg"} className="w-full">
+          {buttonLabel}
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+export default DropdownCTA;

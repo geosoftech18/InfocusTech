@@ -1,0 +1,59 @@
+{
+    "whatWeOfferJSON": [
+        {
+            "name": "SAP Implementation",
+            "imagePath": "/whatWeOfferIcons/SAP Implementation.png",
+            "description": "End-to-end SAP solutions tailored to streamline business processes, enhance efficiency, and drive growth."
+        },
+        {
+            "name": "SAP Maintenance & Support",
+            "imagePath": "/whatWeOfferIcons/SAP Maintenance & Support.png",
+            "description": "Proactive support and maintenance to ensure optimal SAP system performance and reliability."
+        },
+        {
+            "name": "SAP Upgrade & Migration",
+            "imagePath": "/whatWeOfferIcons/SAP Upgrade & Migration.png",
+            "description": "Seamless upgrades and migrations to the latest SAP versions, ensuring minimal disruption."
+        },
+        {
+            "name": "AWS Consulting Services",
+            "imagePath": "/whatWeOfferIcons/AWS Consulting Services.png",
+            "description": "Expert guidance on AWS cloud solutions to optimize scalability, security, and cost-efficiency."
+        },
+        {
+            "name": "SAP Auditing & Testing",
+            "imagePath": "/whatWeOfferIcons/SAP Auditing & Testing Services.png",
+            "description": "Comprehensive auditing and testing to ensure system integrity, compliance, and performance."
+        },
+        {
+            "name": "Custom Software Development",
+            "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+            "description": "Bespoke software solutions designed to meet unique business needs and drive innovation."
+        },
+        {
+            "name": "Resource Consulting",
+            "imagePath": "/whatWeOfferIcons/Resource Consulting.png",
+            "description": "Skilled SAP and IT professionals to augment your team and deliver project success."
+        },
+        {
+            "name": "ERP Corporate Training",
+            "imagePath": "/whatWeOfferIcons/ERP Corporate Training.png",
+            "description": "Customized training programs to empower your workforce with SAP and ERP expertise."
+        },
+        {
+            "name": "S4 RISE Private Cloud",
+            "imagePath": "/whatWeOfferIcons/S4 Rise Private Cloud.png",
+            "description": "Fully managed SAP S/4HANA solutions on private cloud for enhanced security and control."
+        },
+        {
+            "name": "S4 RISE Public Cloud",
+            "imagePath": "/whatWeOfferIcons/S4 Rise Public Cloud.png",
+            "description": "Scalable and cost-effective SAP S/4HANA solutions on public cloud for agile operations."
+        },
+        {
+            "name": "Grow with SAP",
+            "imagePath": "/whatWeOfferIcons/SAP.png",
+            "description": "Tailored solutions to help businesses adopt SAP S/4HANA and accelerate digital transformation."
+        }
+    ]
+}

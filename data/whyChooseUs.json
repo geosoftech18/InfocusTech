@@ -1,0 +1,32 @@
+{
+  "whyChooseUsJSON": {
+    "heading": "Why InFocus is Your Trusted IT Partner",
+    "description": "At InFocus, we go beyond technology—we deliver solutions that transform your business. With a focus on innovation, security, and measurable results, we’re here to help you thrive in a digital-first world. Here’s why leading businesses trust us:",
+    "bulletPoints": [
+      {
+        "title": "Industry-Specific Expertise",
+        "description": "We understand your sector’s unique challenges and deliver IT solutions tailored to your industry."
+      },
+      {
+        "title": "End-to-End Digital Transformation",
+        "description": "From strategy to implementation, we guide you through every step of your digital journey."
+      },
+      {
+        "title": "Future-Ready Cloud Solutions",
+        "description": "Scalable, secure, and optimized cloud services designed to grow with your business."
+      },
+      {
+        "title": "Proactive Cybersecurity Framework",
+        "description": "Protect your business with advanced threat detection and prevention strategies."
+      },
+      {
+        "title": "Agile and Collaborative Approach",
+        "description": "We work alongside your team, ensuring seamless integration and quick adaptability."
+      },
+      {
+        "title": "Proven ROI-Driven Results",
+        "description": "Our solutions are designed to deliver measurable impact, driving efficiency and growth."
+      }
+    ]
+  }
+}

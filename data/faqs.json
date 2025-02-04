@@ -1,0 +1,45 @@
+{
+    "FAQs": 
+    [
+        {
+          "title": "What industries do you specialize in?",
+          "description": "We specialize in industries like Iron & Steel, Cement, Power, Chemicals, Logistics, Pharmaceuticals, Engineering & Construction, and Mining, offering tailored SAP and IT solutions."
+        },
+        {
+          "title": "What SAP services do you provide?",
+          "description": "We offer end-to-end SAP services, including implementation, maintenance, upgrades, migration, auditing, and S/4HANA solutions on private and public clouds."
+        },
+        {
+          "title": "Do you provide AWS consulting services?",
+          "description": "Yes, we offer AWS consulting to help businesses optimize cloud infrastructure, enhance scalability, and reduce costs."
+        },
+        {
+          "title": "Can you help with SAP migration and upgrades?",
+          "description": "Absolutely. We ensure seamless SAP upgrades and migrations with minimal disruption to your business operations."
+        },
+        {
+          "title": "Do you offer custom software development?",
+          "description": "Yes, we develop custom software solutions tailored to meet unique business needs and drive innovation."
+        },
+        {
+          "title": "What is S/4HANA RISE, and do you provide it?",
+          "description": "S/4HANA RISE is a managed cloud solution for SAP S/4HANA. We offer both private and public cloud options to suit your business requirements."
+        },
+        {
+          "title": "Do you provide SAP training for employees?",
+          "description": "Yes, we offer ERP corporate training programs to empower your workforce with SAP expertise."
+        },
+        {
+          "title": "How do you ensure SAP system performance?",
+          "description": "Through proactive maintenance, support, and regular auditing, we ensure optimal SAP system performance and reliability."
+        },
+        {
+          "title": "Can you assist with SAP compliance and testing?",
+          "description": "Yes, we provide comprehensive SAP auditing and testing services to ensure compliance and system integrity."
+        },
+        {
+          "title": "What is 'Grow with SAP,' and how can it benefit my business?",
+          "description": "'Grow with SAP' is a tailored program to help businesses adopt SAP S/4HANA and accelerate digital transformation, driving growth and efficiency."
+        }
+      ]
+}

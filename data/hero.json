@@ -1,0 +1,34 @@
+{
+  "HeroData": [
+    {
+      "title": "Your Digital Transformation",
+      "boldTitle": "Starts Here",
+      "description": "At InFocus, we craft personalized IT solutions to fuel your business growth. From cloud strategies to cybersecurity, we’re here to simplify tech for you. Let’s build your future together.",
+      "cta_button_text": "Start Your Journey"
+    },
+    {
+      "title": "Tech Solutions",
+      "boldTitle": "Tailored for You",
+      "description": "InFocus understands your unique challenges. We deliver innovative IT services designed to streamline your operations and secure your success. Ready to transform?",
+      "cta_button_text": "Explore Our Solutions"
+    },
+    {
+      "title": "Innovate Smarter,",
+      "boldTitle": "Grow Faster",
+      "description": "We’re InFocus, your partner in navigating the digital world. With customized IT solutions, we help you stay ahead. Your success is our mission.",
+      "cta_button_text": "Let’s Innovate Together"
+    },
+    {
+      "title": "Your Business,",
+      "boldTitle": "Powered by InFocus",
+      "description": "At InFocus, we turn tech challenges into opportunities. From cloud services to cybersecurity, we’re here to empower your business. Let’s achieve greatness together.",
+      "cta_button_text": "Power Your Business"
+    },
+    {
+      "title": "Simplifying Tech",
+      "boldTitle": "for Your Success",
+      "description": "InFocus is your trusted partner for IT solutions that work. We focus on your goals, so you can focus on growth. Ready to take the next step?",
+      "cta_button_text": "Get Started Today"
+    }
+  ]
+}

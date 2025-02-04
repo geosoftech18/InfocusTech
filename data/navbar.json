@@ -1,0 +1,70 @@
+{
+    "navLinks": [
+        {
+            "name": "Home"
+        },
+        {
+            "name": "About Us"
+        },
+        {
+            "name": "Solutions",
+            "dropdownList": [
+                "S4 Rise Private Cloud",
+                "S4 Rise Public Cloud",
+                "Grow SAP",
+                "SAP S4HANA",
+                "SAP SuccessFactors (HCM)",
+                "SAP SRM/Ariba",
+                "SAP BW (Business Warehouse)",
+                "SAP FIORI",
+                "SAP PI/XI",
+                "Integration with ICICI Bank"
+            ],
+            "dropdownCTA": {
+                "heading": "Let's Build Something Together",
+                "description": "Create your own agile squad with experienced members just like your local team.",
+                "buttonLabel": "Contact Us",
+                "buttonLink": "/contactus",
+                "bgImagePath": "/peopleworking.png"
+            }
+        },
+        {
+            "name": "Services",
+            "dropdownList": [
+                "SAP Implementation",
+                "SAP Maintenance & Support",
+                "SAP Upgrade and Migration",
+                "AWS Consulting Services",
+                "SAP Auditing and Testing Services",
+                "Custom Software Development",
+                "Resource Consulting",
+                "ERP Corporate Training"
+            ],
+            "dropdownCTA": {
+                "heading": "Discover a New Era of Digital Transformation",
+                "description": "We turn your boldest technological ideas into end-to-end solutions. Want to be on our list of Happy Clients?",
+                "buttonLabel": "Let's find out",
+                "buttonLink": "/aboutus",
+                "bgImagePath": "/peopleworking.png"
+            }
+        },
+        {
+            "name": "Client"
+        },
+        {
+            "name": "News and Event"
+        },
+        {
+            "name": "Carrers"
+        },
+        {
+            "name": "Contact Us"
+        },
+        {
+            "name": "Investors"
+        },
+        {
+            "name": "Products"
+        }
+    ]
+}
