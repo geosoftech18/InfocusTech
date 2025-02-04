@@ -19,6 +19,8 @@
 
 # production
 /build
+geosoft
+geosoft.pub
 
 # misc
 .DS_Store
