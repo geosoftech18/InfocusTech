@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowBigRight, ArrowRight, Repeat, Trash } from "lucide-react";
+import { ArrowRight, Repeat } from "lucide-react";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import {
   Carousel,
@@ -46,7 +46,7 @@ const WhatWeOffer: React.FC<WhatWeOfferProps> = ({ whatWeOfferData }) => {
             private and public clouds. With a focus on innovation and
             efficiency, we help businesses optimize operations, embrace digital
             transformation, and grow sustainably. Partner with us to unlock your
-            business's full potential.
+            business&apos;s full potential.
           </div>
           <Button variant={"default"} size={"lg"}>
             Book Now <Repeat className="h-5 w-5" />

@@ -7,7 +7,6 @@ const DropdownCTA: React.FC<DropDownCTAProps> = ({
   heading,
   description,
   buttonLabel,
-  buttonLink,
   bgImagePath,
 }) => {
   return (

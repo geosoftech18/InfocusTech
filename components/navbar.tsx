@@ -2,7 +2,6 @@
 import { useState } from "react";
 import {
   Navbar,
-  NavbarDivider,
   NavbarItem,
   NavbarLabel,
   NavbarSection,

@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import AboutUs from "@/components/aboutUs";
 import Clients from "@/components/pages/home/clients";
 import FAQs from "@/components/pages/home/FAQ";
