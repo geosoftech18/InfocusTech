@@ -1,0 +1,28 @@
+{
+    "SapImplementationProcessJSON": {
+        "tag": "How It Works",
+        "title": "Our SAP Implementation Process",
+        "steps": [
+            {
+                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "name": "Consultation & Analysis",
+                "description": "Understand business needs, assess existing systems, and design a tailored SAP solution."
+            },
+            {
+                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "name": "System Configuration & Customisation",
+                "description": "Align SAP modules with your unique business processes and requirements."
+            },
+            {
+                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "name": "Testing, Validation & Training",
+                "description": "Ensure functionality through thorough testing, validate the solution, and train end-users for effective adoption."
+            },
+            {
+                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "name": "Go-Live & Ongoing Support",
+                "description": "Transition to the live environment smoothly and provide continuous monitoring and post-implementation support."
+            }
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "aboutSAPMaintenanceAndSupportJSON": {
+      "heading": "Infocus SAP Maintenance & Support",
+      "description": "In today’s competitive landscape, maintaining and enhancing applications post-deployment is crucial to sustaining long-term returns on your initial development investments. However, managing these applications in-house or through expensive vendor contracts can prove cost-prohibitive. Our SAP Maintenance & Support and Application Management Services offer an efficient, cost-effective approach to ensure your systems continue to perform at optimal levels without breaking the bank. Key highlights:",
+      "bulletPoints": [
+        {
+          "title": "Cost-effective Solutions",
+          "description": "Reduce the burden of expensive internal support or vendor contracts."
+        },
+        {
+          "title": "Proactive Issue Resolution",
+          "description": "Timely identification and resolution of potential issues before they affect your business operations."
+        },
+        {
+          "title": "Seamless Upgrades & Enhancements",
+          "description": "Regular updates and improvements to keep your SAP systems aligned with evolving business needs."
+        },
+        {
+          "title": "Optimized System Performance",
+          "description": "Ensure that your applications run efficiently with minimal downtime."
+        },
+        {
+          "title": "Tailored Service Plans",
+          "description": "Customised maintenance plans based on your unique business requirements and budget."
+        },
+        {
+          "title": "Experienced Support Team",
+          "description": "Access to highly skilled professionals dedicated to supporting your SAP infrastructure."
+        }
+      ]
+    }
+  }
+  

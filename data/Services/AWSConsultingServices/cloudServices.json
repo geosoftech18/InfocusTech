@@ -1,0 +1,38 @@
+{
+    "cloudServicesJSON": {
+      "tag": "Key Features of AWS Consulting Services",
+      "keyFeatures": [
+        {
+          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+          "title": "Managed Services",
+          "description": "Deployment and configuration of applications, application performance monitoring, resolution of AWS-related incidents, and backup and disaster recovery."
+        },
+        {
+          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+          "title": "Advisory Services",
+          "description": "Resource usage & billing optimization, application architecture validation and consulting, general consulting and query resolutions, and auto-scaling implementation."
+        },
+        {
+          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+          "title": "Operations and Reports",
+          "description": "Monthly reports, quarterly reviews, and customer scorecards."
+        },
+        {
+          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+          "title": "Enhanced Support",
+          "description": "Executive escalation, enhanced TAM SLA, and customer advocate."
+        },
+        {
+          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+          "title": "Cost and Usage Tracking",
+          "description": "Cost and usage break-up of each AWS asset level as well as group level."
+        },
+        {
+          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+          "title": "Recommendations",
+          "description": "Cost-saving, high availability, auto-scaling, and asset optimization recommendations."
+        }
+      ]
+    }
+  }
+  

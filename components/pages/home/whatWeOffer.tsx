@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Repeat } from "lucide-react";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
@@ -13,14 +14,19 @@ import Autoplay from "embla-carousel-autoplay";
 import { useState } from "react";
 import Image from "next/image";
 
-interface WhatWeOfferProps {
-  whatWeOfferData: {
-    name: string;
-    imagePath: string;
+interface DoorComponentProps {
+  Data: {
+    tag: string;
+    heading: string;
     description: string;
-  }[];
+    items: {
+      name: string;
+      imagePath: string;
+      description: string;
+    }[];
+  };
 }
-const WhatWeOffer: React.FC<WhatWeOfferProps> = ({ whatWeOfferData }) => {
+const DoorComponent: React.FC<DoorComponentProps> = ({ Data }) => {
   const [openCards, setOpenCards] = useState<{ [key: number]: boolean }>({});
 
   const toggleDoor = (id: number) => {
@@ -31,22 +37,15 @@ const WhatWeOffer: React.FC<WhatWeOfferProps> = ({ whatWeOfferData }) => {
       <div className="flex flex-col lg:flex-row items-start justify-between gap-10 pt-10 lg:pt-20">
         {/* top left heading */}
         <div className="flex-1 flex-col items-start justify-center gap-10">
-          <div className="font-semibold">Our Services</div>
+          <div className="font-semibold">{Data.tag}</div>
           <div className="text-5xl w-96 font-bold">
-            End-to-End SAP & IT Solutions
+            {Data.heading}
           </div>
         </div>
         {/* top right content and button */}
         <div className="flex flex-col lg:flex-row items-center text-justify justify-center lg:justify-end gap-20 lg:ml-5">
           <div className=" tracking-tighter text-gray-600 text-md lg:text-left">
-            We provide comprehensive SAP services, including implementation,
-            maintenance, upgrades, and migration, alongside AWS consulting,
-            custom software development, and resource staffing. Our offerings
-            also include SAP auditing, training, and S/4HANA solutions on
-            private and public clouds. With a focus on innovation and
-            efficiency, we help businesses optimize operations, embrace digital
-            transformation, and grow sustainably. Partner with us to unlock your
-            business&apos;s full potential.
+            {Data.description}
           </div>
           <Button variant={"default"} size={"lg"}>
             Book Now <Repeat className="h-5 w-5" />
@@ -67,7 +66,7 @@ const WhatWeOffer: React.FC<WhatWeOfferProps> = ({ whatWeOfferData }) => {
         ]}
       >
         <CarouselContent>
-          {whatWeOfferData.map((item, index) => (
+          {Data.items.map((item, index) => (
             <CarouselItem
               className="md:basis-1/2 lg:basis-1/4 mr-4 relative"
               key={index}
@@ -121,4 +120,4 @@ const WhatWeOffer: React.FC<WhatWeOfferProps> = ({ whatWeOfferData }) => {
   );
 };
 
-export default WhatWeOffer;
+export default DoorComponent;

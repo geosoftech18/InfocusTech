@@ -1,0 +1,33 @@
+{
+    "erpTrainingJSON": {
+        "Tag": "ERP Training Services",
+        "Title": "Providing ERP Training for Your Team",
+        "Description": "Infocus specializes in delivering comprehensive ERP training for all levels of involvement in the implementation process. Our training is designed to ensure that everyone from project teams to end users is fully prepared to leverage ERP/SAP systems for optimal performance. Whether it's functional expertise or technical proficiency, we provide tailored training to meet your organization's specific needs, ensuring a smooth and successful ERP implementation.",
+        "Tool": [
+            {
+                "name": "Project Teams",
+                "description": "Gain in-depth knowledge and skills to manage and implement ERP/SAP systems effectively."
+            },
+            {
+                "name": "Business Process Owners",
+                "description": "Learn how to map and optimize business processes within the ERP framework."
+            },
+            {
+                "name": "Key Users",
+                "description": "Develop the skills to manage and utilize the ERP system for day-to-day operations."
+            },
+            {
+                "name": "End Users",
+                "description": "Train your team to confidently complete transactions and navigate the ERP system."
+            },
+            {
+                "name": "Executives & Stakeholders",
+                "description": "Focus on high-level understanding and strategic decisions regarding ERP implementation and benefits."
+            },
+            {
+                "name": "Customized Workshops",
+                "description": "Workshops tailored to address specific functional and technical training needs for your organization."
+            }
+        ]
+    }
+}

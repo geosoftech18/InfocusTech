@@ -38,39 +38,6 @@ interface NavbarProps {
   NavbarProps: NavLinkItemInterface[];
 }
 
-// const navLinks: NavLinkItemInterface[] = [
-//   { name: "Home" },
-//   {
-//     name: "Services",
-//     dropdownList: ["Product Engineering", "Cloud", "DevOps", "Salesforce"],
-//     dropdownCTA: {
-//       heading: "Discover a New Era of Digital Transformation",
-//       description:
-//         "We turn your boldest technological ideas into end-to-end solutions. Want to be on our list of Happy Clients?",
-//       buttonLabel: "Let's find out",
-//       buttonLink: "/aboutus",
-//       bgImagePath: "/peopleworking.png",
-//     },
-//   },
-//   {
-//     name: "Expertise",
-//     dropdownList: ["Microsoft", "Frontend", "OpenSource"],
-//     dropdownCTA: {
-//       heading: "Let's Build Something Together",
-//       description:
-//         "Create your own agile squad with experienced members just like your local team.",
-//       buttonLabel: "Contact Us",
-//       buttonLink: "/contactus",
-//       bgImagePath: "/peopleworking.png",
-//     },
-//   },
-//   {
-//     name: "Company",
-//     dropdownList: ["AboutUs", "Careers"],
-//   },
-//   { name: "Contact Us" },
-// ];
-
 const NavbarMain: React.FC<NavbarProps> = ({ NavbarProps}) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -141,7 +108,7 @@ const NavbarMain: React.FC<NavbarProps> = ({ NavbarProps}) => {
                       {link.dropdownList.map((label, index) => (
                         <Link
                           className=" col-span-1 flex justify-center items-center p-2 shadow-md rounded-md hover:scale-105 transition-all duration-500 w-full"
-                          href={`/${label}`}
+                          href={`/${link.name}/${label.replace(/\s+/g, "")}`}
                           key={index}
                         >
                           <span className="text-md w-full font-semibold">

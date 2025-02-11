@@ -1,0 +1,41 @@
+{
+    "AboutStaffingConsultingJSON": {
+      "heading": "Introduction to Infocus Staffing and Resource Consulting",
+      "description": "Infocus offers a comprehensive suite of staffing solutions tailored to meet the evolving needs of today’s global workforce. Specializing in SAP/ERP staff augmentation and resource consulting, Infocus leverages its expertise to provide businesses with the right talent at the right time. With a unique methodology focused on flexibility, innovation, and results, Infocus helps organizations enhance operational efficiency and meet their staffing goals.",
+      "bulletPoints": [
+        {
+          "title": "Permanent Staffing",
+          "description": "Providing businesses with full-time professionals who align with their long-term goals and organizational culture."
+        },
+        {
+          "title": "Retained Search",
+          "description": "A dedicated search approach for high-level and executive positions, ensuring the best-fit candidates for key roles."
+        },
+        {
+          "title": "Global Search",
+          "description": "Connecting organizations with top talent worldwide to support global expansion and diverse workforce needs."
+        },
+        {
+          "title": "Assessment Testing",
+          "description": "Comprehensive skills and competency evaluations to ensure candidates meet job-specific requirements."
+        },
+        {
+          "title": "Pre-Employment Checking",
+          "description": "Thorough background verification and reference checks to maintain hiring integrity and workforce quality."
+        },
+        {
+          "title": "Tailored Search Strategy",
+          "description": "Custom recruitment strategies designed to meet specific business requirements and industry demands."
+        },
+        {
+          "title": "Expert Consultations",
+          "description": "Guidance from industry experts to optimize workforce planning, talent acquisition, and resource management."
+        },
+        {
+          "title": "Flexible Solutions",
+          "description": "Adaptable staffing models that cater to dynamic business needs, including contract, temporary, and full-time placements."
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,20 @@
+{
+    "aboutSAPImplementationJSON": {
+      "heading": "Infocus SAP Implementation & ERP Consulting Services Overview",
+      "description": "Infocus provides expert SAP Implementation and ERP Consulting services, helping businesses of all sizes unlock the full potential of SAP solutions. Our dedicated SAP Practice team, with vast industry experience, tailors each solution to meet the specific needs of our clients, offering services that include system configuration, implementation, and ongoing support, all aligned with industry best practices to drive competitive advantage. What sets us apart is the hands-on experience and deep domain expertise of our certified consultants, who specialize in key SAP modules like SD, MM, FI/CO, PP, QM, PM, PS, and CRM. With a combination of experienced project managers and certified professionals who have successfully managed multiple global projects, Infocus ensures optimal and efficient SAP deployments. Key highlights:",
+      "bulletPoints": [
+        {
+          "title": "Expert SAP solutions tailored to meet business-specific needs"
+        },
+        {
+          "title": "Extensive experience across various industry verticals"
+        },
+        {
+          "title": "In-depth knowledge of key SAP modules like SD, MM, FI/CO, PP, and more"
+        },
+        {
+          "title": "Strong project management and leadership with a proven track record in global projects"
+        }
+      ]
+    }
+  }

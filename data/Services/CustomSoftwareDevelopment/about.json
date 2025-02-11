@@ -1,0 +1,40 @@
+{
+    "aboutCustomSoftwareDevelopmentJSON": {
+        "heading": "Custom Software Development by Infocus",
+        "description": "Infocus provides tailored software solutions to businesses when off-the-shelf software does not fully meet their unique requirements. By combining in-depth business analysis with cutting-edge technology, Infocus develops high-performance custom software and web-based applications that streamline business processes, enhance efficiency, and reduce operational bottlenecks. Our offshore software development services are designed to help organizations achieve faster, more cost-effective results through IT-enabled solutions, ultimately improving time-to-market, resource optimization, and overall business performance. Key highlights:",
+        "bulletPoints": [
+            {
+                "title": "Tailored Solutions",
+                "description": "Custom-built software that aligns with your specific business needs, ensuring enhanced productivity and efficiency."
+            },
+            {
+                "title": "Offshore Expertise",
+                "description": "Access to a global team of skilled developers, providing cost-effective and high-quality software solutions."
+            },
+            {
+                "title": "Efficiency & Cost Savings",
+                "description": "Optimize business processes and reduce costs through automation and smart software solutions."
+            },
+            {
+                "title": "End-to-End Development",
+                "description": "Comprehensive development services, from requirement analysis to deployment and maintenance."
+            },
+            {
+                "title": "Scalability & Flexibility",
+                "description": "Solutions designed to scale with your business, adapting to evolving needs and industry trends."
+            },
+            {
+                "title": "Focus on Quality",
+                "description": "Commitment to delivering high-quality software through rigorous testing and best practices."
+            },
+            {
+                "title": "Post-Implementation Support",
+                "description": "Continuous support and maintenance to ensure long-term software reliability and efficiency."
+            },
+            {
+                "title": "Proven Methodology",
+                "description": "Leverage industry-proven frameworks and methodologies for efficient project execution."
+            }
+        ]
+    }
+}

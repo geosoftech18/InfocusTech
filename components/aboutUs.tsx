@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import CountUp from "./ui/countUp";
 
 interface AccordionProps {
   title: string;
@@ -36,17 +37,17 @@ const AboutUs: React.FC<AboutUsProps> = ({
         </Button>
         <div className="flex flex-col gap-2 items-start lg:items-center mr-12 lg:flex-row">
           <div className="flex items-start justify-center  flex-col  border-black">
-            <div className="text-2xl font-semibold">24 +</div>
+            <CountUp initialValue={0} finalValue={24} symbol="+" />
             <div>Years of collective expericence</div>
           </div>
           <div className="bg-gray-400 rounded-xl border border-r h-3/4 w-1 "></div>
           <div className="flex items-start justify-center flex-col  border-black">
-            <div className="text-2xl font-semibold">95 %</div>
+            <CountUp initialValue={0} finalValue={95} symbol="%" />
             <div>Remarkable client satisfaction rate</div>
           </div>
           <div className="bg-gray-400 rounded-xl border border-r h-3/4 w-1 "></div>
           <div className="flex items-start justify-center flex-col  border-black">
-            <div className="text-2xl font-semibold">499 +</div>
+            <CountUp initialValue={0} finalValue={499} symbol="+" />
             <div>successfully created projects</div>
           </div>
           <div className="bg-gray-400 rounded-xl border border-r h-3/4 w-1 "></div>

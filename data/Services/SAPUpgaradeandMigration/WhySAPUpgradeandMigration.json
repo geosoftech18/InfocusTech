@@ -1,0 +1,23 @@
+{
+    "WhySAPUpgradeandMigrationJSON": {
+        "heading": {
+            "normal": "SAP Upgrade & Migration with Infocus:",
+            "emphasized": "Transforming Your Business"
+        },
+        "subheading": "As the market evolves, staying current with the latest SAP versions is critical to ensuring that your business remains agile, compliant, and competitive. Infocus offers comprehensive SAP Upgrade and Migration services that ensure a seamless transition, empowering your business with cutting-edge technology.",
+        "details": [
+            {
+                "tag": "Comprehensive Migration & Upgrade Services",
+                "description": "Infocus provides end-to-end services, guiding you through every stage of your SAP system upgrade or migration — from initial planning to post-migration support. We focus on minimising downtime and ensuring a smooth, risk-free transition to newer versions."
+            },
+            {
+                "tag": "Seamless SAP HANA Migration",
+                "description": "Transition to SAP S/4HANA for faster processing, real-time analytics, and streamlined operations. Infocus ensures a successful migration to HANA, unlocking new functionalities while enhancing speed and business agility."
+            },
+            {
+                "tag": "Optimising Performance and Future Readiness",
+                "description": "Infocus not only focuses on the technical aspects of migration but also ensures that your IT environment is ready for future advancements. Our process includes business case development, technical and solution assessments, and a defined roadmap for ongoing optimisation."
+            }
+        ]
+    }
+}

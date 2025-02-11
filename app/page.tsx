@@ -28,7 +28,7 @@ export default function Home() {
       <HeroCarousal HeroItems={HeroItems}/>
       <AboutUs AboutUsData={aboutUsData} visionMissionQualityData={visionMissionQualityData}/>
       <WhyChooseUs whyChooseUsData={whyChooseUsJSON}/>
-      <WhatWeOffer whatWeOfferData={whatWeOfferJSON}/>
+      <WhatWeOffer Data={whatWeOfferJSON}/>
       <IndustriesWeServe industriesWeServeData={industriesWeServeJSON}/>
       <Testimonial />
       <Clients />

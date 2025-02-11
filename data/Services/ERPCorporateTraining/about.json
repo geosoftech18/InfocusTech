@@ -1,0 +1,41 @@
+{
+    "About": {
+      "heading": "Introduction to ERP Corporate Training",
+      "description": "Infocus offers specialized corporate training solutions tailored to meet the needs of your organization. Whether you're preparing for an ERP implementation or enhancing your team's ERP proficiency, our comprehensive training program ensures that your workforce is equipped with the skills and knowledge necessary to navigate and optimize ERP/SAP systems effectively. Our hands-on exercises and flexible, customized classes empower participants to play an active role in the implementation process, ensuring a smooth transition and long-term success.",
+      "bulletPoints": [
+        {
+          "title": "Project Teams",
+          "description": "Equip project teams with essential ERP knowledge to drive successful implementation and system adoption."
+        },
+        {
+          "title": "Business Process Owners",
+          "description": "Enable business process owners to align ERP functionalities with organizational goals for seamless integration."
+        },
+        {
+          "title": "Key Users",
+          "description": "Train key users to become ERP champions, ensuring efficient system usage and troubleshooting."
+        },
+        {
+          "title": "End Users",
+          "description": "Provide hands-on training for end users to effectively navigate ERP systems in daily operations."
+        },
+        {
+          "title": "Executives & Stakeholders",
+          "description": "Help executives and stakeholders understand ERP benefits and strategic implementation for business success."
+        },
+        {
+          "title": "Functional Training",
+          "description": "Comprehensive training on ERP modules covering finance, HR, supply chain, and other key functions."
+        },
+        {
+          "title": "Technical Training",
+          "description": "In-depth sessions on ERP system architecture, configuration, and customization for IT professionals."
+        },
+        {
+          "title": "Custom Workshops",
+          "description": "Tailored ERP workshops designed to meet specific business needs and industry requirements."
+        }
+      ]
+    }
+  }
+  

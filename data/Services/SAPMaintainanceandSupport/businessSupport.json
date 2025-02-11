@@ -1,0 +1,29 @@
+{
+    "sapBusinessSupportJSON": {
+        "Tag": "Business Support",
+        "Title": "Comprehensive Business Support for SAP Systems",
+        "Description": "Our Business Support services are designed to ensure your team gets the most out of your SAP system with dedicated help desk assistance, troubleshooting, and ongoing user training. We provide prompt, reliable support to keep your operations running smoothly.",
+        "Tool": [
+            {
+                "name": "Help Desk",
+                "description": "Round-the-clock assistance to resolve queries and technical issues swiftly."
+            },
+            {
+                "name": "User Support",
+                "description": "Personalized support to ensure smooth day-to-day usage of your SAP systems."
+            },
+            {
+                "name": "Troubleshoot & Resolve",
+                "description": "Proactive identification and resolution of technical issues to minimize downtime."
+            },
+            {
+                "name": "Additional Development - Offshore",
+                "description": "Access to cost-effective, skilled offshore resources for extended development needs."
+            },
+            {
+                "name": "User Training",
+                "description": "Empower your team with expert training to enhance productivity and system knowledge."
+            }
+        ]
+    }
+}

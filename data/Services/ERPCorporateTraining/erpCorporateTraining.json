@@ -1,0 +1,32 @@
+{
+    "erpCorporateTrainingJSON": {
+        "heading": "Introduction to ERP Corporate Training",
+        "description": "Our ERP training solutions cater to a wide range of stakeholders within your organization, ensuring that each participant receives the targeted knowledge they need to excel in their roles. Whether you’re preparing your project team for implementation or providing end users with the tools they need to navigate ERP systems, our comprehensive programs are designed to meet the diverse needs of your workforce.",
+        "bulletPoints": [
+            {
+                "title": "Project Teams",
+                "description": "Equip your project teams with the expertise needed for successful ERP/SAP implementation."
+            },
+            {
+                "title": "Business Process Owners",
+                "description": "Help business leaders understand how their processes map to the ERP/SAP system for enhanced decision-making and alignment."
+            },
+            {
+                "title": "Key Users",
+                "description": "Provide training on specific functions and workflows to ensure key users can operate the system with confidence and efficiency."
+            },
+            {
+                "title": "End Users",
+                "description": "Develop the skills for smooth, day-to-day interaction with the ERP system, enhancing productivity and reducing operational errors."
+            },
+            {
+                "title": "Executives",
+                "description": "Give your executives a comprehensive understanding of the strategic benefits and capabilities of ERP/SAP to make informed decisions."
+            },
+            {
+                "title": "Stakeholders",
+                "description": "Ensure that all stakeholders involved in the ERP project are well-versed in the system’s impact and functionality to drive success across the organization."
+            }
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "aboutAWSConsultingJSON": {
+      "heading": "Infocus AWS Consulting Services: Seamless Cloud Solutions for Your Business",
+      "description": "At Infocus Technologies, we specialise in providing comprehensive AWS consulting services, empowering businesses to leverage the full potential of the cloud. Our certified experts ensure that your cloud migration, application development, and management processes are efficient, secure, and cost-effective. With AWS being one of the leading cloud platforms, our services span across all areas, from cloud automation and provisioning to monitoring and scalability. We offer a tailored approach to meet your unique business requirements, ensuring a smooth transition and optimal performance in the cloud.",
+      "bulletPoints": [
+        {
+          "title": "Managed Services"
+        },
+        {
+          "title": "Advisory Services"
+        },
+        {
+          "title": "Operations and Reports"
+        },
+        {
+          "title": "Enhanced Support"
+        },
+        {
+          "title": "Cost and Usage Tracking"
+        },
+        {
+          "title": "Recommendations"
+        }
+      ]
+    }
+  }
+  

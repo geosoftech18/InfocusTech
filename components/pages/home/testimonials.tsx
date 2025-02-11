@@ -39,11 +39,11 @@ const Testimonial = () => {
             align: "start",
             loop: true,
           }}
-            plugins={[
-              Autoplay({
-                delay: 2000,
-              }),
-            ]}
+          plugins={[
+            Autoplay({
+              delay: 2000,
+            }),
+          ]}
         >
           <CarouselContent>
             {TestimonialItems.map((item, index) => (
@@ -61,7 +61,9 @@ const Testimonial = () => {
                     <p className="text-center font-bold text-4xl text-[#E60000] lg:text-gray-200">
                       {item.name}
                     </p>
-                    <p className="mt-4 text-xl tracking-tighter text-gray-300 font-semibold">{item.comment}</p>
+                    <p className="mt-4 text-xl tracking-tighter text-gray-300 font-semibold">
+                      {item.comment}
+                    </p>
                     <p className="mt-4 text-xl text-white font-semibold">
                       {item.role}
                     </p>
@@ -71,8 +73,8 @@ const Testimonial = () => {
             ))}
           </CarouselContent>
           <div className="absolute left-1/2 lg:left-full lg:bottom-2 lg:right-2 flex gap-2">
-          <CarouselPrevious className="absolute -left-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md hover:bg-gray-700" /> 
-          <CarouselNext className="absolute -right-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md hover:bg-gray-700" />
+            <CarouselPrevious className="absolute -left-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md hover:bg-gray-700" />
+            <CarouselNext className="absolute -right-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md hover:bg-gray-700" />
           </div>
         </Carousel>
       </div>

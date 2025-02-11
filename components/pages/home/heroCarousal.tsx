@@ -25,7 +25,7 @@ interface HeroCarousalProps {
 const HeroCarousal:React.FC<HeroCarousalProps>=({HeroItems})=> {
   return (
     <Carousel
-      className="w-screen max-w-full mx-auto "
+      className="w-screen max-w-full mx-auto h-[60vh]"
       opts={{
         align: "start",
         loop: true,
@@ -36,12 +36,12 @@ const HeroCarousal:React.FC<HeroCarousalProps>=({HeroItems})=> {
         }),
       ]}
     >
-      <CarouselContent>
+      <CarouselContent className="h-full">
         {HeroItems.map((item, index) => (
           <CarouselItem key={index}>
             <div>
-              <Card className="w-screen flex items-center gap-5 lg:gap-5 pt-5 lg:pt-10  flex-col bg-gray-400">
-                <CardTitle className="text-3xl lg:text-6xl flex items-center justify-center flex-col">
+              <Card className="w-screen flex items-center gap-5 lg:gap-5 pt-5 lg:pt-10 h-full flex-col bg-gray-400">
+                <CardTitle className="text-3xl lg:text-4xl flex items-center justify-center flex-col">
                   <div>{item.title}</div>
                   <div className="font-semibold text-gray-900">
                     {item.boldTitle}

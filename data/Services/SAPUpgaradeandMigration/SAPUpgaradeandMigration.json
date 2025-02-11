@@ -1,0 +1,33 @@
+{
+    "aboutSAPUpgradeandMigration": {
+      "heading": "Ensuring Seamless SAP Upgrade & Migration",
+      "description": "Infocus helps businesses stay ahead with seamless upgrades and migrations, ensuring minimal disruption and maximizing operational efficiency. Here’s why our clients trust us for SAP transitions:",
+      "bulletPoints": [
+        {
+          "title": "Stay Ahead with Latest SAP Versions",
+          "description": "Keep your system updated with new features, enhanced security, and compliance with regulations."
+        },
+        {
+          "title": "Minimise Risk and Downtime",
+          "description": "Our approach ensures a smooth transition with minimal risk and business continuity."
+        },
+        {
+          "title": "Seamless Migration of Data",
+          "description": "We ensure secure data migration with no loss or corruption for smooth integration."
+        },
+        {
+          "title": "Expert Guidance Through Every Step",
+          "description": "Our consultants provide end-to-end support, from planning to post-go-live assistance."
+        },
+        {
+          "title": "Optimise Business Benefits",
+          "description": "Unlock advanced SAP functionalities to improve efficiency and decision-making."
+        },
+        {
+          "title": "Comprehensive Support Post-Upgrade",
+          "description": "We provide post-upgrade support to maintain stability and quickly resolve issues."
+        }
+      ]
+    }
+  }
+  

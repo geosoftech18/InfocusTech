@@ -1,0 +1,41 @@
+{
+    "AboutJSON": {
+      "heading": "Comprehensive SAP Auditing & Testing Services",
+      "description": "At Infocus, we provide a robust suite of SAP/ERP testing services to ensure your SAP projects succeed. Our expertise spans all aspects of testing, from functional assessments to performance management. We focus on delivering accelerated testing, automation, reusable test libraries, and comprehensive performance monitoring to help you achieve optimal ROI on your SAP applications. Our commitment to excellence guarantees that your business processes run smoothly, with reliability and efficiency at every stage of your SAP project lifecycle.",
+      "bulletPoints": [
+        {
+          "title": "Testing Strategy and Assessment",
+          "description": "Developing a structured approach to testing, ensuring all critical business and technical aspects are evaluated."
+        },
+        {
+          "title": "Functional and Regression Testing",
+          "description": "Validating the core functionalities of SAP applications and ensuring consistent performance after updates."
+        },
+        {
+          "title": "Data Migration Testing",
+          "description": "Ensuring data integrity, accuracy, and completeness during SAP data transfers and upgrades."
+        },
+        {
+          "title": "Business Process Testing",
+          "description": "Testing end-to-end business workflows to confirm SAP applications align with organizational goals."
+        },
+        {
+          "title": "Integration Testing",
+          "description": "Verifying seamless communication and data exchange between SAP and other enterprise systems."
+        },
+        {
+          "title": "User Acceptance Testing (UAT)",
+          "description": "Engaging end-users to validate SAP solutions against real-world business scenarios."
+        },
+        {
+          "title": "Test Automation Using Automated Test Tools",
+          "description": "Leveraging automation frameworks to enhance efficiency, accuracy, and speed in SAP testing."
+        },
+        {
+          "title": "Performance, Load & Stress Testing",
+          "description": "Assessing SAP system stability and scalability under various workloads and stress conditions."
+        }
+      ]
+    }
+  }
+  

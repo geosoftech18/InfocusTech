@@ -1,0 +1,50 @@
+{
+    "valueAddedServicesJSON": {
+      "tag": "Value-Added Services",
+      "heading": "Beyond Traditional Staffing",
+      "description": "Infocus goes beyond traditional staffing by offering a range of value-added services that address the complexities of today’s global hiring environment. These services ensure a deeper level of candidate assessment, compliance, and cultural alignment.",
+      "items": [
+        {
+          "name": "Assessment Testing",
+          "imagePath": "/valueAddedServicesIcons/Assessment Testing.png",
+          "description": "Evaluate candidate skills, experience, and cultural fit with advanced tools and insights."
+        },
+        {
+          "name": "Pre-Employment Checking",
+          "imagePath": "/valueAddedServicesIcons/Pre-Employment Checking.png",
+          "description": "Comprehensive background checks to verify the integrity and qualifications of potential hires."
+        },
+        {
+          "name": "Global Talent Network",
+          "imagePath": "/valueAddedServicesIcons/Global Talent Network.png",
+          "description": "Access to talent from around the world to meet the needs of international businesses."
+        },
+        {
+          "name": "Customized Candidate Reports",
+          "imagePath": "/valueAddedServicesIcons/Customized Candidate Reports.png",
+          "description": "Detailed reports to help make informed hiring decisions based on assessments."
+        },
+        {
+          "name": "Cultural Compatibility",
+          "imagePath": "/valueAddedServicesIcons/Cultural Compatibility.png",
+          "description": "Ensure that candidates align with your company’s values and work culture for long-term success."
+        },
+        {
+          "name": "Talent Pool Development",
+          "imagePath": "/valueAddedServicesIcons/Talent Pool Development.png",
+          "description": "Build and maintain a pipeline of qualified candidates for future hiring needs."
+        },
+        {
+          "name": "Onboarding Assistance",
+          "imagePath": "/valueAddedServicesIcons/Onboarding Assistance.png",
+          "description": "Streamlined processes to integrate new hires quickly and effectively into your organization."
+        },
+        {
+          "name": "Consultative Support",
+          "imagePath": "/valueAddedServicesIcons/Consultative Support.png",
+          "description": "Ongoing support and consultation to address evolving staffing challenges."
+        }
+      ]
+    }
+  }
+  

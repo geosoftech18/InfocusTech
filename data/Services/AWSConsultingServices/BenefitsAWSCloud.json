@@ -1,0 +1,48 @@
+{
+    "BenefitsAWSCloudJSON": {
+      "tag": "Business Benefits of Cloud Applications on AWS",
+      "benefits": [
+        {
+          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+          "name": "Agility and Flexibility",
+          "description": "Quickly adapt to changing business needs with scalable cloud solutions."
+        },
+        {
+          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+          "name": "Cost Efficiency",
+          "description": "Only pay for the resources you use, optimising your IT budget."
+        },
+        {
+          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+          "name": "Enhanced Accessibility",
+          "description": "Provide seamless access to applications across multiple devices and locations."
+        },
+        {
+          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+          "name": "High Availability",
+          "description": "Ensure continuous uptime for your applications, improving user experience."
+        },
+        {
+          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+          "name": "Security and Compliance",
+          "description": "Leverage AWS's enterprise-level security and compliance standards to protect your data."
+        },
+        {
+          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+          "name": "Optimised Performance",
+          "description": "Benefit from optimised cloud infrastructure for superior application performance."
+        },
+        {
+          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+          "name": "Resource Optimisation",
+          "description": "Maximise the efficiency of your cloud resources, reducing waste and improving operational efficiency."
+        },
+        {
+          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+          "name": "Seamless Integration",
+          "description": "Easily integrate AWS cloud applications with existing IT infrastructure, streamlining processes and workflows."
+        }
+      ]
+    }
+  }
+  

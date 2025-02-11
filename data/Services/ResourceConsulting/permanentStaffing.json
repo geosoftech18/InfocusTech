@@ -1,0 +1,34 @@
+{
+    "permanentStaffingJSON": {
+      "Tag": "Permanent Staffing Solutions:",
+      "Title": "High-Quality Permanent Staffing",
+      "Description": "Infocus focuses on delivering high-quality, permanent staffing solutions that align with your business’s strategic goals. With our proven search techniques, we ensure that you find the ideal candidates who are not only skilled but also a perfect fit for your company’s culture.",
+      "Tool": [
+        {
+          "name": "Customized Recruitment Strategies",
+          "description": "Tailored hiring approaches designed to meet your specific business needs and workforce goals."
+        },
+        {
+          "name": "Access to a Wide Talent Pool",
+          "description": "A vast network of skilled professionals and executives, ensuring the best fit for your organization."
+        },
+        {
+          "name": "Thorough Vetting and Screening",
+          "description": "Rigorous background checks and skill assessments to ensure long-term compatibility and reliability."
+        },
+        {
+          "name": "Expertise Across All Levels",
+          "description": "Specialized hiring solutions for roles ranging from entry-level to executive leadership positions."
+        },
+        {
+          "name": "Dedicated Recruitment Team",
+          "description": "A team of staffing experts committed to meeting hiring deadlines and project milestones."
+        },
+        {
+          "name": "Flexibility for Urgent Hiring Needs",
+          "description": "Agile staffing solutions to quickly address urgent or high-priority hiring demands."
+        }
+      ]
+    }
+  }
+  

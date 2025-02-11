@@ -1,0 +1,49 @@
+{
+    "SAPTestingServicesJSON": {
+        "tag": "Our SAP Testing Services",
+        "heading": "Comprehensive SAP Testing Solutions",
+        "description": "We provide a comprehensive range of SAP testing services designed to optimize the quality, performance, and reliability of your SAP applications, ensuring efficiency and ROI throughout your project lifecycle.",
+        "items": [
+            {
+                "name": "Testing Strategy & Assessment",
+                "imagePath": "/SAPTestingIcons/Testing Strategy & Assessment.png",
+                "description": "Tailored strategies to define the testing approach and ensure optimal SAP system performance."
+            },
+            {
+                "name": "Functional & Regression Testing",
+                "imagePath": "/SAPTestingIcons/Functional & Regression Testing.png",
+                "description": "Ensuring core functions are working correctly and maintaining stability through updates."
+            },
+            {
+                "name": "Data Migration Testing",
+                "imagePath": "/SAPTestingIcons/Data Migration Testing.png",
+                "description": "Verifying the accuracy and integrity of migrated data during system transitions."
+            },
+            {
+                "name": "Business Process Testing",
+                "imagePath": "/SAPTestingIcons/Business Process Testing.png",
+                "description": "Validating critical business processes for smooth and efficient operations."
+            },
+            {
+                "name": "Integration Testing",
+                "imagePath": "/SAPTestingIcons/Integration Testing.png",
+                "description": "Ensuring seamless collaboration between SAP modules and third-party systems."
+            },
+            {
+                "name": "User Acceptance Testing (UAT)",
+                "imagePath": "/SAPTestingIcons/User Acceptance Testing.png",
+                "description": "Confirming system readiness by validating it meets end-user requirements and expectations."
+            },
+            {
+                "name": "Test Automation",
+                "imagePath": "/SAPTestingIcons/Test Automation.png",
+                "description": "Enhancing efficiency through automated testing processes using advanced tools."
+            },
+            {
+                "name": "Performance, Load & Stress Testing",
+                "imagePath": "/SAPTestingIcons/Performance Load & Stress Testing.png",
+                "description": "Evaluating system robustness by testing under varying loads and stress conditions."
+            }
+        ]
+    }
+}
