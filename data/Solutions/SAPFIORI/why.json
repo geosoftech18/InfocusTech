@@ -1,0 +1,33 @@
+{
+    "whyJSON": {
+      "heading": "Why SAP Fiori?",
+      "description": "SAP Fiori 2.0 enhances the user experience for SAP S/4HANA, offering a unified, responsive, and role-based interface across both on-premise and cloud solutions. It streamlines business processes and increases productivity through its intuitive design, making it easier for users to perform tasks on any device.",
+      "bulletPoints": [
+        {
+          "title": "Unified User Experience",
+          "description": "Provides a consistent design for both cloud and on-premise SAP applications."
+        },
+        {
+          "title": "Role-based Access",
+          "description": "Centralized access through SAP Fiori Launchpad, tailored to specific user roles."
+        },
+        {
+          "title": "Seamless Device Integration",
+          "description": "Start a task on one device (desktop, smartphone, tablet) and continue on another without interruption."
+        },
+        {
+          "title": "Wide Application Range",
+          "description": "Over 300+ role-based apps are available across various business functions like HR, Manufacturing, and Finance."
+        },
+        {
+          "title": "Built with UI5",
+          "description": "SAP Fiori apps use the modern UI5 framework, ensuring a responsive and engaging interface."
+        },
+        {
+          "title": "Increased User Productivity",
+          "description": "Streamlined processes and easy-to-use functionality enable users to accomplish tasks more efficiently, boosting overall productivity."
+        }
+      ]
+    }
+  }
+  

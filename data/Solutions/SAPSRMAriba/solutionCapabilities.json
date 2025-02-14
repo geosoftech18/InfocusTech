@@ -1,0 +1,35 @@
+{
+    "Data": {
+      "tag": "",
+      "heading": "SAP and Ariba Solution Capabilities",
+      "description": "SAP and Ariba provide robust procurement capabilities that enhance supplier collaboration, streamline sourcing, and optimize contract management, ensuring efficient and cost-effective procurement processes.",
+      "items": [
+        {
+          "name": "Creation and Supplier Collaboration",
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "description": "Organizations can handle every aspect of the supplier lifecycle with supplier information and performance management software. The on-demand software provides a central, network-enabled platform for accessing supplier profiles and assessing supplier performance using measurable indicators and prepackaged reports and dashboards."
+        },
+        {
+          "name": "Sourcing",
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "description": "The Ariba Sourcing solution integrates patented 'request for' (RFX) technology, process workflows, commodity intelligence, and supplier discovery, resulting in a flexible, comprehensive sourcing solution that enables fast, sustainable, bottom-line results."
+        },
+        {
+          "name": "BOM, Workflow, and Syndication",
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "description": "Manage all spend types, including advanced direct materials, using a single solution. Support sourcing direct materials with the ability to integrate and calculate the cost of bills of materials (BoM), offer multilevel BoM integration, workflow, and syndication capabilities, and import multilevel BoMs for executing the sourcing process at different levels."
+        },
+        {
+          "name": "Operational Contract Management",
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "description": "Boost contract management services through more accurate, structured, and accessible master data with SAP S/4HANA. Structure committed services more effectively with strong service contracts, ensuring superior support and services."
+        },
+        {
+          "name": "Source Assignments",
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "description": "Find, negotiate, and contract the most qualified and reliable suppliers. Collect, analyze, and access all sourcing-related information in one system, supporting automated and manual processes for managing contracts, source lists, purchase records, quotations, and RFQs."
+        }
+      ]
+    }
+  }
+  

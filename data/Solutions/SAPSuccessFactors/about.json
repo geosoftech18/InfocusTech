@@ -1,0 +1,27 @@
+{
+    "aboutUsJSON": {
+      "heading": "SAP SuccessFactors HCM Suite: Bridging Strategy and Execution",
+      "description": "In today’s fast-evolving digital economy, organizations need to leverage technology that empowers their workforce and helps close the gap between strategic goals and effective execution. SAP SuccessFactors offers a cloud-based Human Capital Management (HCM) suite designed to optimize talent and performance, ensuring that businesses can meet their goals and prepare for the future.",
+      "bulletPoints": [
+        {
+          "title": "Talent Management"
+        },
+        {
+          "title": "Workforce Analytics"
+        },
+        {
+          "title": "Core HR Solutions"
+        },
+        {
+          "title": "Employee Engagement"
+        },
+        {
+          "title": "Global Reach"
+        },
+        {
+          "title": "Future-Proof"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,33 @@
+{
+    "aboutUsJSON": {
+      "heading": "SAP Supplier Relationship Management and Ariba Procurement Solutions",
+      "description": "SAP Supplier Relationship Management (SRM) and Ariba Procurement Solutions offer an integrated suite of tools to streamline procurement, enhance supplier collaboration, and improve decision-making. These solutions leverage advanced technologies like Big Data, cloud computing, and predictive analytics to optimize processes, mitigate risks, and reduce costs. With SAP and Ariba, businesses can manage their entire procurement lifecycle efficiently, from supplier discovery to invoice payment, enabling smarter sourcing, improved compliance, and better supplier performance.",
+      "bulletPoints": [
+        {
+          "title": "End-to-End Procurement Optimization"
+        },
+        {
+          "title": "Risk Mitigation and Compliance"
+        },
+        {
+          "title": "Cloud and Mobile Flexibility"
+        },
+        {
+          "title": "Data-Driven Insights for Smarter Decisions"
+        },
+        {
+          "title": "Supplier Collaboration and Performance Management"
+        },
+        {
+          "title": "Contract Lifecycle Management"
+        },
+        {
+          "title": "Strategic Sourcing and Cost Savings"
+        },
+        {
+          "title": "Faster Time-to-Value"
+        }
+      ]
+    }
+  }
+  

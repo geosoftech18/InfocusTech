@@ -1,0 +1,35 @@
+{
+    "Data": {
+      "tag": "",
+      "heading": "Optimized Contract Lifecycle Management",
+      "description": "Enhancing contract management with improved compliance, visibility, and streamlined processes for better efficiency and risk mitigation.",
+      "items": [
+        {
+          "name": "Improved Contract Management",
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "description": "Improved contract compliance, timely renewals management, and visibility to performance information."
+        },
+        {
+          "name": "Effective Contract Creation",
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "description": "Tighter controls and minimized legal risk."
+        },
+        {
+          "name": "Full Contract Visibility",
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "description": "Single repository for contracts, elimination of redundant contracts, visibility into commitments, and the ability to track regulatory compliance and understand contract history."
+        },
+        {
+          "name": "Streamlined Negotiation Processes",
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "description": "Streamlined and controlled processes, abbreviated negotiation and approval cycles, and inclusion of the right stakeholders."
+        },
+        {
+          "name": "Rapid Time-to-Value",
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "description": "Enables strong user adoption, delivers rapid on-demand deployment, and provides process and data integration."
+        }
+      ]
+    }
+  }
+  

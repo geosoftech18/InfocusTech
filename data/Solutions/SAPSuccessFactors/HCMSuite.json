@@ -1,0 +1,53 @@
+{
+    "HCMSuite": {
+      "tag": "SAP SuccessFactors HCM Suite",
+      "benefits": [
+        {
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "name": "Employee Central",
+          "description": "A core HR solution providing a global system of record for managing workforce data, automating HR processes, and improving compliance."
+        },
+        {
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "name": "Recruiting",
+          "description": "End-to-end recruiting solution that helps attract, engage, and hire the best talent while improving candidate experience."
+        },
+        {
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "name": "On-boarding",
+          "description": "Seamless onboarding experience ensuring new hires integrate quickly and effectively into the organization."
+        },
+        {
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "name": "Learning",
+          "description": "A modern learning management system (LMS) designed to upskill employees and foster continuous professional growth."
+        },
+        {
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "name": "Performance and Goals",
+          "description": "Empowers organizations to align individual and business goals while tracking employee performance and development."
+        },
+        {
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "name": "Compensation",
+          "description": "Ensures fair and competitive pay practices while linking compensation plans to performance and company objectives."
+        },
+        {
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "name": "Succession and Development",
+          "description": "Helps organizations identify, develop, and retain top talent for leadership and critical roles."
+        },
+        {
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "name": "Workforce Planning",
+          "description": "Enables organizations to forecast future workforce needs and optimize talent strategies for business growth."
+        },
+        {
+          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "name": "Workforce Analytics & Reporting",
+          "description": "Provides data-driven insights for better decision-making through real-time workforce analytics and reporting."
+        }
+      ]
+    }
+  }
+  

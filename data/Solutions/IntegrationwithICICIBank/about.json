@@ -1,0 +1,37 @@
+{
+    "aboutJSON": {
+      "heading": "Streamline Your Payments & Bank Reconciliation with ICICI Bank Integration",
+      "description": "Infocus empowers your business with seamless integration of ICICI Bank’s world-class payment processing and reconciliation services. With this robust solution, you can automate your payment approvals, collections, and bank statement reconciliation—all from a single platform. Enhance operational efficiency, reduce manual errors, and accelerate business growth with this secure, end-to-end payment and banking solution.",
+      "bulletPoints": [
+        {
+          "title": "Effortless Payment Approval Process",
+          "description": "Integrate SAP with ICICI Bank for a smooth, automated payment approval process that keeps your vendors satisfied and ensures timely transactions."
+        },
+        {
+          "title": "Automated Bank Reconciliation",
+          "description": "Eliminate manual reconciliation tasks by automating your SAP bank reconciliation, thanks to direct integration with ICICI Bank's systems. Simplify your financial operations and reduce errors."
+        },
+        {
+          "title": "Secure Payment Transactions",
+          "description": "Enjoy secure and fast payment processing with Infocus and ICICI Bank’s advanced encryption and compliance standards, protecting your transactions and business data."
+        },
+        {
+          "title": "Real-time Transaction Tracking",
+          "description": "Gain visibility into all your outgoing and incoming payments with real-time transaction tracking, ensuring full control and transparency."
+        },
+        {
+          "title": "End-to-End Digital Payment Solution",
+          "description": "Transform your payment, collection, and reconciliation processes into a fully digital solution, saving time and improving operational efficiency."
+        },
+        {
+          "title": "Vendor Satisfaction",
+          "description": "Keep your vendors happy by ensuring timely, accurate, and automated payment disbursements through seamless integration with ICICI Bank."
+        },
+        {
+          "title": "Seamless SAP Integration",
+          "description": "Infocus delivers smooth integration with SAP for both payment approval and reconciliation, streamlining your finance operations."
+        }
+      ]
+    }
+  }
+  

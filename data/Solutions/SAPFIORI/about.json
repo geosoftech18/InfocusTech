@@ -1,0 +1,21 @@
+{
+    "aboutUsJSON": {
+      "heading": "Reimagine the SAP User Experience with SAP Fiori",
+      "description": "SAP Fiori transforms the way users interact with SAP software by providing a modern, intuitive, and personalized experience. Designed to align with the way users work, SAP Fiori offers a responsive, role-based interface that works seamlessly across devices and platforms, whether on-premise or cloud-based.",
+      "bulletPoints": [
+        {
+          "title": "Enhanced Productivity"
+        },
+        {
+          "title": "Real-time Transparency"
+        },
+        {
+          "title": "Seamless Continuity"
+        },
+        {
+          "title": "Increased User Satisfaction"
+        }
+      ]
+    }
+  }
+  

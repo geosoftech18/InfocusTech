@@ -1,0 +1,30 @@
+{
+    "Data": {
+      "tag": "SAP BW/4HANA – A Simpler, Faster, and More Flexible Data Warehouse",
+      "heading": "Key Advantages of SAP BW/4HANA: Simplicity, Openness, Modern Interface, and High Performance",
+      "description": "SAP BW/4HANA is designed to address the growing demands of modern businesses by providing a simpler, faster, and more flexible data warehousing solution. Its in-memory platform, SAP HANA, enables the efficient management of large datasets, transforming how organizations utilize and analyze data.",
+      "items": [
+        {
+          "name": "Simplicity",
+          "imagePath": "/images/simplicity.png",
+          "description": "Get up and running faster with reduced development efforts and lower overall costs. Simplifies the data warehouse architecture, enabling quicker deployment and easier maintenance."
+        },
+        {
+          "name": "Openness",
+          "imagePath": "/images/openness.png",
+          "description": "Supports integration and management of all data types, whether from SAP applications or other SQL systems. Provides open SQL interface access to all models for enhanced flexibility and interoperability."
+        },
+        {
+          "name": "Modern Interface",
+          "imagePath": "/images/modern-interface.png",
+          "description": "Offers an intuitive user interface that simplifies data interaction for all users, not just database experts. Designed with a new, user-friendly interface that makes data access simpler for business users."
+        },
+        {
+          "name": "High Performance",
+          "imagePath": "/images/high-performance.png",
+          "description": "Delivers real-time analytics by leveraging large volumes of data with significantly faster query performance (up to 100% faster). Helps organizations stay competitive with improved decision-making capabilities powered by high-performance data processing."
+        }
+      ]
+    }
+  }
+  

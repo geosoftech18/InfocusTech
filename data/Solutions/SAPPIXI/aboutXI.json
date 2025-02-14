@@ -1,0 +1,37 @@
+{
+    "aboutSAPXI": {
+      "heading": "SAP Exchange Infrastructure (SAP XI) Overview",
+      "description": "SAP Exchange Infrastructure (SAP XI) is an enterprise application integration (EAI) platform within the SAP NetWeaver suite that facilitates seamless data exchange between internal and external systems. It connects SAP and non-SAP systems, supporting multiple protocols and programming languages, and provides a unified platform for managing complex integration scenarios.",
+      "bulletPoints": [
+        {
+          "title": "Enterprise Integration",
+          "description": "Integrates SAP and non-SAP systems, allowing smooth data exchange across diverse platforms."
+        },
+        {
+          "title": "Message Modeling & Transformation",
+          "description": "Supports modeling and transforming messages to ensure compatibility between different systems."
+        },
+        {
+          "title": "Cross-System Communication",
+          "description": "Enables integration across systems with varying protocols and technologies (e.g., Java, ABAP)."
+        },
+        {
+          "title": "Open Architecture",
+          "description": "Built on open standards like XML and Java, ensuring compatibility with third-party systems."
+        },
+        {
+          "title": "Message Flow Management",
+          "description": "Configures and manages message routing, error handling, and process flow."
+        },
+        {
+          "title": "Adapter Engine & Runtime",
+          "description": "Provides an Adapter Engine for system integration and runtime services for message handling."
+        },
+        {
+          "title": "Central Monitoring",
+          "description": "Monitors message flows and integration processes, ensuring real-time error detection and resolution."
+        }
+      ]
+    }
+  }
+  

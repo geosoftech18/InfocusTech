@@ -1,0 +1,27 @@
+{
+    "AboutUsJSON": {
+      "heading": "Introduction to SAP BW/4HANA: The Future of Data Warehousing",
+      "description": "SAP BW/4HANA is a next-generation data warehousing solution designed to meet the demands of modern enterprises. Built on the powerful SAP HANA in-memory platform, it provides unmatched performance, flexibility, and real-time analytics, enabling organizations to manage vast amounts of structured and unstructured data with ease. As businesses increasingly rely on data-driven decision-making, SAP BW/4HANA ensures they remain agile and competitive in the digital age.",
+      "bulletPoints": [
+        {
+          "title": "Next-Gen Data Warehousing"
+        },
+        {
+          "title": "Real-Time Analytics"
+        },
+        {
+          "title": "Flexible Data Integration"
+        },
+        {
+          "title": "Cloud-Ready Architecture"
+        },
+        {
+          "title": "IoT and Multi-Temperature Management"
+        },
+        {
+          "title": "Modern User Experience"
+        }
+      ]
+    }
+  }
+  
