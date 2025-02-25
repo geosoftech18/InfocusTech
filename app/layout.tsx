@@ -18,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Container>
+        <div>
           <NavbarMain NavbarProps={navLinks} />
           {children}
-        </Container>
+        </div>
       </body>
     </html>
   );

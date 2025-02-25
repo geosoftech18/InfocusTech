@@ -25,7 +25,7 @@ export default function Home() {
   
 
   return (
-    <Container>
+    <div>
       <HeroCarousal HeroItems={HeroItems}/>
       <AboutUs AboutUsData={aboutUsData} visionMissionQualityData={visionMissionQualityData}/>
       <WhyChooseUs whyChooseUsData={whyChooseUsJSON}/>
@@ -34,6 +34,6 @@ export default function Home() {
       <Testimonial />
       <Clients />
       <FAQs FAQData={FAQsdata} />
-    </Container>
+    </div>
   );
 }

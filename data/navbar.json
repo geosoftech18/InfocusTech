@@ -9,9 +9,6 @@
         {
             "name": "Solutions",
             "dropdownList": [
-                "S4 Rise Private Cloud",
-                "S4 Rise Public Cloud",
-                "Grow SAP",
                 "SAP S4HANA",
                 "SAP SuccessFactors (HCM)",
                 "SAP SRM-Ariba",

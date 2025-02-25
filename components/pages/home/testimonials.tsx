@@ -3,11 +3,13 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselApi,
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
+import React from "react";
 
 const TestimonialItems = [
   {
@@ -27,6 +29,20 @@ const TestimonialItems = [
 ];
 
 const Testimonial = () => {
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
   return (
     <div className="relative h-screen  py-32 grid grid-cols-12 ">
       <div className="hidden md:block md:col-span-4 bg-gray-200"></div>
@@ -34,6 +50,7 @@ const Testimonial = () => {
 
       <div className="absolute mt-36 lg:mt-auto px-10 inset-0 mx-auto max-w-5xl max-h-3xl flex items-center justify-center z-50">
         <Carousel
+          setApi={setApi}
           className="mx-auto"
           opts={{
             align: "start",
@@ -75,6 +92,18 @@ const Testimonial = () => {
           <div className="absolute left-1/2 lg:left-full lg:bottom-2 lg:right-2 flex gap-2">
             <CarouselPrevious className="absolute -left-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md hover:bg-gray-700" />
             <CarouselNext className="absolute -right-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md hover:bg-gray-700" />
+          </div>
+          <div className="flex items-center justify-center gap-2 m-2">
+            {TestimonialItems.map((_, index) => (
+              <div
+                key={index}
+                className={`${
+                  current === index + 1
+                    ? "bg-black scale-125 transition-all duration-200"
+                    : "bg-gray-400"
+                } rounded-full h-2 w-2`}
+              ></div>
+            ))}
           </div>
         </Carousel>
       </div>

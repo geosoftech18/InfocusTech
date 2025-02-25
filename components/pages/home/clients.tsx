@@ -2,17 +2,35 @@
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
+  CarouselApi,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import React from "react";
 
 const Clients = () => {
+
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
   return (
     <div className="my-20 mx-40">
       <Carousel
+       setApi={setApi}
         className="mx-auto"
         opts={{
           align: "start",
@@ -46,6 +64,18 @@ const Clients = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
+        <div className="flex items-center justify-center gap-2 m-2">
+        {Array.from({ length: 10 }).map((_, index) => (
+          <div
+            key={index}
+            className={`${
+              current === index + 1
+                ? "bg-black scale-125 transition-all duration-200"
+                : "bg-gray-400"
+            } rounded-full h-2 w-2`}
+          ></div>
+        ))}
+      </div>
       </Carousel>
     </div>
   );
