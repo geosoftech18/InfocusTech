@@ -14,7 +14,6 @@ import {aboutUsData,visionMissionQualityData} from "@/data/aboutUs.json"
 import {whyChooseUsJSON} from "@/data/whyChooseUs.json"
 import {whatWeOfferJSON} from "@/data/whatWeOffer.json"
 import {industriesWeServeJSON} from "@/data/industriesWeServe.json"
-import Container from "@/components/container";
 
 
 
