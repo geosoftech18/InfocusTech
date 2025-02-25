@@ -3,42 +3,42 @@
       "tag": "Benefits of Using an In-Memory Platform with SAP S/4HANA",
       "benefits": [
         {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "imagePath": "/Solutions/SAP S4 HANA/Benefits of using an in-memory platform offered by S4 HANA/Faster Data Processing.png",
           "name": "Faster Data Processing",
           "description": "Leverages SAP HANA’s in-memory technology to process large volumes of data instantly, enhancing efficiency and reducing delays."
         },
         {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "imagePath": "/Solutions/SAP S4 HANA/Benefits of using an in-memory platform offered by S4 HANA/Simplified Data Architecture.png",
           "name": "Simplified Data Architecture",
           "description": "Eliminates data redundancy and complexity, leading to improved system performance and streamlined operations."
         },
         {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "imagePath": "/Solutions/SAP S4 HANA/Benefits of using an in-memory platform offered by S4 HANA/Lower Total Cost of Ownership (TCO).png",
           "name": "Lower Total Cost of Ownership (TCO)",
           "description": "Reduces hardware and maintenance costs by eliminating the need for traditional disk-based storage systems."
         },
         {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "imagePath": "/Solutions/SAP S4 HANA/Benefits of using an in-memory platform offered by S4 HANA/Accelerated Decision-Making.png",
           "name": "Accelerated Decision-Making",
           "description": "Enables businesses to make data-driven decisions faster with real-time insights and analytics."
         },
         {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "imagePath": "/Solutions/SAP S4 HANA/Benefits of using an in-memory platform offered by S4 HANA/Increased Productivity.png",
           "name": "Increased Productivity",
           "description": "Enhances business processes through automation and improved system responsiveness."
         },
         {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "imagePath": "/Solutions/SAP S4 HANA/Benefits of using an in-memory platform offered by S4 HANA/Real-Time Analytics.png",
           "name": "Real-Time Analytics",
           "description": "Provides instant visibility into business operations, allowing for proactive decision-making."
         },
         {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "imagePath": "/Solutions/SAP S4 HANA/Benefits of using an in-memory platform offered by S4 HANA/Scalability and Flexibility.png",
           "name": "Scalability and Flexibility",
           "description": "Supports business growth with the ability to scale resources and adapt to changing requirements."
         },
         {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
+          "imagePath": "/Solutions/SAP S4 HANA/Benefits of using an in-memory platform offered by S4 HANA/Improved Innovation.png",
           "name": "Improved Innovation",
           "description": "Enables organizations to leverage AI, machine learning, and other advanced technologies for continuous business improvement."
         }

@@ -57,7 +57,7 @@ const Testimonial = () => {
                     className="rounded-lg"
                   />
                   <div className="flex items-center text-justify md:items-start flex-col justify-center">
-                    <div>Our testimonials</div>
+                    <div className="text-gray-300">Our testimonials</div>
                     <p className="text-center font-bold text-4xl text-[#E60000] lg:text-gray-200">
                       {item.name}
                     </p>

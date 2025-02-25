@@ -1,48 +1,47 @@
 {
-    "KeyBenefits": {
-      "tag": "Key Benefits of SAP S/4HANA",
-      "keyFeatures": [
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Faster Financial Close",
-          "description": "Achieve up to 71% faster batch input processing and reduce quarter-end close processing time by 400 hours."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Improved Accuracy",
-          "description": "Reduce posting corrections in financial close by 40%, leading to cleaner and more accurate financial reporting."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Quicker Market Response",
-          "description": "Make faster decisions with real-time insights to respond quickly to market changes and business needs."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Enhanced Customer Satisfaction",
-          "description": "Boost customer satisfaction by 20% through faster order fulfilment and improved service delivery."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Optimized Manufacturing",
-          "description": "Reduce manufacturing cycle times by 10%, improving efficiency and production throughput."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Simplified Migration",
-          "description": "Streamlined migration process with system updates, Unicode conversion, and data migration all in one tool."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Cost Efficiency",
-          "description": "Lower total cost of ownership (TCO) by simplifying system landscapes and reducing infrastructure needs."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Faster Inter-Company Reconciliation",
-          "description": "Decrease inter-company reconciliation time by 70%, improving financial accuracy and operational efficiency."
-        }
-      ]
-    }
+  "KeyBenefits": {
+    "tag": "Key Benefits of SAP S/4HANA",
+    "keyFeatures": [
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Benefits of S4HANA/Faster Financial Close.png",
+        "title": "Faster Financial Close",
+        "description": "Achieve up to 71% faster batch input processing and reduce quarter-end close processing time by 400 hours."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Benefits of S4HANA/Improved Accuracy.png",
+        "title": "Improved Accuracy",
+        "description": "Reduce posting corrections in financial close by 40%, leading to cleaner and more accurate financial reporting."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Benefits of S4HANA/Quicker Market Response.png",
+        "title": "Quicker Market Response",
+        "description": "Make faster decisions with real-time insights to respond quickly to market changes and business needs."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Benefits of S4HANA/Enhanced Customer Satisfaction.png",
+        "title": "Enhanced Customer Satisfaction",
+        "description": "Boost customer satisfaction by 20% through faster order fulfilment and improved service delivery."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Benefits of S4HANA/Optimized Manufacturing.png",
+        "title": "Optimized Manufacturing",
+        "description": "Reduce manufacturing cycle times by 10%, improving efficiency and production throughput."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Benefits of S4HANA/Simplified Migration.png",
+        "title": "Simplified Migration",
+        "description": "Streamlined migration process with system updates, Unicode conversion, and data migration all in one tool."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Benefits of S4HANA/Cost Efficiency.png",
+        "title": "Cost Efficiency",
+        "description": "Lower total cost of ownership (TCO) by simplifying system landscapes and reducing infrastructure needs."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Benefits of S4HANA/Faster Inter-Company Reconciliation.png",
+        "title": "Faster Inter-Company Reconciliation",
+        "description": "Decrease inter-company reconciliation time by 70%, improving financial accuracy and operational efficiency."
+      }
+    ]
   }
-  
+}

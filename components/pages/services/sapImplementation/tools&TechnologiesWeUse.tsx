@@ -79,17 +79,17 @@ const ImagesArea: React.FC<ToolsTechnologiesWeUseProps> = ({
 }) => {
   return (
     <div
-      className={`col-span-1 lg:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-5 ${
-        scroll && "overflow-y-scroll"
+      className={`col-span-1 lg:col-span-2 grid grid-cols-2 md:grid-cols-3 gap-2 ${
+        scroll && "overflow-y-scroll no-scrollbar"
       }`}
     >
       {ToolsAndTechnologiesWeUseData.Tool.map((item, index) => (
         <div
-          className="p-4 flex items-center text-center rounded-lg bg-gray-100 justify-between hover:bg-gray-200 flex-col"
+          className="p-2 flex items-center text-center rounded-lg bg-gray-100 justify-center hover:bg-gray-200 flex-col py-4"
           key={index}
         >
           <Image alt="" src={item.imagePath || ""} height={100} width={100} />
-          <div className="flex flex-col items-center justify-around h-3/4">
+          <div className="flex flex-col items-center justify-center gap-4 h-3/4">
             <div className="text-xl font-medium">{item.name}</div>
             <div className="text-gray-600 text-sm">{item.description}</div>
           </div>

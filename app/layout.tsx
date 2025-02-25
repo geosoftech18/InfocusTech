@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import NavbarMain from "@/components/navbar";
-import navLinksData  from "@/data/navbar.json";
+import navLinksData from "@/data/navbar.json";
+import Container from "@/components/container";
 
 export const metadata: Metadata = {
   title: "InfocusTech",
@@ -13,12 +14,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const navLinks=navLinksData.navLinks
+  const navLinks = navLinksData.navLinks;
   return (
     <html lang="en">
       <body>
-        <NavbarMain NavbarProps={navLinks}/>
-        {children}
+        <Container>
+          <NavbarMain NavbarProps={navLinks} />
+          {children}
+        </Container>
       </body>
     </html>
   );

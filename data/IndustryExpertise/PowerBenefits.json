@@ -1,0 +1,29 @@
+{
+    "PowerBenefits": {
+      "Tag": "Benefits in Power sector",
+      "Title": "Benefits of SAP Solutions for the Energy & Utilities Sector",
+      "Tool": [
+        {
+          "name": "Improved Asset Reliability and Sustainability",
+          "description": "Enhances operational efficiency and ensures long-term sustainability of energy assets.",
+          "imagePath":"/IndustryExpertise/Power/What are the benefits_2/Improved Customer Satisfaction.png"
+        },
+        {
+          "name": "Optimized Maintenance Planning",
+          "description": "Streamlines maintenance schedules to minimize downtime and maximize performance.",
+           "imagePath":"/IndustryExpertise/Power/What are the benefits_2/Optimized Maintenance Planning.png"
+        },
+        {
+          "name": "Improved Customer Satisfaction",
+          "description": "Enhances customer experience with better service delivery and engagement.",
+           "imagePath":"/IndustryExpertise/Power/What are the benefits_2/Improved Customer Satisfaction.png"
+        },
+        {
+          "name": "Ability to Grow Revenue and Increase Profitability",
+          "description": "Drives financial growth by optimizing operations and exploring new revenue streams.",
+           "imagePath":"/IndustryExpertise/Power/What are the benefits_2/Ability to Grow Revenue and Increase Profitability.png"
+        }
+      ]
+    }
+  }
+  

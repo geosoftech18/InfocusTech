@@ -16,11 +16,12 @@ const SAPMaintainanceandSupport = () => {
   return (
     <div>
       <AboutSapImplementation
-        initialValue={0}
-        finalValue={15}
-        symbol="+"
+        // initialValue={0}
+        // finalValue={15}
+        // symbol="+"
         AboutSapImplementationData={aboutSAPMaintenanceAndSupportJSON}
       />
+      {/* Comprehensive SAP Project Support */}
       <ToolsAndTechnologiesWeUse
         ToolsAndTechnologiesWeUseData={sapProjectSupportJSON}
       />
@@ -28,11 +29,12 @@ const SAPMaintainanceandSupport = () => {
         ToolsAndTechnologiesWeUseData={sapBusinessSupportJSON}
         basis="textRight"
       />
-
+      {/* Technical Support */}
       <KeyFeatureSapImplementation KeyFeatureSapImplementationData={technicalSupportJSON}/>
 
       <div className="my-20"></div>
       <SAPLifecycle />
+      <div className="my-20"></div>
 
     </div>
   );

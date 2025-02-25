@@ -5,26 +5,32 @@
         "Description": "Our SAP Project Support services provide end-to-end solutions to ensure your applications remain up-to-date and seamlessly integrate with new technologies. We offer expert assistance in managing upgrades, data archiving, and the implementation of new features and modules.",
         "Tool": [
             {
+                "imagePath": "/Services/SAP Maintenance & Support/Comprehensive SAP Project Support/Upgrades, Release, and Version Management.png",
                 "name": "Upgrades, Release, and Version Management",
                 "description": "Ensure your SAP system is always running the latest, most secure version."
             },
             {
+                "imagePath": "/Services/SAP Maintenance & Support/Comprehensive SAP Project Support/Data Archiving.png",
                 "name": "Data Archiving",
                 "description": "Efficiently manage and store data while maintaining performance and compliance."
             },
             {
+                "imagePath": "/Services/SAP Maintenance & Support/Comprehensive SAP Project Support/Business Application Enabling.png",
                 "name": "Business Application Enabling",
                 "description": "Empower your business with integrated applications that drive operational efficiency."
             },
             {
+                "imagePath": "/Services/SAP Maintenance & Support/Comprehensive SAP Project Support/Integration with New Applications.png",
                 "name": "Integration with New Applications",
                 "description": "Seamlessly integrate your SAP environment with new business-critical applications."
             },
             {
+                "imagePath": "/Services/SAP Maintenance & Support/Comprehensive SAP Project Support/Implementation of New Dimension Products.png",
                 "name": "Implementation of New Dimension Products",
                 "description": "Expand the capabilities of your SAP system with cutting-edge products and features."
             },
             {
+                "imagePath": "/Services/SAP Maintenance & Support/Comprehensive SAP Project Support/Implementation of New Modules.png",
                 "name": "Implementation of New Modules",
                 "description": "Tailor your SAP system to your evolving needs with the addition of new modules."
             }

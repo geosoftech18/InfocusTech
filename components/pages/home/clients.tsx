@@ -11,7 +11,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 const Clients = () => {
   return (
-    <div className="m-20">
+    <div className="my-20 mx-40">
       <Carousel
         className="mx-auto"
         opts={{

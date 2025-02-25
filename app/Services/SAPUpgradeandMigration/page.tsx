@@ -21,9 +21,9 @@ const SAPUpgradeandMigration = () => {
   return (
     <div>
       <AboutSapImplementation
-        initialValue={0}
-        finalValue={15}
-        symbol="+"
+        // initialValue={0}
+        // finalValue={15}
+        // symbol="+"
         AboutSapImplementationData={aboutSAPUpgradeandMigration}
       />
       {/* why SAP Upgrade and Migration? */}
@@ -32,10 +32,12 @@ const SAPUpgradeandMigration = () => {
         WhySAPUpgradeandMigrationData={WhySAPUpgradeandMigrationJSON}
       />
 
+      {/* Key Features of SAP Upgrade & Migration */}
       <KeyFeatureSapImplementation
         KeyFeatureSapImplementationData={keyFeaturesSAPUpgaradeandMigrationJSON}
       />
       <div className="h-40"></div>
+      {/* Our Approach to SAP Upgrade & Migration */}
       <SapImplementationProcess
         SapImplemetationProcessData={SAPUpgaradeandMigrationProcessJSON}
       />
@@ -47,6 +49,8 @@ const SAPUpgradeandMigration = () => {
         BenefitSapImplementationData={SAPUpgradeandMigrationChallengesJSON}
       />
       <div className="h-1"></div>
+
+      {/* Tools & Technologies for SAP Upgrade & Migration */}
       <ToolsAndTechnologiesWeUse
         scroll={true}
         ToolsAndTechnologiesWeUseData={

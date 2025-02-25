@@ -1,48 +1,27 @@
 {
-    "BenefitsAWSCloudJSON": {
-      "tag": "Business Benefits of Cloud Applications on AWS",
-      "benefits": [
-        {
-          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
-          "name": "Agility and Flexibility",
-          "description": "Quickly adapt to changing business needs with scalable cloud solutions."
-        },
-        {
-          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
-          "name": "Cost Efficiency",
-          "description": "Only pay for the resources you use, optimising your IT budget."
-        },
-        {
-          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
-          "name": "Enhanced Accessibility",
-          "description": "Provide seamless access to applications across multiple devices and locations."
-        },
-        {
-          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
-          "name": "High Availability",
-          "description": "Ensure continuous uptime for your applications, improving user experience."
-        },
-        {
-          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
-          "name": "Security and Compliance",
-          "description": "Leverage AWS's enterprise-level security and compliance standards to protect your data."
-        },
-        {
-          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
-          "name": "Optimised Performance",
-          "description": "Benefit from optimised cloud infrastructure for superior application performance."
-        },
-        {
-          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
-          "name": "Resource Optimisation",
-          "description": "Maximise the efficiency of your cloud resources, reducing waste and improving operational efficiency."
-        },
-        {
-          "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
-          "name": "Seamless Integration",
-          "description": "Easily integrate AWS cloud applications with existing IT infrastructure, streamlining processes and workflows."
-        }
-      ]
-    }
+  "BenefitsAWSCloudJSON": {
+    "tag": "Business Benefits of Cloud Applications on AWS",
+    "benefits": [
+      {
+        "imagePath": "/Services/AWSConsulting/Business Benefits of Cloud Applications on AWS/Highly Agile and Instantly Responsive.png",
+        "name": "Highly Agile and Instantly Responsive",
+        "description": "AWS enables businesses to quickly adapt to changing needs, providing agility to scale up or down based on demand, ensuring a responsive solution to business requirements."
+      },
+      {
+        "imagePath": "/Services/AWSConsulting/Business Benefits of Cloud Applications on AWS/Pay-As-You-Go Model.png",
+        "name": "Pay-As-You-Go Model",
+        "description": "AWS allows businesses to pay only for the resources they actually use, minimizing unnecessary capital expenditure and reducing overhead costs by eliminating the need for over-provisioning."
+      },
+      {
+        "imagePath": "/Services/AWSConsulting/Business Benefits of Cloud Applications on AWS/Multi-Device and Multi-Location Access.png",
+        "name": "Multi-Device and Multi-Location Access",
+        "description": "With cloud applications hosted on AWS, businesses enable their customers to access applications from a wide range of devices and locations, improving accessibility and user experience."
+      },
+      {
+        "imagePath": "/Services/AWSConsulting/Business Benefits of Cloud Applications on AWS/Flexible and Elastic Cloud Designs.png",
+        "name": "Flexible and Elastic Cloud Designs",
+        "description": "AWS supports scalable infrastructure, ensuring continuous availability of servers and applications, leading to high uptime, which enhances the end-user experience."
+      }
+    ]
   }
-  
+}

@@ -1,59 +1,58 @@
 {
-    "PortfolioJSON": {
-      "heading": "SAP and Ariba: Delivering a Comprehensive Integrated Procurement Portfolio to Collaborate Seamlessly",
-      "description": "SAP and Ariba offer an integrated procurement solution that enables businesses to enhance collaboration, improve supplier management, and drive cost efficiencies across the procurement lifecycle. By seamlessly connecting procurement teams with suppliers, these solutions unlock new opportunities for smarter sourcing, better contract management, and increased savings.",
-      "industry_wise_expertise": [
-        {
-          "industry": "Procurement Excellence",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Leverage SAP and Ariba’s supplier discovery and lifecycle management tools to identify and onboard the right suppliers, ensuring strong, long-term relationships that support a resilient and efficient supply chain."
-        },
-        {
-          "industry": "Source Better and Increase Savings",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Drive smarter sourcing strategies with advanced tools for strategic sourcing and contracting. By tapping into powerful analytics and supplier insights, businesses can negotiate better terms, reduce procurement costs, and maximize savings."
-        },
-        {
-          "industry": "Reduce Contractual Risk",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Minimize risks associated with procurement contracts through enhanced collaboration and clear communication. With streamlined contract management features, businesses can ensure compliance, mitigate disputes, and achieve favorable contract outcomes."
-        },
-        {
-          "industry": "Lower Operating Costs",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Automate procurement and invoicing processes to reduce administrative overhead. By improving invoice-to-pay cycles, businesses can lower operational costs and improve payment accuracy, enhancing overall procurement efficiency."
-        },
-        {
-          "industry": "Collaborate for Greater Success",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Foster stronger collaboration between procurement teams and suppliers to drive better outcomes. SAP and Ariba’s collaborative tools enable transparent communication, smoother workflows, and better decision-making, leading to sustained success and improved supplier performance."
-        },
-        {
-          "industry": "Supplier Discovery and Lifecycle Management",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Discover and develop the right suppliers, efficiently managing their performance to ensure a reliable and resilient supply chain."
-        },
-        {
-          "industry": "Strategic Sourcing and Contracting",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Source smarter and achieve greater savings through advanced sourcing tools, helping you negotiate better contracts and maximize supplier value."
-        },
-        {
-          "industry": "Procurement and Order Collaboration",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Minimize contractual risks by promoting clear communication and collaboration between procurement teams and suppliers, ensuring smooth order processing."
-        },
-        {
-          "industry": "Collaborative Invoice to Pay",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Automate and streamline invoicing processes, lowering operating costs and improving payment accuracy to foster stronger supplier relationships."
-        },
-        {
-          "industry": "Drive Compliant Spending",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Promote transparent and compliant procurement practices, ensuring adherence to policies and regulations while driving cost-efficiency across the organization."
-        }
-      ]
-    }
+  "PortfolioJSON": {
+    "heading": "SAP and Ariba: Delivering a Comprehensive Integrated Procurement Portfolio to Collaborate Seamlessly",
+    "description": "SAP and Ariba offer an integrated procurement solution that enables businesses to enhance collaboration, improve supplier management, and drive cost efficiencies across the procurement lifecycle. By seamlessly connecting procurement teams with suppliers, these solutions unlock new opportunities for smarter sourcing, better contract management, and increased savings.",
+    "industry_wise_expertise": [
+      {
+        "industry": "Procurement Excellence",
+        "imagePath": "/Solutions/SAPSRMAriba/SAP and Ariba deliver a comprehensive Integrated Procurement Portfolio to Collaborate Seamlessly/Procurement and Order Collaboration.png",
+        "description": "Leverage SAP and Ariba’s supplier discovery and lifecycle management tools to identify and onboard the right suppliers, ensuring strong, long-term relationships that support a resilient and efficient supply chain."
+      },
+      {
+        "industry": "Source Better and Increase Savings",
+        "imagePath": "/Solutions/SAPSRMAriba/SAP and Ariba deliver a comprehensive Integrated Procurement Portfolio to Collaborate Seamlessly/Source Better and Increase Savings.png",
+        "description": "Drive smarter sourcing strategies with advanced tools for strategic sourcing and contracting. By tapping into powerful analytics and supplier insights, businesses can negotiate better terms, reduce procurement costs, and maximize savings."
+      },
+      {
+        "industry": "Reduce Contractual Risk",
+        "imagePath": "/Solutions/SAPSRMAriba/SAP and Ariba deliver a comprehensive Integrated Procurement Portfolio to Collaborate Seamlessly/Reduce Contractual Risk.png",
+        "description": "Minimize risks associated with procurement contracts through enhanced collaboration and clear communication. With streamlined contract management features, businesses can ensure compliance, mitigate disputes, and achieve favorable contract outcomes."
+      },
+      {
+        "industry": "Lower Operating Costs",
+        "imagePath": "/Solutions/SAPSRMAriba/SAP and Ariba deliver a comprehensive Integrated Procurement Portfolio to Collaborate Seamlessly/Lower Operating Costs.png",
+        "description": "Automate procurement and invoicing processes to reduce administrative overhead. By improving invoice-to-pay cycles, businesses can lower operational costs and improve payment accuracy, enhancing overall procurement efficiency."
+      },
+      {
+        "industry": "Collaborate for Greater Success",
+        "imagePath": "/Solutions/SAPSRMAriba/SAP and Ariba deliver a comprehensive Integrated Procurement Portfolio to Collaborate Seamlessly/Collaborate for Greater Success.png",
+        "description": "Foster stronger collaboration between procurement teams and suppliers to drive better outcomes. SAP and Ariba’s collaborative tools enable transparent communication, smoother workflows, and better decision-making, leading to sustained success and improved supplier performance."
+      },
+      {
+        "industry": "Supplier Discovery and Lifecycle Management",
+        "imagePath": "/Solutions/SAPSRMAriba/SAP and Ariba deliver a comprehensive Integrated Procurement Portfolio to Collaborate Seamlessly/Supplier Discovery and Lifecycle Management.png",
+        "description": "Discover and develop the right suppliers, efficiently managing their performance to ensure a reliable and resilient supply chain."
+      },
+      {
+        "industry": "Strategic Sourcing and Contracting",
+        "imagePath": "/Solutions/SAPSRMAriba/SAP and Ariba deliver a comprehensive Integrated Procurement Portfolio to Collaborate Seamlessly/Strategic Sourcing and Contracting.png",
+        "description": "Source smarter and achieve greater savings through advanced sourcing tools, helping you negotiate better contracts and maximize supplier value."
+      },
+      {
+        "industry": "Procurement and Order Collaboration",
+        "imagePath": "/Solutions/SAPSRMAriba/SAP and Ariba deliver a comprehensive Integrated Procurement Portfolio to Collaborate Seamlessly/Procurement and Order Collaboration.png",
+        "description": "Minimize contractual risks by promoting clear communication and collaboration between procurement teams and suppliers, ensuring smooth order processing."
+      },
+      {
+        "industry": "Collaborative Invoice to Pay",
+        "imagePath": "/Solutions/SAPSRMAriba/SAP and Ariba deliver a comprehensive Integrated Procurement Portfolio to Collaborate Seamlessly/Collaborative Invoice to Pay.png",
+        "description": "Automate and streamline invoicing processes, lowering operating costs and improving payment accuracy to foster stronger supplier relationships."
+      },
+      {
+        "industry": "Drive Compliant Spending",
+        "imagePath": "/Solutions/SAPSRMAriba/SAP and Ariba deliver a comprehensive Integrated Procurement Portfolio to Collaborate Seamlessly/Drive Compliant Spending.png",
+        "description": "Promote transparent and compliant procurement practices, ensuring adherence to policies and regulations while driving cost-efficiency across the organization."
+      }
+    ]
   }
-  
+}

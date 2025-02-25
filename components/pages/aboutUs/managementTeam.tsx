@@ -39,7 +39,7 @@ const ManagementTeam: React.FC<ManagementTeamProps> = ({
 
   return (
     <Carousel
-      className="bg-gray-400  grid grid-cols-1 md:grid-cols-3 md:h-[75vh] items-center justify-center px-10 md:px-28 gap-20 md:gap-56 lg:gap-20 py-5 lg:py-0"
+      className="bg-gray-400  grid grid-cols-1 md:grid-cols-3 md:h-[75vh] items-center justify-center px-10 md:px-40 gap-20 md:gap-56 lg:gap-20 py-5 lg:py-0"
       opts={{
         align: "start",
         loop: true,

@@ -1,0 +1,25 @@
+{
+    "TruckingIndustry": {
+      "Tag": "Trucking Software Solutions",
+      "Title": "Software for Trucking Companies",
+      "Description": "Trucking companies face unique operational challenges, ranging from fleet management to driver operations and customer relationship management. Below is an overview of the software solutions tailored to the trucking industry, covering various business functions such as sales and marketing, resource management, and operations.",
+      "Tool": [
+        {
+          "name": "Sales and Marketing",
+          "imagePath": "/IndustryExpertise/TruckingandLogistics/Software for Trucking Company/Sales and Marketing.png",
+          "description": "Marketing Activity Management Customer Sales Activity Management Sales Performance Management Product, Quote, and Contract Management"
+        },
+        {
+          "name": "Resource Management for Trucking",
+          "imagePath": "/IndustryExpertise/TruckingandLogistics/Software for Trucking Company/Resource Management for Trucking.png",
+          "description": "Fleet Maintenance Fleet Operations Driver Management"
+        },
+        {
+          "name": "Operations for Trucking",
+          "imagePath": "/IndustryExpertise/TruckingandLogistics/Software for Trucking Company/Sales and Marketing.png",
+          "description": "Transportation Management Warehouse Management Track and Trace"
+        }
+      ]
+    }
+  }
+  

@@ -25,7 +25,8 @@ const SAPAuditingandTestingServices = () => {
         KeyFeatureSapImplementationData={SAPTestingServicesOfferingsJSON}
       />
       <div className="h-20"></div>
-      <DoorComponent Data={SAPTestingServicesJSON}/>
+      <DoorComponent Data={SAPTestingServicesJSON} />
+      <div className="h-20"></div>
     </div>
   );
 };

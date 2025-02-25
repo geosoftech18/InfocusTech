@@ -5,74 +5,34 @@
         "Description": "Infocus leverages a wide range of advanced tools and technologies to ensure a smooth, secure, and efficient SAP Upgrade & Migration process. These tools streamline migration, reduce risks, and enhance overall system performance.",
         "Tool": [
             {
-                "imagePath": "/whatWeOfferIcons/SAP Upgrade.png",
+                "imagePath": "/Services/SAP Upgrade & Migration/Tools & Technologies Used for SAP Upgrade & Migration/SAP Upgrade Tools.png",
                 "name": "SAP Upgrade Tools",
                 "description": "Automates and streamlines the SAP upgrade process, reducing errors and manual effort."
             },
             {
-                "imagePath": "/whatWeOfferIcons/SAP Solution Manager.png",
+                "imagePath": "/Services/SAP Upgrade & Migration/Tools & Technologies Used for SAP Upgrade & Migration/SAP Solution Manager.png",
                 "name": "SAP Solution Manager",
                 "description": "Manages the entire SAP lifecycle, ensuring smooth planning, testing, and support."
             },
             {
-                "imagePath": "/whatWeOfferIcons/SAP HANA Studio.png",
+                "imagePath": "/Services/SAP Upgrade & Migration/Tools & Technologies Used for SAP Upgrade & Migration/SAP HANA Studio.png",
                 "name": "SAP HANA Studio",
                 "description": "Provides configuration, migration, and data modeling for enhanced real-time analytics and performance."
             },
             {
-                "imagePath": "/whatWeOfferIcons/SAP Data Services.png",
+                "imagePath": "/Services/SAP Upgrade & Migration/Tools & Technologies Used for SAP Upgrade & Migration/SAP Data Services.png",
                 "name": "SAP Data Services",
                 "description": "Ensures data integrity and security by managing data migration, cleansing, and transformation."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Cloud Migration.png",
+                "imagePath": "/Services/SAP Upgrade & Migration/Tools & Technologies Used for SAP Upgrade & Migration/Cloud Migration Tools.png",
                 "name": "Cloud Migration Tools",
                 "description": "Facilitates seamless migration to cloud platforms like AWS, Azure, or Google Cloud for greater flexibility and scalability."
             },
             {
-                "imagePath": "/whatWeOfferIcons/SAP SLT.png",
+                "imagePath": "/Services/SAP Upgrade & Migration/Tools & Technologies Used for SAP Upgrade & Migration/SAP Landscape Transformation (SLT).png",
                 "name": "SAP Landscape Transformation (SLT)",
                 "description": "Enables real-time data replication for efficient migration to SAP HANA with minimal disruption."
-            },
-            {
-                "imagePath": "/whatWeOfferIcons/SAP ERP.png",
-                "name": "SAP ERP",
-                "description": "A comprehensive suite of integrated applications to streamline enterprise resource planning."
-            },
-            {
-                "imagePath": "/whatWeOfferIcons/SAP Fiori.png",
-                "name": "SAP Fiori",
-                "description": "A UX design system for building intuitive and responsive interfaces that enhance productivity."
-            },
-            {
-                "imagePath": "/whatWeOfferIcons/SAP S4HANA.png",
-                "name": "SAP S/4HANA",
-                "description": "Next-gen ERP suite leveraging AI, machine learning, and IoT to drive digital transformation."
-            },
-            {
-                "imagePath": "/whatWeOfferIcons/SAP Cloud Platform.png",
-                "name": "SAP Cloud Platform",
-                "description": "A platform-as-a-service (PaaS) offering for building and deploying cloud applications."
-            },
-            {
-                "imagePath": "/whatWeOfferIcons/Project Management.png",
-                "name": "Project Management Tools",
-                "description": "Used for effective tracking, task management, and collaboration (e.g., Microsoft Project, Jira)."
-            },
-            {
-                "imagePath": "/whatWeOfferIcons/Integration.png",
-                "name": "Integration Tools",
-                "description": "Solutions for connecting SAP with other enterprise systems, including SAP PI/PO and SAP Cloud Integration."
-            },
-            {
-                "imagePath": "/whatWeOfferIcons/BI Tools.png",
-                "name": "Business Intelligence Tools",
-                "description": "Platforms like SAP BusinessObjects and SAP Analytics Cloud for real-time data-driven decision-making."
-            },
-            {
-                "imagePath": "/whatWeOfferIcons/Automation Testing.png",
-                "name": "Automation & Testing Tools",
-                "description": "Tools like SAP Solution Manager and third-party test automation frameworks to ensure smooth deployment."
             }
         ]
     }

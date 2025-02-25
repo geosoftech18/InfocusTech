@@ -1,0 +1,33 @@
+{
+    "CloudMigration": {
+      "tag": "Cloud Migration Services by Infocus Technologies",
+      "keyFeatures": [
+        {
+          "imagePath": "/Services/AWSConsulting/Cloud Migration Services by Infocus Technologies/Design and Architecture Expertise.png",
+          "title": "Design and Architecture Expertise",
+          "description": "Infocus Technologies provides comprehensive cloud migration services, specializing in designing, architecting, and moving IT infrastructure to the optimal  cloud solution, freeing capital from infrastructure management."
+        },
+        {
+          "imagePath": "/Services/AWSConsulting/Cloud Migration Services by Infocus Technologies/Proven Track Record.png",
+          "title": "Proven Track Record",
+          "description": "With over 10 successful cloud migrations for large enterprises, SAP-based organizations, and media companies on leading  clouds, Infocus Technologies has established itself as a trusted cloud migration partner."
+        },
+        {
+          "imagePath": "/Services/AWSConsulting/Cloud Migration Services by Infocus Technologies/Certified Cloud Migration Providers.png",
+          "title": "Certified Cloud Migration Providers",
+          "description": "As certified experts, Infocus Technologies brings a team of engineers and architects to help businesses seamlessly migrate their data and applications to the cloud while adhering to timelines, budgets, and compliance standards."
+        },
+        {
+          "imagePath": "/Services/AWSConsulting/Cloud Migration Services by Infocus Technologies/Tailored Solutions for Business Goals.png",
+          "title": "Tailored Solutions for Business Goals",
+          "description": "Whether your business goals are high availability, scalability, compliance, or cost control, Infocus Technologies ensures that your cloud infrastructure is secure, scalable, cost-effective, and optimized for performance."
+        },
+        {
+          "imagePath": "/Services/AWSConsulting/Cloud Migration Services by Infocus Technologies/End-to-End Cloud Migration Support.png",
+          "title": "End-to-End Cloud Migration Support",
+          "description": "Infocus offers a full range of services from planning to post-migration support, ensuring smooth and secure transitions for businesses looking to migrate to the cloud."
+        }
+      ]
+    }
+  }
+  

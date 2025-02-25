@@ -5,22 +5,32 @@
         "Description": "Our Business Support services are designed to ensure your team gets the most out of your SAP system with dedicated help desk assistance, troubleshooting, and ongoing user training. We provide prompt, reliable support to keep your operations running smoothly.",
         "Tool": [
             {
+                "imagePath": "/Services/SAP Maintenance & Support/Key Business Support Services/Help Desk.png",
                 "name": "Help Desk",
                 "description": "Round-the-clock assistance to resolve queries and technical issues swiftly."
             },
             {
+                "imagePath": "/Services/SAP Maintenance & Support/Key Business Support Services/User Support.png",
                 "name": "User Support",
                 "description": "Personalized support to ensure smooth day-to-day usage of your SAP systems."
             },
             {
-                "name": "Troubleshoot & Resolve",
-                "description": "Proactive identification and resolution of technical issues to minimize downtime."
+                "imagePath": "/Services/SAP Maintenance & Support/Key Business Support Services/Troubleshoot & Resolve.png",
+                "name": "Troubleshoot",
+                "description": "Proactive identification of potential system issues to prevent disruptions."
             },
             {
+                "imagePath": "/Services/SAP Maintenance & Support/Key Business Support Services/Troubleshoot & Resolve.png",
+                "name": "Resolve Issues",
+                "description": "Swift action to fix any technical or functional SAP-related problems."
+            },
+            {
+                "imagePath": "/Services/SAP Maintenance & Support/Key Business Support Services/Additional Development.png",
                 "name": "Additional Development - Offshore",
                 "description": "Access to cost-effective, skilled offshore resources for extended development needs."
             },
             {
+                "imagePath": "/Services/SAP Maintenance & Support/Key Business Support Services/User Training.png",
                 "name": "User Training",
                 "description": "Empower your team with expert training to enhance productivity and system knowledge."
             }

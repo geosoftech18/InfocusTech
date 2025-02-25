@@ -4,22 +4,22 @@
         "title": "Our Approach to SAP Upgrade & Migration",
         "steps": [
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Upgrade & Migration/Our Approach to SAP Upgrade & Migration/Assessment & Planning.png",
                 "name": "Assessment & Planning",
                 "description": "We evaluate your existing SAP landscape, identify challenges, and develop a strategic roadmap for a smooth transition."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Upgrade & Migration/Our Approach to SAP Upgrade & Migration/Tailored Solution & Implementation.png",
                 "name": "Tailored Solution & Implementation",
                 "description": "We design a customised migration plan and execute the upgrade with minimal disruption, ensuring seamless integration."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Upgrade & Migration/Our Approach to SAP Upgrade & Migration/Testing & Validation.png",
                 "name": "Testing & Validation",
                 "description": "Comprehensive testing ensures data integrity, system stability, and optimal performance before go-live."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Upgrade & Migration/Our Approach to SAP Upgrade & Migration/Post-Migration Support & Optimisation.png",
                 "name": "Post-Migration Support & Optimisation",
                 "description": "We provide continuous monitoring, issue resolution, and improvements to keep your system future-ready."
             }

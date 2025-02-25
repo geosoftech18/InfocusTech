@@ -6,42 +6,42 @@
       "items": [
         {
           "name": "Assessment Testing",
-          "imagePath": "/valueAddedServicesIcons/Assessment Testing.png",
+          "imagePath": "/Services/Resource Consulting/Value Added Services/Assessment Testing.png",
           "description": "Evaluate candidate skills, experience, and cultural fit with advanced tools and insights."
         },
         {
           "name": "Pre-Employment Checking",
-          "imagePath": "/valueAddedServicesIcons/Pre-Employment Checking.png",
+          "imagePath": "/Services/Resource Consulting/Value Added Services/Pre-Employment Checking.png",
           "description": "Comprehensive background checks to verify the integrity and qualifications of potential hires."
         },
         {
           "name": "Global Talent Network",
-          "imagePath": "/valueAddedServicesIcons/Global Talent Network.png",
+          "imagePath": "/Services/Resource Consulting/Value Added Services/Global Talent Network.png",
           "description": "Access to talent from around the world to meet the needs of international businesses."
         },
         {
           "name": "Customized Candidate Reports",
-          "imagePath": "/valueAddedServicesIcons/Customized Candidate Reports.png",
+          "imagePath": "/Services/Resource Consulting/Value Added Services/Customized Candidate Reports.png",
           "description": "Detailed reports to help make informed hiring decisions based on assessments."
         },
         {
           "name": "Cultural Compatibility",
-          "imagePath": "/valueAddedServicesIcons/Cultural Compatibility.png",
+          "imagePath": "/Services/Resource Consulting/Value Added Services/Cultural Compatibility.png",
           "description": "Ensure that candidates align with your company’s values and work culture for long-term success."
         },
         {
           "name": "Talent Pool Development",
-          "imagePath": "/valueAddedServicesIcons/Talent Pool Development.png",
+          "imagePath": "/Services/Resource Consulting/Value Added Services/Talent Pool Development.png",
           "description": "Build and maintain a pipeline of qualified candidates for future hiring needs."
         },
         {
           "name": "Onboarding Assistance",
-          "imagePath": "/valueAddedServicesIcons/Onboarding Assistance.png",
+          "imagePath": "/Services/Resource Consulting/Value Added Services/Onboarding Assistance.png",
           "description": "Streamlined processes to integrate new hires quickly and effectively into your organization."
         },
         {
           "name": "Consultative Support",
-          "imagePath": "/valueAddedServicesIcons/Consultative Support.png",
+          "imagePath": "/Services/Resource Consulting/Value Added Services/Consultative Support.png",
           "description": "Ongoing support and consultation to address evolving staffing challenges."
         }
       ]

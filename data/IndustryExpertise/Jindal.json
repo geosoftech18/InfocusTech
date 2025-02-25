@@ -1,0 +1,32 @@
+{
+    "CustomerSuccessStoryDataJindal": {
+        "tag": "Customer Success Story",
+        "title": "Jindal Stainless Steel (Spain) – SAP Implementation",
+        "description": "Jindal Stainless Limited, a part of the O P Jindal Group, is India's largest and only fully integrated stainless steel manufacturer. The company is globally recognized for producing stainless steel flat products across various grades, including Austenitic, Ferritic, Martensitic, and Duplex. Its product range includes Ferro Alloys, Stainless Steel Slabs, Hot Rolled Coils, Cold Rolled Coils, and speciality items such as razor blade steel and precision strips.",
+        "items": [
+            {
+                "title": "Project Overview: SAP Implementation for Jindal’s Spain Unit",
+                "content": "Infocus was selected to implement SAP for Jindal Stainless at their Spain-based unit. The project scope included the full operational integration of SAP modules such as MM (Materials Management), SD (Sales and Distribution), PP (Production Planning), and FI (Financial Accounting). Following the successful implementation of SEZ units, this project was executed in an offsite-onshore model."
+            },
+            {
+                "title": "Key Challenges",
+                "content": [
+                    { "point": "Localization Implementation: Adapting the SAP system to meet Spain-specific business and statutory requirements." },
+                    { "point": "Team Mobility & Language Barriers: Managing challenges related to team mobility and language differences between onshore and offshore teams." },
+                    { "point": "User Migration: Transitioning from a non-standard accounting system to an ERP-based workflow and ensuring smooth adaptation." },
+                    { "point": "Statutory Compliance: Ensuring the implementation met all local statutory and management compliance requirements." }
+                ]
+            },
+            {
+                "title": "Benefits Achieved",
+                "content": [
+                    { "point": "Seamless Implementation: A prior understanding of Jindal's business processes led to a smooth SAP deployment, overcoming potential challenges." },
+                    { "point": "Successful Localization & Compliance: Spain-specific localization and statutory compliances were fully implemented." },
+                    { "point": "Effective Data Migration & Training: Data migration was executed seamlessly, supported by the 'train the trainer' concept and remote training workshops, ensuring successful user adoption." },
+                    { "point": "Offshore-Onsite Support Model: Established a long-term offshore-onshore support model for continuous client assistance." },
+                    { "point": "Centralized Management Reporting: Created a centralized approach for controlling and reporting, offering greater visibility and efficiency." }
+                ]
+            }
+        ]
+    }
+}

@@ -3,27 +3,27 @@
       "tag": "User-Centered Design: Empowering Employees for Greater Efficiency",
       "benefits": [
         {
-          "imagePath": "/images/increased-productivity.png",
+          "imagePath": "/Solutions/Firori/The user-centred design concept focuses on the way employees work and offers a variety of business benefits/Increased Productivity.png",
           "name": "Increased Productivity",
           "description": "SAP Fiori’s user-centred design enhances employee productivity by providing intuitive tools that streamline workflows."
         },
         {
-          "imagePath": "/images/real-time-transparency.png",
+          "imagePath": "/Solutions/Firori/The user-centred design concept focuses on the way employees work and offers a variety of business benefits/Real-time Transparency.png",
           "name": "Real-time Transparency",
           "description": "Enables employees to access real-time insights, ensuring better decision-making and operational efficiency."
         },
         {
-          "imagePath": "/images/quick-informed-actions.png",
+          "imagePath": "/Solutions/Firori/The user-centred design concept focuses on the way employees work and offers a variety of business benefits/Quick, Informed Actions.png",
           "name": "Quick, Informed Actions",
           "description": "Facilitates rapid decision-making by presenting relevant data and actionable insights at the right time."
         },
         {
-          "imagePath": "/images/clear-next-steps.png",
+          "imagePath": "/Solutions/Firori/The user-centred design concept focuses on the way employees work and offers a variety of business benefits/Clear Next Steps.png",
           "name": "Clear Next Steps",
           "description": "Guides users through tasks with a structured workflow, reducing errors and improving efficiency."
         },
         {
-          "imagePath": "/images/improved-user-satisfaction.png",
+          "imagePath": "/Solutions/Firori/The user-centred design concept focuses on the way employees work and offers a variety of business benefits/Improved User Satisfaction.png",
           "name": "Improved User Satisfaction",
           "description": "Enhances the overall user experience by making SAP applications more intuitive, engaging, and user-friendly."
         }

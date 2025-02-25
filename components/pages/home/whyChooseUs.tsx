@@ -18,7 +18,7 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
   basis,
 }) => {
   return (
-    <div className="grid  lg:grid-cols-2  lg:mx-20 mb-20 p-10 gap-10">
+    <div className="grid  lg:grid-cols-2  lg:mx-40 mb-20 p-10 gap-10">
       {/* <div
         className={`bg-[url('/WhyChooseUs.jpg')] bg-cover min-h-52 min-w-96 col-span-1 rounded-lg`}
       ></div> */}
@@ -29,12 +29,12 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
             alt=""
             height={1000}
             width={1000}
-            className="col-span-1 rounded-lg"
+            className="col-span-1 rounded-lg h-full"
           />
 
           <div className="flex items-start justify-center flex-col gap-4 col-span-1">
             <div className="font-bold">Why Choose Us</div>
-            <div className="text-4xl font-semibold  ">
+            <div className="text-3xl font-semibold  ">
               {whyChooseUsData.heading}
             </div>
             <div className="text-justify tracking-tighter w-11/12 font-semibold text-gray-600">

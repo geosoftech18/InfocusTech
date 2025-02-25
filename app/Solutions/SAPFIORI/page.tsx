@@ -10,6 +10,7 @@ const SAPFIORI = () => {
         <div>
             <WhyChooseUs whyChooseUsData={aboutUsJSON}/>
             <WhyChooseUs basis="textRight" whyChooseUsData={whyJSON}/>
+            {/* User-Centered Design: Empowering Employees for Greater Efficiency */}
             <BenefitsSapImplementation BenefitSapImplementationData={keyBenefits}/>
         </div>
      );

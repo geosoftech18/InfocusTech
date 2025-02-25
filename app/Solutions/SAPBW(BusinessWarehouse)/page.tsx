@@ -15,9 +15,11 @@ const SAPBW = () => {
       <WhyChooseUs whyChooseUsData={AboutUsJSON} />
       <WhyChooseUs basis="textRight" whyChooseUsData={expertAnalysisJSON} />
       <DoorComponent Data={Data} />
+      <div className="h-20"></div>
       <KeyFeatureSapImplementation
         KeyFeatureSapImplementationData={KeyHighlightsSAPBWJSON}
       />
+      <div className="h-20"></div>
       <DoorComponent Data={whyBW4HAHA} />
     </div>
   );

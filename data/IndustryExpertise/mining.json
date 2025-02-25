@@ -1,0 +1,160 @@
+{
+    "aboutMining": {
+        "heading": "Achieving Digital Transformation in Mining with SAP",
+        "description": "The mining industry in India plays a crucial role in economic growth but faces challenges such as fluctuating commodity prices, operational inefficiencies, and regulatory compliance. SAP provides industry-specific solutions to help mining companies optimize operations, enhance productivity, and ensure safety and compliance through integrated IT and operational technology.",
+        "bulletPoints": [
+            {
+                "title": "Optimized Mining Operations",
+                "description": "/emp1.jpg"
+            },
+            {
+                "title": "Sales and Supply Chain Management",
+                "description": "/emp1.jpg"
+            },
+            {
+                "title": "Operational Risk and Compliance Management",
+                "description": "/emp1.jpg"
+            },
+            {
+                "title": "Predictive Maintenance and Asset Management",
+                "description": "/emp1.jpg"
+            },
+            {
+                "title": "Real-Time Data and Analytics",
+                "description": "/emp1.jpg"
+            },
+            {
+                "title": "Sustainable Mining and Resource Optimization",
+                "description": "/emp1.jpg"
+            }
+        ]
+    },
+    "ComoditySCM": {
+        "Tag": "Commodity Supply Chain Management",
+        "Title": "Commodity Supply Chain Management Solutions",
+        "Tool": [
+            {
+                "imagePath": "/IndustryExpertise/mining/Commodity Supply Chain Management/Commodity Supply Chain Management.png",
+                "name": "Commodity Supply Chain Management",
+                "description": "Long-Term Business Planning Commodity, Management Logistics and Inventory Optimization"
+            },
+            {
+                "imagePath": "/IndustryExpertise/mining/Commodity Supply Chain Management/Mine Operations.png",
+                "name": "Mine Operations",
+                "description": "Project and Portfolio Management, Mine Operations and Downstream Processing,Asset Operations and Maintenance, Asset Network"
+            },
+            {
+                "imagePath": "/IndustryExpertise/mining/Commodity Supply Chain Management/Operational Risk and Compliance Management.png",
+                "name": "Operational Risk and Compliance Management",
+                "description": "Environment, Health, and Safety and Corporate Sustainability"
+            },
+            {
+                "imagePath": "/IndustryExpertise/mining/Commodity Supply Chain Management/Human Resources Solutions for Mining.png",
+                "name": "Human Resources Solutions for Mining",
+                "description": "Workforce Planning and Management, Talent Acquisition and Development,Health, Safety, and Compliance"
+            },
+            {
+                "imagePath": "/IndustryExpertise/mining/Commodity Supply Chain Management/Procurement Excellence.png",
+                "name": "Procurement Excellence",
+                "description": "Strategic Sourcing and Supplier Management, Contract and Spend Management, Procurement Process Automation"
+            }
+        ]
+    },
+    "howSAPSolutionsHelp": {
+        "tag": "SAP Solutions",
+        "heading": "How SAP Solutions Help Customers",
+        "description": "SAP solutions enable businesses to streamline project management, optimize resources, and integrate with third-party tools for seamless operations.",
+        "items": [
+            {
+                "name": "Idea Management",
+                "imagePath": "/IndustryExpertise/mining/Industry Expertise,Mining,What do SAP solutions help customers to do/Idea Management.png",
+                "description": "Collect, rank, and prioritize ideas for development projects."
+            },
+            {
+                "name": "Portfolio Management",
+                "imagePath": "/IndustryExpertise/mining/Industry Expertise,Mining,What do SAP solutions help customers to do/Portfolio Management.png",
+                "description": "Submit, prioritize, and monitor project proposals and progress."
+            },
+            {
+                "name": "Project Management",
+                "imagePath": "/IndustryExpertise/mining/Industry Expertise,Mining,What do SAP solutions help customers to do/Project Management.png",
+                "description": "Manage tasks, timelines, resources, and critical paths efficiently."
+            },
+            {
+                "name": "Resource Management",
+                "imagePath": "/IndustryExpertise/mining/Industry Expertise,Mining,What do SAP solutions help customers to do/Resource Management.png",
+                "description": "Optimize resource allocation, availability, and utilization."
+            },
+            {
+                "name": "Project Connectivity",
+                "imagePath": "/IndustryExpertise/mining/Industry Expertise,Mining,What do SAP solutions help customers to do/Project Connectivity.png",
+                "description": "Integrate with third-party scheduling tools for a unified project view."
+            }
+        ]
+    },
+    "benefitsMining": {
+        "tag": "Benefits of SAP Solutions for Mining",
+        "keyFeatures": [
+            {
+                "imagePath": "/IndustryExpertise/mining/Industry ExpertiseMiningBenefits/Real-time Visibility into Mine Operations.png",
+                "title": "Real-time Visibility into Mine Operations",
+                "description": "Gain real-time insights into mining operations to enhance decision-making and efficiency."
+            },
+            {
+                "imagePath": "/IndustryExpertise/mining/Industry ExpertiseMiningBenefits/Optimized Utilization of Assets.png",
+                "title": "Optimized Utilization of Assets",
+                "description": "Improve asset utilization to maximize productivity and reduce operational costs."
+            },
+            {
+                "imagePath": "/IndustryExpertise/mining/Industry ExpertiseMiningBenefits/Improved Commodity Risk Profiles.png",
+                "title": "Improved Commodity Risk Profiles",
+                "description": "Enhance risk management strategies to mitigate commodity price fluctuations."
+            },
+            {
+                "imagePath": "/IndustryExpertise/mining/Industry ExpertiseMiningBenefits/Efficient Transportation.png",
+                "title": "Efficient Transportation",
+                "description": "Optimize logistics and transportation processes for cost-effective and timely deliveries."
+            },
+            {
+                "imagePath": "/IndustryExpertise/mining/Industry ExpertiseMiningBenefits/Efficient Procurement Processes Through Business Networks.png",
+                "title": "Efficient Procurement Processes Through Business Networks",
+                "description": "Streamline procurement operations using integrated business networks for better supplier collaboration."
+            },
+            {
+                "imagePath": "/IndustryExpertise/mining/Industry ExpertiseMiningBenefits/Reduced Operational Risk.png",
+                "title": "Reduced Operational Risk",
+                "description": "Implement safety and compliance measures to minimize risks in mining operations."
+            }
+        ]
+    },
+    "SAPforMining": {
+        "heading": "SAP Solution Portfolio for the Mining Industry",
+        "description": "SAP S/4HANA provides a digital core that integrates financial, sales, and manufacturing processes while enabling mining companies to leverage a complete suite of SAP solutions. This integration helps optimize operations, enhance decision-making, and drive efficiency in the digital economy.",
+        "bulletPoints": [
+            {
+                "title": "Enterprise Resource Planning (ERP)",
+                "description": "/emp1.jpg"
+            },
+            {
+                "title": "Asset and Maintenance Management",
+                "description": "/emp1.jpg"
+            },
+            {
+                "title": "Supply Chain and Logistics Management",
+                "description": "/emp1.jpg"
+            },
+            {
+                "title": "Environmental, Health, and Safety Compliance",
+                "description": "/emp1.jpg"
+            },
+            {
+                "title": "Commodity and Risk Management",
+                "description": "/emp1.jpg"
+            },
+            {
+                "title": "Workforce and Human Capital Management",
+                "description": "/emp1.jpg"
+            }
+        ]
+    }
+}

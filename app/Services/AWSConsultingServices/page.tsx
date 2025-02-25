@@ -8,6 +8,9 @@ import { aboutAWSConsultingJSON } from "@/data/Services/AWSConsultingServices/ab
 import { cloudServicesJSON } from "@/data/Services/AWSConsultingServices/cloudServices.json";
 
 import { BenefitsAWSCloudJSON } from "@/data/Services/AWSConsultingServices/BenefitsAWSCloud.json";
+
+import { CloudMigration } from "@/data/Services/AWSConsultingServices/cloudMigration.json";
+
 const AWSConsultingServices = () => {
   return (
     <div>
@@ -17,13 +20,19 @@ const AWSConsultingServices = () => {
         symbol="+"
         AboutSapImplementationData={aboutAWSConsultingJSON}
       />
-
+      {/*Our cloud services include */}
       <KeyFeatureSapImplementation
         KeyFeatureSapImplementationData={cloudServicesJSON}
       />
-
+      {/* Business Benefits of Cloud Applications on AWS */}
       <BenefitsSapImplementation
         BenefitSapImplementationData={BenefitsAWSCloudJSON}
+      />
+
+      <div className="h-20"></div>
+
+      <KeyFeatureSapImplementation
+        KeyFeatureSapImplementationData={CloudMigration}
       />
     </div>
   );

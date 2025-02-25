@@ -1,0 +1,53 @@
+{
+    "BenefitChemical": {
+      "tag": "Business Benefits",
+      "benefits": [
+        {
+          "imagePath": "/IndustryExpertise/chemicals/Business Benefits/1020 increased portfolio and project management resource productivity.png",
+          "name": "Increased Portfolio and Project Management Resource Productivity",
+          "description": "10%–20% increased portfolio and project management resource productivity."
+        },
+        {
+          "imagePath": "/IndustryExpertise/chemicals/Business Benefits/4050 reduced days to close annual books.png",
+          "name": "Reduced Days to Close Annual Books",
+          "description": "40%–50% reduced days to close annual books."
+        },
+        {
+          "imagePath": "/IndustryExpertise/chemicals/Business Benefits/1012 reduced days in inventory.png",
+          "name": "Reduced Days in Inventory",
+          "description": "10%–12% reduced days in inventory."
+        },
+        {
+          "imagePath": "/IndustryExpertise/chemicals/Business Benefits/1012 increased on-time delivery.png",
+          "name": "Increased On-Time Delivery",
+          "description": "10%–12% increased on-time delivery."
+        },
+        {
+          "imagePath": "/IndustryExpertise/chemicals/Business Benefits/510 reduction in unplanned asset downtime or outages.png",
+          "name": "Reduction in Unplanned Asset Downtime or Outages",
+          "description": "5%–10% reduction in unplanned asset downtime or outages."
+        },
+        {
+          "imagePath": "/IndustryExpertise/chemicals/Business Benefits/1015 reduced asset service and maintenance costs.png",
+          "name": "Reduced Asset Service and Maintenance Costs",
+          "description": "10%–15% reduced asset service and maintenance costs."
+        },
+        {
+          "imagePath": "/IndustryExpertise/chemicals/Business Benefits/Faster adoption to business challenges.png",
+          "name": "Faster Adaptation to Business Challenges",
+          "description": "Faster adoption to business challenges."
+        },
+        {
+          "imagePath": "/IndustryExpertise/chemicals/Business Benefits/High user efficiency.png",
+          "name": "High User Efficiency",
+          "description": "High user efficiency."
+        },
+        {
+          "imagePath": "/IndustryExpertise/chemicals/Business Benefits/Increased return on assets.png",
+          "name": "Increased Return on Assets",
+          "description": "Increased return on assets."
+        }
+      ]
+    }
+  }
+  

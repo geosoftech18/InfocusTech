@@ -6,27 +6,27 @@
       "items": [
         {
           "name": "Real-Time Data Integration",
-          "imagePath": "/images/real-time-data-integration.png",
+          "imagePath": "/Solutions/SAP BW/Why SAP BW4HANA/Real-Time Data Integration.png",
           "description": "Connects historical and live data to facilitate in-the-moment analytics and decision-making."
         },
         {
           "name": "Simplified Architecture",
-          "imagePath": "/images/simplified-architecture.png",
+          "imagePath": "/Solutions/SAP BW/Why SAP BW4HANA/Simplified Architecture.png",
           "description": "Reduces complexity, freeing up more time for line-of-business priorities."
         },
         {
           "name": "Unified Data Management",
-          "imagePath": "/images/unified-data-management.png",
+          "imagePath": "/Solutions/SAP BW/Why SAP BW4HANA/Unified Data Management.png",
           "description": "Integrates SAP and non-SAP applications into one logical data warehouse, ensuring a single version of the truth across the organization."
         },
         {
           "name": "Scalable for Future Growth",
-          "imagePath": "/images/scalable-for-future-growth.png",
+          "imagePath": "/Solutions/SAP BW/Why SAP BW4HANA/Scalable for Future Growth.png",
           "description": "Effectively handles growing data volumes and evolving business opportunities, both now and in the future."
         },
         {
           "name": "Flexible Deployment",
-          "imagePath": "/images/flexible-deployment.png",
+          "imagePath": "/Solutions/SAP BW/Why SAP BW4HANA/Flexible Deployment.png",
           "description": "Offers simple, open, and flexible data warehousing tools for both on-premise and cloud environments."
         }
       ]

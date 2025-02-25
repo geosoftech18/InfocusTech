@@ -6,22 +6,22 @@
       "items": [
         {
           "name": "Simplicity",
-          "imagePath": "/images/simplicity.png",
+          "imagePath": "/Solutions/SAP BW/SAP BW4HANA – a simpler, faster, and more flexible Data Warehouse/Simplicity.png",
           "description": "Get up and running faster with reduced development efforts and lower overall costs. Simplifies the data warehouse architecture, enabling quicker deployment and easier maintenance."
         },
         {
           "name": "Openness",
-          "imagePath": "/images/openness.png",
+          "imagePath": "/Solutions/SAP BW/SAP BW4HANA – a simpler, faster, and more flexible Data Warehouse/Openness.png",
           "description": "Supports integration and management of all data types, whether from SAP applications or other SQL systems. Provides open SQL interface access to all models for enhanced flexibility and interoperability."
         },
         {
           "name": "Modern Interface",
-          "imagePath": "/images/modern-interface.png",
+          "imagePath": "/Solutions/SAP BW/SAP BW4HANA – a simpler, faster, and more flexible Data Warehouse/Modern Interface.png",
           "description": "Offers an intuitive user interface that simplifies data interaction for all users, not just database experts. Designed with a new, user-friendly interface that makes data access simpler for business users."
         },
         {
           "name": "High Performance",
-          "imagePath": "/images/high-performance.png",
+          "imagePath": "/Solutions/SAP BW/SAP BW4HANA – a simpler, faster, and more flexible Data Warehouse/High Performance.png",
           "description": "Delivers real-time analytics by leveraging large volumes of data with significantly faster query performance (up to 100% faster). Helps organizations stay competitive with improved decision-making capabilities powered by high-performance data processing."
         }
       ]

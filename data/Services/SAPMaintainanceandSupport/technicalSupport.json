@@ -3,52 +3,52 @@
         "tag": "Technical Support",
         "keyFeatures": [
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Maintenance & Support/Key Technical Support Services/Help Desk.png",
                 "title": "Help Desk",
                 "description": "Immediate support for technical issues to ensure quick resolutions."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Maintenance & Support/Key Technical Support Services/Hardware Performance & Management.png",
                 "title": "Hardware Performance & Management",
                 "description": "Regular monitoring and optimization of hardware performance for system reliability."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Maintenance & Support/Key Technical Support Services/Application System Administration.png",
                 "title": "Application System Administration",
                 "description": "Efficient management of SAP system configurations, user profiles, and settings."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Maintenance & Support/Key Technical Support Services/Patches & Fixes Management.png",
                 "title": "Patches & Fixes Management",
                 "description": "Timely installation of critical patches and fixes to ensure your system is up-to-date and secure."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Maintenance & Support/Key Technical Support Services/User Profile Management.png",
                 "title": "User Profile Management",
                 "description": "Control and manage user access rights to maintain security and workflow efficiency."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Maintenance & Support/Key Technical Support Services/Batch Scheduling and Monitoring.png",
                 "title": "Batch Scheduling and Monitoring",
                 "description": "Ensure scheduled jobs are executed on time without errors."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Maintenance & Support/Key Technical Support Services/Interface Monitoring.png",
                 "title": "Interface Monitoring",
                 "description": "Continuous monitoring of SAP interfaces to ensure smooth data flow across systems."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Maintenance & Support/Key Technical Support Services/Database Monitoring.png",
                 "title": "Database Monitoring",
                 "description": "Proactive monitoring of your database for peak performance and integrity."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Maintenance & Support/Key Technical Support Services/Network Support.png",
                 "title": "Network Support",
                 "description": "Network infrastructure support to ensure seamless connectivity for SAP applications."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Maintenance & Support/Key Technical Support Services/ABAP Production _ Development Support.png",
                 "title": "ABAP Production / Development Support",
                 "description": "Specialized support for ABAP programming, troubleshooting, and development."
             }

@@ -17,9 +17,9 @@ const SapImplementation = () => {
   return (
     <div>
       <AboutSapImplementation
-        initialValue={0}
-        finalValue={15}
-        symbol="+"
+        // initialValue={0}
+        // finalValue={15}
+        // symbol="+"
         AboutSapImplementationData={aboutSAPImplementationJSON}
       />
       <KeyFeatureSapImplementation
@@ -32,9 +32,11 @@ const SapImplementation = () => {
       <BenefitsSapImplementation
         BenefitSapImplementationData={BenefitsSapImplementationJSON}
       />
+      <div className="h-20"></div>
       <SapImplementationProcess
         SapImplemetationProcessData={SapImplementationProcessJSON}
       />
+      <div className="h-20"></div>
     </div>
   );
 };

@@ -1,0 +1,33 @@
+{
+    "CustomerSuccessStoryDataAdhunik": {
+      "tag": "Customer Success Story",
+      "title": "Adhunik Group's SAP PS Module Implementation",
+      "description": "Adhunik Group, a leading Rs. 3,500 crore conglomerate, is renowned for its diverse portfolio in mining, steel, power, and value-added steel products. With a strong commitment to quality and customer satisfaction, Adhunik has established itself as a steady performer in the Indian industry. The group turned to Infocus to implement the SAP PS (Project Systems) module to better manage and track their turn-key projects.",
+      "items": [
+        {
+          "title": "Project Overview: SAP PS Module Implementation",
+          "content": "After successfully implementing SAP core modules, Adhunik Group sought to streamline its project management processes by integrating SAP PS. The goal was to map gaps, enhance processes, and provide future-proof solutions based on the 'now followed' practices while ensuring smooth integration with existing configurations."
+        },
+        {
+          "title": "Key Challenges",
+          "content": [
+            { "point": "Knowledge Transfer: Ensuring smooth knowledge transfer of current implementations and configurations to enable seamless transition." },
+            { "point": "Gap Identification: Identifying the gaps in the existing SAP setup and suggesting enhancements for a more efficient workflow." },
+            { "point": "Non-Standard Process Complexity: Managing ABAP development for non-standard process complexities, as well as integrating cross-application modules." },
+            { "point": "User Transition: Ensuring complete user transition and compliance assurance for SAP PS while moving away from Primavera, focusing on usability and reporting." }
+          ]
+        },
+        {
+          "title": "Benefits Achieved",
+          "content": [
+            { "point": "Real-Time Integration: Seamless integration of enterprise transactions related to materials, costs, and resources." },
+            { "point": "Business Process Value-Addition: Integration of exclusive features like BOM-PS interface, purchasing cycle processing, and cross-application time sheets (CATS)." },
+            { "point": "Efficient Billing and Accounting: Streamlined billing procedures that fulfil accounting requirements." },
+            { "point": "Cash Flow Monitoring: Improved monitoring and management of project cash flow." },
+            { "point": "Reliable Project Reporting: Enhanced project performance reporting with drill-down capabilities for detailed transaction insights." }
+          ]
+        }
+      ]
+    }
+  }
+  

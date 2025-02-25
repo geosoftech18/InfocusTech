@@ -20,22 +20,21 @@ import Image from "next/image";
 // ];
 
 interface WhySAPUpgradeandMigrationProps {
-  WhySAPUpgradeandMigrationData:{
-    heading:{
-      normal:string,
-      emphasized:string,
-    },
-    subheading:string,
-    details:{
-      tag:string,
-      description:string
-    }[]
-  }
+  WhySAPUpgradeandMigrationData: {
+    heading: {
+      normal: string;
+      emphasized: string;
+    };
+    subheading: string;
+    details: {
+      tag: string;
+      description: string;
+    }[];
+  };
 }
 
-
-const WhySAPUpgradeandMigration:React.FC<WhySAPUpgradeandMigrationProps> = ({
-  WhySAPUpgradeandMigrationData
+const WhySAPUpgradeandMigration: React.FC<WhySAPUpgradeandMigrationProps> = ({
+  WhySAPUpgradeandMigrationData,
 }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-12 px-10 md:px-28 gap-10 md:gap-20 my-20 md:my-20 h-[75vh]">
@@ -62,17 +61,20 @@ const WhySAPUpgradeandMigration:React.FC<WhySAPUpgradeandMigrationProps> = ({
       <div className="col-span-1 md:col-span-7 h-full flex flex-col justify-between gap-5 md:gap-0">
         {/* heading */}
         <div className="">
-          <div className="font-semibold text-2xl md:text-4xl">
+          <div className="font-semibold text-2xl md:text-3xl">
             {WhySAPUpgradeandMigrationData.heading.normal}
           </div>
-          <div className="font-extralight text-2xl md:text-4xl underline font-serif">
-            {WhySAPUpgradeandMigrationData.heading.emphasized}
+          <div className="font-extralight text-2xl md:text-3xl font-serif flex flex-col gap-2">
+            <div className="underline ">
+              {WhySAPUpgradeandMigrationData.heading.emphasized}
+            </div>
+            <div className="text-gray-600 text-xs md:text-lg tracking-tight">
+              {WhySAPUpgradeandMigrationData.subheading}
+            </div>
           </div>
         </div>
         {/* subheading */}
-        <div className="text-gray-600 text-xs md:text-lg tracking-tight">
-          {WhySAPUpgradeandMigrationData.subheading}
-        </div>
+
         {/* data */}
         <div>
           {WhySAPUpgradeandMigrationData.details.map((item, index) => (
@@ -80,8 +82,12 @@ const WhySAPUpgradeandMigration:React.FC<WhySAPUpgradeandMigrationProps> = ({
               className="border-b py-2 md:py-2 flex items-start justify-between gap-10"
               key={index}
             >
-              <div className="font-semibold text-sm md:text-md w-1/4">{item.tag}</div>
-              <div className="text-gray-600 text-xs md:text-md text-justify w-3/4">{item.description}</div>
+              <div className="font-semibold text-sm md:text-md w-1/4">
+                {item.tag}
+              </div>
+              <div className="text-gray-600 text-xs md:text-md text-justify w-3/4">
+                {item.description}
+              </div>
             </div>
           ))}
         </div>

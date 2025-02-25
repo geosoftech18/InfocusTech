@@ -1,65 +1,64 @@
 {
-    "KeyHighlights": {
-      "Tag": "SAP S/4HANA",
-      "Title": "Key Highlights of SAP S/4HANA",
-      "Description": "SAP S/4HANA brings a range of advanced features that transform traditional business systems into powerful, real-time solutions.",
-      "Tool": [
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "name": "In-Memory Database",
-          "description": "Leverages the SAP HANA in-memory database for ultra-fast processing, reducing the need for traditional disk-based storage and enabling real-time data access."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "name": "Smaller Total Data Footprint",
-          "description": "Simplifies the data architecture by eliminating redundant data layers, minimizing the overall data storage requirements."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "name": "Higher Throughput",
-          "description": "Optimizes system performance with the ability to handle a higher volume of transactions and data processing simultaneously."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "name": "Faster Analytics and Reports",
-          "description": "Instant access to analytics and reports, allowing businesses to make faster, data-driven decisions without delays."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "name": "Fewer Process Steps",
-          "description": "Streamlines business processes by reducing unnecessary steps, resulting in more efficient workflows and faster task completion."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "name": "No Locking, Parallelism",
-          "description": "Supports parallel processing, eliminating data locking issues, and allowing multiple tasks to run concurrently without interruption."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "name": "Actual Data (25%) & Historical Data (75%)",
-          "description": "Seamlessly integrates both real-time and historical data, giving businesses a comprehensive, 360-degree view of their operations."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "name": "Unlimited Workload Capacity",
-          "description": "Scalable to handle any workload size, ensuring high system performance regardless of growing data demands."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "name": "ERP, CRM, SRM, SCM, PLM Co-Deployed",
-          "description": "Consolidates multiple business functions such as ERP, CRM, SRM, SCM, and PLM into a unified system, eliminating silos and improving cross-functional collaboration."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "name": "SAP Fiori UX for Any Device",
-          "description": "Provides a consistent, user-friendly interface across devices (mobile, desktop, tablet), ensuring seamless user experiences regardless of platform."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "name": "On-Premise, Cloud, and Hybrid Deployment Options",
-          "description": "Offers flexible deployment options, allowing businesses to choose between on-premise, cloud, or hybrid configurations to suit their infrastructure and business needs."
-        }
-      ]
-    }
+  "KeyHighlights": {
+    "Tag": "SAP S/4HANA",
+    "Title": "Key Highlights of SAP S/4HANA",
+    "Description": "SAP S/4HANA brings a range of advanced features that transform traditional business systems into powerful, real-time solutions.",
+    "Tool": [
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Highlights of SAP S4HANA/In-Memory Database.png",
+        "name": "In-Memory Database",
+        "description": "Leverages the SAP HANA in-memory database for ultra-fast processing, reducing the need for traditional disk-based storage and enabling real-time data access."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Highlights of SAP S4HANA/Smaller Total Data Footprint.png",
+        "name": "Smaller Total Data Footprint",
+        "description": "Simplifies the data architecture by eliminating redundant data layers, minimizing the overall data storage requirements."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Highlights of SAP S4HANA/Higher Throughput.png",
+        "name": "Higher Throughput",
+        "description": "Optimizes system performance with the ability to handle a higher volume of transactions and data processing simultaneously."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Highlights of SAP S4HANA/Faster Analytics and Reports.png",
+        "name": "Faster Analytics and Reports",
+        "description": "Instant access to analytics and reports, allowing businesses to make faster, data-driven decisions without delays."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Highlights of SAP S4HANA/Fewer Process Steps.png",
+        "name": "Fewer Process Steps",
+        "description": "Streamlines business processes by reducing unnecessary steps, resulting in more efficient workflows and faster task completion."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Highlights of SAP S4HANA/No Locking, Parallelism.png",
+        "name": "No Locking, Parallelism",
+        "description": "Supports parallel processing, eliminating data locking issues, and allowing multiple tasks to run concurrently without interruption."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Highlights of SAP S4HANA/Actual Data (25) & Historical Data (75).png",
+        "name": "Actual Data (25%) & Historical Data (75%)",
+        "description": "Seamlessly integrates both real-time and historical data, giving businesses a comprehensive, 360-degree view of their operations."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Highlights of SAP S4HANA/Unlimited Workload Capacity.png",
+        "name": "Unlimited Workload Capacity",
+        "description": "Scalable to handle any workload size, ensuring high system performance regardless of growing data demands."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Highlights of SAP S4HANA/ERP, CRM, SRM, SCM, PLM Co-Deployed.png",
+        "name": "ERP, CRM, SRM, SCM, PLM Co-Deployed",
+        "description": "Consolidates multiple business functions such as ERP, CRM, SRM, SCM, and PLM into a unified system, eliminating silos and improving cross-functional collaboration."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Highlights of SAP S4HANA/SAP Fiori UX for Any Device.png",
+        "name": "SAP Fiori UX for Any Device",
+        "description": "Provides a consistent, user-friendly interface across devices (mobile, desktop, tablet), ensuring seamless user experiences regardless of platform."
+      },
+      {
+        "imagePath": "/Solutions/SAP S4 HANA/Key Highlights of SAP S4HANA/11.png",
+        "name": "On-Premise, Cloud, and Hybrid Deployment Options",
+        "description": "Offers flexible deployment options, allowing businesses to choose between on-premise, cloud, or hybrid configurations to suit their infrastructure and business needs."
+      }
+    ]
   }
-  
+}

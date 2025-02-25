@@ -1,48 +1,28 @@
 {
     "SAPTestingServicesJSON": {
-        "tag": "Our SAP Testing Services",
-        "heading": "Comprehensive SAP Testing Solutions",
-        "description": "We provide a comprehensive range of SAP testing services designed to optimize the quality, performance, and reliability of your SAP applications, ensuring efficiency and ROI throughout your project lifecycle.",
+        "tag": "SAP Testing Tools",
+        "heading": "Comprehensive SAP Testing Tools",
+        "description": "We leverage advanced tools to ensure your SAP systems' optimal performance and reliability, enabling smooth testing processes and enhanced results throughout your SAP project lifecycle.",
         "items": [
             {
-                "name": "Testing Strategy & Assessment",
-                "imagePath": "/SAPTestingIcons/Testing Strategy & Assessment.png",
-                "description": "Tailored strategies to define the testing approach and ensure optimal SAP system performance."
+                "name": "SAP LoadRunner",
+                "imagePath": "/Services/SAP Auditing & Testing Services/SAP Testing Tools/SAP LoadRunner.png",
+                "description": " A performance testing tool that simulates user activity to evaluate system performance under stress and load conditions."
             },
             {
-                "name": "Functional & Regression Testing",
-                "imagePath": "/SAPTestingIcons/Functional & Regression Testing.png",
-                "description": "Ensuring core functions are working correctly and maintaining stability through updates."
+                "name": "SAP Solution Manager",
+                "imagePath": "/Services/SAP Auditing & Testing Services/SAP Testing Tools/SAP Solution Manager.png",
+                "description": "  An integrated platform for monitoring, testing, and managing SAP applications, ensuring smooth implementation and operation."
             },
             {
-                "name": "Data Migration Testing",
-                "imagePath": "/SAPTestingIcons/Data Migration Testing.png",
-                "description": "Verifying the accuracy and integrity of migrated data during system transitions."
+                "name": "QTP Tools",
+                "imagePath": "/Services/SAP Auditing & Testing Services/SAP Testing Tools/QTP Tools.png",
+                "description": "QuickTest Professional (QTP) automates functional and regression testing, enhancing speed and accuracy in SAP application validation."
             },
             {
-                "name": "Business Process Testing",
-                "imagePath": "/SAPTestingIcons/Business Process Testing.png",
-                "description": "Validating critical business processes for smooth and efficient operations."
-            },
-            {
-                "name": "Integration Testing",
-                "imagePath": "/SAPTestingIcons/Integration Testing.png",
-                "description": "Ensuring seamless collaboration between SAP modules and third-party systems."
-            },
-            {
-                "name": "User Acceptance Testing (UAT)",
-                "imagePath": "/SAPTestingIcons/User Acceptance Testing.png",
-                "description": "Confirming system readiness by validating it meets end-user requirements and expectations."
-            },
-            {
-                "name": "Test Automation",
-                "imagePath": "/SAPTestingIcons/Test Automation.png",
-                "description": "Enhancing efficiency through automated testing processes using advanced tools."
-            },
-            {
-                "name": "Performance, Load & Stress Testing",
-                "imagePath": "/SAPTestingIcons/Performance Load & Stress Testing.png",
-                "description": "Evaluating system robustness by testing under varying loads and stress conditions."
+                "name": "SAP Ecatt Tools",
+                "imagePath": "/Services/SAP Auditing & Testing Services/SAP Testing Tools/SAP Ecatt Tools.png",
+                "description": " A test automation tool for SAP environments that helps automate and execute business process tests, improving efficiency and coverage.."
             }
         ]
     }

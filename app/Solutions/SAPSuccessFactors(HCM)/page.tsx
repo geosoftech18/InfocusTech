@@ -22,8 +22,9 @@ const SAPSuccessFactors = () => {
       />
       {/* HCM suite */}
       <BenefitsSapImplementation BenefitSapImplementationData={HCMSuite} />
+      <div className="h-10"></div>
       <WhySAPUpgradeandMigration WhySAPUpgradeandMigrationData={CoreHR} />
-
+      <div className="h-10"></div>
         {/* Key Capabilities */}
       <DoorComponent Data={Data}/>
     </div>

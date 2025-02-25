@@ -14,7 +14,7 @@ import { Data } from "@/data/Solutions/SAPSRMAriba/ContractLifecycleManagement.j
 
 import { Data as solutionCapabilities } from "@/data/Solutions/SAPSRMAriba/solutionCapabilities.json";
 
-import {collaborativeSourcing} from "@/data/Solutions/SAPSRMAriba/CollaborativeSourcing.json"
+import { collaborativeSourcing } from "@/data/Solutions/SAPSRMAriba/CollaborativeSourcing.json";
 
 const SAPSRMAriba = () => {
   return (
@@ -25,18 +25,23 @@ const SAPSRMAriba = () => {
       <IndustriesWeServe industriesWeServeData={PortfolioJSON} />
 
       <div className="h-20"></div>
+      {/* Key Modules of SAP and Ariba Procurement Solutions */}
       <KeyFeatureSapImplementation
         KeyFeatureSapImplementationData={KeyModules}
       />
       <FlexibledeploymentOptions />
 
+      {/* Optimized Contract Lifecycle Management */}
       <DoorComponent Data={Data} />
+
       <div className="h-20"></div>
+      
       <KeyFeatureSapImplementation
         KeyFeatureSapImplementationData={collaborativeSourcing}
       />
-
+      <div className="h-20"></div>
       <DoorComponent Data={solutionCapabilities} />
+      <div className="h-20"></div>
     </div>
   );
 };

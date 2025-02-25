@@ -5,26 +5,32 @@
         "Description": "At Infocus, we follow a comprehensive and structured approach to custom software development, ensuring that each project is executed efficiently and effectively. Our 'Plan-Build-Manage' methodology allows us to manage the entire software development lifecycle, from initial concept to post-implementation support, ensuring alignment with your business objectives and delivering high-quality solutions that drive success.",
         "Tool": [
             {
+                "imagePath": "/Services/Custom Software Development/Our Development Approach/Plan.png",
                 "name": "Plan",
                 "description": "Strategic planning and in-depth business analysis to align software development with business goals and requirements."
             },
             {
+                "imagePath": "/Services/Custom Software Development/Our Development Approach/Plan.png",
                 "name": "Requirement Analysis",
                 "description": "Identifying key functional and technical requirements to ensure a clear development roadmap."
             },
             {
+                "imagePath": "/Services/Custom Software Development/Our Development Approach/Build.png",
                 "name": "Build",
                 "description": "Comprehensive design, development, and seamless integration of software solutions tailored to your needs."
             },
             {
+                "imagePath": "/Services/Custom Software Development/Our Development Approach/Plan.png",
                 "name": "Testing & Quality Assurance",
                 "description": "Rigorous testing to ensure reliability, security, and high performance before deployment."
             },
             {
+                "imagePath": "/Services/Custom Software Development/Our Development Approach/Manage.png",
                 "name": "Manage",
                 "description": "Post-implementation support, monitoring, and continuous optimization to maintain long-term software efficiency."
             },
             {
+                "imagePath": "/Services/Custom Software Development/Our Development Approach/Continuous Improvement.png",
                 "name": "Continuous Improvement",
                 "description": "Ensuring software solutions evolve with business needs, leveraging feedback and technological advancements."
             }

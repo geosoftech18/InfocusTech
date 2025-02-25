@@ -6,83 +6,23 @@
       "items": [
         {
           "name": "Basic Human Resources",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Strengthen employee engagement with a unified system for global and local workforce management, payroll, and more."
-        },
-        {
-          "name": "Centralized Workforce Management",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Consolidate all HR processes and information on a single platform, improving access and decision-making across teams."
-        },
-        {
-          "name": "Organizational Structure Optimization",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Easily map and analyze your organization's structure, improving reporting and alignment with business goals."
-        },
-        {
-          "name": "Tailored Benefits Packages",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Design and manage custom benefit plans to meet the unique needs of your workforce and enhance employee satisfaction."
+          "imagePath": "/Solutions/SAP HCM/Key Capabilities/Basic Human Resources.png",
+          "description": "Centralized Workforce Management Organizational Structure Optimization Tailored Benefits Packages"
         },
         {
           "name": "Time and Attendance Management",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Provide your workforce with streamlined tools for better productivity, accuracy, and time management."
-        },
-        {
-          "name": "Automation of HR Forms",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Reduce administrative overhead by automating paper-based HR forms and processes."
-        },
-        {
-          "name": "Self-Service Empowerment",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Enable employees to independently manage key life and work events through intuitive HR self-service tools."
-        },
-        {
-          "name": "Time Administration Streamlining",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Improve efficiency and control labour costs with automated time tracking and attendance management systems."
+          "imagePath": "/Solutions/SAP HCM/Key Capabilities/Time and Attendance Management.png",
+          "description": "Automation of HR Forms Self-Service Empowerment Time Administration Streamlining"
         },
         {
           "name": "Globalization Capabilities",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "SAP solutions support global deployment and adherence to local laws and regulations, making it easy to manage diverse, international workforces."
-        },
-        {
-          "name": "Global Compliance",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Adapt to evolving national tax laws, accounting regulations, and manufacturing standards across 40+ countries."
-        },
-        {
-          "name": "Localized Features",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Tailor solutions to meet local HR needs and practices, ensuring seamless operations in diverse geographic regions."
-        },
-        {
-          "name": "Consistent Global Practices",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Maintain a consistent HR strategy while adapting to local requirements, supporting organizational growth worldwide."
+          "imagePath": "/Solutions/SAP HCM/Key Capabilities/Globalization Capabilities.png",
+          "description": "Global Compliance Localized Features Consistent Global Practices"
         },
         {
           "name": "Employee Engagement & Collaboration",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Foster a collaborative and engaged workforce, no matter where they are located, to drive productivity and satisfaction."
-        },
-        {
-          "name": "Employee Interaction Center",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Create a centralized hub for employees to access HR resources, communicate with teams, and stay connected with the organization."
-        },
-        {
-          "name": "Enhanced Communication Tools",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Use collaborative tools to bridge geographical gaps and improve internal communication across all levels of the workforce."
-        },
-        {
-          "name": "Workforce Collaboration",
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "description": "Encourage teamwork and engagement by providing employees with easy access to necessary tools, resources, and information to succeed in their roles."
+          "imagePath": "/Solutions/SAP HCM/Key Capabilities/Employee Engagement & Collaboration.png",
+          "description": "Employee Interaction Center Enhanced Communication Tools Workforce Collaboration"
         }
       ]
     }

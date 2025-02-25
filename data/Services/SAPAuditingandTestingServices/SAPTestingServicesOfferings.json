@@ -4,42 +4,42 @@
         "description": "We provide a comprehensive range of SAP testing services designed to optimize the quality, performance, and reliability of your SAP applications, ensuring efficiency and ROI throughout your project lifecycle.",
         "keyFeatures": [
             {
-                "imagePath": "/whatWeOfferIcons/Testing Strategy & Assessment.png",
+                "imagePath": "/Services/SAP Auditing & Testing Services/Our SAP testing services encompass the following types of offerings/Testing Strategy & Assessment.png",
                 "title": "Testing Strategy & Assessment",
                 "description": "Tailored strategies to define the testing approach and ensure optimal SAP system performance."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Functional & Regression Testing.png",
+                "imagePath": "/Services/SAP Auditing & Testing Services/Our SAP testing services encompass the following types of offerings/Functional & Regression Testing.png",
                 "title": "Functional & Regression Testing",
                 "description": "Ensuring core functions are working correctly and maintaining stability through updates."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Data Migration Testing.png",
+                "imagePath": "/Services/SAP Auditing & Testing Services/Our SAP testing services encompass the following types of offerings/Data Migration Testing.png",
                 "title": "Data Migration Testing",
                 "description": "Verifying the accuracy and integrity of migrated data during system transitions."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Business Process Testing.png",
+                "imagePath": "/Services/SAP Auditing & Testing Services/Our SAP testing services encompass the following types of offerings/Business Process Testing.png",
                 "title": "Business Process Testing",
                 "description": "Validating critical business processes for smooth and efficient operations."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Integration Testing.png",
+                "imagePath": "/Services/SAP Auditing & Testing Services/Our SAP testing services encompass the following types of offerings/Integration Testing.png",
                 "title": "Integration Testing",
                 "description": "Ensuring seamless collaboration between SAP modules and third-party systems."
             },
             {
-                "imagePath": "/whatWeOfferIcons/User Acceptance Testing.png",
+                "imagePath": "/Services/SAP Auditing & Testing Services/Our SAP testing services encompass the following types of offerings/User Acceptance Testing (UAT).png",
                 "title": "User Acceptance Testing (UAT)",
                 "description": "Confirming system readiness by validating it meets end-user requirements and expectations."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Test Automation.png",
+                "imagePath": "/Services/SAP Auditing & Testing Services/Our SAP testing services encompass the following types of offerings/Test Automation.png",
                 "title": "Test Automation",
                 "description": "Enhancing efficiency through automated testing processes using advanced tools."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Performance Load Stress Testing.png",
+                "imagePath": "/Services/SAP Auditing & Testing Services/Our SAP testing services encompass the following types of offerings/Performance, Load & Stress Testing.png",
                 "title": "Performance, Load & Stress Testing",
                 "description": "Evaluating system robustness by testing under varying loads and stress conditions."
             }

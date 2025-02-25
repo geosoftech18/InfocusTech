@@ -1,34 +1,39 @@
 {
-    "permanentStaffingJSON": {
-      "Tag": "Permanent Staffing Solutions:",
-      "Title": "High-Quality Permanent Staffing",
-      "Description": "Infocus focuses on delivering high-quality, permanent staffing solutions that align with your business’s strategic goals. With our proven search techniques, we ensure that you find the ideal candidates who are not only skilled but also a perfect fit for your company’s culture.",
-      "Tool": [
-        {
-          "name": "Customized Recruitment Strategies",
-          "description": "Tailored hiring approaches designed to meet your specific business needs and workforce goals."
-        },
-        {
-          "name": "Access to a Wide Talent Pool",
-          "description": "A vast network of skilled professionals and executives, ensuring the best fit for your organization."
-        },
-        {
-          "name": "Thorough Vetting and Screening",
-          "description": "Rigorous background checks and skill assessments to ensure long-term compatibility and reliability."
-        },
-        {
-          "name": "Expertise Across All Levels",
-          "description": "Specialized hiring solutions for roles ranging from entry-level to executive leadership positions."
-        },
-        {
-          "name": "Dedicated Recruitment Team",
-          "description": "A team of staffing experts committed to meeting hiring deadlines and project milestones."
-        },
-        {
-          "name": "Flexibility for Urgent Hiring Needs",
-          "description": "Agile staffing solutions to quickly address urgent or high-priority hiring demands."
-        }
-      ]
-    }
+  "permanentStaffingJSON": {
+    "Tag": "Permanent Staffing Solutions:",
+    "Title": "High-Quality Permanent Staffing",
+    "Description": "Infocus focuses on delivering high-quality, permanent staffing solutions that align with your business’s strategic goals. With our proven search techniques, we ensure that you find the ideal candidates who are not only skilled but also a perfect fit for your company’s culture.",
+    "Tool": [
+      {
+        "imagePath": "/Services/Resource Consulting/Resource Consulting/Customized recruitment strategies tailored to your specific needs.png",
+        "name": "Customized Recruitment Strategies",
+        "description": "Tailored hiring approaches designed to meet your specific business needs and workforce goals."
+      },
+      {
+        "imagePath": "/Services/Resource Consulting/Resource Consulting/Access to a wide talent pool, including top-tier professionals and executives.png",
+        "name": "Access to a Wide Talent Pool",
+        "description": "A vast network of skilled professionals and executives, ensuring the best fit for your organization."
+      },
+      {
+        "imagePath": "/Services/Resource Consulting/Resource Consulting/Thorough vetting and screening processes to ensure long-term compatibility.png",
+        "name": "Thorough Vetting and Screening",
+        "description": "Rigorous background checks and skill assessments to ensure long-term compatibility and reliability."
+      },
+      {
+        "imagePath": "/Services/Resource Consulting/Resource Consulting/Expertise in filling roles at all organizational levels, from entry-level to executive positions.png",
+        "name": "Expertise Across All Levels",
+        "description": "Specialized hiring solutions for roles ranging from entry-level to executive leadership positions."
+      },
+      {
+        "imagePath": "/Services/Resource Consulting/Resource Consulting/Dedicated recruitment team focused on meeting deadlines and project timelines.png",
+        "name": "Dedicated Recruitment Team",
+        "description": "A team of staffing experts committed to meeting hiring deadlines and project milestones."
+      },
+      {
+        "imagePath": "/Services/Resource Consulting/Resource Consulting/Flexibility to handle urgent or high-priority staffing needs.png",
+        "name": "Flexibility for Urgent Hiring Needs",
+        "description": "Agile staffing solutions to quickly address urgent or high-priority hiring demands."
+      }
+    ]
   }
-  
+}

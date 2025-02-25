@@ -4,22 +4,22 @@
         "benefits": [
             {
                 "name": "Outdated Software Risks",
-                "imagePath" : "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath" : "/Services/SAP Upgrade & Migration/Challenges Addressed by SAP Upgrade & Migration/Outdated Software Risks.png",
                 "description": "Mitigates security vulnerabilities, system incompatibilities, and unsupported SAP versions."
             },
             {
                 "name": "Performance Bottlenecks",
-                "imagePath" : "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath" : "/Services/SAP Upgrade & Migration/Challenges Addressed by SAP Upgrade & Migration/Performance Bottlenecks.png",
                 "description": "Upgrades eliminate slowdowns, enabling faster processing and improved system performance."
             },
             {
                 "name": "System Downtime & Data Loss Concerns",
-                "imagePath" : "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath" : "/Services/SAP Upgrade & Migration/Challenges Addressed by SAP Upgrade & Migration/System Downtime and Data Loss Concerns.png",
                 "description": "Ensures a seamless migration process with minimal downtime and secure data transfer."
             },
             {
                 "name": "Regulatory & Compliance Requirements",
-                "imagePath" : "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath" : "/Services/SAP Upgrade & Migration/Challenges Addressed by SAP Upgrade & Migration/Regulatory and Compliance Requirements.png",
                 "description": "Keeps businesses compliant with evolving industry regulations and government mandates."
             }
         ]

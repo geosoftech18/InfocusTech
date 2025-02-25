@@ -3,52 +3,52 @@
         "tag": "Benefits of SAP Implementation",
         "benefits": [
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Implementation/Benefits of SAP Implementation/Improved Efficiency.png",
                 "name": "Improved Efficiency",
                 "description": "Streamlines business processes, reducing manual tasks and increasing automation across departments."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Implementation/Benefits of SAP Implementation/Real-time Data Access.png",
                 "name": "Real-time Data Access",
                 "description": "Provides real-time data and analytics for faster decision-making and better business insights."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Implementation/Benefits of SAP Implementation/Scalability.png",
                 "name": "Scalability",
                 "description": "SAP solutions grow with your business, allowing for easy scaling as your organization expands."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Implementation/Benefits of SAP Implementation/Integration Across Departments.png",
                 "name": "Integration Across Departments",
                 "description": "Facilitates seamless integration between different departments, ensuring smooth communication and collaboration."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Implementation/Benefits of SAP Implementation/Enhanced Data Security.png",
                 "name": "Enhanced Data Security",
                 "description": "Offers robust security features to protect sensitive business data and ensure compliance with industry regulations."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Implementation/Benefits of SAP Implementation/Cost Savings.png",
                 "name": "Cost Savings",
                 "description": "Reduces operational costs by optimizing processes, improving resource allocation, and reducing redundancies."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Implementation/Benefits of SAP Implementation/Improved Customer Service.png",
                 "name": "Improved Customer Service",
                 "description": "Helps manage customer relationships more effectively, leading to better customer satisfaction and loyalty."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Implementation/Benefits of SAP Implementation/Industry Best Practices.png",
                 "name": "Industry Best Practices",
                 "description": "Aligns business operations with industry standards, ensuring compliance and adopting best practices."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Implementation/Benefits of SAP Implementation/Better Project Management.png",
                 "name": "Better Project Management",
                 "description": "Enhances project visibility and control, enabling efficient management of timelines, budgets, and resources."
             },
             {
-                "imagePath": "/whatWeOfferIcons/Custom Software Development.png",
+                "imagePath": "/Services/SAP Implementation/Benefits of SAP Implementation/Future-Proof Solutions.png",
                 "name": "Future-Proof Solutions",
                 "description": "Keeps your business competitive by leveraging the latest technology and staying ahead of industry trends."
             }
