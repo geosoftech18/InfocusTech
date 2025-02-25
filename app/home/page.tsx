@@ -14,7 +14,6 @@ import {aboutUsData,visionMissionQualityData} from "@/data/aboutUs.json"
 import {whyChooseUsJSON} from "@/data/whyChooseUs.json"
 import {whatWeOfferJSON} from "@/data/whatWeOffer.json"
 import {industriesWeServeJSON} from "@/data/industriesWeServe.json"
-import Container from "@/components/container";
 
 
 
@@ -25,7 +24,7 @@ export default function Home() {
   
 
   return (
-    <Container>
+    <div>
       <HeroCarousal HeroItems={HeroItems}/>
       <AboutUs AboutUsData={aboutUsData} visionMissionQualityData={visionMissionQualityData}/>
       <WhyChooseUs whyChooseUsData={whyChooseUsJSON}/>
@@ -34,6 +33,6 @@ export default function Home() {
       <Testimonial />
       <Clients />
       <FAQs FAQData={FAQsdata} />
-    </Container>
+    </div>
   );
 }
