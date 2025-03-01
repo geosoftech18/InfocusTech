@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <div>
-      <HeroCarousal HeroItems={HeroItems}/>
+      {/* <HeroCarousal HeroItems={HeroItems}/> */}
       <AboutUs AboutUsData={aboutUsData} visionMissionQualityData={visionMissionQualityData}/>
       <WhyChooseUs whyChooseUsData={whyChooseUsJSON}/>
       <WhatWeOffer Data={whatWeOfferJSON}/>

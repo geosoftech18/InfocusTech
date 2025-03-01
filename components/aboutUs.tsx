@@ -25,7 +25,7 @@ const AboutUs: React.FC<AboutUsProps> = ({
   visionMissionQualityData,
 }) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 mx-2 lg:mx-40 p-10">
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 mx-2 lg:px-40 p-10">
       <div className="col-span-1 lg:col-span-6 flex flex-col gap-2">
         <div className="font-bold">About InFocusTech</div>
         <div className="text-3xl font-semibold ">{AboutUsData.heading}</div>

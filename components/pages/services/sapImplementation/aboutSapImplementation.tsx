@@ -24,7 +24,7 @@ const AboutSapImplementation: React.FC<AboutSapImplementationProps> = ({
   AboutSapImplementationData,
 }) => {
   return (
-    <div className={`grid lg:grid-cols-2  lg:mx-20 mb-20 p-10 gap-10 items-stretch`}>
+    <div className={`grid lg:grid-cols-2 mb-20 md:mx-40 gap-10 items-stretch`}>
       <div className="relative h-full">
         <Image
           src={"/WhyChooseUs.jpg"}

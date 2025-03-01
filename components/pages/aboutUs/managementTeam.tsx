@@ -14,8 +14,9 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
 import Autoplay from "embla-carousel-autoplay";
-import { Facebook, Share2, Twitter, Youtube } from "lucide-react";
+import { Facebook, Linkedin, Share2, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 interface ManagementTeamProps {
@@ -26,7 +27,7 @@ interface ManagementTeamProps {
       name: string;
       role: string;
       imagePath: string;
-      facebookLink: string;
+      linkedinLink: string;
       youtubeLink: string;
       twitterLink: string;
     }[];
@@ -80,7 +81,7 @@ const ManagementTeam: React.FC<ManagementTeamProps> = ({
                   />
                   <CardContent className="flex items-center justify-between">
                     <div>
-                      <div className="font-semibold text-2xl">{item.name}</div>
+                      <div className="font-semibold text-xl">{item.name}</div>
                       <div>{item.role}</div>
                     </div>
                     <div
@@ -99,15 +100,38 @@ const ManagementTeam: React.FC<ManagementTeamProps> = ({
                           align="center"
                           className="bg-transparent border-0 shadow-none gap-3 flex flex-col items-center justify-center"
                         >
-                          <DropdownMenuItem className="rounded-full p-2 bg-gray-100 font-bold">
-                            <Facebook className="w-5" />
-                          </DropdownMenuItem>
-                          <DropdownMenuItem className="rounded-full p-2 bg-gray-100 font-bold">
-                            <Twitter className="w-5" />
-                          </DropdownMenuItem>
-                          <DropdownMenuItem className="rounded-full p-2 bg-gray-100 font-bold">
-                            <Youtube className="w-5" />
-                          </DropdownMenuItem>
+                          {item.linkedinLink.length > 0 && (
+                            <DropdownMenuItem className="rounded-full p-2 bg-gray-100 font-bold">
+                              <Link
+                                href={item.linkedinLink}
+                                className="h-full w-full"
+                              >
+                                <Linkedin className="w-5" />
+                              </Link>
+                            </DropdownMenuItem>
+                          )}
+
+                          {item.twitterLink.length > 0 && (
+                            <DropdownMenuItem className="rounded-full p-2 bg-gray-100 font-bold">
+                              <Link
+                                href={item.twitterLink}
+                                className="h-full w-full"
+                              >
+                                <Twitter className="w-5" />
+                              </Link>
+                            </DropdownMenuItem>
+                          )}
+
+                          {item.youtubeLink.length > 0 && (
+                            <DropdownMenuItem className="rounded-full p-2 bg-gray-100 font-bold">
+                              <Link
+                                href={item.youtubeLink}
+                                className="h-full w-full"
+                              >
+                                <Youtube className="w-5" />
+                              </Link>
+                            </DropdownMenuItem>
+                          )}
                         </DropdownMenuContent>
                       </DropdownMenu>
                     </div>

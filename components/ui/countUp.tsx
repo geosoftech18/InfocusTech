@@ -21,7 +21,7 @@ const CountUp: React.FC<CountUpProps> = ({
     let i = initialValue;
     const timer = setInterval(() => {
       setVal(i++);
-      if (i == finalValue) {
+      if (i > finalValue) {
         clearInterval(timer);
       }
     }, timeJump);

@@ -1,32 +1,37 @@
 {
-    "CorePointsJSON":{
-        "title":"We'll do the best for our honourable clients",
-        "subTitle":"Qistinctivel iterate quality intellectual to before user friendly applications team Sontinually intellectual deliver efficient team convergene.",
-        "cardData":[
+    "CorePointsJSON": {
+        "title": "Key Milestones in Our Journey",
+        "subTitle": "Stay updated with our exciting milestones and events as we guide you through the innovative solutions, successful implementations, and continuous improvements we offer. From digital transformation to the launch of new services, we're here to help your business thrive at every step.",
+        "cardData": [
             {
-                "number":"1280",
-                "symbol":"+",
-                "caption":"HAPPY CLIENTS"
+                "number": "1280",
+                "symbol": "+",
+                "caption": "Get Ready for the Future",
+                "imagePath": "/corePoints/Get Ready for the Future.png"
             },
             {
-                "number":"1280",
-                "symbol":"+",
-                "caption":"HAPPY CLIENTS"
+                "number": "1280",
+                "symbol": "+",
+                "caption": "Countdown to Success",
+                "imagePath": "/corePoints/Countdown to Success.png"
             },
             {
-                "number":"1280",
-                "symbol":"+",
-                "caption":"HAPPY CLIENTS"
+                "number": "1280",
+                "symbol": "+",
+                "caption": "Stay on Track",
+                "imagePath": "/corePoints/Stay on Track.png"
             },
             {
-                "number":"1280",
-                "symbol":"+",
-                "caption":"HAPPY CLIENTS"
+                "number": "1280",
+                "symbol": "+",
+                "caption": "Building Stronger Relationships",
+                "imagePath": "/corePoints/Building Stronger Relationships.png"
             },
             {
-                "number":"1280",
-                "symbol":"+",
-                "caption":"HAPPY CLIENTS"
+                "number": "1280",
+                "symbol": "+",
+                "caption": "Countdown to Our Latest Offering",
+                "imagePath": "/corePoints/Countdown to Our Latest Offering.png"
             }
         ]
     }

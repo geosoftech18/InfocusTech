@@ -48,7 +48,7 @@ const Testimonial = () => {
       <div className="hidden md:block md:col-span-4 bg-gray-200"></div>
       <div className="hidden  md:block col-span-12 md:col-span-8 bg-[#B00D07]"></div>
 
-      <div className="absolute mt-36 lg:mt-auto px-10 inset-0 mx-auto max-w-5xl max-h-3xl flex items-center justify-center z-50">
+      <div className="absolute z-0 mt-36 lg:mt-auto px-10 inset-0 mx-auto max-w-5xl max-h-3xl flex items-center justify-center ">
         <Carousel
           setApi={setApi}
           className="mx-auto"
@@ -71,7 +71,7 @@ const Testimonial = () => {
                     src={item.imageUrl}
                     width={1000}
                     height={1000}
-                    className="rounded-lg"
+                    className="rounded-lg "
                   />
                   <div className="flex items-center text-justify md:items-start flex-col justify-center">
                     <div className="text-gray-300">Our testimonials</div>

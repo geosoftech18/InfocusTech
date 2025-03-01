@@ -4,10 +4,18 @@
         "title":"Use SEO To Drive Growth At Your Business",
         "team":[
             {
-                "name":"Leslie Alexander",
-                "role":"designer",
+                "name":"Dipak Rakhecha",
+                "role":"Director",
                 "imagePath":"/emp1.jpg",
-                "facebookLink":"",
+                "linkedinLink":"https://www.linkedin.com/in/dipakrakhecha/",
+                "youtubeLink":"",
+                "twitterLink":""
+            },
+            {
+                "name":"Sudip Maitra",
+                "role":"Director",
+                "imagePath":"/emp1.jpg",
+                "linkedinLink":"https://www.linkedin.com/in/sudip-maitra-0b351223/",
                 "youtubeLink":"",
                 "twitterLink":""
             },
@@ -15,7 +23,7 @@
                 "name":"Leslie Alexander",
                 "role":"designer",
                 "imagePath":"/emp1.jpg",
-                "facebookLink":"",
+                "linkedinLink":"",
                 "youtubeLink":"",
                 "twitterLink":""
             },
@@ -23,7 +31,7 @@
                 "name":"Leslie Alexander",
                 "role":"designer",
                 "imagePath":"/emp1.jpg",
-                "facebookLink":"",
+                "linkedinLink":"",
                 "youtubeLink":"",
                 "twitterLink":""
             },
@@ -31,7 +39,7 @@
                 "name":"Leslie Alexander",
                 "role":"designer",
                 "imagePath":"/emp1.jpg",
-                "facebookLink":"",
+                "linkedinLink":"",
                 "youtubeLink":"",
                 "twitterLink":""
             },
@@ -39,15 +47,7 @@
                 "name":"Leslie Alexander",
                 "role":"designer",
                 "imagePath":"/emp1.jpg",
-                "facebookLink":"",
-                "youtubeLink":"",
-                "twitterLink":""
-            },
-            {
-                "name":"Leslie Alexander",
-                "role":"designer",
-                "imagePath":"/emp1.jpg",
-                "facebookLink":"",
+                "linkedinLink":"",
                 "youtubeLink":"",
                 "twitterLink":""
             }

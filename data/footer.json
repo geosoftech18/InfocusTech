@@ -1,0 +1,167 @@
+{
+    "FooterData": {
+        "brandName": "Infocus",
+        "locations": [
+            {
+                "title": "India Office",
+                "addressLines": [
+                    "India Office (Certified by DNV)",
+                    "230B AJC Bose Road 1st Floor,",
+                    "Minto Park, Kolkata - 700020.    "
+                ],
+                "phone": "+91 - 33 - 35989678",
+                "email": "sales@infocus-in.com"
+            },
+            {
+                "title": "US Office",
+                "addressLines": [
+                    "6012 Lake Grove BLVD, CARY NC 27519"
+                ],
+                "phone": "+1 919 - 864 - 1121",
+                "email": "business@vedlogic.com"
+            }
+        ],
+        "socials":{
+            "Linkedin":"https://www.linkedin.com/company/infocus-technologies-pvt-ltd/",
+            "Facebook":"https://www.facebook.com/InfocusTechnologiesPvtLtd/",
+            "Twitter":"https://infocus-in.com/",
+            "google":"https://infocus-in.com/"
+        },
+        "columns": [
+            {
+                "title": "Solutions",
+                "links": [
+                    {
+                        "label": "SAP S4HANA",
+                        "href": "/Solutions/SAPS4HANA"
+                    },
+                    {
+                        "label": "SAP SuccessFactors (HCM)",
+                        "href": "/Solutions/SAPSuccessFactors(HCM)"
+                    },
+                    {
+                        "label": "SAP SRM/Ariba",
+                        "href": "/Solutions/SAPSRM-Ariba"
+                    },
+                    {
+                        "label": "SAP BW (Business Warehouse)",
+                        "href": "/Solutions/SAPBW(BusinessWarehouse)"
+                    },
+                    {
+                        "label": "SAP FIORI",
+                        "href": "/Solutions/SAPFIORI"
+                    },
+                    {
+                        "label": "SAP PI/XI",
+                        "href": "/Solutions/SAPPI-XI"
+                    },
+                    {
+                        "label": "Integration with ICICI Bank",
+                        "href": "/IntegrationwithICICIBank"
+                    }
+                ]
+            },
+            {
+                "title": "Services",
+                "links": [
+                    {
+                        "label": "SAP Implementation",
+                        "href": "/Services/SAPImplementation"
+                    },
+                    {
+                        "label": "SAP Maintenance and Support",
+                        "href": "/Services/SAPMaintenanceandSupport"
+                    },
+                    {
+                        "label": "SAP Upgrade and Migration",
+                        "href": "/Services/SAPUpgradeandMigration"
+                    },
+                    {
+                        "label": "AWS Consulting Services",
+                        "href": "/Services/AWSConsultingServices"
+                    },
+                    {
+                        "label": "SAP Auditing and Testing Services",
+                        "href": "/Services/SAPAuditingandTestingServices"
+                    },
+                    {
+                        "label": "Custom Software Development",
+                        "href": "/Services/CustomSoftwareDevelopment"
+                    },
+                    {
+                        "label": "Resource Consulting",
+                        "href": "/Services/ResourceConsulting"
+                    },
+                    {
+                        "label": "ERP Corporate Training",
+                        "href": "/Services/ERPCorporateTraining"
+                    }
+                ]
+            },
+            {
+                "title": "Industry Expertise",
+                "links": [
+                    {
+                        "label": "Cement",
+                        "href": "/IndustryExpertise/Cement"
+                    },
+                    {
+                        "label": "Chemical",
+                        "href": "/IndustryExpertise/Chemical"
+                    },
+                    {
+                        "label": "Engineering and Construction",
+                        "href": "/IndustryExpertise/EngineeringandConstruction"
+                    },
+                    {
+                        "label": "Iron and Steel",
+                        "href": "/IndustryExpertise/IronandSteel"
+                    },
+                    {
+                        "label": "Mining",
+                        "href": "/IndustryExpertise/Mining"
+                    },
+                    {
+                        "label": "Pharmaceuticals",
+                        "href": "/IndustryExpertise/Pharmaceuticals"
+                    },
+                    {
+                        "label": "Power",
+                        "href": "/IndustryExpertise/Power"
+                    },
+                    {
+                        "label": "Transportation and Logistics",
+                        "href": "/IndustryExpertise/TransportationandLogistics"
+                    }
+                ]
+            }
+        ],
+        "accreditation": [
+            {
+                "label": "SAP Gold Partner",
+                "imageUrl": "/Company-Certifications/sap-partner.jpg"
+            },
+            {
+                "label": "NSR-partner",
+                "imageUrl": "/Company-Certifications/nsr-partner.gif"
+            },
+            {
+                "label": "NASSCOM-partner",
+                "imageUrl": "/Company-Certifications/nasscom-partner.jpg"
+            },
+            {
+                "label": "ISO9001",
+                "imageUrl": "/Company-Certifications/ISO9001.jpg"
+            },
+            {
+                "label": "ICICI partner",
+                "imageUrl": "/Company-Certifications/icici-partner.jpg"
+            },
+            {
+                "label": "CMMI-Level3",
+                "imageUrl": "/Company-Certifications/cmmi-level-3-certification.jpg"
+            }
+        ],
+        "privacyPolicyLink": "/privacy-policy"
+    }
+}

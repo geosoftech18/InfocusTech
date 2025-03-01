@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const FlexibledeploymentOptions = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 px-10 md:px-28 gap-20 my-20">
+    <div className="grid grid-cols-1 md:grid-cols-2 md:mx-40 gap-20 my-20">
       <div className="col-span-1 font-semibold text-center md:text-left  h-full flex items-center gap-5 flex-col  w-5/6">
         <div className="font-semibold text-4xl">
           Flexible deployment Options:
