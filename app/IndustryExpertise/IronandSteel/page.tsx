@@ -1,27 +1,22 @@
 import AboutSapImplementation from "@/components/pages/services/sapImplementation/aboutSapImplementation";
-import { aboutIronandSteelJSON } from "@/data/IndustryExpertise/about.json";
-
 import CustomerSuccessStory from "@/components/pages/IndustryExpertise/customerSuccessStoryComponent";
 
-import { CustomerSuccessStoryDataAdhunik } from "@/data/IndustryExpertise/Adhunik.json";
-import { CustomerSuccessStoryDataJindal } from "@/data/IndustryExpertise/Jindal.json";
+// Import JSON files using default imports
+import aboutData from "@/data/IndustryExpertise/about.json";
+import adhunikData from "@/data/IndustryExpertise/Adhunik.json";
+import jindalData from "@/data/IndustryExpertise/Jindal.json";
+
+// Extract necessary data
+const aboutIronandSteelJSON = aboutData.aboutIronandSteelJSON;
+const CustomerSuccessStoryDataAdhunik = adhunikData.CustomerSuccessStoryDataAdhunik;
+const CustomerSuccessStoryDataJindal = jindalData.CustomerSuccessStoryDataJindal;
 
 const IronandSteel = () => {
   return (
     <>
-      <AboutSapImplementation
-        // initialValue={0}
-        // finalValue={15}
-        // symbol="+"
-        AboutSapImplementationData={aboutIronandSteelJSON}
-      />
-      <CustomerSuccessStory
-        CustomerSuccessStoryData={CustomerSuccessStoryDataAdhunik}
-      />
-
-      <CustomerSuccessStory
-        CustomerSuccessStoryData={CustomerSuccessStoryDataJindal}
-      />
+      <AboutSapImplementation AboutSapImplementationData={aboutIronandSteelJSON} />
+      <CustomerSuccessStory CustomerSuccessStoryData={CustomerSuccessStoryDataAdhunik} />
+      <CustomerSuccessStory CustomerSuccessStoryData={CustomerSuccessStoryDataJindal} />
     </>
   );
 };

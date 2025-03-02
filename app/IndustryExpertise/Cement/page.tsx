@@ -1,10 +1,13 @@
 import CustomerSuccessStory from "@/components/pages/IndustryExpertise/customerSuccessStoryComponent";
-import {CustomerSuccessStoryDataCement} from "@/data/IndustryExpertise/Cement.json"
+
+// Import JSON file using default import
+import customerSuccessStoryDataFile from "@/data/IndustryExpertise/Cement.json";
+
+// Extract necessary data
+const customerSuccessStoryDataCement = customerSuccessStoryDataFile.CustomerSuccessStoryDataCement;
 
 const Cement = () => {
-    return ( 
-        <CustomerSuccessStory CustomerSuccessStoryData={CustomerSuccessStoryDataCement}/>
-     );
-}
- 
+  return <CustomerSuccessStory CustomerSuccessStoryData={customerSuccessStoryDataCement} />;
+};
+
 export default Cement;

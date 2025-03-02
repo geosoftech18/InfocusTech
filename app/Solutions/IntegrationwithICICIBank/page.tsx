@@ -1,12 +1,19 @@
+// Import JSON data
+import aboutData from "@/data/Solutions/IntegrationwithICICIBank/about.json";
+
+// Extract relevant data
+const { aboutJSON } = aboutData;
+
+// Import Component
 import WhyChooseUs from "@/components/pages/home/whyChooseUs";
-import {aboutJSON} from "@/data/Solutions/IntegrationwithICICIBank/about.json"
 
 const IntegrationwithICICIBank = () => {
-    return (
-        <div>
-            <WhyChooseUs whyChooseUsData={aboutJSON}/>
-        </div>
-      );
-}
- 
+  return (
+    <div>
+      {/* Why Choose Us Section */}
+      <WhyChooseUs whyChooseUsData={aboutJSON} />
+    </div>
+  );
+};
+
 export default IntegrationwithICICIBank;

@@ -1,39 +1,39 @@
 import BenefitsSapImplementation from "@/components/pages/services/sapImplementation/benefitsSapImplementation";
 import KeyFeatureSapImplementation from "@/components/pages/services/sapImplementation/keyFeaturesSapImplementation";
-
 import AboutSapImplementation from "@/components/pages/services/sapImplementation/aboutSapImplementation";
 
-import { aboutAWSConsultingJSON } from "@/data/Services/AWSConsultingServices/about.json";
+// Import JSON data
+import aboutAWS from "@/data/Services/AWSConsultingServices/about.json";
+import cloudServices from "@/data/Services/AWSConsultingServices/cloudServices.json";
+import benefitsAWSCloud from "@/data/Services/AWSConsultingServices/BenefitsAWSCloud.json";
+import cloudMigration from "@/data/Services/AWSConsultingServices/cloudMigration.json";
 
-import { cloudServicesJSON } from "@/data/Services/AWSConsultingServices/cloudServices.json";
-
-import { BenefitsAWSCloudJSON } from "@/data/Services/AWSConsultingServices/BenefitsAWSCloud.json";
-
-import { CloudMigration } from "@/data/Services/AWSConsultingServices/cloudMigration.json";
+// Extract data from JSON
+const aboutAWSConsultingData = aboutAWS.aboutAWSConsultingJSON;
+const cloudServicesData = cloudServices.cloudServicesJSON;
+const benefitsAWSCloudData = benefitsAWSCloud.BenefitsAWSCloudJSON;
+const cloudMigrationData = cloudMigration.CloudMigration;
 
 const AWSConsultingServices = () => {
   return (
     <div>
       <AboutSapImplementation
-        initialValue={0}
-        finalValue={15}
-        symbol="+"
-        AboutSapImplementationData={aboutAWSConsultingJSON}
+        // initialValue={0}
+        // finalValue={15}
+        // symbol="+"
+        AboutSapImplementationData={aboutAWSConsultingData}
       />
-      {/*Our cloud services include */}
-      <KeyFeatureSapImplementation
-        KeyFeatureSapImplementationData={cloudServicesJSON}
-      />
+
+      {/* Our cloud services include */}
+      <KeyFeatureSapImplementation KeyFeatureSapImplementationData={cloudServicesData} />
+
       {/* Business Benefits of Cloud Applications on AWS */}
-      <BenefitsSapImplementation
-        BenefitSapImplementationData={BenefitsAWSCloudJSON}
-      />
+      <BenefitsSapImplementation BenefitSapImplementationData={benefitsAWSCloudData} />
 
       <div className="h-20"></div>
 
-      <KeyFeatureSapImplementation
-        KeyFeatureSapImplementationData={CloudMigration}
-      />
+      {/* Cloud Migration Services */}
+      <KeyFeatureSapImplementation KeyFeatureSapImplementationData={cloudMigrationData} />
     </div>
   );
 };

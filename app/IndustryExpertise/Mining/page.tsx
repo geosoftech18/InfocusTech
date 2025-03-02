@@ -2,28 +2,35 @@ import DoorComponent from "@/components/pages/home/whatWeOffer";
 import WhyChooseUs from "@/components/pages/home/whyChooseUs";
 import KeyFeatureSapImplementation from "@/components/pages/services/sapImplementation/keyFeaturesSapImplementation";
 import ToolsAndTechnologiesWeUse from "@/components/pages/services/sapImplementation/tools&TechnologiesWeUse";
-import {aboutMining,SAPforMining,ComoditySCM,howSAPSolutionsHelp,benefitsMining} from "@/data/IndustryExpertise/mining.json"
+
+// Import JSON files using default imports
+import miningData from "@/data/IndustryExpertise/mining.json";
+
+// Extract necessary data
+const aboutMining = miningData.aboutMining;
+const SAPforMining = miningData.SAPforMining;
+const ComoditySCM = miningData.ComoditySCM;
+const howSAPSolutionsHelp = miningData.howSAPSolutionsHelp;
+const benefitsMining = miningData.benefitsMining;
 
 const Mining = () => {
-    return ( 
-        <div>
-            <WhyChooseUs whyChooseUsData={aboutMining}/>
+  return (
+    <div>
+      <WhyChooseUs whyChooseUsData={aboutMining} />
 
-            {/* comodity SCM */}
+      {/* Commodity SCM */}
+      <ToolsAndTechnologiesWeUse scroll={true} ToolsAndTechnologiesWeUseData={ComoditySCM} />
 
-            <ToolsAndTechnologiesWeUse scroll={true} ToolsAndTechnologiesWeUseData={ComoditySCM}/>
+      {/* How SAP solutions help */}
+      <DoorComponent Data={howSAPSolutionsHelp} />
 
-            {/* how SAP solutins help */}
+      <div className="h-20"></div>
 
-            <DoorComponent Data={howSAPSolutionsHelp}/>
+      <KeyFeatureSapImplementation KeyFeatureSapImplementationData={benefitsMining} />
 
-            <div className="h-20"></div>
+      <WhyChooseUs whyChooseUsData={SAPforMining} />
+    </div>
+  );
+};
 
-            <KeyFeatureSapImplementation KeyFeatureSapImplementationData={benefitsMining}/>
-
-            <WhyChooseUs whyChooseUsData={SAPforMining}/>
-        </div>
-     );
-}
- 
 export default Mining;

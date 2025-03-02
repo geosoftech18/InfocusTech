@@ -1,12 +1,15 @@
 import WhyChooseUs from "@/components/pages/home/whyChooseUs";
 import KeyFeatureSapImplementation from "@/components/pages/services/sapImplementation/keyFeaturesSapImplementation";
 import ToolsAndTechnologiesWeUse from "@/components/pages/services/sapImplementation/tools&TechnologiesWeUse";
-import {
-  aboutECO,
-  dynamicsECO,
-  challengesECO,
-  KeyFeaturesECO,
-} from "@/data/IndustryExpertise/aboutECO.json";
+
+// Import JSON files using default imports
+import aboutECODataFile from "@/data/IndustryExpertise/aboutECO.json";
+
+// Extract necessary data
+const aboutECO = aboutECODataFile.aboutECO;
+const dynamicsECO = aboutECODataFile.dynamicsECO;
+const challengesECO = aboutECODataFile.challengesECO;
+const keyFeaturesECO = aboutECODataFile.KeyFeaturesECO;
 
 const ECO = () => {
   return (
@@ -20,7 +23,7 @@ const ECO = () => {
         ToolsAndTechnologiesWeUseData={challengesECO}
       />
       <KeyFeatureSapImplementation
-        KeyFeatureSapImplementationData={KeyFeaturesECO}
+        KeyFeatureSapImplementationData={keyFeaturesECO}
       />
     </div>
   );

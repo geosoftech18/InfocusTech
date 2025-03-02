@@ -1,15 +1,14 @@
 "use client";
-import dynamic from "next/dynamic";
-
-const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
-import animationData from "@/animations/background-animation.json";
 import animationDataWhite from "@/animations/background-animation-white.json";
 import HeroCarousal from "@/components/pages/home/heroCarousal";
-import NavbarMain from "./navbar";
-import navLinksData from "@/data/navbar.json";
-import { usePathname } from "next/navigation";
 import HeroData from "@/data/hero.json";
+import navLinksData from "@/data/navbar.json";
+import dynamic from "next/dynamic";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import NavbarMain from "./navbar";
+
+const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const Animation = () => {
   const [isSticky, setIsSticky] = useState(false);

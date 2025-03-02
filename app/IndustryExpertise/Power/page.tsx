@@ -1,18 +1,21 @@
 import CustomerSuccessStory from "@/components/pages/IndustryExpertise/customerSuccessStoryComponent";
-import { CustomerSuccessStoryDataPower } from "@/data/IndustryExpertise/Power.json";
-
 import ToolsAndTechnologiesWeUse from "@/components/pages/services/sapImplementation/tools&TechnologiesWeUse";
-import { PowerBenefits } from "@/data/IndustryExpertise/PowerBenefits.json";
+
+// Import JSON files using default import
+import powerData from "@/data/IndustryExpertise/Power.json";
+import powerBenefitsData from "@/data/IndustryExpertise/PowerBenefits.json";
+
+// Extract necessary data
+const CustomerSuccessStoryDataPower = powerData.CustomerSuccessStoryDataPower;
+const PowerBenefits = powerBenefitsData.PowerBenefits;
+
 const Power = () => {
   return (
     <>
-      <CustomerSuccessStory
-        CustomerSuccessStoryData={CustomerSuccessStoryDataPower}
-      />
+      <CustomerSuccessStory CustomerSuccessStoryData={CustomerSuccessStoryDataPower} />
+
       {/* Benefits of SAP Solutions for the Energy & Utilities Sector */}
-      <ToolsAndTechnologiesWeUse
-        ToolsAndTechnologiesWeUseData={PowerBenefits}
-      />
+      <ToolsAndTechnologiesWeUse ToolsAndTechnologiesWeUseData={PowerBenefits} />
     </>
   );
 };

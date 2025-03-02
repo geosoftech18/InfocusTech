@@ -1,32 +1,42 @@
+// Import Components
 import WhyChooseUs from "@/components/pages/home/whyChooseUs";
-import { aboutUsJSON } from "@/data/Solutions/SAPSuccessFactors/about.json";
-
 import WhySAPUpgradeandMigration from "@/components/pages/services/WhySAPUpgradeandMigration";
-import { CoreHR } from "@/data/Solutions/SAPSuccessFactors/coreHR.json";
-
 import BenefitsSapImplementation from "@/components/pages/services/sapImplementation/benefitsSapImplementation";
-import { HCMSuite } from "@/data/Solutions/SAPSuccessFactors/HCMSuite.json";
-
-import { UniqueCompetitiveAdvantageJSON } from "@/data/Solutions/SAPSuccessFactors/UniqueCompetitiveAdvantage.json";
 import DoorComponent from "@/components/pages/home/whatWeOffer";
 
-import {Data} from "@/data/Solutions/SAPSuccessFactors/keyCapabilities.json"
+// Import JSON Data
+import aboutUsData from "@/data/Solutions/SAPSuccessFactors/about.json";
+import coreHRData from "@/data/Solutions/SAPSuccessFactors/coreHR.json";
+import hcmSuiteData from "@/data/Solutions/SAPSuccessFactors/HCMSuite.json";
+import uniqueCompetitiveAdvantageData from "@/data/Solutions/SAPSuccessFactors/UniqueCompetitiveAdvantage.json";
+import keyCapabilitiesData from "@/data/Solutions/SAPSuccessFactors/keyCapabilities.json";
+
+// Extract JSON Objects
+const { aboutUsJSON } = aboutUsData;
+const { CoreHR } = coreHRData;
+const { HCMSuite } = hcmSuiteData;
+const { UniqueCompetitiveAdvantageJSON } = uniqueCompetitiveAdvantageData;
+const { Data: KeyCapabilities } = keyCapabilitiesData;
 
 const SAPSuccessFactors = () => {
   return (
     <div>
+      {/* Why Choose Us */}
       <WhyChooseUs whyChooseUsData={aboutUsJSON} />
-      <WhyChooseUs
-        basis="textRight"
-        whyChooseUsData={UniqueCompetitiveAdvantageJSON}
-      />
-      {/* HCM suite */}
+      <WhyChooseUs basis="textRight" whyChooseUsData={UniqueCompetitiveAdvantageJSON} />
+
+      {/* HCM Suite */}
       <BenefitsSapImplementation BenefitSapImplementationData={HCMSuite} />
+
       <div className="h-10"></div>
+
+      {/* Core HR - SAP Upgrade & Migration */}
       <WhySAPUpgradeandMigration WhySAPUpgradeandMigrationData={CoreHR} />
+
       <div className="h-10"></div>
-        {/* Key Capabilities */}
-      <DoorComponent Data={Data}/>
+
+      {/* Key Capabilities */}
+      <DoorComponent Data={KeyCapabilities} />
     </div>
   );
 };

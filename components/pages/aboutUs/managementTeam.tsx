@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
 import Autoplay from "embla-carousel-autoplay";
-import { Facebook, Linkedin, Share2, Twitter, Youtube } from "lucide-react";
+import { Linkedin, Share2, Twitter, Youtube } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";

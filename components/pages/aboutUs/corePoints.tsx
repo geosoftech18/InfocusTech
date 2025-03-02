@@ -1,6 +1,5 @@
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import CountUp from "@/components/ui/countUp";
-import { Heart } from "lucide-react";
 import Image from "next/image";
 
 interface CorePointsInterface {

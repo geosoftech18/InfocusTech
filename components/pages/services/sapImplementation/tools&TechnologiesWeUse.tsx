@@ -1,4 +1,3 @@
-import ForcedScroll from "@/components/ui/forcedScroll";
 import { ChevronsRight } from "lucide-react";
 import Image from "next/image";
 
@@ -76,7 +75,6 @@ const TextArea: React.FC<ToolsTechnologiesWeUseProps> = ({
 
 const ImagesArea: React.FC<ToolsTechnologiesWeUseProps> = ({
   ToolsAndTechnologiesWeUseData,
-  scroll,
 }) => {
   //  ${scroll && "overflow-y-scroll no-scrollbar"}
   // const content=(

@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -8,10 +7,10 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { ChevronDownIcon } from "@heroicons/react/16/solid";
-import DropdownCTA from "./ui/dropdownCTA";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import DropdownCTA from "./ui/dropdownCTA";
 
 export interface DropDownCTAProps {
   heading: string;
@@ -33,7 +32,7 @@ interface NavbarProps {
 }
 
 const NavbarMain: React.FC<NavbarProps> = ({fixed ,NavbarProps }) => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen,] = useState(false);
 
   return (
     <NavigationMenu  className={`${fixed?"fixed bg-white z-50 shadow-md":"bg-transparent"} py-4 max-w-screen-2xl transition-all duration-300`}>

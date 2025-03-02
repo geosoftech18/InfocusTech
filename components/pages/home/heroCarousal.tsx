@@ -7,7 +7,6 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 
-import Autoplay from "embla-carousel-autoplay";
 import { Button } from "@/components/ui/button";
 
 import { type CarouselApi } from "@/components/ui/carousel";

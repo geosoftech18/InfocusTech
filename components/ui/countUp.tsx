@@ -20,13 +20,16 @@ const CountUp: React.FC<CountUpProps> = ({
   useEffect(() => {
     let i = initialValue;
     const timer = setInterval(() => {
-      setVal(i++);
-      if (i > finalValue) {
+      setVal((prev) => (prev < finalValue ? prev + 1 : prev));
+      if (i >= finalValue) {
         clearInterval(timer);
       }
+      i++;
     }, timeJump);
+
     return () => clearInterval(timer);
-  }, []);
+  }, [initialValue, finalValue, timeJump]);
+  
   return (
     <div className="text-3xl flex items-center justify-center gap-0 font-bold">
       <div>{val}</div> <div>{symbol}</div>

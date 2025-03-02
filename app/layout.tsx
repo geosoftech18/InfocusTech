@@ -1,13 +1,10 @@
 
+import Animation from "@/components/animation";
+import Container from "@/components/container";
+import Footer from "@/components/footer";
+import FooterData from "@/data/footer.json";
 import type { Metadata } from "next";
 import "./globals.css";
-import NavbarMain from "@/components/navbar";
-import navLinksData from "@/data/navbar.json";
-import Container from "@/components/container";
-import { usePathname } from "next/navigation";
-import Animation from "@/components/animation";
-import Footer from "@/components/footer";
-import {FooterData} from "@/data/footer.json"
 
 
 
@@ -23,7 +20,8 @@ export default function RootLayout({
 }>) {
   
 
-  const navLinks = navLinksData.navLinks;
+  const FooterJSON=FooterData.FooterData
+
   
   return (
     <html lang="en">
@@ -35,7 +33,7 @@ export default function RootLayout({
           {/* </AnimationProvider> */}
           <Animation/>
           {children}
-          <Footer FooterData={FooterData}/>
+          <Footer FooterData={FooterJSON}/>
         </Container>
       </body>
     </html>
