@@ -92,9 +92,7 @@ const WhySAPUpgradeandMigration: React.FC<WhySAPUpgradeandMigrationProps> = ({
           ))}
         </div>
         {/* buttons/CTA */}
-        <div>
-          <Button className="bg-[#b00d07]">Read More</Button>
-        </div>
+        <Button className="bg-[#b00d07] w-full">Read More</Button>
       </div>
     </div>
   );

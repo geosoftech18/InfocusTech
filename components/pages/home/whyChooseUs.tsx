@@ -34,23 +34,27 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
 
           <div className="flex items-start justify-center flex-col gap-4 col-span-1">
             {/* <div className="font-bold">Why Choose Us</div> */}
-            <div className="text-3xl font-semibold  ">
+            <div className="text-2xl font-semibold  ">
               {whyChooseUsData.heading}
             </div>
-            <div className="text-justify tracking-tighter w-11/12 font-semibold text-gray-600">
+            <div className="text-justify tracking-tighter  font-semibold text-gray-600">
               {whyChooseUsData.description}
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 text-left border-y-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 text-left w-full border-y-2">
               {whyChooseUsData.bulletPoints.map((item, index) => (
                 <div className="col-span-1 p-2" key={index}>
                   <div className="flex items-center gap-2 justify-start">
                     <CheckBadgeIcon className="h-5 w-5" />
-                    <div className="">{item.title}</div>
+                    <div className="text-sm">{item.title}</div>
                   </div>
                 </div>
               ))}
             </div>
-            <Button variant={"default"} size={"lg"}>
+            <Button
+              className="w-full flex items-center justify-center"
+              variant={"default"}
+              size={"lg"}
+            >
               Learn More
             </Button>
           </div>
@@ -60,23 +64,28 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
         <>
           <div className="flex items-start justify-center flex-col gap-4 col-span-1">
             {/* <div className="font-bold">Why Choose Us</div> */}
-            <div className="text-4xl font-semibold  ">
+            <div className="text-2xl font-semibold  ">
               {whyChooseUsData.heading}
             </div>
-            <div className="text-justify tracking-tighter w-11/12 font-semibold text-gray-600">
+            <div className="text-justify tracking-tighter font-semibold text-gray-600">
               {whyChooseUsData.description}
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 text-left border-y-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 text-left w-full border-y-2">
               {whyChooseUsData.bulletPoints.map((item, index) => (
                 <div className="col-span-1 p-2" key={index}>
                   <div className="flex items-center gap-2 justify-start">
                     <CheckBadgeIcon className="h-5 w-5" />
-                    <div className="">{item.title}</div>
+                    <div className="text-sm">{item.title}</div>
                   </div>
                 </div>
               ))}
             </div>
-            <Button variant={"default"} size={"lg"}>
+
+            <Button
+              className="w-full flex items-center justify-center"
+              variant={"default"}
+              size={"lg"}
+            >
               Learn More
             </Button>
           </div>

@@ -67,7 +67,7 @@ const AboutSapImplementation: React.FC<AboutSapImplementationProps> = ({
             </div>
           ))}
         </div>
-        <Button variant={"default"} size={"lg"}>
+        <Button className="w-full" variant={"default"} size={"lg"}>
           Learn More
         </Button>
       </div>

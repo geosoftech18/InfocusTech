@@ -131,32 +131,27 @@ const DoorComponent: React.FC<DoorComponentProps> = ({ Data }) => {
                     <div className="text-xl font-semibold">{item.name}</div>
                   </div>
                 </CardTitle>
-                <CardContent
-                  className={`font-normal text-gray-600 text-sm w-full px-0 ${
-                    expandedDescriptions[index]
-                      ? "overflow-y-scroll no-scrollbar"
-                      : ""
-                  }`}
-                >
-                  {/* Show truncated text when not expanded */}
-                  {!expandedDescriptions[index] ? (
-                    <>
-                      {item.description.slice(0, 150)}...
-                      <button
-                        onClick={() => toggleReadMore(index)}
-                        className="text-sm text-black hover:text-blue-500 ml-1 hover:underline"
-                      >
-                        Read more
-                      </button>
-                    </>
-                  ) : (
+                <CardContent className="text-sm text-gray-600 w-full px-0">
+                  {item.description.length < 150 ? (
+                    item.description
+                  ) : expandedDescriptions[index] ? (
                     <>
                       {item.description}
                       <button
                         onClick={() => toggleReadMore(index)}
-                        className="text-sm text-black hover:text-blue-500 ml-1 hover:underline"
+                        className="ml-1 text-black hover:text-blue-500 hover:underline"
                       >
                         Read less
+                      </button>
+                    </>
+                  ) : (
+                    <>
+                      {item.description.slice(0, 150)}...
+                      <button
+                        onClick={() => toggleReadMore(index)}
+                        className="ml-1 text-black hover:text-blue-500 hover:underline"
+                      >
+                        Read more
                       </button>
                     </>
                   )}

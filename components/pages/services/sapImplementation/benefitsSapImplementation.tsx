@@ -75,9 +75,9 @@ const BenefitsSapImplementation: React.FC<BenefitsSapImplementationProps> = ({
                     src={item.imagePath}
                     className=" h-1/3 w-1/3"
                   />
-                  <div className="flex items-center justify-between gap-4 flex-col h-3/4">
+                  <div className="flex items-center justify-between gap-4 py-2 flex-col h-5/6">
                     <div className="">{item.name}</div>
-                    <div className="text-gray-600 text-lg font-normal text-center">
+                    <div className="text-gray-600 overflow-y-scroll no-scrollbar flex items-start justify-center h-full text-xs md:text-sm font-normal text-center">
                       {item.description}
                     </div>
                   </div>
