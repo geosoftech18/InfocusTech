@@ -35,7 +35,7 @@ const NavbarMain: React.FC<NavbarProps> = ({fixed ,NavbarProps }) => {
   const [isMobileMenuOpen,] = useState(false);
 
   return (
-    <NavigationMenu  className={`${fixed?"fixed bg-white z-50 shadow-md":"bg-transparent"} py-4 max-w-screen-2xl transition-all duration-300`}>
+    <NavigationMenu  className={`${fixed?"fixed bg-white z-50 shadow-md":"bg-transparent"} py-4 transition-all duration-300`}>
       <NavigationMenuList className="flex items-center gap-2 md:gap-6">
         {/* Logo */}
         <NavigationMenuItem className="z-20">
