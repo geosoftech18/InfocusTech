@@ -1,58 +1,57 @@
 {
-    "collaborativeSourcing": {
+  "collaborativeSourcing": {
       "tag": "SAP Collaborative Sourcing and Contract Management Solutions",
       "keyFeatures": [
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Automated Contract Creation",
-          "description": "Automates the contract creation cycle, from draft to reviews and approvals."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Contract Authoring Tools",
-          "description": "Includes clause libraries and conditional templates for seamless contract creation."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Centralized Contract Repository",
-          "description": "Creates a contract repository with access-controlled search and reporting."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Audit Trail & Compliance",
-          "description": "Maintains an audit trail for internal, external, and regulatory requirements."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Integrated Source-to-Contract Process",
-          "description": "Provides deep, bidirectional integration within the source-to-contract process."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Expiry & Renewal Management",
-          "description": "Includes expiry notifications for improved contract renewal management."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Task-Driven Notifications",
-          "description": "Centralized electronic task-driven notification alerts for contract management."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "On-Demand Deployment",
-          "description": "Enables rapid time to value with on-demand deployment for flexibility."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "Microsoft Word Integration",
-          "description": "Supports Microsoft Word integration for streamlined contract editing."
-        },
-        {
-          "imagePath": "/Industry-Wise Expertise/Iron & Steel.png",
-          "title": "eSignature Integration",
-          "description": "Integrates with leading eSignature providers like DocuSign and Adobe EchoSign."
-        }
+          {
+              "imagePath": "/Solutions/SAPSRMAriba/SAP Collaborative Sourcing and Contract Management Solutions/Automates the contract creation cycle, from draft to reviews and approvals.png",
+              "title": "Automated Contract Creation",
+              "description": "Automates the contract creation cycle, from draft to reviews and approvals."
+          },
+          {
+              "imagePath": "/Solutions/SAPSRMAriba/SAP Collaborative Sourcing and Contract Management Solutions/Contract authoring tools, including clause libraries and conditional templates.png",
+              "title": "Contract Authoring Tools",
+              "description": "Includes clause libraries and conditional templates for seamless contract creation."
+          },
+          {
+              "imagePath": "/Solutions/SAPSRMAriba/SAP Collaborative Sourcing and Contract Management Solutions/Creates a contract repository with access-controlled search and reporting.png",
+              "title": "Centralized Contract Repository",
+              "description": "Creates a contract repository with access-controlled search and reporting."
+          },
+          {
+              "imagePath": "/Solutions/SAPSRMAriba/SAP Collaborative Sourcing and Contract Management Solutions/Audit trail for internal, external and regulatory requirements.png",
+              "title": "Audit Trail & Compliance",
+              "description": "Maintains an audit trail for internal, external, and regulatory requirements."
+          },
+          {
+              "imagePath": "/Solutions/SAPSRMAriba/SAP Collaborative Sourcing and Contract Management Solutions/Deep, bidirectional integration within the source-to-contract process.png",
+              "title": "Integrated Source-to-Contract Process",
+              "description": "Provides deep, bidirectional integration within the source-to-contract process."
+          },
+          {
+              "imagePath": "/Solutions/SAPSRMAriba/SAP Collaborative Sourcing and Contract Management Solutions/Expiry notification for improved renewal management.png",
+              "title": "Expiry & Renewal Management",
+              "description": "Includes expiry notifications for improved contract renewal management."
+          },
+          {
+              "imagePath": "/Solutions/SAPSRMAriba/SAP Collaborative Sourcing and Contract Management Solutions/Centralized electronic task-driven notification alerts.png",
+              "title": "Task-Driven Notifications",
+              "description": "Centralized electronic task-driven notification alerts for contract management."
+          },
+          {
+              "imagePath": "/Solutions/SAPSRMAriba/SAP Collaborative Sourcing and Contract Management Solutions/Rapid time to value with on-demand deployment.png",
+              "title": "On-Demand Deployment",
+              "description": "Enables rapid time to value with on-demand deployment for flexibility."
+          },
+          {
+              "imagePath": "/Solutions/SAPSRMAriba/SAP Collaborative Sourcing and Contract Management Solutions/Microsoft Word integration.png",
+              "title": "Microsoft Word Integration",
+              "description": "Supports Microsoft Word integration for streamlined contract editing."
+          },
+          {
+              "imagePath": "/Solutions/SAPSRMAriba/SAP Collaborative Sourcing and Contract Management Solutions/Integration to leading eSignature providers – DocuSign and Adobe EchoSign.png",
+              "title": "eSignature Integration",
+              "description": "Integrates with leading eSignature providers like DocuSign and Adobe EchoSign."
+          }
       ]
-    }
   }
-  
+}

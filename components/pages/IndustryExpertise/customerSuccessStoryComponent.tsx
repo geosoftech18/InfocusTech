@@ -36,7 +36,7 @@ const CustomerSuccessStory: React.FC<CustomerSuccessStoryProps> = ({
   CustomerSuccessStoryData,
 }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-20 p-20 ">
+    <div className="flex flex-col items-center justify-center gap-20 py-20 md:mx-40">
       <HeadingComponent
         tag={CustomerSuccessStoryData.tag}
         title={CustomerSuccessStoryData.title}
@@ -62,7 +62,7 @@ const HeadingComponent: React.FC<HeadingComponentProps> = ({
         <div className="text-4xl font-semibold w-9/12">{title}</div>
       </div>
       {/* right part */}
-      <div className="text-gray-600 text-md text-justify h-full flex items-center pr-10 justify-center">
+      <div className="text-gray-600 text-md text-justify h-full flex items-start pr-10 justify-center">
         {description}
       </div>
     </div>

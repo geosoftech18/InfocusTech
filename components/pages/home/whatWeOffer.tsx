@@ -19,6 +19,7 @@ interface DoorComponentProps {
   Data: {
     tag: string;
     heading: string;
+    subheading?: string;
     description: string;
     items: {
       name: string;
@@ -62,7 +63,15 @@ const DoorComponent: React.FC<DoorComponentProps> = ({ Data }) => {
         {/* top left heading */}
         <div className="flex flex-col items-start justify-center gap-10">
           <div className="font-semibold">{Data.tag}</div>
+          <div className="flex flex-col gap-2">
+
           <div className="text-3xl w-96 font-semibold">{Data.heading}</div>
+          {Data.subheading && (
+            <div className="text-2xl w-96 text-gray-600 font-semibold">
+              {Data.subheading}
+            </div>
+          )}
+          </div>
         </div>
         {/* top right content and button */}
         <div className="flex flex-col lg:flex-row items-center text-justify justify-center lg:justify-end gap-10">
@@ -103,22 +112,20 @@ const DoorComponent: React.FC<DoorComponentProps> = ({ Data }) => {
                   toggleDoor(index);
                 }}
               >
-                {
-                  !expandedDescriptions[index]?(
-                    <Button
-                      variant={"default"}
-                      className={`rounded-full z-50 p-6 absolute bottom-2 right-2 shadow-lg ${
-                        openCards[index]
-                          ? "bg-black text-white"
-                          : "bg-transparent border border-1 text-black "
-                      }`}
-                    >
-                      <ArrowRight className="h-5 w-2" />
-                    </Button>
-                  ):(
-                    <div className="hidden"></div>
-                  )
-                }
+                {!expandedDescriptions[index] ? (
+                  <Button
+                    variant={"default"}
+                    className={`rounded-full z-50 p-6 absolute bottom-2 right-2 shadow-lg ${
+                      openCards[index]
+                        ? "bg-black text-white"
+                        : "bg-transparent border border-1 text-black "
+                    }`}
+                  >
+                    <ArrowRight className="h-5 w-2" />
+                  </Button>
+                ) : (
+                  <div className="hidden"></div>
+                )}
                 <CardTitle className=" flex items-start justify-center flex-col">
                   <div className="  flex flex-col gap-2 text-gray-900">
                     <Image
@@ -131,7 +138,7 @@ const DoorComponent: React.FC<DoorComponentProps> = ({ Data }) => {
                     <div className="text-xl font-semibold">{item.name}</div>
                   </div>
                 </CardTitle>
-                <CardContent className="text-sm text-gray-600 w-full px-0">
+                <CardContent className="text-sm text-gray-600 overflow-y-scroll no-scrollbar mb-2 w-full px-0">
                   {item.description.length < 150 ? (
                     item.description
                   ) : expandedDescriptions[index] ? (
