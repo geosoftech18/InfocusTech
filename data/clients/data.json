@@ -1,0 +1,144 @@
+{
+    "domesticClients": [
+        {
+            "name": "Chloride Exide",
+            "title": "SAP All Module Implementation",
+            "description": "Implementation of SAP all modules - FI, CO, MM, PP, SD in 6 months time frame, with 50 custom enhancements.",
+            "imagePath": "/clients/domestic/Chloride Exide.png"
+        },
+        {
+            "name": "Jindal Stainless",
+            "title": "Comprehensive SAP Implementation and Reporting",
+            "description": "Implemented SAP core modules for Jindal Stainless, including localization for their Spain plant, SEZ implementation in Jajpur, Orissa, and Forex reporting solutions to enhance treasury efficiency.",
+            "imagePath": "/clients/domestic/Jindal Stainless.png"
+        },
+        {
+            "name": "Exide Industries Limited",
+            "title": "SAP Process Automation & HR Integration",
+            "description": "Implemented SAP PI with SAP ECC for dealers commission payment through secured payment gateway and interfaced with Bank automatically. Also implemented depreciation revamp based on the new Companies Act and integrated travel management with SAP HR.",
+            "imagePath": "/clients/domestic/Exide Industries Limited.png"
+        },
+        {
+            "name": "Tractors India",
+            "title": "SAP Full Module Support",
+            "description": "Providing full support on all modules like FICO, MM, ABAP, CRM, BI, Basis, and helping in stabilizing their SAP implementation.",
+            "imagePath": "/clients/domestic/Tractors India.png"
+        },
+        {
+            "name": "Thriveni",
+            "title": "SAP Support Services",
+            "description": "Providing complete SAP support in FICO, Basis, ABAP, and SD processes for their mines in Orissa.",
+            "imagePath": "/clients/domestic/Thriveni.png"
+        },
+        {
+            "name": "Tega",
+            "title": "SAP Automation & Support",
+            "description": "Implemented automatic payment process along with Bank integration and providing SAP support services.",
+            "imagePath": "/clients/domestic/Tega.png"
+        },
+        {
+            "name": "TRF Limited",
+            "title": "Annual SAP Maintenance & Support",
+            "description": "Providing end-to-end onsite support for complete SAP infrastructure, including SAP Solution Manager help desk management.",
+            "imagePath": "/clients/domestic/TRF Limited.png"
+        },
+        {
+            "name": "Ambuja Neotia",
+            "title": "ABAP Implementation & Consulting",
+            "description": "Providing ABAP development and consulting services for SAP implementation and assisting in implementation handholding and rollout.",
+            "imagePath": "/clients/domestic/Ambuja Neotia.png"
+        },
+        {
+            "name": "Amrit",
+            "title": "SAP Stabilization & Enhancement",
+            "description": "Providing complete SAP stabilization, enhancement, and support services post SAP implementation.",
+            "imagePath": "/clients/domestic/Amrit.png"
+        },
+        {
+            "name": "Chembiotech",
+            "title": "SAP Integration & Process Automation",
+            "description": "Seamless integration of Procurement (MM) between non-SAP and SAP systems, integrating Material Master and Vendor Master Data to reduce duplication.",
+            "imagePath": "/clients/domestic/Chembiotech.png"
+        },
+        {
+            "name": "Century Ply",
+            "title": "SAP Support & Funds Management",
+            "description": "Providing SAP support services since 2010 and implementing SAP Funds Management for financial budgeting.",
+            "imagePath": "/clients/domestic/Century Ply.png"
+        },
+        {
+            "name": "Adhunik Group",
+            "title": "SAP Implementation & Support",
+            "description": "Providing SAP Implementation and support for Power, Mining, and Steel Plants in Jamshedpur and Rourkela.",
+            "imagePath": "/clients/domestic/Adhunik Group.png"
+        },
+        {
+            "name": "Linde",
+            "title": "SAP Financial Consolidation & Rollout",
+            "description": "Implementing SAP ECC 6 in India, Pakistan, and Bangladesh, along with financial consolidation and production planning for Singapore office.",
+            "imagePath": "/clients/domestic/Linde.png"
+        },
+        {
+            "name": "Caterpillar",
+            "title": "SAP Support Services",
+            "description": "Providing SAP FI support services since 2012 in Kolkata operations.",
+            "imagePath": "/clients/domestic/Caterpillar.png"
+        },
+        {
+            "name": "Visa Steel",
+            "title": "SAP Post Implementation Support",
+            "description": "Providing enhancements in FICO, SD, and ABAP at Kalinganagar Plant.",
+            "imagePath": "/clients/domestic/Visa Steel.png"
+        },
+        {
+            "name": "Votorantim",
+            "title": "GST Migration",
+            "description": "Providing SAP support for GST migration.",
+            "imagePath": "/clients/domestic/Votorantim.png"
+        },
+        {
+            "name": "Shyam Steel",
+            "title": "SAP Upgrade & HANA Migration",
+            "description": "Upgrading SAP system environment and facilitating HANA migration.",
+            "imagePath": "/clients/domestic/Shyam Steel.png"
+        },
+        {
+            "name": "Krishna",
+            "title": "SAP Implementation & Support",
+            "description": "Providing SAP implementation and support for MM, SD, and FICO modules.",
+            "imagePath": "/clients/domestic/Krishna.png"
+        },
+        {
+            "name": "Birla Tyres",
+            "title": "SAP Post Implementation Support",
+            "description": "Providing post-implementation support in MM, SD, and FICO modules.",
+            "imagePath": "/clients/domestic/Birla Tyres.png"
+        }
+    ],
+    "internationalClients": [
+        {
+            "name": "CLP",
+            "title": "SAP Treasury Module Advisory & Training",
+            "description": "Provided advisory and training for the SAP Treasury Module along with the core team of the organization.",
+            "imagePath": "/clients/international/CLP.png"
+        },
+        {
+            "name": "Isolux Corsani",
+            "title": "SAP Rollout Support",
+            "description": "Supported the rollout of SAP in Bangladesh.",
+            "imagePath": "/clients/international/Isolux Corsani.png"
+        },
+        {
+            "name": "African Development Bank",
+            "title": "SAP Process Integration & Bank Communication Management",
+            "description": "Recommended best approaches for SAP NetWeaver PI to enable platform interoperability and configured the BCM module with quality testing for interfaces.",
+            "imagePath": "/clients/international/African Development Bank.png"
+        },
+        {
+            "name": "Islamic Development Bank",
+            "title": "Advisory Role in SAP Funds Management Implementation",
+            "description": "Analyzed the AS-IS process and implemented fund management to monitor budgetary controls, expenditures, system-based controls, and audit trails.",
+            "imagePath": "/clients/international/Islamic Development Bank.png"
+        }
+    ]
+}

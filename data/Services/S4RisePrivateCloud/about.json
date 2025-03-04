@@ -1,0 +1,85 @@
+{
+    "Data": {
+        "heading": "S/4HANA Rise Private Cloud",
+        "description": "SAP’s RISE with SAP S/4HANA Private Cloud is a game-changing offering designed to accelerate businesses toward digital transformation. It provides organizations with a fully managed, cloud-based ERP system tailored for scalability, security, and performance.",
+        "bulletPoints": [
+            {
+                "title": "Fully Managed Cloud Environment "
+            },
+            {
+                "title": "Customization and Flexibility "
+            },
+            {
+                "title": "Seamless Integration with SAP and Third-Party Applications "
+            },
+            {
+                "title": "Scalability and Performance Optimization    "
+            }
+        ]
+    },
+    "keyFeatures": {
+        "tag": "Key Features and Benefits",
+        "keyFeatures": [
+            {
+                "imagePath": "/Services/risePrivateCloud/Key Features and Benefits_3/Fully Managed Cloud Environment.png",
+                "title": "Fully Managed Cloud Environment",
+                "description": "A single, comprehensive solution for enterprises looking to move their ERP to the cloud without managing infrastructure. SAP manages security, updates, and compliance, reducing the IT burden."
+            },
+            {
+                "imagePath": "/Services/risePrivateCloud/Key Features and Benefits_3/Customization and Flexibility.png",
+                "title": "Customization and Flexibility",
+                "description": "Unlike  cloud solutions, the private cloud allows businesses to retain greater control over configurations and integrations. Supports industry-specific extensions and custom ABAP developments."
+            },
+            {
+                "imagePath": "/Services/risePrivateCloud/Key Features and Benefits_3/Seamless Integration with SAP and Third-Party Applications.png",
+                "title": "Seamless Integration with SAP and Third-Party Applications",
+                "description": "Connects with SAP BTP (Business Technology Platform) for enhanced analytics, AI, and automation. Easily integrates with third-party applications to streamline business processes."
+            },
+            {
+                "imagePath": "/Services/risePrivateCloud/Key Features and Benefits_3/Scalability and Performance Optimization (2).png",
+                "title": "Scalability and Performance Optimization",
+                "description": "Supports high-performance workloads while ensuring seamless upgrades and performance tuning. Flexible resource allocation helps businesses scale as they grow."
+            }
+        ]
+    },
+    "why": {
+        "tag": "Why Choose S/4HANA Rise Private Cloud?",
+        "benefits": [
+            {
+                "imagePath": "/Services/risePrivateCloud/Why Choose S4HANA Rise Public Cloud/Faster cloud adoption.png",
+                "name": "Faster Cloud Adoption",
+                "description": "Faster cloud adoption with SAP’s expertise and managed services."
+            },
+            {
+                "imagePath": "/Services/risePrivateCloud/Why Choose S4HANA Rise Public Cloud/Lower total cost of ownership (TCO).png",
+                "name": "Lower Total Cost of Ownership (TCO)",
+                "description": "Lower total cost of ownership (TCO) compared to traditional on-premise solutions."
+            },
+            {
+                "imagePath": "/Services/risePrivateCloud/Why Choose S4HANA Rise Public Cloud/Continuous innovation.png",
+                "name": "Enhanced Security and Compliance",
+                "description": "Enhanced security and compliance with SAP’s built-in cloud security measures."
+            }
+        ]
+    },
+    "useCases": {
+        "tag": "Use Cases for Enterprises",
+        "keyFeatures": [
+            {
+                "imagePath": "/Services/risePrivateCloud/Use Cases for Growing Businesses/Manufacturing.png",
+                "title": "Manufacturing",
+                "description": "Streamline supply chain management with real-time inventory tracking."
+            },
+            {
+                "imagePath": "/Services/risePrivateCloud/Use Cases for Growing Businesses/Finance.png",
+                "title": "Finance",
+                "description": "Automate financial operations and ensure regulatory compliance."
+            },
+            {
+                "imagePath": "/Services/risePrivateCloud/Use Cases for Growing Businesses/Retail.png",
+                "title": "Retail",
+                "description": "Improve customer experience with integrated CRM and e-commerce solutions."
+            }
+        ]
+    }
+}

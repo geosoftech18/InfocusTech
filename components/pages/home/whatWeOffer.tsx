@@ -59,7 +59,7 @@ const DoorComponent: React.FC<DoorComponentProps> = ({ Data }) => {
 
   return (
     <div className="bg-gray-300 px-10 lg:px-40 mb-40 lg:mb-20">
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-10 pt-10 lg:pt-20">
+      <div className="flex flex-col items-start xl:flex-row xl:items-center justify-between gap-10 pt-10 lg:pt-20">
         {/* top left heading */}
         <div className="flex flex-col items-start justify-center gap-10">
           <div className="font-semibold">{Data.tag}</div>

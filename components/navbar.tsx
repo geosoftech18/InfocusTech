@@ -36,7 +36,7 @@ const NavbarMain: React.FC<NavbarProps> = ({fixed ,NavbarProps }) => {
 
   return (
     <NavigationMenu  className={`${fixed?"fixed bg-white z-50 shadow-md":"bg-transparent"} py-4 transition-all duration-300`}>
-      <NavigationMenuList className="flex items-center gap-2 md:gap-6">
+      <NavigationMenuList className="flex items-center gap-2 lg:gap-6">
         {/* Logo */}
         <NavigationMenuItem className="z-20">
           <div className={`text-black  font-extrabold text-2xl ${fixed?'':'bg-white p-2 rounded-md'}`}>
@@ -45,7 +45,7 @@ const NavbarMain: React.FC<NavbarProps> = ({fixed ,NavbarProps }) => {
               alt="Logo"
               height={1000}
               width={1000}
-              className="h-10 w-40"
+              className="h-5 xl:h-10 w-20 xl:w-40 "
             />
           </div>
         </NavigationMenuItem>
@@ -58,7 +58,7 @@ const NavbarMain: React.FC<NavbarProps> = ({fixed ,NavbarProps }) => {
               <NavigationMenuLink asChild>
                 <Link
                   href={`/${link.name.toLowerCase().replace(/\s+/g, "")}`}
-                  className={`block py-2  ${fixed?'text-black':'text-white'} text-xs md:text-sm font-semibold hover:text-red-600 transition`}
+                  className={`block py-2  ${fixed?'text-black':'text-white'} text-xs xl:text-sm font-semibold hover:text-red-600 transition`}
                 >
                   {link.name}
                 </Link>
@@ -68,11 +68,11 @@ const NavbarMain: React.FC<NavbarProps> = ({fixed ,NavbarProps }) => {
             {/* Dropdown Menu */}
             {link.dropdownList && (
               <>
-                <NavigationMenuTrigger className={`font-semibold ${fixed?'text-black':'text-white'} text-xs md:text-sm bg-transparent hover:text-red-600 hover:bg-transparent transition duration-300`}>
+                <NavigationMenuTrigger className={`font-semibold ${fixed?'text-black':'text-white'} text-xs xl:text-sm bg-transparent px-1 hover:text-red-600 hover:bg-transparent transition duration-300`}>
                   {link.name}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 md:gap-5 w-[60vw] p-5">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-5 w-[60vw] p-5">
                     {/* CTA Section (If Available) */}
                     {link.dropdownCTA && !isMobileMenuOpen && (
                       <DropdownCTA
@@ -96,7 +96,7 @@ const NavbarMain: React.FC<NavbarProps> = ({fixed ,NavbarProps }) => {
                           href={`/${link.name}/${label.replace(/\s+/g, "")}`}
                           className="col-span-1 flex justify-center items-center p-2 shadow-md hover:scale-105 transition-all duration-500 w-full"
                         >
-                          <span className="text-md w-full font-semibold">
+                          <span className="text-xs xl:text-sm  w-full font-semibold">
                             {label}
                           </span>
                         </Link>

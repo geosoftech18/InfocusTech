@@ -36,7 +36,7 @@ const CustomerSuccessStory: React.FC<CustomerSuccessStoryProps> = ({
   CustomerSuccessStoryData,
 }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-20 py-20 md:mx-40">
+    <div className="flex flex-col items-center justify-center gap-20 py-20 mx-20 xl:mx-40">
       <HeadingComponent
         tag={CustomerSuccessStoryData.tag}
         title={CustomerSuccessStoryData.title}
@@ -73,8 +73,8 @@ const SelectComponent: React.FC<SelectComponentProps> = ({ items }) => {
   const [activeItem, setActiveItem] = useState(0);
 
   return (
-    <div className=" grid grid-cols-12 gap-20 w-full rounded-[50px] bg-black pl-10 max-h-screen" >
-      <div className="flex flex-col gap-10 items-center justify-start col-span-4 py-10 max-h-[80vh] overflow-y-scroll no-scrollbar">
+    <div className=" grid grid-cols-12 gap-20 w-full rounded-[50px] bg-black pl-10 max-h-[70vh]" >
+      <div className="flex flex-col gap-10 items-center justify-start col-span-4 py-10 max-h-[70vh] overflow-y-scroll no-scrollbar">
         {items.map((item, index) => (
           <div
             className={`text-white ${
@@ -92,7 +92,7 @@ const SelectComponent: React.FC<SelectComponentProps> = ({ items }) => {
           </div>
         ))}
       </div>
-      <div className=" border rounded-[50px] col-span-8 bg-gray-200 flex flex-col p-20 items-start justify-center gap-10">
+      <div className=" border rounded-[50px] col-span-8 bg-gray-200 flex flex-col p-5 xl:px-20 xl:py-10 items-start justify-start gap-10 max-h-[70vh] overflow-y-scroll no-scrollbar">
         {typeof items[activeItem].content === "string" ? (
           <div className="relative flex items-center justify-center h-full">
             <Quote className="h-10 w-10 absolute top-2 left-2" />
@@ -105,7 +105,7 @@ const SelectComponent: React.FC<SelectComponentProps> = ({ items }) => {
           items[activeItem].content.map((item, index) => (
             <div
               key={index}
-              className="p-2 border-b last:border-b-0 flex items-center justify-around"
+              className="p-2 border-b last:border-b-0 flex items-center justify-around w-full"
             >
               <CheckCircle className="h-5 w-5 bg-[#b00d07] text-white rounded-full" />
 

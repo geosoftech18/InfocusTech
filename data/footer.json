@@ -64,40 +64,52 @@
             {
                 "title": "Services",
                 "links": [
-                    {
-                        "label": "SAP Implementation",
-                        "href": "/Services/SAPImplementation"
-                    },
-                    {
-                        "label": "SAP Maintenance and Support",
-                        "href": "/Services/SAPMaintenanceandSupport"
-                    },
-                    {
-                        "label": "SAP Upgrade and Migration",
-                        "href": "/Services/SAPUpgradeandMigration"
-                    },
-                    {
-                        "label": "AWS Consulting Services",
-                        "href": "/Services/AWSConsultingServices"
-                    },
-                    {
-                        "label": "SAP Auditing and Testing Services",
-                        "href": "/Services/SAPAuditingandTestingServices"
-                    },
-                    {
-                        "label": "Custom Software Development",
-                        "href": "/Services/CustomSoftwareDevelopment"
-                    },
-                    {
-                        "label": "Resource Consulting",
-                        "href": "/Services/ResourceConsulting"
-                    },
-                    {
-                        "label": "ERP Corporate Training",
-                        "href": "/Services/ERPCorporateTraining"
-                    }
+                  {
+                    "label": "SAP Implementation",
+                    "href": "/Services/SAPImplementation"
+                  },
+                  {
+                    "label": "SAP Maintenance and Support",
+                    "href": "/Services/SAPMaintenanceandSupport"
+                  },
+                  {
+                    "label": "SAP Upgrade and Migration",
+                    "href": "/Services/SAPUpgradeandMigration"
+                  },
+                  {
+                    "label": "AWS Consulting Services",
+                    "href": "/Services/AWSConsultingServices"
+                  },
+                  {
+                    "label": "SAP Auditing and Testing Services",
+                    "href": "/Services/SAPAuditingandTestingServices"
+                  },
+                  {
+                    "label": "Custom Software Development",
+                    "href": "/Services/CustomSoftwareDevelopment"
+                  },
+                  {
+                    "label": "Resource Consulting",
+                    "href": "/Services/ResourceConsulting"
+                  },
+                  {
+                    "label": "ERP Corporate Training",
+                    "href": "/Services/ERPCorporateTraining"
+                  },
+                  {
+                    "label": "S4 Rise Private Cloud",
+                    "href": "/Services/S4RisePrivateCloud"
+                  },
+                  {
+                    "label": "S4 Rise Public Cloud",
+                    "href": "/Services/S4RisePublicCloud"
+                  },
+                  {
+                    "label": "Grow with SAP",
+                    "href": "/Services/GrowwithSAP"
+                  }
                 ]
-            },
+              },
             {
                 "title": "Industry Expertise",
                 "links": [

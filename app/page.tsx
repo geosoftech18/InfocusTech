@@ -12,6 +12,7 @@ import FAQdata from "@/data/faqs.json";
 import industriesWeServeData from "@/data/industriesWeServe.json";
 import whatWeOfferData from "@/data/whatWeOffer.json";
 import whyChooseUsData from "@/data/whyChooseUs.json";
+import clientsData from "@/data/clients/data.json"
 
 
 
@@ -23,7 +24,7 @@ export default function Home() {
   const whyChooseUsJSON = whyChooseUsData.whyChooseUsJSON
   const whatWeOfferJSON = whatWeOfferData.whatWeOfferJSON
   const industriesWeServeJSON = industriesWeServeData.industriesWeServeJSON
-  
+  const {domesticClients,internationalClients} = clientsData
 
   return (
     <div>
@@ -33,7 +34,7 @@ export default function Home() {
       <WhatWeOffer Data={whatWeOfferJSON}/>
       <IndustriesWeServe industriesWeServeData={industriesWeServeJSON}/>
       <Testimonial />
-      <Clients />
+      <Clients domesticClients={domesticClients} internationalClients={internationalClients} />
       <FAQs FAQData={FAQsdata} />
     </div>
   );

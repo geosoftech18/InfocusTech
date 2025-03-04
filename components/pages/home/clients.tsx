@@ -9,9 +9,27 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 import React from "react";
 
-const Clients = () => {
+interface client{
+  name:string,
+  imagePath:string,
+  title:string,
+  description:string
+}
+
+interface ClientsProps{
+  domesticClients:client[],
+  internationalClients:client[]
+}
+const Clients:React.FC<ClientsProps> = ({
+  domesticClients,
+  internationalClients
+}) => {
+
+  const clientsCombined = [...domesticClients, ...internationalClients];
+
 
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
@@ -52,12 +70,12 @@ const Clients = () => {
           </div>
         </div>
         <CarouselContent>
-          {Array.from({ length: 10 }).map((_, index) => (
+          {clientsCombined.map((item, index) => (
             <CarouselItem key={index} className="basis-1/2 md:basis-1/4 lg:basis-1/6">
               <div className="p-1">
                 <Card>
-                  <CardContent className="flex aspect-video items-center justify-center p-6">
-                    <span className="text-3xl font-semibold">{index + 1}</span>
+                  <CardContent className="flex aspect-video items-center justify-center p-2">
+                    <Image src={item.imagePath} alt="" width={1000} height={1000  } className="max-h-full"/>
                   </CardContent>
                 </Card>
               </div>

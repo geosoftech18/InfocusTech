@@ -9,6 +9,7 @@ import aboutUsDataFile from "@/data/aboutUs.json";
 import corePointsDataFile from "@/data/AboutUs/corePoints.json";
 import whyChooseUsDataFile from "@/data/whyChooseUs.json";
 import managementTeamDataFile from "@/data/AboutUs/ManagementTeam.json";
+import clientsData from "@/data/clients/data.json"
 
 // Extract necessary data
 const aboutUsData = aboutUsDataFile.aboutUsData;
@@ -17,7 +18,11 @@ const corePointsJSON = corePointsDataFile.CorePointsJSON;
 const whyChooseUsJSON = whyChooseUsDataFile.whyChooseUsJSON;
 const managementTeamJSON = managementTeamDataFile.ManagementTeamJSON;
 
+
 const AboutUsPage = () => {
+
+  const {domesticClients,internationalClients} = clientsData
+
   return (
     <div>
       <AboutUs
@@ -27,7 +32,7 @@ const AboutUsPage = () => {
       <CorePoints CorePointsData={corePointsJSON} />
       <WhyChooseUs whyChooseUsData={whyChooseUsJSON} />
       <ManagementTeam ManagementTeamData={managementTeamJSON} />
-      <Clients />
+      <Clients  domesticClients={domesticClients} internationalClients={internationalClients}/>
     </div>
   );
 };

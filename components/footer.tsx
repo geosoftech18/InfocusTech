@@ -146,7 +146,6 @@ const Footer: React.FC<FooterProps> = ({ FooterData }) => {
 
 export default Footer;
 
-/** Single location block (e.g., "India", "Dubai"). */
 const LocationBlock: React.FC<{ location: FooterLocation }> = ({
   location,
 }) => {
