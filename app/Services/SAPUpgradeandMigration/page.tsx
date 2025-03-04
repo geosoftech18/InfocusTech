@@ -31,6 +31,8 @@ const SAPUpgradeandMigration = () => {
       {/* Why SAP Upgrade and Migration? */}
       <WhySAPUpgradeandMigration WhySAPUpgradeandMigrationData={WhySAPUpgradeandMigrationJSON} />
 
+      <div className="h-40 md:h-0"></div>
+
       {/* Key Features of SAP Upgrade & Migration */}
       <KeyFeatureSapImplementation KeyFeatureSapImplementationData={keyFeaturesSAPUpgaradeandMigrationJSON} />
 
@@ -39,7 +41,7 @@ const SAPUpgradeandMigration = () => {
       {/* Our Approach to SAP Upgrade & Migration */}
       <SapImplementationProcess SapImplemetationProcessData={SAPUpgaradeandMigrationProcessJSON} />
 
-      <div className="h-1"></div>
+      <div className="h-10 md:h-1 "></div>
 
       {/* Challenges Addressed */}
       <BenefitsSapImplementation BenefitSapImplementationData={SAPUpgradeandMigrationChallengesJSON} />

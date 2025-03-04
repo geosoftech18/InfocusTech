@@ -31,7 +31,7 @@ const GrowwithSAP = () => {
 
             <KeyFeatureSapImplementation KeyFeatureSapImplementationData={useCaseData}/>
 
-            <div className="md:mx-40 flex items-center justify-center flex-col mt-20 gap-10">
+            <div className="mx-10 md:mx-40 flex items-center justify-center flex-col mt-20 gap-10">
                 <div className="text-2xl font-bold">Conclusion</div>
                 <div className="text-lg text-center bg-gray-300 rounded-lg p-4">
                     {Conclusion.description}

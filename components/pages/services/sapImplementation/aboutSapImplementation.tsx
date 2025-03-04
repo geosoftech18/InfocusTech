@@ -24,7 +24,7 @@ const AboutSapImplementation: React.FC<AboutSapImplementationProps> = ({
   AboutSapImplementationData,
 }) => {
   return (
-    <div className={`grid lg:grid-cols-2 mb-20 md:mx-40 gap-10 items-stretch`}>
+    <div className={`grid lg:grid-cols-2 mb-20 mx-10 md:mx-40 gap-10 items-stretch`}>
       <div className="relative h-full">
         <Image
           src={"/WhyChooseUs.jpg"}
@@ -57,7 +57,7 @@ const AboutSapImplementation: React.FC<AboutSapImplementationProps> = ({
         <div className="text-justify tracking-tighter w-11/12 text-md font-semibold text-gray-600">
           {AboutSapImplementationData.description}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 text-left border-y-2">
+        <div className="grid grid-cols-2 text-left w-full border-y-2">
           {AboutSapImplementationData.bulletPoints.map((item, index) => (
             <div className="col-span-1 p-2" key={index}>
               <div className="flex items-center gap-2 justify-start">

@@ -51,25 +51,25 @@ const HeroCarousal: React.FC<HeroCarousalProps> = ({ HeroItems }) => {
       //   }),
       // ]}
     >
-      <CarouselContent className="h-full">
+      <CarouselContent className="h-full max-w-[100vw]">
         {HeroItems.map((item, index) => (
           <CarouselItem
             key={index}
             className="flex justify-center  items-center"
           >
-            <Card className="w-full border-none rounded-none flex flex-col items-center gap-3 sm:gap-10 py-5 3xl:gap-20  bg-transparent">
+            <Card className="w-full h-full border-none rounded-none flex flex-col items-center gap-3 sm:gap-10 py-5 3xl:gap-20  bg-transparent">
               <CardTitle className="text-lg lg:text-4xl 2xl:text-6xl 3xl:text-7xl font-semibold text-center z-20  text-white">
                 {item.title} <br />
                 <span className="font-bold">{item.boldTitle}</span>
               </CardTitle>
-              <CardContent className="flex flex-col items-center text-center gap-10 px-4 3xl:gap-20  max-w-3xl">
+              <CardContent className="flex px-10 flex-col items-center text-center gap-10 3xl:gap-20  max-w-3xl">
                 <span className="text-sm lg:text-md 2xl:text-xl 3xl:text-2xl font-medium text-white ">
                   {item.description}
                 </span>
                 <Button
                   variant="default"
                   size="lg"
-                  className="w-3/4 sm:w-2/4 lg:w-1/3 lg:h-8 3xl:w-3/4 3xl:h-14"
+                  className="sm:w-2/4 lg:w-1/3 lg:h-8 3xl:w-3/4 3xl:h-14"
                 >
                   {item.cta_button_text}
                 </Button>

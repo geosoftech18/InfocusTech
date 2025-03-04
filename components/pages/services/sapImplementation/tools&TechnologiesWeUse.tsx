@@ -22,7 +22,7 @@ const ToolsAndTechnologiesWeUse: React.FC<ToolsTechnologiesWeUseProps> = ({
   scroll,
 }) => {
   return (
-    <div className="grid grid-cols-1  lg:grid-cols-3  lg:mx-40 my-20 gap-10 lg:gap-20 ">
+    <div className="grid grid-cols-1  lg:grid-cols-3  mx-10 lg:mx-40 my-20 gap-10 lg:gap-20 ">
       {(basis === "textLeft" || basis === undefined) && (
         <>
           <TextArea
@@ -53,7 +53,7 @@ const TextArea: React.FC<ToolsTechnologiesWeUseProps> = ({
   ToolsAndTechnologiesWeUseData,
 }) => {
   return (
-    <div className="col-span-1 sticky top-20 h-[75vh] flex flex-col items-start justify-around gap-4 lg:gap-0">
+    <div className="col-span-1 md:sticky top-20 h-[75vh] flex flex-col items-start justify-around gap-4 lg:gap-0">
       <div className="text-[#b00d07] text-xl font-semibold">
         {ToolsAndTechnologiesWeUseData.Tag}
       </div>

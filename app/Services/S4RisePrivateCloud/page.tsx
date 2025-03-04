@@ -29,7 +29,7 @@ const S4RisePrivateCloud = () => {
 
             <KeyFeatureSapImplementation KeyFeatureSapImplementationData={useCaseData}/>
 
-            <div className="md:mx-40 flex items-center justify-center flex-col mt-20 gap-10">
+            <div className="mx-10 md:mx-40 flex items-center justify-center flex-col mt-20 gap-10">
                 <div className="text-2xl font-bold">Conclusion</div>
                 <div className="text-lg text-center bg-gray-300 rounded-lg p-4">S/4HANA Rise Private Cloud is an ideal choice for enterprises aiming for agility, efficiency, and digital transformation. By leveraging SAP&apos;s cutting-edge technology, businesses can innovate faster and stay ahead in a competitive market.</div>
             </div>

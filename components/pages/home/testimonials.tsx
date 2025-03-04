@@ -93,7 +93,7 @@ const Testimonial = () => {
             <CarouselPrevious className="absolute -left-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md hover:bg-gray-700" />
             <CarouselNext className="absolute -right-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md hover:bg-gray-700" />
           </div>
-          <div className="flex items-center justify-center gap-2 m-2">
+          <div className="flex items-center justify-center gap-2 m-2 mt-10">
             {TestimonialItems.map((_, index) => (
               <div
                 key={index}

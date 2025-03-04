@@ -1,7 +1,10 @@
+import { ScaleLoader } from "react-spinners";
+
 const Loader: React.FC = () => {
+  // const ScaleLoader = data.ScaleLoader;
   return (
     <div className="flex justify-center items-center h-screen">
-      <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500 border-solid"></div>
+      <ScaleLoader color="#e60000" height={48} radius={0} width={10} />;
     </div>
   );
 };

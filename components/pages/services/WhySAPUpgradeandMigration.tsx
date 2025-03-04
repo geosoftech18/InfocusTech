@@ -37,13 +37,14 @@ const WhySAPUpgradeandMigration: React.FC<WhySAPUpgradeandMigrationProps> = ({
   WhySAPUpgradeandMigrationData,
 }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 md:mx-40 gap-10 md:gap-20 my-20 md:my-20 h-[75vh]">
+    <div className="grid grid-cols-1 md:grid-cols-12 mx-10 md:mx-40 md:gap-20 my-5 md:my-20 md:h-[75vh]">
       <div className="col-span-1 md:col-span-5 relative">
         <Image
           src={"/whySAPUpgradationandMigration.jpg"}
           alt=""
-          layout="fill"
-          className="h-[75vh] rounded-lg"
+          width={1000}
+          height={1000}
+          className="h-3/4 w-full md:h-[75vh] rounded-lg"
         />
         {/* <div className="absolute top-20 -left-5 bg-gray-200 px-5 pt-2 pb-5 rounded-lg font-serif text-xl">
           {data.map((item, index) => (

@@ -24,8 +24,8 @@ const FAQs: React.FC<FAQsProps> = ({ FAQData }) => {
       {/* Header Section */}
       <div className="text-center mb-10 flex gap-5 flex-col" >
         <h3 className="text-xl">FAQs</h3>
-        <h2 className="text-4xl font-semibold">Frequently Asked Questions</h2>
-        <p className="text-gray-600 text-lg">
+        <h2 className="text-xl md:text-4xl font-semibold ">Frequently Asked Questions</h2>
+        <p className="text-gray-600 text-sm md:text-lg">
           This FAQ section includes frequently asked questions that can help
           provide clear and concise answers.
         </p>

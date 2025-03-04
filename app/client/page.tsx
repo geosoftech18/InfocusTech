@@ -1,12 +1,28 @@
 "use client";
 import ClientCard from "@/components/pages/client/clientCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // data
 
 import data from "@/data/clients/data.json";
 
 const Client = () => {
+
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 768);
+    };
+  
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+
+
   const [hovered, setHovered] = useState<number | null>(null);
 
   const domesticClients = data.domesticClients;
@@ -14,13 +30,14 @@ const Client = () => {
   const internationalClients = data.internationalClients;
 
   return (
-    <div className="mx-40 flex flex-col items-center justify-center gap-10 my-20">
+    <div className="mx-10 md:mx-40 flex flex-col items-center justify-center gap-10 my-20">
       {/* heading */}
       <Heading title={"Our Domestic Clients"} />
 
       <div className="grid grid-cols-1 md:grid-cols-3  gap-5">
         {domesticClients.map((item, index) => (
           <ClientCard
+          isSmallScreen={isSmallScreen}
             key={index}
             index={index}
             hovered={hovered === index}
@@ -38,6 +55,7 @@ const Client = () => {
       <div className="grid grid-cols-1 md:grid-cols-3  gap-5">
         {internationalClients.map((item, index) => (
           <ClientCard
+          isSmallScreen={isSmallScreen}
             key={index}
             index={index}
             hovered={hovered === index}

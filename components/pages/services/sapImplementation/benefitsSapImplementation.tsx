@@ -43,7 +43,7 @@ const BenefitsSapImplementation: React.FC<BenefitsSapImplementationProps> = ({
 
 
   return (
-    <div className="h-screen lg:h-[40vh] my-64 xl:my-52 relative bg-[#b00d07] px-10 xl:px-28">
+    <div className="h-screen lg:h-[40vh] my-20 xl:my-52 relative bg-[#b00d07] px-10 xl:px-28">
       <div className="flex items-center justify-center text-gray-100 pt-10 text-3xl font-semibold">
         {BenefitSapImplementationData.tag}
       </div>

@@ -24,7 +24,7 @@ const ResourceConsulting = () => {
       />
 
       {/* Resource Consulting Heading & Description */}
-      <div className="flex flex-col items-center justify-center gap-10 px-28 text-center">
+      <div className="flex flex-col items-center justify-center gap-10 mx-10 md:mx-40 text-center">
         <h1 className="text-4xl font-semibold">Resource Consulting</h1>
         <p className="text-xl text-gray-800">
           Infocus provides expert Resource Consulting to help organizations
