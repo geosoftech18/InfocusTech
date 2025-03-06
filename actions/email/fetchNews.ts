@@ -1,14 +1,14 @@
 "use server";
 
-const base_URL = process.env.NEXT_PUBLIC_CONTENTFUL_CDN_BASE_URL;
-const space_ID = process.env.NEXT_PUBLIC_SPACE_ID;
-const env_ID = process.env.NEXT_PUBLIC_ENVIRONMENT_ID;
-const cdn_access_token = process.env.NEXT_PUBLIC_ACCESS_TOKEN_CDN;
+const base_URL = process.env.CONTENTFUL_CDN_BASE_URL;
+const space_ID = process.env.SPACE_ID;
+const env_ID = process.env.ENVIRONMENT_ID;
+const cdn_access_token = process.env.ACCESS_TOKEN_CDN;
 
 import * as contentful from "contentful";
 
 export async function fetchNews() {
-  // const NEWS_URL = process.env.NEXT_PUBLIC_NEWS_URL;
+  // const NEWS_URL = process.env.NEWS_URL;
 
   const news_URL = `${base_URL}/spaces/${space_ID}/environments/${env_ID}/entries?access_token=${cdn_access_token}`;
 
