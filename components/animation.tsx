@@ -88,7 +88,7 @@ const Animation = () => {
         </div>
       )}
       {!isHomePage  && (
-        <div className="md:pb-20">
+        <div className="md:pb-[4.5rem]">
           <NavbarMain fixed={true} NavbarProps={navLinks} />
         </div>
       )}
