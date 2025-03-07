@@ -38,7 +38,7 @@ export default function CareersHero({
           </CardTitle>
         </CardHeader>
         <CardContent className="p-8">
-          <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line ">
+          <div className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line flex flex-col gap-5">
             {description}
             <div>{extraDescription}</div>
             <div className="grid grid-cols-2 ">

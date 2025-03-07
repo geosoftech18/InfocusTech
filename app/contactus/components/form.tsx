@@ -25,6 +25,9 @@ import { z } from "zod";
 
 import countries from "@/data/countries.json";
 
+import {toast,Toaster} from "react-hot-toast"
+import { sendContactEmail } from "@/actions/email/brevo";
+
 const services = [
   "SAP Licensing",
   "SAP Implementation",
@@ -34,7 +37,7 @@ const services = [
   "Others",
 ];
 
-const FormSchema = z.object({
+export const FormSchema = z.object({
   service: z.string().min(1, "Service is required"),
   name: z.string().min(2, "Name is required"),
   email: z.string().email("Invalid email"),
@@ -48,10 +51,21 @@ const FormSchema = z.object({
 const ContactUsForm = () => {
   const [step, setStep] = useState(1);
 
-  function onSubmit(values: z.infer<typeof FormSchema>) {
-    console.log("contril");
-    alert(values);
-    console.log(values);
+  const to = process.env.NEXT_PUBLIC_contactEmail
+
+  async function onSubmit(values: z.infer<typeof FormSchema>) {
+    if(!to){
+      toast.error("source email not found")
+      return;
+    }
+    const response=await sendContactEmail(to,values)
+    if(response.success){
+      toast.success(response.message)
+    }else{
+
+      toast.error(response.message)
+    }
+
   }
 
   const form = useForm<z.infer<typeof FormSchema>>({
@@ -71,6 +85,7 @@ const ContactUsForm = () => {
 
   return (
     <Card className="col-span-1">
+      <Toaster/>
       <div className="flex items-center justify-center my-2 w-full">
         <div
           className={`rounded-full w-10 h-10 flex items-center justify-center  border bg-[#e60000] text-gray-200  font-semibold`}
