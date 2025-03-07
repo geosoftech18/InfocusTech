@@ -69,18 +69,20 @@ const Footer: React.FC<FooterProps> = ({ FooterData }) => {
     <footer className="bg-gray-900 text-gray-300 px-4 py-8 mt-28">
       <div className="max-w-7xl mx-auto">
         {/* Top section: Locations + Columns + Accreditation */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-8">
           {/* 1) Locations (India, Dubai, etc.) */}
           <div className="space-y-6 lg:col-span-1">
             {locations.map((loc, i) => (
               <LocationBlock key={i} location={loc} />
             ))}
+            <div className="hidden md:block pr-10">
             <Socials
               google={socials.google}
               Facebook={socials.Facebook}
               Twitter={socials.Twitter}
               Linkedin={socials.Linkedin}
             />
+            </div>
           </div>
 
           {/* 2) Footer Columns (Company, Services, Expertise, etc.) */}
@@ -89,20 +91,19 @@ const Footer: React.FC<FooterProps> = ({ FooterData }) => {
           ))}
 
           {/* 3) Accreditation */}
-          <div className="mt-4 lg:mt-0">
+          <div className="col-span-2 md:col-span-1 mt-4 lg:mt-0">
             <h3 className="text-lg font-semibold mb-2 flex items-center justify-center">
               Accreditation
             </h3>
-            <div className="grid grid-cols-2 gap-2">
+            <div className=" grid grid-cols-2 gap-2">
               {accreditation.map((acc, idx) => (
                 <a
                   key={idx}
                   href={acc.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 col-span-1"
+                  className="flex items-start justify-center gap-2 col-span-1"
                 >
-                  {/* Using next/image for optimization; adjust as needed */}
                   <Image
                     src={acc.imageUrl}
                     alt={acc.label}
@@ -115,6 +116,14 @@ const Footer: React.FC<FooterProps> = ({ FooterData }) => {
             </div>
           </div>
         </div>
+        <div className="md:hidden block px-10 pt-10">
+            <Socials
+              google={socials.google}
+              Facebook={socials.Facebook}
+              Twitter={socials.Twitter}
+              Linkedin={socials.Linkedin}
+            />
+            </div>
 
         {/* Bottom section: Copyright + Privacy Policy */}
         <div className="mt-8 pt-4 border-t border-gray-700 flex flex-col md:flex-row items-center justify-between gap-4">

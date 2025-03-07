@@ -10,6 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 import { type CarouselApi } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 interface HeroCarousalItem {
   title: string;
@@ -45,11 +46,11 @@ const HeroCarousal: React.FC<HeroCarousalProps> = ({ HeroItems }) => {
         align: "start",
         loop: true,
       }}
-      // plugins={[
-      //   Autoplay({
-      //     delay: 3000,
-      //   }),
-      // ]}
+      plugins={[
+        Autoplay({
+          delay: 3000,
+        }),
+      ]}
     >
       <CarouselContent className="h-full max-w-[100vw]">
         {HeroItems.map((item, index) => (
@@ -80,7 +81,7 @@ const HeroCarousal: React.FC<HeroCarousalProps> = ({ HeroItems }) => {
       </CarouselContent>
 
       {/* Pagination Dots */}
-      <div className="flex items-center gap-2">
+      <div className="absolute bottom-14 flex items-center gap-2">
         {HeroItems.map((_, index) => (
           <div
             key={index}

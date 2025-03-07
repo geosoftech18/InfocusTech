@@ -72,7 +72,7 @@ const Animation = () => {
   return (
     <>
       {isHomePage  && (
-        <div className="relative h-screen bg-[#b00d07]">
+        <div className="relative h-[75vh] md:h-screen bg-[#b00d07]">
           <Lottie
             animationData={animationDataWhite}
             loop={true}

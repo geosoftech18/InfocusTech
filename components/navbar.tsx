@@ -19,6 +19,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { AnimatePresence, motion } from "framer-motion";
 
 export interface DropDownCTAProps {
   heading: string;
@@ -133,105 +134,133 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
           ))}
         </NavigationMenuList>
       </NavigationMenu>
-
-      <NavigationMenu className="flex md:hidden flex-col">
-        {/* Mobile Menu Toggle */}
-
-        <div className="flex items-center justify-between w-full">
+      {/* Mobile Menu*/}
+      <NavigationMenu
+        className={`flex md:hidden flex-col ${
+          fixed ? "fixed top-0 bg-white" : "bg-transparent"
+        }  text-gray-300 py-2`}
+      >
+        <div className="flex items-center justify-between px-2 w-full">
           <div
-            className={`text-black font-extrabold text-2xl bg-white p-2 rounded-md left-0 top-0`}
+            className={`text-black  ${
+              fixed ? "" : "bg-white p-2 rounded-md"
+            } font-extrabold text-2xl mx-2 rounded-md left-0 top-0`}
           >
             <Image
               src={"/logo.png"}
               alt="Logo"
               height={1000}
               width={1000}
-              className="h-5 xl:h-10 w-20 xl:w-40 "
+              className={`h-5 xl:h-10 w-20 xl:w-40 `}
             />
           </div>
 
           <button
-            className="md:hidden top-0 right-0 z-30 text-black"
+            className="md:hidden  z-30 text-black "
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {isMobileMenuOpen ? (
+              <X size={24} className="bg-[#b00d07] text-white rounded-lg p-1" />
+            ) : (
+              <Menu size={24} className="bg-gray-400 rounded-lg p-1" />
+            )}
           </button>
         </div>
         {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <div
-            className={` rounded-b-lg w-full bg-white shadow-md transition-all duration-300
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              className="shadow-none border-none bg-gray-900 w-full"
+              initial={{ opacity: 0, height: 0 }} // Start slightly above
+              animate={{ opacity: 1, height: "auto" }} // Move down to normal position
+              exit={{ opacity: 0, height: 0 }} // Move up when closing
+              transition={{ duration: 0.4, ease: "easeInOut" }} // Smooth transition
+            >
+              <div
+                className={` rounded-b-lg w-full transition-all duration-300
         opacity-100 flex flex-col items-center`}
-          >
-            <NavigationMenuList className="flex flex-col gap-2">
-              {/* Logo */}
+              >
+                <NavigationMenuList className="flex flex-col gap-2">
+                  {/* Logo */}
 
-              {/* Navigation Links */}
-              {NavbarProps.map((link, index) => (
-                <NavigationMenuItem key={index} className="relative group z-20">
-                  {/* Normal Link */}
-                  {!link.dropdownList && (
-                    <NavigationMenuLink asChild>
-                      <Link
-                        href={`/${link.name.toLowerCase().replace(/\s+/g, "")}`}
-                        className={`block py-2 text-xl font-semibold hover:text-red-600 transition`}
-                      >
-                        {link.name}
-                      </Link>
-                    </NavigationMenuLink>
-                  )}
+                  {/* Navigation Links */}
+                  {NavbarProps.map((link, index) => (
+                    <NavigationMenuItem
+                      key={index}
+                      className="relative group z-20"
+                    >
+                      {/* Normal Link */}
+                      {!link.dropdownList && (
+                        <NavigationMenuLink asChild>
+                          <Link
+                            href={`/${link.name
+                              .toLowerCase()
+                              .replace(/\s+/g, "")}`}
+                            className={`block py-2 text-sm font-semibold hover:text-red-600 transition`}
+                          >
+                            {link.name}
+                          </Link>
+                        </NavigationMenuLink>
+                      )}
 
-                  {/* Dropdown Menu */}
-                  {link.dropdownList && (
-                    <Accordion type="single" collapsible>
-                      <AccordionItem value="item-1 " className="border-none">
-                        <AccordionTrigger className="py-2 text-xl font-semibold hover:text-red-600 transition ">
-                          {link.name}
-                        </AccordionTrigger>
-                        <AccordionContent>
-                          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-5 w-full md:w-[60vw] p-5">
-                            {/* CTA Section (If Available) */}
-                            {link.dropdownCTA && (
-                              <DropdownCTA
-                                heading={link.dropdownCTA.heading}
-                                description={link.dropdownCTA.description}
-                                buttonLabel={link.dropdownCTA.buttonLabel}
-                                buttonLink={link.dropdownCTA.buttonLink}
-                                bgImagePath={link.dropdownCTA.bgImagePath}
-                              />
-                            )}
+                      {/* Dropdown Menu */}
+                      {link.dropdownList && (
+                        <Accordion type="single" collapsible>
+                          <AccordionItem
+                            value="item-1 "
+                            className="border-none"
+                          >
+                            <AccordionTrigger className="py-2 text-sm font-semibold hover:text-red-600 transition ">
+                              {link.name}
+                            </AccordionTrigger>
+                            <AccordionContent>
+                              <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-5 w-full md:w-[60vw] p-5">
+                                {/* CTA Section (If Available) */}
+                                {/* {link.dropdownCTA && (
+                                  <DropdownCTA
+                                    heading={link.dropdownCTA.heading}
+                                    description={link.dropdownCTA.description}
+                                    buttonLabel={link.dropdownCTA.buttonLabel}
+                                    buttonLink={link.dropdownCTA.buttonLink}
+                                    bgImagePath={link.dropdownCTA.bgImagePath}
+                                  />
+                                )} */}
 
-                            {/* Dropdown Items */}
-                            <div
-                              className={`grid grid-cols-1 lg:grid-cols-2 gap-2 ${
-                                link.dropdownCTA ? "col-span-1" : "col-span-2"
-                              }`}
-                            >
-                              {link.dropdownList.map((label, idx) => (
-                                <Link
-                                  key={idx}
-                                  href={`/${link.name}/${label.replace(
-                                    /\s+/g,
-                                    ""
-                                  )}`}
-                                  className="col-span-1 flex justify-center items-center p-2 shadow-md hover:scale-105 transition-all duration-500 w-full"
+                                {/* Dropdown Items */}
+                                <div
+                                  className={`grid grid-cols-2 lg:grid-cols-2 gap-2 ${
+                                    link.dropdownCTA
+                                      ? "col-span-1"
+                                      : "col-span-2"
+                                  }`}
                                 >
-                                  <span className="text-xs xl:text-sm  w-full font-semibold">
-                                    {label}
-                                  </span>
-                                </Link>
-                              ))}
-                            </div>
-                          </div>
-                        </AccordionContent>
-                      </AccordionItem>
-                    </Accordion>
-                  )}
-                </NavigationMenuItem>
-              ))}
-            </NavigationMenuList>
-          </div>
-        )}
+                                  {link.dropdownList.map((label, idx) => (
+                                    <Link
+                                      key={idx}
+                                      href={`/${link.name}/${label.replace(
+                                        /\s+/g,
+                                        ""
+                                      )}`}
+                                      className="col-span-1 flex justify-center items-center p-2 shadow-md hover:scale-105 transition-all duration-500 w-full"
+                                    >
+                                      <span className="text-xs xl:text-sm  w-full font-semibold">
+                                        {label}
+                                      </span>
+                                    </Link>
+                                  ))}
+                                </div>
+                              </div>
+                            </AccordionContent>
+                          </AccordionItem>
+                        </Accordion>
+                      )}
+                    </NavigationMenuItem>
+                  ))}
+                </NavigationMenuList>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </NavigationMenu>
     </>
   );

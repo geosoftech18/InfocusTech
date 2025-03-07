@@ -36,7 +36,7 @@ const NewsAndEvents = async () => {
   // console.log(filteredEvents);
 
   return (
-    <div>
+    <div className="pt-10">
       <NewsPage NewsData={filteredNews} />;
       <NewsPage NewsData={filteredEvents} />;
     </div>
