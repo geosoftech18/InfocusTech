@@ -74,11 +74,11 @@ const Testimonial = () => {
                     className="rounded-lg "
                   />
                   <div className="flex items-center text-justify md:items-start flex-col justify-center">
-                    <div className="text-gray-300">Our testimonials</div>
+                    <div className="text-gray-600 md:text-gray-300">Our testimonials</div>
                     <p className="text-center font-bold text-4xl text-[#E60000] lg:text-gray-200">
                       {item.name}
                     </p>
-                    <p className="mt-4 text-xl tracking-tighter text-gray-300 font-semibold">
+                    <p className="mt-4 text-xl tracking-tighter text-gray-600 md:text-gray-300 font-semibold">
                       {item.comment}
                     </p>
                     <p className="mt-4 text-xl text-white font-semibold">

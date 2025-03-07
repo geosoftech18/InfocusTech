@@ -37,7 +37,10 @@ const DetailedPage = async ({ params }: { params: Params }) => {
       <div>data not fetched properly, newsId or imageId not available</div>
     );
   }
+  //@ts-ignore
   const newsData: NewsEntryResponse = await fetchNewsById(newsId); //"32oXOR10xpXOykZo8GPOGp"
+
+  // console.log(newsData)
 
   const assetData: NewsAssetResponse = await fetchAssetById(imageId);
 
@@ -57,15 +60,24 @@ const DetailedPage = async ({ params }: { params: Params }) => {
       </div>
     );
   }
+  const extractText = (richText: RichText) => {
+    return (
+      richText?.content
+        ?.map((block) =>
+          block.content?.map((textNode) => textNode.value).join("")
+        )
+        .join("\n") || ""
+    );
+  };
+
 
   const { fields } = newsData.data;
 
   // Extracting title from Rich Text
-  const title = fields.title?.content?.[0]?.content?.[0]?.value || "Untitled";
+  const title =  extractText(fields.title)
 
   // // Extracting content
-  const content =
-    fields.content?.content?.[0]?.content?.[0]?.value || "Untitled";
+  const content =extractText(fields.content)
 
   // // Extracting date
   const date = fields.date || new Date().toISOString();
@@ -73,6 +85,7 @@ const DetailedPage = async ({ params }: { params: Params }) => {
   // Extracting Image URL
   const imageUrl = assetData.data.fields.file.url;
 
+  
   return (
     <DetailedNewsPage
       title={title}

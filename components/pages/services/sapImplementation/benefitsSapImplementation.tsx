@@ -43,7 +43,7 @@ const BenefitsSapImplementation: React.FC<BenefitsSapImplementationProps> = ({
 
 
   return (
-    <div className="h-screen lg:h-[40vh] my-20 xl:my-52 relative bg-[#b00d07] px-10 xl:px-28">
+    <div className="h-[70vh] md:h-screen lg:h-[40vh] my-32 xl:my-52 relative bg-[#b00d07] px-10 xl:px-28">
       <div className="flex items-center justify-center text-gray-100 pt-10 text-3xl font-semibold">
         {BenefitSapImplementationData.tag}
       </div>
@@ -89,7 +89,7 @@ const BenefitsSapImplementation: React.FC<BenefitsSapImplementationProps> = ({
         <CarouselNext className="right-10" />
         <CarouselPrevious className="left-10" />
 
-        <div className="flex items-center justify-center gap-2 m-2">
+        <div className="flex items-center justify-center m-10 lg:m-2 gap-2">
         {BenefitSapImplementationData.benefits.map((_, index) => (
           <div
             key={index}

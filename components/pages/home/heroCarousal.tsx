@@ -58,7 +58,7 @@ const HeroCarousal: React.FC<HeroCarousalProps> = ({ HeroItems }) => {
             className="flex justify-center  items-center"
           >
             <Card className="w-full h-full border-none rounded-none flex flex-col items-center gap-3 sm:gap-10 py-5 3xl:gap-20  bg-transparent">
-              <CardTitle className="text-lg lg:text-4xl 2xl:text-6xl 3xl:text-7xl font-semibold text-center z-20  text-white">
+              <CardTitle className="text-2xl lg:text-4xl 2xl:text-6xl 3xl:text-7xl font-semibold text-center z-20  text-white">
                 {item.title} <br />
                 <span className="font-bold">{item.boldTitle}</span>
               </CardTitle>
@@ -84,8 +84,8 @@ const HeroCarousal: React.FC<HeroCarousalProps> = ({ HeroItems }) => {
         {HeroItems.map((_, index) => (
           <div
             key={index}
-            className={`h-2 w-2 sm:h-2 2xl:h-3 sm:w-2 2xl:w-3 rounded-full transition-all duration-200 ${
-              current === index + 1 ? "bg-black scale-125" : "bg-gray-600"
+            className={`h-1 w-1  2xl:h-2 2xl:w-2 rounded-full transition-all duration-200 ${
+              current === index + 1 ? "bg-black scale-[200%]" : "bg-gray-600"
             }`}
           />
         ))}

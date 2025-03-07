@@ -1,19 +1,21 @@
-interface NewsData {
+interface BEResponseFormat {
     success: boolean;
     error?: string;
-    data?: {
-      sys: {
-        type: string;
-      };
-      total: number;
-      skip: number;
-      limit: number;
-      items: NewsItem[];
-      includes: {
-        Asset: Asset[];
-      };
-    };
+    data?: data
   }
+
+  interface data {
+    sys: {
+      type: string;
+    };
+    total: number;
+    skip: number;
+    limit: number;
+    items: NewsItem[];
+    includes: {
+      Asset: Asset[];
+    };
+  };
   
   interface NewsItem {
     metadata: {
@@ -96,7 +98,7 @@ interface NewsData {
   
   interface TextNode {
     data: {};
-    marks: any[];
+    marks: Mark[];
     value: string;
     nodeType: string;
   }

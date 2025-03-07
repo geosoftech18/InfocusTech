@@ -1,5 +1,6 @@
 "use client";
 
+import AccordionCard from "@/components/accordionCard";
 import { CheckCircle, ChevronRight, Quote } from "lucide-react";
 import { useState } from "react";
 
@@ -73,13 +74,14 @@ const SelectComponent: React.FC<SelectComponentProps> = ({ items }) => {
   const [activeItem, setActiveItem] = useState(0);
 
   return (
-    <div className=" grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-20 w-full rounded-[50px] bg-black md:px-0 md:pl-10 md:max-h-[70vh]" >
-      <div className="flex col-span-1 md:col-span-4 flex-col gap-10 items-center justify-start md:py-10 max-h-[20vh] md:max-h-[70vh] overflow-y-scroll no-scrollbar">
+    <>
+    <div className="hidden md:grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-20 w-full rounded-[50px] bg-black md:px-0 overflow-hidden  md:max-h-[70vh]" >
+      <div className="flex col-span-1 md:col-span-4 flex-col gap-10 items-start justify-start md:py-10 max-h-[20vh] md:max-h-[70vh] overflow-y-scroll no-scrollbar">
         {items.map((item, index) => (
           <div
             className={`text-white ${
               activeItem===index? "bg-gray-500":"bg-gray-800"
-            } p-10 rounded-full w-full relative ` }
+            } p-5 pl-10 rounded-r-full w-full relative ` }
             key={index}
             onClick={() => {
               setActiveItem(index);
@@ -92,7 +94,7 @@ const SelectComponent: React.FC<SelectComponentProps> = ({ items }) => {
           </div>
         ))}
       </div>
-      <div className=" border rounded-[50px] col-span-1 md:col-span-8 bg-gray-200 flex flex-col p-5 xl:px-20 xl:py-10 items-start justify-start gap-10 md:max-h-[70vh] overflow-y-scroll no-scrollbar">
+      <div className=" border rounded-r-[50px] col-span-1 md:col-span-8 bg-gray-200 flex flex-col p-5 xl:px-20 xl:py-10 items-start justify-start gap-10 md:max-h-[70vh] overflow-y-scroll no-scrollbar">
         {typeof items[activeItem].content === "string" ? (
           <div className="relative flex items-center justify-center h-full">
             <Quote className="h-5 w-5 md:h-10 md:w-10 absolute top-2 left-2" />
@@ -115,7 +117,18 @@ const SelectComponent: React.FC<SelectComponentProps> = ({ items }) => {
         ) : null}
       </div>
     </div>
+
+    {/* accordion card only for mobile screen */}
+    <div className="md:hidden grid grid-cols-1 gap-2">
+        {items.map((item,index)=>(
+          <AccordionCard key={index} title={item.title} description={item.content} />
+        ))}
+    </div>  
+    </>
   );
 };
+
+
+
 
 export default CustomerSuccessStory;

@@ -10,7 +10,7 @@ interface ClientCardProps {
   hovered: boolean;
   index: number;
   setHovered: (hovered: number | null) => void;
-  isSmallScreen:boolean
+  isSmallScreen: boolean;
 }
 
 const ClientCard: React.FC<ClientCardProps> = ({
@@ -21,15 +21,11 @@ const ClientCard: React.FC<ClientCardProps> = ({
   title,
   description,
   index,
-  isSmallScreen
+  isSmallScreen,
 }) => {
-
- 
-
   return (
     <Card
-      className="relative flex flex-col items-center justify-center md:p-6 bg-white shadow-lg rounded-2xl transition-transform duration-1000 hover:scale-105"
-      
+      className="relative flex flex-col items-center justify-center md:p-6 bg-white shadow-lg rounded-2xl transition-transform duration-1000 hover:scale-105 col-span-1"
       onMouseEnter={() => isSmallScreen && setHovered(index)}
       onMouseLeave={() => isSmallScreen && setHovered(null)}
     >
@@ -39,35 +35,44 @@ const ClientCard: React.FC<ClientCardProps> = ({
         alt={name}
         height={100}
         width={100}
-        className="rounded-md mt-2 md:mt-0 mb-4 border-2 aspect-square p-2 border-[#b00d07] shadow-sm"
+        className="w-full aspect-video"
       />
 
       {/* Name */}
-      <CardTitle className="text-lg font-semibold text-gray-800">
-        {name}
-      </CardTitle>
+      <div className={`flex w-full ${isSmallScreen? 'flex-col justify-start ' : 'flex-row justify-center text-center' } items-center px-1`}>
+        <div className={`flex flex-col ${isSmallScreen? 'items-center gap-2':'items-start'} w-11/12`}>
+          <CardTitle className="text-sm md:text-lg font-semibold text-gray-800">
+            {name}
+          </CardTitle>
 
-      {/* Title */}
-      <p className="text-sm text-gray-600 mt-1 text-center  font-medium">
-        {title}
-      </p>
-      <div className="w-full flex justify-end mt-2">
-
-      {hovered ? (
-        <ChevronsUp onClick={()=>{
-          setHovered(null)
-        }} className="h-5 w-5 md:h-10 md:w-20" />
-      ) : (
-        <ChevronsDown
-        onClick={()=>{
-          setHovered(index)
-        }} className="h-5 w-5 md:h-10 md:w-20" />
-      )}
+          {/* Title */}
+          <p className="text-xs md:text-sm text-gray-600 mt-1 font-medium">
+            {title}
+          </p>
+        </div>
+        {/* <div className="w-full flex justify-end mt-2"> */}
+        {hovered ? (
+          <ChevronsUp
+            onClick={() => {
+              setHovered(null);
+            }}
+            className="h-5 w-1/12 md:h-10 md:w-1/12"
+          />
+        ) : (
+          <ChevronsDown
+            onClick={() => {
+              setHovered(index);
+            }}
+            className="h-5 w-1/12 md:h-10 md:w-1/12"
+          />
+        )}
       </div>
+      {/* </div> */}
 
       {/* Description */}
+      
       <CardDescription
-        className={`mt-2 text-sm text-center text-gray-500 transition-opacity duration-100 ${
+        className={`mt-2 text-xs md:text-sm text-center p-1 text-gray-500 transition-opacity duration-100 ${
           hovered ? "opacity-100" : "opacity-0 h-0"
         }`}
       >

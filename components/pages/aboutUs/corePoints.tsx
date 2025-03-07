@@ -20,9 +20,9 @@ const CorePoints: React.FC<CorePointsInterface> = ({ CorePointsData }) => {
     <div className="bg-[#b00d07] px-10 md:px-40 mt-20 py-10">
       <div className="flex flex-col gap-5 mb-10">
         <div className="text-3xl text-gray-100 max-w-4xl font-semibold">{CorePointsData.title}</div>
-        <div className="text-gray-300 text-lg w-3/4">{CorePointsData.subTitle}</div>
+        <div className="text-gray-300 text-sm md:text-lg w-3/4">{CorePointsData.subTitle}</div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
         {CorePointsData.cardData.map((data, index) => (
           <Card className="col-span-1 p-5 flex items-center justify-center flex-col aspect-square" key={index}>
             <CardTitle className="mb-5">

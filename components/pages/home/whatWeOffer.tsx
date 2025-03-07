@@ -74,7 +74,7 @@ const DoorComponent: React.FC<DoorComponentProps> = ({ Data }) => {
           </div>
         </div>
         {/* top right content and button */}
-        <div className="flex flex-col lg:flex-row items-center text-justify justify-center lg:justify-end gap-10">
+        <div className="flex flex-col lg:flex-row items-start md:items-center text-justify justify-center lg:justify-end gap-10">
           <div className=" tracking-tighter text-gray-600 text-base lg:text-left">
             {Data.description}
           </div>

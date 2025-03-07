@@ -1,29 +1,18 @@
 "use client";
-import ClientCard from "@/components/pages/client/clientCard";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 // data
 
+import AccordionCard from "@/components/accordionCard";
 import data from "@/data/clients/data.json";
 
 const Client = () => {
 
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-
   useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 768);
-    };
-  
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+   
+
+    
   }, []);
-
-
-
-  const [hovered, setHovered] = useState<number | null>(null);
 
   const domesticClients = data.domesticClients;
 
@@ -34,37 +23,42 @@ const Client = () => {
       {/* heading */}
       <Heading title={"Our Domestic Clients"} />
 
-      <div className="grid grid-cols-1 md:grid-cols-3  gap-5">
+      <div className="grid grid-cols-2 md:grid-cols-4  gap-5">
         {domesticClients.map((item, index) => (
-          <ClientCard
-          isSmallScreen={isSmallScreen}
-            key={index}
-            index={index}
-            hovered={hovered === index}
-            setHovered={setHovered}
+          <AccordionCard
             imagePath={item.imagePath}
-            name={item.name}
             title={item.title}
             description={item.description}
+            name={item.name}
+            key={index}
+            index={index.toString()}
           />
         ))}
       </div>
 
       <Heading title={"Our International Clients"} />
 
-      <div className="grid grid-cols-1 md:grid-cols-3  gap-5">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
         {internationalClients.map((item, index) => (
-          <ClientCard
-          isSmallScreen={isSmallScreen}
-            key={index}
-            index={index}
-            hovered={hovered === index}
-            setHovered={setHovered}
+          <AccordionCard
             imagePath={item.imagePath}
-            name={item.name}
             title={item.title}
             description={item.description}
+            name={item.name}
+            key={index}
+            index={index.toString()}
           />
+          // <ClientCard
+          //   isSmallScreen={isSmallScreen}
+          //   key={index}
+          //   index={index}
+          //   hovered={hovered === index}
+          //   setHovered={setHovered}
+          //   imagePath={item.imagePath}
+          //   name={item.name}
+          //   title={item.title}
+          //   description={item.description}
+          // />
         ))}
       </div>
     </div>
@@ -72,7 +66,7 @@ const Client = () => {
 };
 
 const Heading = ({ title }: { title: string }) => {
-  return <div className="text-2xl font-semibold">{title}</div>;
+  return <div className="text-3xl font-semibold">{title}</div>;
 };
 
 export default Client;

@@ -14,13 +14,14 @@ import BenefitsSapImplementation from "@/components/pages/services/sapImplementa
 
 const SAPFIORI = () => {
   return (
-    <div>
+    <div className="pb-20 md:pb-5">
       {/* Introduction & Why SAP FIORI */}
       <WhyChooseUs whyChooseUsData={aboutUsJSON} />
       <WhyChooseUs basis="textRight" whyChooseUsData={whyJSON} />
 
       {/* Key Benefits - User-Centered Design */}
       <BenefitsSapImplementation BenefitSapImplementationData={keyBenefits} />
+
     </div>
   );
 };

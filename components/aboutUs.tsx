@@ -35,7 +35,7 @@ const AboutUs: React.FC<AboutUsProps> = ({
         <Button className="w-2/4 lg:w-1/4 my-5" variant={"default"}>
           Discover More
         </Button>
-        <div className="flex flex-col gap-2 items-start lg:items-center mr-12 lg:flex-row">
+        <div className="flex gap-2 items-start md:items-center mr-12 flex-row">
           <div className="flex items-start justify-center  flex-col  border-black">
             <CountUp initialValue={0} finalValue={18} symbol="+" />
             <div>Years of collective expericence</div>
