@@ -65,9 +65,9 @@ const DoorComponent: React.FC<DoorComponentProps> = ({ Data }) => {
           <div className="font-semibold">{Data.tag}</div>
           <div className="flex flex-col gap-2">
 
-          <div className="text-3xl w-96 font-semibold">{Data.heading}</div>
+          <div className="text-3xl md:w-96 font-semibold">{Data.heading}</div>
           {Data.subheading && (
-            <div className="text-2xl w-96 text-gray-600 font-semibold">
+            <div className="text-2xl md:w-96 text-gray-600 font-semibold">
               {Data.subheading}
             </div>
           )}

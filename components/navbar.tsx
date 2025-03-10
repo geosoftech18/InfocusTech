@@ -138,7 +138,7 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
       <NavigationMenu
         className={`flex md:hidden flex-col ${
           fixed ? "fixed top-0 bg-white" : "bg-transparent"
-        }  text-gray-300 py-2`}
+        }  text-gray-300 py-4`}
       >
         <div className="flex items-center justify-between px-2 w-full">
           <div
@@ -151,7 +151,7 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
               alt="Logo"
               height={1000}
               width={1000}
-              className={`h-5 xl:h-10 w-20 xl:w-40 `}
+              className={`h-7 xl:h-10 w-28 xl:w-40 `}
             />
           </div>
 
@@ -160,9 +160,15 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X size={24} className="bg-[#b00d07] text-white rounded-lg p-1" />
+              <X
+                size={28}
+                className="bg-[#b00d07] text-white rounded-md  p-1"
+              />
             ) : (
-              <Menu size={24} className="bg-gray-400 rounded-lg p-1" />
+              <Menu
+                size={28}
+                className="bg-gray-400 rounded-md bg-opacity-50 p-1"
+              />
             )}
           </button>
         </div>
