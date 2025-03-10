@@ -85,6 +85,7 @@ const JobApplicationForm = () => {
       }
     } catch (error) {
       toast.error("Failed to submit application. Please try again.");
+      console.log(error)
     } finally {
       setLoading(false);
     }
