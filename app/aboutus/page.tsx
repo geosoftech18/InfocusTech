@@ -9,6 +9,7 @@ import WhyChooseUs from "@/components/pages/home/whyChooseUs";
 // import managementTeamDataFile from "@/data/AboutUs/ManagementTeam.json";
 import extractAboutUsPage from "@/lib/extractAboutUsPage";
 import { extractHomePage } from "@/lib/extractHomepage";
+import { getHomePageGQL } from "@/lib/graphql/extractHomepageGQL";
 
 // Extract necessary data
 // const aboutUsData = aboutUsDataFile.aboutUsData;
@@ -22,18 +23,18 @@ const AboutUsPage = async() => {
 
   // const {domesticClients,internationalClients} = clientsData
 
-  const homepageData = await extractHomePage();
+  const homepageData = await getHomePageGQL();
   
     if (!homepageData) return;
   
-    const {aboutUsProps,domesticClients,internationalClients,whyChooseUsData} = homepageData
+    const {aboutUsData,visionMissionQualityData,domesticClients,internationalClients,whyChooseUsData} = homepageData
     const {corePointsData,ManagementTeamData}=await extractAboutUsPage()
 
   return (
     <div>
       <AboutUs
-        AboutUsData={aboutUsProps.aboutUsData}
-        visionMissionQualityData={aboutUsProps.visionMissionQualityData}
+        AboutUsData={aboutUsData}
+        visionMissionQualityData={visionMissionQualityData}
       />
       <CorePoints CorePointsData={corePointsData} />
       <WhyChooseUs whyChooseUsData={whyChooseUsData} />
