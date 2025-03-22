@@ -19,32 +19,32 @@
     },
     "keyFeatures": {
         "tag": "Key Features and Benefits",
-        "keyFeatures": [
+        "items": [
             {
                 "imagePath": "/Services/risePrivateCloud/Key Features and Benefits_3/Fully Managed Cloud Environment.png",
-                "title": "Fully Managed Cloud Environment",
+                "name": "Fully Managed Cloud Environment",
                 "description": "A single, comprehensive solution for enterprises looking to move their ERP to the cloud without managing infrastructure. SAP manages security, updates, and compliance, reducing the IT burden."
             },
             {
                 "imagePath": "/Services/risePrivateCloud/Key Features and Benefits_3/Customization and Flexibility.png",
-                "title": "Customization and Flexibility",
+                "name": "Customization and Flexibility",
                 "description": "Unlike  cloud solutions, the private cloud allows businesses to retain greater control over configurations and integrations. Supports industry-specific extensions and custom ABAP developments."
             },
             {
                 "imagePath": "/Services/risePrivateCloud/Key Features and Benefits_3/Seamless Integration with SAP and Third-Party Applications.png",
-                "title": "Seamless Integration with SAP and Third-Party Applications",
+                "name": "Seamless Integration with SAP and Third-Party Applications",
                 "description": "Connects with SAP BTP (Business Technology Platform) for enhanced analytics, AI, and automation. Easily integrates with third-party applications to streamline business processes."
             },
             {
                 "imagePath": "/Services/risePrivateCloud/Key Features and Benefits_3/Scalability and Performance Optimization (2).png",
-                "title": "Scalability and Performance Optimization",
+                "name": "Scalability and Performance Optimization",
                 "description": "Supports high-performance workloads while ensuring seamless upgrades and performance tuning. Flexible resource allocation helps businesses scale as they grow."
             }
         ]
     },
     "why": {
         "tag": "Why Choose S/4HANA Rise Private Cloud?",
-        "benefits": [
+        "items": [
             {
                 "imagePath": "/Services/risePrivateCloud/Why Choose S4HANA Rise Public Cloud/Faster cloud adoption.png",
                 "name": "Faster Cloud Adoption",
@@ -64,20 +64,20 @@
     },
     "useCases": {
         "tag": "Use Cases for Enterprises",
-        "keyFeatures": [
+        "items": [
             {
                 "imagePath": "/Services/risePrivateCloud/Use Cases for Growing Businesses/Manufacturing.png",
-                "title": "Manufacturing",
+                "name": "Manufacturing",
                 "description": "Streamline supply chain management with real-time inventory tracking."
             },
             {
                 "imagePath": "/Services/risePrivateCloud/Use Cases for Growing Businesses/Finance.png",
-                "title": "Finance",
+                "name": "Finance",
                 "description": "Automate financial operations and ensure regulatory compliance."
             },
             {
                 "imagePath": "/Services/risePrivateCloud/Use Cases for Growing Businesses/Retail.png",
-                "title": "Retail",
+                "name": "Retail",
                 "description": "Improve customer experience with integrated CRM and e-commerce solutions."
             }
         ]

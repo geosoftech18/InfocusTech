@@ -50,7 +50,7 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
           fixed ? "fixed bg-white z-50 shadow-md" : "bg-transparent"
         } py-4 transition-all duration-300 hidden md:flex`}
       >
-        <NavigationMenuList className=" items-center gap-2 lg:gap-6">
+        <NavigationMenuList className=" items-center gap-2 lg:gap-10">
           {/* Logo */}
           <NavigationMenuItem className="z-20">
             <div
@@ -58,13 +58,15 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
                 fixed ? "" : "bg-white p-2 rounded-md"
               }`}
             >
-              <Image
-                src={"/logo.png"}
-                alt="Logo"
-                height={1000}
-                width={1000}
-                className="h-5 xl:h-10 w-20 xl:w-40 "
-              />
+              <Link href={"/"}>
+                <Image
+                  src={"/logo.png"}
+                  alt="Logo"
+                  height={1000}
+                  width={1000}
+                  className="h-5 xl:h-10 w-20 xl:w-40 "
+                />
+              </Link>
             </div>
           </NavigationMenuItem>
 
@@ -146,13 +148,15 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
               fixed ? "" : "bg-white p-2 rounded-md"
             } font-extrabold text-2xl mx-2 rounded-md left-0 top-0`}
           >
-            <Image
-              src={"/logo.png"}
-              alt="Logo"
-              height={1000}
-              width={1000}
-              className={`h-7 xl:h-10 w-28 xl:w-40 `}
-            />
+            <Link href={"/"}>
+              <Image
+                src={"/logo.png"}
+                alt="Logo"
+                height={1000}
+                width={1000}
+                className={`h-7 xl:h-10 w-28 xl:w-40 `}
+              />
+            </Link>
           </div>
 
           <button

@@ -1,19 +1,20 @@
-import { ChevronsRight } from "lucide-react";
 import Image from "next/image";
 
+export interface ToolsAndTechnologiesWeUseData {
+  Tag: string;
+  Title: string;
+  Description?: string;
+  Tool: {
+    imagePath?: string;
+    name: string;
+    description: string;
+  }[];
+};
 interface ToolsTechnologiesWeUseProps {
   basis?: "textLeft" | "textRight";
   scroll?: boolean;
-  ToolsAndTechnologiesWeUseData: {
-    Tag: string;
-    Title: string;
-    Description?: string;
-    Tool: {
-      imagePath?: string;
-      name: string;
-      description: string;
-    }[];
-  };
+  ToolsAndTechnologiesWeUseData:ToolsAndTechnologiesWeUseData
+  
 }
 
 const ToolsAndTechnologiesWeUse: React.FC<ToolsTechnologiesWeUseProps> = ({
@@ -53,7 +54,7 @@ const TextArea: React.FC<ToolsTechnologiesWeUseProps> = ({
   ToolsAndTechnologiesWeUseData,
 }) => {
   return (
-    <div className="col-span-1 md:sticky top-20 h-[75vh] flex flex-col items-start justify-center md:justify-around gap-4 lg:gap-0">
+    <div className="col-span-1 md:sticky md:top-20 h-[75vh] flex flex-col items-start justify-center md:justify-around gap-4 lg:gap-0">
       <div className="text-[#b00d07] text-xl font-semibold">
         {ToolsAndTechnologiesWeUseData.Tag}
       </div>
@@ -66,9 +67,9 @@ const TextArea: React.FC<ToolsTechnologiesWeUseProps> = ({
       <div className="text-gray-500 ">
         {ToolsAndTechnologiesWeUseData.Description}
       </div>
-      <div className="flex items-center gap-2 text-xl text-[#b00d07]">
+      {/* <div className="flex items-center gap-2 text-xl text-[#b00d07]">
         Read More <ChevronsRight />
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,3 +1,4 @@
+"use client"
 import { Card } from "@/components/ui/card";
 import {
   Carousel,
@@ -11,24 +12,37 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import React from "react";
 
-const TestimonialItems = [
-  {
-    name: "Kevin Martin",
-    comment:
-      "Etiam imperdiet massa vitae sem vestibulum ut sem hendrerit pellentesque. Vivamus vulputate faucibus purus ac ultrices. Mauris orci turpis, semper a arcu a, consectetur congue eros.",
-    role: "customer",
-    imageUrl: "/testimonial-v1-1.jpg",
-  },
-  {
-    name: "Kevin Martin",
-    comment:
-      "Etiam imperdiet massa vitae sem vestibulum ut sem hendrerit pellentesque. Vivamus vulputate faucibus purus ac ultrices. Mauris orci turpis, semper a arcu a, consectetur congue eros.",
-    role: "customer",
-    imageUrl: "/testimonial-v1-2.jpg",
-  },
-];
+export interface TestimonialItem{
+  name:string,
+  comment:string,
+  role:string,
+  imageUrl:string
+}
 
-const Testimonial = () => {
+interface TestimonialProps{
+  TestimonialItems:TestimonialItem[]
+}
+
+// const TestimonialItems = [
+//   {
+//     name: "Kevin Martin",
+//     comment:
+//       "Etiam imperdiet massa vitae sem vestibulum ut sem hendrerit pellentesque. Vivamus vulputate faucibus purus ac ultrices. Mauris orci turpis, semper a arcu a, consectetur congue eros.",
+//     role: "customer",
+//     imageUrl: "/testimonial-v1-1.jpg",
+//   },
+//   {
+//     name: "Kevin Martin",
+//     comment:
+//       "Etiam imperdiet massa vitae sem vestibulum ut sem hendrerit pellentesque. Vivamus vulputate faucibus purus ac ultrices. Mauris orci turpis, semper a arcu a, consectetur congue eros.",
+//     role: "customer",
+//     imageUrl: "/testimonial-v1-2.jpg",
+//   },
+// ];
+
+const Testimonial:React.FC<TestimonialProps> = ({
+  TestimonialItems
+}) => {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
 

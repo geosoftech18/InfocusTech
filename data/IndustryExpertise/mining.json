@@ -94,35 +94,35 @@
     },
     "benefitsMining": {
         "tag": "Benefits of SAP Solutions for Mining",
-        "keyFeatures": [
+        "items": [
             {
                 "imagePath": "/IndustryExpertise/mining/Industry ExpertiseMiningBenefits/Real-time Visibility into Mine Operations.png",
-                "title": "Real-time Visibility into Mine Operations",
+                "name": "Real-time Visibility into Mine Operations",
                 "description": "Gain real-time insights into mining operations to enhance decision-making and efficiency."
             },
             {
                 "imagePath": "/IndustryExpertise/mining/Industry ExpertiseMiningBenefits/Optimized Utilization of Assets.png",
-                "title": "Optimized Utilization of Assets",
+                "name": "Optimized Utilization of Assets",
                 "description": "Improve asset utilization to maximize productivity and reduce operational costs."
             },
             {
                 "imagePath": "/IndustryExpertise/mining/Industry ExpertiseMiningBenefits/Improved Commodity Risk Profiles.png",
-                "title": "Improved Commodity Risk Profiles",
+                "name": "Improved Commodity Risk Profiles",
                 "description": "Enhance risk management strategies to mitigate commodity price fluctuations."
             },
             {
                 "imagePath": "/IndustryExpertise/mining/Industry ExpertiseMiningBenefits/Efficient Transportation.png",
-                "title": "Efficient Transportation",
+                "name": "Efficient Transportation",
                 "description": "Optimize logistics and transportation processes for cost-effective and timely deliveries."
             },
             {
                 "imagePath": "/IndustryExpertise/mining/Industry ExpertiseMiningBenefits/Efficient Procurement Processes Through Business Networks.png",
-                "title": "Efficient Procurement Processes Through Business Networks",
+                "name": "Efficient Procurement Processes Through Business Networks",
                 "description": "Streamline procurement operations using integrated business networks for better supplier collaboration."
             },
             {
                 "imagePath": "/IndustryExpertise/mining/Industry ExpertiseMiningBenefits/Reduced Operational Risk.png",
-                "title": "Reduced Operational Risk",
+                "name": "Reduced Operational Risk",
                 "description": "Implement safety and compliance measures to minimize risks in mining operations."
             }
         ]

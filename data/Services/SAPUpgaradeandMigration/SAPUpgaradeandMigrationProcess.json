@@ -1,8 +1,9 @@
 {
     "SAPUpgaradeandMigrationProcessJSON": {
         "tag": "How It Works",
-        "title": "Our Approach to SAP Upgrade & Migration",
-        "steps": [
+        "heading": "Our Approach to SAP Upgrade & Migration",
+        "description":"",
+        "items": [
             {
                 "imagePath": "/Services/SAP Upgrade & Migration/Our Approach to SAP Upgrade & Migration/Assessment & Planning.png",
                 "name": "Assessment & Planning",

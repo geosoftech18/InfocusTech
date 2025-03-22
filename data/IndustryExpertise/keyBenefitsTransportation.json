@@ -1,20 +1,20 @@
 {
     "keyBenefitsTransportation": {
         "tag": "Key Benefits of SAP Implementation",
-        "keyFeatures": [
+        "items": [
             {
                 "imagePath": "/IndustryExpertise/TruckingandLogistics/Key Benefits/Increase Operational Efficiency and Enhance Customer Satisfaction.png",
-                "title": "Increase Operational Efficiency and Enhance Customer Satisfaction",
+                "name": "Increase Operational Efficiency and Enhance Customer Satisfaction",
                 "description": "Optimize business processes for efficiency while ensuring superior customer service. Deliver personalized solutions and streamline workflows to reduce costs and increase margins."
             },
             {
                 "imagePath": "/IndustryExpertise/TruckingandLogistics/Key Benefits/Integrate and Automate Logistics Operations.png",
-                "title": "Integrate and Automate Logistics Operations",
+                "name": "Integrate and Automate Logistics Operations",
                 "description": "Automate quote-to-bill processes, integrate real-time platforms, and support all transport modes for seamless logistics operations."
             },
             {
                 "imagePath": "/IndustryExpertise/TruckingandLogistics/Key Benefits/Automate Warehouse and Distribution.png",
-                "title": "Automate Warehouse and Distribution Operations",
+                "name": "Automate Warehouse and Distribution Operations",
                 "description": "Enhance workforce productivity, optimize asset management, and enable real-time monitoring for efficient operations."
             }
         ]

@@ -1,7 +1,7 @@
 {
     "HCMSuite": {
       "tag": "SAP SuccessFactors HCM Suite",
-      "benefits": [
+      "items": [
         {
           "imagePath": "/Solutions/SAP HCM/SAP SuccessFactors HCM SUITE includes/Employee Central.png",
           "name": "Employee Central",

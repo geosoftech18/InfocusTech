@@ -1,7 +1,6 @@
 "use client";
 import animationDataWhite from "@/animations/background-animation-white.json";
 import HeroCarousal from "@/components/pages/home/heroCarousal";
-import HeroData from "@/data/hero.json";
 import navLinksData from "@/data/navbar.json";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
@@ -10,7 +9,7 @@ import NavbarMain from "./navbar";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
-const Animation = () => {
+const Animation = ({heroItems}:{heroItems:any}) => {
   const [isSticky, setIsSticky] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -43,7 +42,7 @@ const Animation = () => {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
   const navLinks = navLinksData.navLinks;
-  const HeroItems = HeroData.HeroData;
+  // const HeroItems = HeroData.HeroData;
 
   // if (isMobile) {
   
@@ -84,11 +83,11 @@ const Animation = () => {
 
           <NavbarMain fixed={isSticky} NavbarProps={navLinks} />
 
-          <HeroCarousal HeroItems={HeroItems} />
+          <HeroCarousal HeroItems={heroItems} />
         </div>
       )}
       {!isHomePage  && (
-        <div className="md:pb-[4.5rem]">
+        <div className="pb-20 md:pb-[4.5rem]">
           <NavbarMain fixed={true} NavbarProps={navLinks} />
         </div>
       )}

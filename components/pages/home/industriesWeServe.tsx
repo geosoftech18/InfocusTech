@@ -12,18 +12,24 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
+import { DoorComponentData } from "./whatWeOffer";
+
+// export interface  industriesWeServeData {
+//   tag:string,
+//   heading: string;
+//   description: string;
+//   industry_wise_expertise: {
+//     industry: string;
+//     link?: string;
+//     imagePath: string;
+//     description: string;
+//   }[];
+// };
 
 interface IndustriesWeServeProps {
-  industriesWeServeData: {
-    heading: string;
-    description: string;
-    industry_wise_expertise: {
-      industry: string;
-      imagePath: string;
-      description: string;
-    }[];
-  };
+  industriesWeServeData: DoorComponentData
 }
 
 const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
@@ -65,7 +71,7 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
         </div>
       </div>
       <Carousel
-      setApi={setApi}
+        setApi={setApi}
         className="relative top-20 mx-auto w-full"
         opts={{
           align: "start",
@@ -78,7 +84,7 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
         ]}
       >
         <CarouselContent>
-          {industriesWeServeData.industry_wise_expertise.map((item, index) => (
+          {industriesWeServeData.items.map((item, index) => (
             <CarouselItem
               className="mx-auto sm:basis-3/4 md:basis-1/2 lg:basis-1/3"
               key={index}
@@ -95,7 +101,7 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
                       alt="People working"
                       height={1000}
                       width={1000}
-                      src={item.imagePath}
+                      src={item.imagePath || ""}
                       className="-z-10 ml-2 mt-2 h-20 w-20 border-2 p-2 rounded-full border-[#E60000]" // Keeps the image behind the overlay
                     />
 
@@ -122,7 +128,7 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
                         />
                       </div> */}
                       <div className="h-16 flex items-center justify-center mt-5">
-                        {item.industry}
+                        {item.name}
                       </div>
                     </div>
                   </CardTitle>
@@ -130,17 +136,19 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
                     <span className="text-md text-gray-600 text-center max-w-2xl pb-10">
                       {item.description}
                     </span>
-                    <Button
-                      variant={"default"}
-                      className={`rounded-full z-50 p-6 absolute bottom-2 right-2 shadow-lg ${
-                        openCards[index]
-                          ? "bg-black text-white"
-                          : "bg-transparent border border-1 text-black "
-                      } transition-colors duration-200`}
-                    >
-                      Read More
-                      <ArrowRight className="h-5 w-2" />
-                    </Button>
+                    <Link href={item.link || ""}>
+                      <Button
+                        variant={"default"}
+                        className={`rounded-full z-50 p-6 absolute bottom-2 right-2 shadow-lg ${
+                          openCards[index]
+                            ? "bg-black text-white"
+                            : "bg-transparent border border-1 text-black "
+                        } transition-colors duration-200`}
+                      >
+                        Read More
+                        <ArrowRight className="h-5 w-2" />
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               </div>
@@ -150,17 +158,17 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
         <CarouselPrevious className="absolute -left-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md hover:bg-gray-700" />
         <CarouselNext className="absolute -right-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md hover:bg-gray-700" />
         <div className="flex items-center justify-center gap-2 m-2">
-        {industriesWeServeData.industry_wise_expertise.map((_, index) => (
-          <div
-            key={index}
-            className={`${
-              current === index + 1
-                ? "bg-black scale-125 transition-all duration-200"
-                : "bg-gray-400"
-            } rounded-full h-2 w-2`}
-          ></div>
-        ))}
-      </div>
+          {industriesWeServeData.items.map((_, index) => (
+            <div
+              key={index}
+              className={`${
+                current === index + 1
+                  ? "bg-black scale-125 transition-all duration-200"
+                  : "bg-gray-400"
+              } rounded-full h-2 w-2`}
+            ></div>
+          ))}
+        </div>
       </Carousel>
     </div>
   );

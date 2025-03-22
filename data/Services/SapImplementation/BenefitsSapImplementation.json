@@ -1,7 +1,7 @@
 {
     "BenefitsSapImplementationJSON": {
         "tag": "Benefits of SAP Implementation",
-        "benefits": [
+        "items": [
             {
                 "imagePath": "/Services/SAP Implementation/Benefits of SAP Implementation/Improved Efficiency.png",
                 "name": "Improved Efficiency",

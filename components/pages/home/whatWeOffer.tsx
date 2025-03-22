@@ -14,21 +14,34 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import CarousalBullets from "@/components/ui/carousalBullets";
+
+export interface DoorComponentData {
+  tag: string;
+  heading: string;
+  subheading?: string;
+  description: string;
+
+  items: {
+    name: string;
+    imagePath?: string;
+    description: string;
+    link?: string;
+  }[];
+};
 
 interface DoorComponentProps {
-  Data: {
-    tag: string;
-    heading: string;
-    subheading?: string;
-    description: string;
-    items: {
-      name: string;
-      imagePath: string;
-      description: string;
-    }[];
-  };
+  bookNowButton?: boolean;
+  arrowRight?:boolean,
+  Data:DoorComponentData
+  
 }
-const DoorComponent: React.FC<DoorComponentProps> = ({ Data }) => {
+const DoorComponent: React.FC<DoorComponentProps> = ({
+  Data,
+  bookNowButton,
+  arrowRight
+}) => {
   const [openCards, setOpenCards] = useState<{ [key: number]: boolean }>({});
 
   const toggleDoor = (id: number) => {
@@ -64,23 +77,24 @@ const DoorComponent: React.FC<DoorComponentProps> = ({ Data }) => {
         <div className="flex flex-col items-start justify-center gap-10">
           <div className="font-semibold">{Data.tag}</div>
           <div className="flex flex-col gap-2">
-
-          <div className="text-3xl md:w-96 font-semibold">{Data.heading}</div>
-          {Data.subheading && (
-            <div className="text-2xl md:w-96 text-gray-600 font-semibold">
-              {Data.subheading}
-            </div>
-          )}
+            <div className="text-3xl md:w-96 font-semibold">{Data.heading}</div>
+            {Data.subheading && (
+              <div className="text-2xl md:w-96 text-gray-600 font-semibold">
+                {Data.subheading}
+              </div>
+            )}
           </div>
         </div>
         {/* top right content and button */}
         <div className="flex flex-col lg:flex-row items-start md:items-center text-justify justify-center lg:justify-end gap-10">
-          <div className=" tracking-tighter text-gray-600 text-base lg:text-left">
+          <div className="text-gray-900 text-base lg:text-left">
             {Data.description}
           </div>
-          <Button variant={"default"} size={"lg"}>
-            Book Now <Repeat className="h-5 w-5" />
-          </Button>
+          {bookNowButton && bookNowButton===true && (
+            <Button variant={"default"} size={"lg"}>
+              Book Now <Repeat className="h-5 w-5" />
+            </Button>
+          )}
         </div>
       </div>
 
@@ -104,7 +118,7 @@ const DoorComponent: React.FC<DoorComponentProps> = ({ Data }) => {
               key={index}
             >
               <Card
-                className="flex items-start h-80 px-10 gap-10 pt-5 flex-col z-10 bg-gray-100 mt-12 mx-auto [perspective:4000px]"
+                className="flex items-start h-80 px-10 gap-10  flex-col z-10 bg-gray-100 mt-12 mx-auto [perspective:4000px]"
                 onMouseEnter={() => {
                   toggleDoor(index);
                 }}
@@ -113,16 +127,20 @@ const DoorComponent: React.FC<DoorComponentProps> = ({ Data }) => {
                 }}
               >
                 {!expandedDescriptions[index] ? (
-                  <Button
-                    variant={"default"}
-                    className={`rounded-full z-50 p-6 absolute bottom-2 right-2 shadow-lg ${
-                      openCards[index]
-                        ? "bg-black text-white"
-                        : "bg-transparent border border-1 text-black "
-                    }`}
-                  >
-                    <ArrowRight className="h-5 w-2" />
-                  </Button>
+                  <Link href={`${item.link}`}>
+                    { arrowRight &&
+                      <Button
+                      variant={"default"}
+                      className={`rounded-full z-50  absolute bottom-2 right-2 shadow-lg ${
+                        openCards[index]
+                          ? "bg-black text-white"
+                          : "bg-transparent border border-1 text-black "
+                      }`}
+                    >
+                      <ArrowRight className="h-5 w-2" />
+                    </Button>
+                    }
+                  </Link>
                 ) : (
                   <div className="hidden"></div>
                 )}
@@ -130,7 +148,7 @@ const DoorComponent: React.FC<DoorComponentProps> = ({ Data }) => {
                   <div className="  flex flex-col gap-2 text-gray-900">
                     <Image
                       className="h-16 w-16"
-                      src={item.imagePath}
+                      src={item.imagePath||""}
                       alt=""
                       height={1000}
                       width={1000}
@@ -179,14 +197,7 @@ const DoorComponent: React.FC<DoorComponentProps> = ({ Data }) => {
         <CarouselNext className="absolute -right-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md hover:bg-gray-700" />
         <div className="flex items-center justify-center gap-2 mt-10">
           {Data.items.map((_, index) => (
-            <div
-              key={index}
-              className={`${
-                current === index + 1
-                  ? "bg-black scale-125 transition-all duration-200"
-                  : "bg-gray-400"
-              } rounded-full h-2 w-2`}
-            ></div>
+            <CarousalBullets key={index} current={current} index={index}/>
           ))}
         </div>
       </Carousel>

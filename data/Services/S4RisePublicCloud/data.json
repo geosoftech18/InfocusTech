@@ -19,32 +19,32 @@
     },
     "keyFeatures": {
       "tag": "Key Features and Benefits",
-      "keyFeatures": [
+      "items": [
         {
           "imagePath": "/Services/risePublicCloud/Key Features and Benefits_2/Fully Managed Cloud Environment.png",
-          "title": "Fully Managed Cloud Environment",
+          "name": "Fully Managed Cloud Environment",
           "description": "A single, comprehensive solution for enterprises looking to move their ERP to the cloud without managing infrastructure. SAP manages security, updates, and compliance, reducing the IT burden."
         },
         {
           "imagePath": "/Services/risePublicCloud/Key Features and Benefits_2/Standardized and Rapid Deployment.png",
-          "title": "Standardized and Rapid Deployment",
+          "name": "Standardized and Rapid Deployment",
           "description": "Unlike private cloud solutions, the public cloud offers standardized processes and configurations for faster deployment. Regular updates and innovations from SAP ensure continuous improvement."
         },
         {
           "imagePath": "/Services/risePublicCloud/Key Features and Benefits_2/Seamless Integration with SAP and Third-Party Applications.png",
-          "title": "Seamless Integration with SAP and Third-Party Applications",
+          "name": "Seamless Integration with SAP and Third-Party Applications",
           "description": "Connects with SAP BTP (Business Technology Platform) for enhanced analytics, AI, and automation. Easily integrates with third-party applications to streamline business processes."
         },
         {
           "imagePath": "/Services/risePublicCloud/Key Features and Benefits_2/Scalability and Cost-Effectiveness.png",
-          "title": "Scalability and Cost-Effectiveness",
+          "name": "Scalability and Cost-Effectiveness",
           "description": "Supports dynamic scalability to handle business growth efficiently. Lower upfront costs compared to private cloud and on-premise solutions."
         }
       ]
     },
     "why": {
       "tag": "Why Choose S/4HANA Rise Public Cloud?",
-      "benefits": [
+      "items": [
         {
           "imagePath": "/Services/risePublicCloud/Why Choose S4HANA Rise Public Cloud/Faster cloud adoption.png",
           "name": "Faster Cloud Adoption",
@@ -64,20 +64,20 @@
     },
     "useCases": {
       "tag": "Use Cases for Enterprises",
-      "keyFeatures": [
+      "items": [
         {
           "imagePath": "/Services/risePublicCloud/Use Cases for Growing Businesses/Manufacturing.png",
-          "title": "Manufacturing",
+          "name": "Manufacturing",
           "description": "Optimize production planning with real-time insights."
         },
         {
           "imagePath": "/Services/risePublicCloud/Use Cases for Growing Businesses/Finance.png",
-          "title": "Finance",
+          "name": "Finance",
           "description": "Leverage automated financial reporting and compliance tools."
         },
         {
           "imagePath": "/Services/risePublicCloud/Use Cases for Growing Businesses/Retail.png",
-          "title": "Retail",
+          "name": "Retail",
           "description": "Enhance customer engagement with AI-driven analytics and e-commerce capabilities."
         }
       ]

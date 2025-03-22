@@ -1,7 +1,7 @@
 {
     "SAPUpgradeandMigrationChallengesJSON":{
         "tag": "Challenges Addressed by SAP Upgrade & Migration",
-        "benefits": [
+        "items": [
             {
                 "name": "Outdated Software Risks",
                 "imagePath" : "/Services/SAP Upgrade & Migration/Challenges Addressed by SAP Upgrade & Migration/Outdated Software Risks.png",

@@ -1,35 +1,35 @@
 {
     "KeyHighlightsSAPBWJSON": {
       "tag": "Key Highlights of SAP BW/4HANA",
-      "keyFeatures": [
+      "items": [
         {
           "imagePath": "/Solutions/SAP BW/Key Highlights of SAP BW4HANA/Next-Generation Data Warehouse.png",
-          "title": "Next-Generation Data Warehouse",
+          "name": "Next-Generation Data Warehouse",
           "description": "SAP BW/4HANA is designed to revolutionize how organizations manage and utilize data, offering significant improvements over traditional data warehousing solutions."
         },
         {
           "imagePath": "/Solutions/SAP BW/Key Highlights of SAP BW4HANA/Real-Time Analytics.png",
-          "title": "Real-Time Analytics",
+          "name": "Real-Time Analytics",
           "description": "Enables organizations to process and analyze vast amounts of data in real time, allowing for faster and more informed decision-making."
         },
         {
           "imagePath": "/Solutions/SAP BW/Key Highlights of SAP BW4HANA/Unified Data Integration.png",
-          "title": "Unified Data Integration",
+          "name": "Unified Data Integration",
           "description": "Seamlessly integrates data from multiple sources, ensuring a comprehensive and consolidated view of business-critical information."
         },
         {
           "imagePath": "/Solutions/SAP BW/Key Highlights of SAP BW4HANA/Flexible Data Handling.png",
-          "title": "Flexible Data Handling",
+          "name": "Flexible Data Handling",
           "description": "Provides businesses with the flexibility to manage structured and unstructured data efficiently, improving adaptability to evolving data requirements."
         },
         {
           "imagePath": "/Solutions/SAP BW/Key Highlights of SAP BW4HANA/Cloud-Ready Architecture.png",
-          "title": "Cloud-Ready Architecture",
+          "name": "Cloud-Ready Architecture",
           "description": "Optimized for cloud deployment, enabling organizations to leverage scalable, cost-effective, and secure cloud environments for data storage and processing."
         },
         {
           "imagePath": "/Solutions/SAP BW/Key Highlights of SAP BW4HANA/Advanced Multi-Temperature Management.png",
-          "title": "Advanced Multi-Temperature Management",
+          "name": "Advanced Multi-Temperature Management",
           "description": "Intelligently manages hot, warm, and cold data tiers, optimizing storage costs and enhancing system performance."
         }
       ]

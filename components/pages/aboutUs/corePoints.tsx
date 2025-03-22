@@ -2,17 +2,18 @@ import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import CountUp from "@/components/ui/countUp";
 import Image from "next/image";
 
+export interface CorePointsData {
+  title: string;
+  subTitle: string;
+  cardData: {
+    number: string;
+    symbol:string;
+    caption: string;
+    imagePath:string
+  }[];
+};
 interface CorePointsInterface {
-  CorePointsData: {
-    title: string;
-    subTitle: string;
-    cardData: {
-      number: string;
-      symbol:string;
-      caption: string;
-      imagePath:string
-    }[];
-  };
+  CorePointsData:CorePointsData
 }
 
 const CorePoints: React.FC<CorePointsInterface> = ({ CorePointsData }) => {

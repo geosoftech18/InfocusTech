@@ -11,8 +11,9 @@ import { Button } from "@/components/ui/button";
 
 import { type CarouselApi } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import CarousalBullets from "@/components/ui/carousalBullets";
 
-interface HeroCarousalItem {
+export interface HeroCarousalItem {
   title: string;
   boldTitle: string;
   description: string;
@@ -83,12 +84,7 @@ const HeroCarousal: React.FC<HeroCarousalProps> = ({ HeroItems }) => {
       {/* Pagination Dots */}
       <div className="absolute bottom-14 flex items-center gap-2">
         {HeroItems.map((_, index) => (
-          <div
-            key={index}
-            className={`h-1 w-1  2xl:h-2 2xl:w-2 rounded-full transition-all duration-200 ${
-              current === index + 1 ? "bg-black scale-[200%]" : "bg-gray-600"
-            }`}
-          />
+          <CarousalBullets key={index} current={current} index={index}/>
         ))}
       </div>
     </Carousel>

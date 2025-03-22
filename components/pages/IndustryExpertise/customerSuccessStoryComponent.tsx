@@ -8,16 +8,18 @@ interface item {
   point: string;
 }
 
-interface CustomerSuccessStoryProps {
-  CustomerSuccessStoryData: {
-    tag: string;
+export interface CustomerSuccessStoryData{
+  tag: string;
+  title: string;
+  description: string;
+  items: {
     title: string;
-    description: string;
-    items: {
-      title: string;
-      content: string | item[];
-    }[];
-  };
+    content: string | item[];
+  }[];
+};
+
+export interface CustomerSuccessStoryProps {
+  CustomerSuccessStoryData:CustomerSuccessStoryData
 }
 
 interface HeadingComponentProps {
@@ -26,7 +28,7 @@ interface HeadingComponentProps {
   description: string;
 }
 
-interface SelectComponentProps {
+export interface SelectComponentProps {
   items: {
     title: string;
     content: string | item[];

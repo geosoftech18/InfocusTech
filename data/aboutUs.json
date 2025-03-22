@@ -1,7 +1,12 @@
 {
     "aboutUsData": {
+        "tag":"About InFocusTech",
         "heading": "Who We Are",
-        "description": "At InFocus, we are more than just an IT solutions provider—we are your partners in innovation. With a passion for technology and a commitment to excellence, we help businesses navigate the digital landscape with confidence. Our team of experts brings years of experience, delivering tailored solutions that drive growth, efficiency, and security. Whether it’s cloud services, cybersecurity, or digital transformation, we’re here to empower your success every step of the way."
+        "description": "At InFocus, we are more than just an IT solutions provider—we are your partners in innovation. With a passion for technology and a commitment to excellence, we help businesses navigate the digital landscape with confidence. Our team of experts brings years of experience, delivering tailored solutions that drive growth, efficiency, and security. Whether it’s cloud services, cybersecurity, or digital transformation, we’re here to empower your success every step of the way.",
+        "imageUrl":"/wokringEmp.jpg",
+        "projectsCreated":300,
+        "clientSatisfactionRate":95,
+        "yearsOfExperience":18
     },
     "visionMissionQualityData": [
         {

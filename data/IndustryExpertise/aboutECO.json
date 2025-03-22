@@ -103,30 +103,30 @@
     },
     "KeyFeaturesECO": {
         "tag": "Benefits of SAP Solutions for Engineering, Construction, and Real Estate Businesses",
-        "keyFeatures": [
+        "items": [
             {
                 "imagePath": "/IndustryExpertise/ECO/What are the benefits/Faster and More Profitable Bidding.png",
-                "title": "Faster and More Profitable Bidding",
+                "name": "Faster and More Profitable Bidding",
                 "description": "Enhance bid accuracy and efficiency to secure profitable projects with competitive pricing."
             },
             {
                 "imagePath": "/IndustryExpertise/ECO/What are the benefits/On-Time and Budget-Controlled Project Execution.png",
-                "title": "On-Time and Budget-Controlled Project Execution",
+                "name": "On-Time and Budget-Controlled Project Execution",
                 "description": "Ensure projects are completed within schedule and budget through better planning and tracking."
             },
             {
                 "imagePath": "/IndustryExpertise/ECO/What are the benefits/Optimized Workforce and Revenue Protection –.png",
-                "title": "Optimized Workforce and Revenue Protection",
+                "name": "Optimized Workforce and Revenue Protection",
                 "description": "Improve workforce management and financial stability by aligning labor costs with project requirements."
             },
             {
                 "imagePath": "/IndustryExpertise/ECO/What are the benefits/Enhanced Asset Utilization and Safety –.png",
-                "title": "Enhanced Asset Utilization and Safety",
+                "name": "Enhanced Asset Utilization and Safety",
                 "description": "Maximize the efficiency of equipment and infrastructure while ensuring compliance with safety regulations."
             },
             {
                 "imagePath": "/IndustryExpertise/ECO/What are the benefits/Maximized Real Estate Revenue –.png",
-                "title": "Maximized Real Estate Revenue",
+                "name": "Maximized Real Estate Revenue",
                 "description": "Leverage data-driven insights to optimize property utilization and boost revenue generation."
             }
         ]

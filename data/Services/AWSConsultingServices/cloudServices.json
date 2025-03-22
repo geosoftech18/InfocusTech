@@ -1,35 +1,35 @@
 {
     "cloudServicesJSON": {
       "tag": "Our cloud services include",
-      "keyFeatures": [
+      "items": [
         {
           "imagePath": "/Services/AWSConsulting/Our cloud services include/Managed Services.png",
-          "title": "Managed Services",
+          "name": "Managed Services",
           "description": "Deployment and configuration of applications, application performance monitoring, resolution of AWS-related incidents, and backup and disaster recovery."
         },
         {
           "imagePath": "/Services/AWSConsulting/Our cloud services include/Advisory Services.png",
-          "title": "Advisory Services",
+          "name": "Advisory Services",
           "description": "Resource usage & billing optimization, application architecture validation and consulting, general consulting and query resolutions, and auto-scaling implementation."
         },
         {
           "imagePath": "/Services/AWSConsulting/Our cloud services include/Operations and Reports.png",
-          "title": "Operations and Reports",
+          "name": "Operations and Reports",
           "description": "Monthly reports, quarterly reviews, and customer scorecards."
         },
         {
           "imagePath": "/Services/AWSConsulting/Our cloud services include/Enhanced Support.png",
-          "title": "Enhanced Support",
+          "name": "Enhanced Support",
           "description": "Executive escalation, enhanced TAM SLA, and customer advocate."
         },
         {
           "imagePath": "/Services/AWSConsulting/Our cloud services include/Cost and Usage Tracking.png",
-          "title": "Cost and Usage Tracking",
+          "name": "Cost and Usage Tracking",
           "description": "Cost and usage break-up of each AWS asset level as well as group level."
         },
         {
           "imagePath": "/Services/AWSConsulting/Our cloud services include/Recommendations.png",
-          "title": "Recommendations",
+          "name": "Recommendations",
           "description": "Cost-saving, high availability, auto-scaling, and asset optimization recommendations."
         }
       ]

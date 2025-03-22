@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { DoorComponentData } from "../home/whatWeOffer";
 
 // const data = [
 //   {
@@ -20,21 +21,11 @@ import Image from "next/image";
 // ];
 
 interface WhySAPUpgradeandMigrationProps {
-  WhySAPUpgradeandMigrationData: {
-    heading: {
-      normal: string;
-      emphasized: string;
-    };
-    subheading: string;
-    details: {
-      tag: string;
-      description: string;
-    }[];
-  };
+ Data:DoorComponentData
 }
 
 const WhySAPUpgradeandMigration: React.FC<WhySAPUpgradeandMigrationProps> = ({
-  WhySAPUpgradeandMigrationData,
+  Data,
 }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-12 mx-10 md:mx-40 md:gap-20 my-5 md:my-20 md:h-[75vh]">
@@ -63,14 +54,14 @@ const WhySAPUpgradeandMigration: React.FC<WhySAPUpgradeandMigrationProps> = ({
         {/* heading */}
         <div className="">
           <div className="font-semibold text-2xl md:text-3xl">
-            {WhySAPUpgradeandMigrationData.heading.normal}
+            {Data.tag}
           </div>
           <div className="font-extralight text-2xl md:text-3xl font-serif flex flex-col gap-2">
             <div className="underline ">
-              {WhySAPUpgradeandMigrationData.heading.emphasized}
+              {Data.heading}
             </div>
             <div className="text-gray-600 text-xs md:text-lg tracking-tight">
-              {WhySAPUpgradeandMigrationData.subheading}
+              {Data.description}
             </div>
           </div>
         </div>
@@ -78,13 +69,13 @@ const WhySAPUpgradeandMigration: React.FC<WhySAPUpgradeandMigrationProps> = ({
 
         {/* data */}
         <div>
-          {WhySAPUpgradeandMigrationData.details.map((item, index) => (
+          {Data.items.map((item, index) => (
             <div
               className="border-b py-2 md:py-2 flex items-center justify-between gap-10"
               key={index}
             >
               <div className="font-semibold text-sm md:text-md w-1/4">
-                {item.tag}
+                {item.name}
               </div>
               <div className="text-gray-600 text-xs md:text-md text-justify w-3/4">
                 {item.description}

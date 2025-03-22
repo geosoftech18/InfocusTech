@@ -1,8 +1,9 @@
 {
     "SapImplementationProcessJSON": {
         "tag": "How It Works",
-        "title": "Our SAP Implementation Process",
-        "steps": [
+        "heading": "Our SAP Implementation Process",
+        "description":"",
+        "items": [
             {
                 "imagePath": "/Services/SAP Implementation/Our SAP Implementation Process/Consultation & Analysis.png",
                 "name": "Consultation & Analysis",

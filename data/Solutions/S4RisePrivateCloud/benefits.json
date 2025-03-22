@@ -1,7 +1,7 @@
 {
     "BenefitsJSON": {
       "tag": "Benefits of Using an In-Memory Platform with SAP S/4HANA",
-      "benefits": [
+      "items": [
         {
           "imagePath": "/Solutions/SAP S4 HANA/Benefits of using an in-memory platform offered by S4 HANA/Faster Data Processing.png",
           "name": "Faster Data Processing",

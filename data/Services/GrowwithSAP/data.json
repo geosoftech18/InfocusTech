@@ -19,32 +19,32 @@
     },
     "keyFeatures": {
       "tag": "Key Features and Benefits",
-      "keyFeatures": [
+      "items": [
         {
           "imagePath": "/Services/growWithSAP/Key Features and Benefits/Cloud-Based ERP for SMBs.png",
-          "title": "Cloud-Based ERP for SMBs",
+          "name": "Cloud-Based ERP for SMBs",
           "description": "A streamlined, easy-to-deploy ERP system tailored for growing businesses. Fully managed by SAP, ensuring security, compliance, and automatic updates."
         },
         {
           "imagePath": "/Services/growWithSAP/Key Features and Benefits/Preconfigured Best Practices.png",
-          "title": "Preconfigured Best Practices",
+          "name": "Preconfigured Best Practices",
           "description": "Industry-specific best practices to enable rapid implementation and business process optimization. Standardized workflows reduce setup time and operational complexities."
         },
         {
           "imagePath": "/Services/growWithSAP/Key Features and Benefits/Seamless Integration and Flexibility.png",
-          "title": "Seamless Integration and Flexibility",
+          "name": "Seamless Integration and Flexibility",
           "description": "Integrates seamlessly with SAP BTP and third-party applications for enhanced business intelligence. Allows customization to fit unique business needs while maintaining cloud agility."
         },
         {
           "imagePath": "/Services/growWithSAP/Key Features and Benefits/Scalability and Cost Efficiency.png",
-          "title": "Scalability and Cost Efficiency",
+          "name": "Scalability and Cost Efficiency",
           "description": "Designed to scale with business growth, providing flexible pricing models. Lower upfront costs compared to traditional ERP solutions, reducing IT overhead."
         }
       ]
     },
     "why": {
       "tag": "Why Choose Grow with SAP?",
-      "benefits": [
+      "items": [
         {
           "imagePath": "/Services/growWithSAP/Why Choose Grow with SAP/Faster deployment.png",
           "name": "Faster Deployment",
@@ -64,20 +64,20 @@
     },
     "useCases": {
       "tag": "Use Cases for Growing Businesses",
-      "keyFeatures": [
+      "items": [
         {
           "imagePath": "/Services/growWithSAP/Use Cases for Growing Businesses/Manufacturing.png",
-          "title": "Manufacturing",
+          "name": "Manufacturing",
           "description": "Enhance supply chain management and production planning."
         },
         {
           "imagePath": "/Services/growWithSAP/Use Cases for Growing Businesses/Finance.png",
-          "title": "Finance",
+          "name": "Finance",
           "description": "Automate accounting processes and ensure compliance with financial regulations."
         },
         {
           "imagePath": "/Services/growWithSAP/Use Cases for Growing Businesses/Retail.png",
-          "title": "Retail",
+          "name": "Retail",
           "description": "Improve customer engagement with data-driven insights and omnichannel capabilities."
         }
       ]

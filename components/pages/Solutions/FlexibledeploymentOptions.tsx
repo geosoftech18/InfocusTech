@@ -1,37 +1,42 @@
 import Image from "next/image";
+import { whyChooseUsData } from "../home/whyChooseUs";
 
-const FlexibledeploymentOptions = () => {
+const FlexibleDeploymentOptions= ({
+heading,
+description,
+imageUrl
+}:{
+  heading:string,
+  description:string,
+  imageUrl:string
+}) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 mx-10 md:mx-40 gap-20 my-20">
-      <div className="col-span-1 font-semibold text-center md:text-left  h-full flex items-center gap-5 flex-col  md:w-5/6">
-        <div className="font-semibold text-4xl">
-          Flexible deployment Options:
-          <div className="text-gray-600 text-3xl"> On-premise and Cloud Solutions addressing
-          all your needs.</div>
+    <div className="container mx-auto px-6 md:px-20 lg:px-32 my-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        {/* Text Content */}
+        <div className="text-center md:text-left space-y-6">
+          <h2 className="text-3xl md:text-4xl font-semibold">
+            {heading}
+          </h2>
+          
+          <p className="text-gray-600 text-xs md:text-sm leading-relaxed">
+            {description}
+          </p>
         </div>
-        <div className="text-md text-gray-600">
-          SAP and Ariba offer flexible deployment options, allowing businesses
-          to choose between on-premise and cloud-based solutions to best fit
-          their needs. Whether you prefer the control of on-premise
-          installations or the scalability and convenience of cloud solutions,
-          both options provide seamless integration and robust procurement
-          functionality. On-premise and Cloud Solutions Adaptable to your
-          business requirements, these solutions ensure that organizations can
-          scale operations, improve agility, and optimize procurement processes
-          regardless of their infrastructure preferences. Choose the deployment
-          that aligns with your IT strategy, compliance needs, and operational
-          goals.
-        </div>{" "}
+
+        {/* Image Section */}
+        <div className="flex justify-center">
+          <Image
+            className="w-full h-auto max-w-lg"
+            alt="Flexible Deployment Options"
+            src={imageUrl||"/FlexibledeploymentOptions.png"}
+            width={600}
+            height={600}
+          />
+        </div>
       </div>
-      <Image
-        className="col-span-1 "
-        alt=""
-        src={"/FlexibledeploymentOptions.png"}
-        width={1000}
-        height={1000}
-      />
     </div>
   );
 };
 
-export default FlexibledeploymentOptions;
+export default FlexibleDeploymentOptions;

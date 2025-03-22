@@ -1,7 +1,7 @@
 {
   "BenefitsAWSCloudJSON": {
     "tag": "Business Benefits of Cloud Applications on AWS",
-    "benefits": [
+    "items": [
       {
         "imagePath": "/Services/AWSConsulting/Business Benefits of Cloud Applications on AWS/Highly Agile and Instantly Responsive.png",
         "name": "Highly Agile and Instantly Responsive",

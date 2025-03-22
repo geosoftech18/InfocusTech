@@ -1,5 +1,6 @@
 "use client";
 import { Card, CardContent } from "@/components/ui/card";
+import CarousalBullets from "@/components/ui/carousalBullets";
 import {
   Carousel,
   CarouselContent,
@@ -12,19 +13,21 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import React from "react";
 
-interface BenefitsSapImplementationProps {
-  BenefitSapImplementationData: {
-    tag: string;
-    benefits: {
-      imagePath: string;
-      name: string;
-      description: string;
-    }[];
-  };
+export interface BenefitsData {
+  tag: string;
+  items: {
+    imagePath: string;
+    name: string;
+    description: string;
+  }[];
+};
+
+export interface BenefitsSapImplementationProps {
+  Data:BenefitsData
 }
 
 const BenefitsSapImplementation: React.FC<BenefitsSapImplementationProps> = ({
-  BenefitSapImplementationData,
+  Data,
 }) => {
 
   const [api, setApi] = React.useState<CarouselApi>();
@@ -43,9 +46,9 @@ const BenefitsSapImplementation: React.FC<BenefitsSapImplementationProps> = ({
 
 
   return (
-    <div className="h-[70vh] md:h-screen lg:h-[40vh] my-32 xl:my-52 relative bg-[#b00d07] px-10 xl:px-28">
+    <div className="h-[40vh] md:h-screen lg:h-[40vh] my-32  relative bg-[#b00d07] px-10 xl:px-28">
       <div className="flex items-center justify-center text-gray-100 pt-10 text-3xl font-semibold">
-        {BenefitSapImplementationData.tag}
+        {Data.tag}
       </div>
       <Carousel
       setApi={setApi}
@@ -61,7 +64,7 @@ const BenefitsSapImplementation: React.FC<BenefitsSapImplementationProps> = ({
         ]}
       >
         <CarouselContent>
-          {BenefitSapImplementationData.benefits.map((item, index) => (
+          {Data.items.map((item, index) => (
             <CarouselItem
               key={index}
               className="mx-auto sm:basis-1 md:basis-1/2 lg:basis-1/4"
@@ -86,19 +89,12 @@ const BenefitsSapImplementation: React.FC<BenefitsSapImplementationProps> = ({
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselNext className="right-10" />
-        <CarouselPrevious className="left-10" />
+        <CarouselNext className="right-0 md:right-20 text-black bg-gray-200 rounded-full p-2 shadow-md " />
+        <CarouselPrevious className="left-0 md:left-20 text-black bg-gray-200 rounded-full p-2 shadow-md " />
 
-        <div className="flex items-center justify-center m-10 lg:m-2 gap-2">
-        {BenefitSapImplementationData.benefits.map((_, index) => (
-          <div
-            key={index}
-            className={`${
-              current === index + 1
-                ? "bg-black scale-125 transition-all duration-200"
-                : "bg-gray-400"
-            } rounded-full h-2 w-2`}
-          ></div>
+        <div className="flex items-center justify-center m-10 lg:m-2 lg:mt-8 gap-2">
+        {Data.items.map((_, index) => (
+         <CarousalBullets key={index} index={index} current={current}/>
         ))}
       </div>
       </Carousel>

@@ -18,26 +18,61 @@ import KeyFeatureSapImplementation from "@/components/pages/services/sapImplemen
 import ToolsAndTechnologiesWeUse from "@/components/pages/services/sapImplementation/tools&TechnologiesWeUse";
 import BenefitsSapImplementation from "@/components/pages/services/sapImplementation/benefitsSapImplementation";
 import SapImplementationProcess from "@/components/pages/services/sapImplementation/sapImplementationProcess";
+import { itemsUploader } from "@/lib/uploader/uploader";
+import { getBenefitsComponent, getSolutionsGQL, getToolsandTechnology } from "@/lib/graphql/extractSolutionsPages";
+import { extractDoorComponent } from "@/lib/graphql/extractHomepageGQL";
+import WhyChooseUs from "@/components/pages/home/whyChooseUs";
 
-const SapImplementation = () => {
+const SapImplementation = async() => {
+
+  // SapImplementationProcessJSON.items.map((item) => {
+  //   itemsUploader({ name: item.name, description: item.description });
+  // });
+
+  const {
+        aboutPage1,
+        doorComponent1,
+        doorComponent2,
+        benefitsComponent1,
+        benefitsComponent2
+      } = (await getSolutionsGQL("2fO3uHxhtPOaygSXwyFToS")).data.contentPage;
+    
+      if (
+        !aboutPage1 ||
+        !doorComponent1 ||
+        !doorComponent2 ||
+        !benefitsComponent1 ||
+        !benefitsComponent2
+      ) {
+        return <div>NADA</div>;
+      }
+    
+      const doorComponent11 = getToolsandTechnology(doorComponent1);
+      const doorComponent22 = extractDoorComponent(doorComponent2);
+      const benefits1 = getBenefitsComponent(benefitsComponent1);
+      const benefits2 = getBenefitsComponent(benefitsComponent2);
+  
   return (
     <div>
+       <div className="md:h-20"></div>
       {/* About SAP Implementation */}
-      <AboutSapImplementation AboutSapImplementationData={aboutSAPImplementationJSON} />
+      {/* <AboutSapImplementation AboutSapImplementationData={aboutPage1} /> */}
+
+      <WhyChooseUs whyChooseUsData={aboutPage1}/>
 
       {/* Key Features */}
-      <KeyFeatureSapImplementation KeyFeatureSapImplementationData={KeyFeatureSapImplementationJSON} />
+      <KeyFeatureSapImplementation Data={benefits1} />
 
       {/* Tools & Technologies We Use */}
-      <ToolsAndTechnologiesWeUse scroll ToolsAndTechnologiesWeUseData={toolsTechnologiesWeUseJSON} />
+      <ToolsAndTechnologiesWeUse scroll ToolsAndTechnologiesWeUseData={doorComponent11} />
 
       {/* Business Benefits */}
-      <BenefitsSapImplementation BenefitSapImplementationData={BenefitsSapImplementationJSON} />
+      <BenefitsSapImplementation Data={benefits2} />
 
-      <div className="h-20"></div>
+      <div className="h-32"></div>
 
       {/* SAP Implementation Process */}
-      <SapImplementationProcess SapImplemetationProcessData={SapImplementationProcessJSON} />
+      <SapImplementationProcess SapImplemetationProcessData={doorComponent22} />
 
       <div className="h-20"></div>
     </div>

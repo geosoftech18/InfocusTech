@@ -1,7 +1,7 @@
 {
     "BenefitChemical": {
       "tag": "Business Benefits",
-      "benefits": [
+      "items": [
         {
           "imagePath": "/IndustryExpertise/chemicals/Business Benefits/1020 increased portfolio and project management resource productivity.png",
           "name": "Increased Portfolio and Project Management Resource Productivity",

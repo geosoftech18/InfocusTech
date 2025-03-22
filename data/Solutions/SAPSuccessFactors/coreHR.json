@@ -1,28 +1,25 @@
 {
-    "CoreHR": {
-      "heading": {
-        "normal": "Core HR in SAP ERP",
-        "emphasized": "Empower Your Workforce for Organizational Success"
+  "CoreHR": {
+    "tag": "Core HR in SAP ERP",
+    "heading": "Empower Your Workforce for Organizational Success",
+    "description": "Manage your workforce and help your organization succeed by leveraging Core Human Resources in SAP ERP.",
+    "items": [
+      {
+        "name": "Overview",
+        "description": "Automate, streamline, and extend your core HR processes within your company. Core Human Resources in SAP ERP software covers workforce management, time and attendance, recruiting, payroll, and more – so you can fully leverage your employees’ skills and drive growth to increase profitability."
       },
-      "subheading": "Manage your workforce and help your organization succeed by leveraging Core Human Resources in SAP ERP.",
-      "details": [
-        {
-          "tag": "Overview",
-          "description": "Automate, streamline, and extend your core HR processes within your company. Core Human Resources in SAP ERP software covers workforce management, time and attendance, recruiting, payroll, and more – so you can fully leverage your employees’ skills and drive growth to increase profitability."
-        },
-        {
-          "tag": "Why Core HR in SAP ERP?",
-          "description": "To gain a competitive edge in the marketplace, you need to support organizational growth and employee engagement with a single, centralized, robust system for global and local workforce management and payroll processes."
-        },
-        {
-          "tag": "Key Benefits",
-          "description": "With Core HR in SAP ERP software, you can: Automate employee administration, time management, payroll, and legal reporting processes. Support compliance requirements with changing global and local HR regulations. Understand, evaluate, and measure your workforce’s contributions to the bottom line."
-        },
-        {
-          "tag": "SAP HR Sub-Modules",
-          "description": "SAP HR is divided into various sub-modules including Organizational Management, Personnel Administration, E-Recruitment, Time Management, Payroll, and Personnel Development."
-        }
-      ]
-    }
+      {
+        "name": "Why Core HR in SAP ERP?",
+        "description": "To gain a competitive edge in the marketplace, you need to support organizational growth and employee engagement with a single, centralized, robust system for global and local workforce management and payroll processes."
+      },
+      {
+        "name": "Key Benefits",
+        "description": "With Core HR in SAP ERP software, you can: Automate employee administration, time management, payroll, and legal reporting processes. Support compliance requirements with changing global and local HR regulations. Understand, evaluate, and measure your workforce’s contributions to the bottom line."
+      },
+      {
+        "name": "SAP HR Sub-Modules",
+        "description": "SAP HR is divided into various sub-modules including Organizational Management, Personnel Administration, E-Recruitment, Time Management, Payroll, and Personnel Development."
+      }
+    ]
   }
-  
+}

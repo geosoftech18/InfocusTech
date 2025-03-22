@@ -1,45 +1,45 @@
 {
     "KeyModules": {
       "tag": "Key Modules of SAP and Ariba Procurement Solutions",
-      "keyFeatures": [
+      "items": [
         {
           "imagePath": "/Solutions/SAPSRMAriba/Key Modules/Spend Analysis.png",
-          "title": "Spend Analysis",
+          "name": "Spend Analysis",
           "description": "Gain actionable insights into procurement spend, identify savings opportunities, and track spending patterns to make informed decisions."
         },
         {
           "imagePath": "/Solutions/SAPSRMAriba/Key Modules/Sourcing.png",
-          "title": "Sourcing",
+          "name": "Sourcing",
           "description": "Optimize sourcing processes, from supplier discovery to negotiation, ensuring better supplier selection and increased savings."
         },
         {
           "imagePath": "/Solutions/SAPSRMAriba/Key Modules/Contract Management.png",
-          "title": "Contract Management",
+          "name": "Contract Management",
           "description": "Manage the entire contract lifecycle, ensuring compliance, visibility, and seamless execution of contract terms."
         },
         {
           "imagePath": "/Solutions/SAPSRMAriba/Key Modules/Operational Procurement.png",
-          "title": "Operational Procurement",
+          "name": "Operational Procurement",
           "description": "Streamline day-to-day procurement tasks, enhancing operational efficiency and reducing manual processes."
         },
         {
           "imagePath": "/Solutions/SAPSRMAriba/Key Modules/Invoice Management.png",
-          "title": "Invoice Management",
+          "name": "Invoice Management",
           "description": "Automate invoice processing and payment, improving accuracy, reducing cycle times, and lowering operational costs."
         },
         {
           "imagePath": "/Solutions/SAPSRMAriba/Key Modules/Supplier Information and Performance Management.png",
-          "title": "Supplier Information and Performance Management",
+          "name": "Supplier Information and Performance Management",
           "description": "Monitor supplier performance and manage supplier information to ensure consistent quality, compliance, and reliability."
         },
         {
           "imagePath": "/Solutions/SAPSRMAriba/Key Modules/Mobile Procurement.png",
-          "title": "Mobile Procurement",
+          "name": "Mobile Procurement",
           "description": "Access procurement tools on the go, enabling mobile procurement for greater flexibility and responsiveness."
         },
         {
           "imagePath": "/Solutions/SAPSRMAriba/Key Modules/Supplier Collaboration.png",
-          "title": "Supplier Collaboration",
+          "name": "Supplier Collaboration",
           "description": "Foster seamless collaboration between procurement teams and suppliers, improving communication, transparency, and overall supplier performance."
         }
       ]

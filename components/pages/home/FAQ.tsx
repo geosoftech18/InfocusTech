@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -10,7 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-interface FAQItem {
+export interface FAQItem {
   title: string;
   description: string;
 }
@@ -20,12 +21,14 @@ interface FAQsProps {
 }
 
 const FAQs: React.FC<FAQsProps> = ({ FAQData }) => {
+  const [openItem, setOpenItem] = useState<string | undefined>();
+
   return (
-    <div className="my-20 mx-10 md:mx-40 flex flex-col justify-center  gap-5">
+    <div className="my-20 mx-10 md:mx-40 flex flex-col justify-center gap-5">
       {/* Header Section */}
       <div className="text-center mb-10 flex gap-5 flex-col">
         <h3 className="text-xl">FAQs</h3>
-        <h2 className="text-xl md:text-4xl font-semibold ">
+        <h2 className="text-xl md:text-4xl font-semibold">
           Frequently Asked Questions
         </h2>
         <p className="text-gray-600 text-sm md:text-lg">
@@ -35,22 +38,28 @@ const FAQs: React.FC<FAQsProps> = ({ FAQData }) => {
       </div>
 
       {/* FAQ Items */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-        {FAQData.map((faq, index) => (
-          <Accordion type="single" collapsible key={index}>
+      <Accordion type="single" collapsible value={openItem} className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
+        {FAQData.map((faq, index) => {
+          const itemValue = `item-${index}`;
+
+          return (
             <AccordionItem
-              className="border-gray-400 border-b-2 rounded-b-lg"
-              value={`item-${index}`}
               key={index}
+              value={itemValue}
+              className="data-[state=open]:border-none transition-all duration-500 ease-in-out border-gray-400 border-b-2 rounded-b-lg"
+              onMouseEnter={() => setOpenItem(itemValue)}
+              onMouseLeave={() => setOpenItem(undefined)}
             >
-              <AccordionTrigger className="ml-3">{faq.title}</AccordionTrigger>
+              <AccordionTrigger className="ml-3 hover:no-underline">
+                {faq.title}
+              </AccordionTrigger>
               <AccordionContent className="bg-gray-200 text-md p-4 text-gray-800 font-semibold rounded-b-lg">
                 {faq.description}
               </AccordionContent>
             </AccordionItem>
-          </Accordion>
-        ))}
-      </div>
+          );
+        })}
+      </Accordion>
 
       {/* Contact Section */}
       <div className="flex flex-col items-center justify-center mt-10 gap-5">

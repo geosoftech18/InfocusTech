@@ -12,6 +12,9 @@ import keyModulesData from "@/data/Solutions/SAPSRMAriba/keyModules.json";
 import contractLifecycleData from "@/data/Solutions/SAPSRMAriba/ContractLifecycleManagement.json";
 import solutionCapabilitiesData from "@/data/Solutions/SAPSRMAriba/solutionCapabilities.json";
 import collaborativeSourcingData from "@/data/Solutions/SAPSRMAriba/CollaborativeSourcing.json";
+import { itemsUploader } from "@/lib/uploader/uploader";
+import { getBenefitsComponent, getSolutionsGQL } from "@/lib/graphql/extractSolutionsPages";
+import { extractDoorComponent } from "@/lib/graphql/extractHomepageGQL";
 
 // Extract JSON Objects
 const { aboutUsJSON } = aboutUsData;
@@ -21,37 +24,70 @@ const { Data: ContractLifecycleData } = contractLifecycleData;
 const { Data: SolutionCapabilities } = solutionCapabilitiesData;
 const { collaborativeSourcing } = collaborativeSourcingData;
 
-const SAPSRMAriba = () => {
+const SAPSRMAriba = async() => {
+
+  // SolutionCapabilities.items.map((item) => {
+  //   itemsUploader({ name: item.name, description: item.description });
+  // });
+
+  const {
+      aboutPage1,
+      aboutPage2,
+      doorComponent1,
+      doorComponent2,
+      doorComponent3,
+      benefitsComponent1,
+      benefitsComponent2
+    } = (await getSolutionsGQL("6a1f2ddX4XrU4snlB5pzGM")).data.contentPage;
+  
+    if (
+      !aboutPage1 ||
+      !aboutPage2 ||
+      !doorComponent1 ||
+      !doorComponent2 ||
+      !doorComponent3 ||
+      !benefitsComponent1 ||
+      !benefitsComponent2
+    ) {
+      return <div>NADA</div>;
+    }
+  
+    const doorComponent11 = extractDoorComponent(doorComponent1);
+    const doorComponent22 = extractDoorComponent(doorComponent2);
+    const doorComponent33 = extractDoorComponent(doorComponent3);
+    const benefits1 = getBenefitsComponent(benefitsComponent1);
+    const benefits2 = getBenefitsComponent(benefitsComponent2);
+
   return (
     <div>
       {/* Why Choose Us */}
-      <WhyChooseUs whyChooseUsData={aboutUsJSON} />
+      <WhyChooseUs whyChooseUsData={aboutPage1} />
 
       {/* Industries We Serve */}
-      <IndustriesWeServe industriesWeServeData={PortfolioJSON} />
+      <IndustriesWeServe industriesWeServeData={doorComponent11} />
 
       <div className="h-20"></div>
 
       {/* Key Modules of SAP and Ariba Procurement Solutions */}
-      <KeyFeatureSapImplementation KeyFeatureSapImplementationData={KeyModules} />
+      <KeyFeatureSapImplementation Data={benefits1} />
 
       {/* Flexible Deployment Options */}
-      <FlexibledeploymentOptions />
+      <FlexibledeploymentOptions heading={aboutPage2.heading} description={aboutPage2.description} imageUrl={aboutPage2.whyChooseUsImage.url}/>
 
       {/* Optimized Contract Lifecycle Management */}
-      <DoorComponent Data={ContractLifecycleData} />
+      <DoorComponent Data={doorComponent22} />
 
       <div className="h-20"></div>
 
       {/* Collaborative Sourcing */}
-      <KeyFeatureSapImplementation KeyFeatureSapImplementationData={collaborativeSourcing} />
+      <KeyFeatureSapImplementation Data={benefits2} />
 
       <div className="h-20"></div>
 
       {/* Solution Capabilities */}
-      <DoorComponent Data={SolutionCapabilities} />
+      <DoorComponent Data={doorComponent33} />
 
-      <div className="h-0 md:h-20"></div>
+      <div className="h-0 "></div>
     </div>
   );
 };
