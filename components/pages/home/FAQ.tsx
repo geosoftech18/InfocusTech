@@ -38,7 +38,7 @@ const FAQs: React.FC<FAQsProps> = ({ FAQData }) => {
       </div>
 
       {/* FAQ Items */}
-      <Accordion type="single" collapsible value={openItem} className="w-full grid grid-cols-1 md:grid-cols-2 gap-5">
+      <Accordion type="single" collapsible value={openItem} className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 ">
         {FAQData.map((faq, index) => {
           const itemValue = `item-${index}`;
 
@@ -46,14 +46,14 @@ const FAQs: React.FC<FAQsProps> = ({ FAQData }) => {
             <AccordionItem
               key={index}
               value={itemValue}
-              className="data-[state=open]:border-none transition-all duration-500 ease-in-out border-gray-400 border-b-2 rounded-b-lg"
+              className="data-[state=open]:border-b-none transition-all duration-1000 ease-in-out "
               onMouseEnter={() => setOpenItem(itemValue)}
               onMouseLeave={() => setOpenItem(undefined)}
             >
               <AccordionTrigger className="ml-3 hover:no-underline">
                 {faq.title}
               </AccordionTrigger>
-              <AccordionContent className="bg-gray-200 text-md p-4 text-gray-800 font-semibold rounded-b-lg">
+              <AccordionContent className="bg-gray-200 text-md p-4 text-gray-800 font-semibold  border-b-2 rounded-b-lg border-gray-900">
                 {faq.description}
               </AccordionContent>
             </AccordionItem>

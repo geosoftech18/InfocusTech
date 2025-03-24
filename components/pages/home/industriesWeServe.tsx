@@ -29,11 +29,13 @@ import { DoorComponentData } from "./whatWeOffer";
 // };
 
 interface IndustriesWeServeProps {
-  industriesWeServeData: DoorComponentData
+  industriesWeServeData: DoorComponentData;
+  isHomePage?: boolean;
 }
 
 const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
   industriesWeServeData,
+  isHomePage,
 }) => {
   const [openCards, setOpenCards] = useState<{ [key: number]: boolean }>({});
 
@@ -59,9 +61,11 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
     <div className="bg-[#B00D07] px-10 lg:px-40 mt-20 sm:mt-30 md:mt-40 mb-40 lg:mb-20 pt-10 flex flex-col gap-3 items-start justify-center">
       <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10 lg:gap-20">
         <div>
-          <div className=" font-semibold text-gray-100">
-            Industries We Serve
-          </div>
+          {isHomePage && (
+            <div className=" font-semibold text-gray-100">
+              Industries We Serve
+            </div>
+          )}
           <div className="text-4xl md:text-4xl font-semibold  text-gray-100 mt-2">
             {industriesWeServeData.heading}
           </div>
@@ -91,10 +95,11 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
             >
               <div className="relative h-full">
                 <Card
-                  className="flex relative items-center h-full overflow-hidden bg-gray-100 flex-col z-10"
+                  className="flex relative items-center h-full overflow-hidden flex-col z-10"
                   onMouseEnter={() => toggleDoor(index)}
                   onMouseLeave={() => toggleDoor(index)}
                 >
+                  <div className="absolute inset-0 bg-[url('/vectors/2.jpg')] bg-cover bg-center opacity-50"></div>
                   <div className="relative flex items-center justify-center w-full">
                     {/* Image */}
                     <Image
@@ -102,7 +107,7 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
                       height={1000}
                       width={1000}
                       src={item.imagePath || ""}
-                      className="-z-10 ml-2 mt-2 h-20 w-20 border-2 p-2 rounded-full border-[#E60000]" // Keeps the image behind the overlay
+                      className=" ml-2 mt-2 h-20 w-20 border-2 p-2 rounded-full border-[#E60000]" // Keeps the image behind the overlay
                     />
 
                     {/* Sliding overlay */}
@@ -136,27 +141,29 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
                     <span className="text-md text-gray-600 text-center max-w-2xl pb-10">
                       {item.description}
                     </span>
-                    <Link href={item.link || ""}>
-                      <Button
-                        variant={"default"}
-                        className={`rounded-full z-50 p-6 absolute bottom-2 right-2 shadow-lg ${
-                          openCards[index]
-                            ? "bg-black text-white"
-                            : "bg-transparent border border-1 text-black "
-                        } transition-colors duration-200`}
-                      >
-                        Read More
-                        <ArrowRight className="h-5 w-2" />
-                      </Button>
-                    </Link>
+                    {isHomePage && (
+                      <Link href={item.link || ""}>
+                        <Button
+                          variant={"default"}
+                          className={`rounded-full z-50 p-6 absolute bottom-2 right-2 shadow-lg ${
+                            openCards[index]
+                              ? "bg-black text-white"
+                              : "bg-transparent border border-1 text-black "
+                          } transition-colors duration-200`}
+                        >
+                          Read More
+                          <ArrowRight className="h-5 w-2" />
+                        </Button>
+                      </Link>
+                    )}
                   </CardContent>
                 </Card>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="absolute -left-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md hover:bg-gray-700" />
-        <CarouselNext className="absolute -right-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md hover:bg-gray-700" />
+        <CarouselPrevious className="absolute -left-10 top-1/2 transform -translate-y-1/2  text-black bg-gray-200 rounded-full p-2 shadow-md hover:scale-125 transition-transform duration-300 " />
+        <CarouselNext className="absolute -right-10 top-1/2 transform -translate-y-1/2  text-black bg-gray-200 rounded-full p-2 shadow-md hover:scale-125 transition-transform duration-300 " />
         <div className="flex items-center justify-center gap-2 m-2">
           {industriesWeServeData.items.map((_, index) => (
             <div

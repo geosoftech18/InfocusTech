@@ -16,16 +16,19 @@ export interface whyChooseUsData {
         title: string;
       }[];
   imagePath?: string;
+  
 }
 interface WhyChooseUsProps {
   basis?: "textLeft" | "textRight";
   isHomepage?: boolean;
   whyChooseUsData: whyChooseUsData;
+  buttonText?:string
 }
 const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
   whyChooseUsData,
   basis,
   isHomepage,
+  buttonText
 }) => {
   return (
     <div className="grid  lg:grid-cols-2  lg:px-40 mb-20 p-10 gap-10">
@@ -53,9 +56,9 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
             <div className="grid grid-cols-1 md:grid-cols-2 text-left w-full border-y-2">
               {whyChooseUsData.bulletPoints.map((item, index) => (
                 <div className="col-span-1 p-2" key={index}>
-                  <div className="flex items-center gap-2 justify-start">
-                    <CheckBadgeIcon className="h-5 w-5" />
-                    <div className="text-sm">{item.toString()}</div>
+                  <div className="flex items-center  justify-start">
+                    <CheckBadgeIcon className="h-5 w-2/12 " />
+                    <div className="text-sm w-10/12">{item.toString()}</div>
                   </div>
                 </div>
               ))}
@@ -67,7 +70,7 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
                   variant={"default"}
                   size={"lg"}
                 >
-                  Learn More
+                  {buttonText || "Learn More"}
                 </Button>
               </Link>
             )}
@@ -87,9 +90,9 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
             <div className="grid grid-cols-1 md:grid-cols-2 text-left w-full border-y-2">
               {whyChooseUsData.bulletPoints.map((item, index) => (
                 <div className="col-span-1 p-2" key={index}>
-                  <div className="flex items-center gap-2 justify-start">
-                    <CheckBadgeIcon className="h-5 w-5" />
-                    <div className="text-sm">{item.toString()}</div>
+                  <div className="flex items-center  justify-start">
+                    <CheckBadgeIcon className="h-5 w-2/12 " />
+                    <div className="text-sm w-10/12">{item.toString()}</div>
                   </div>
                 </div>
               ))}
@@ -101,7 +104,7 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
                   variant={"default"}
                   size={"lg"}
                 >
-                  Learn More
+                   {buttonText || "Learn More"}
                 </Button>
               </Link>
             )}

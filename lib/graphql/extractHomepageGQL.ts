@@ -108,7 +108,7 @@ export async function getHomePageGQL() {
     }
   }
 }`,
-    { next: { revalidate: 3600 } }
+    { next: { revalidate: 120 } }
   );
   // console.log(result);
 

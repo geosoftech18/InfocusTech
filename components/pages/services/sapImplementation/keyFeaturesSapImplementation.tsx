@@ -32,6 +32,7 @@ const KeyFeatureSapImplementation: React.FC<BenefitsSapImplementationProps> = ({
 
   return (
     <div className="max-w-screen-xl mx-auto px-10">
+
       <h2 className="text-black text-2xl md:text-3xl font-semibold text-center mb-6">
         {Data.tag}
       </h2>
@@ -48,8 +49,9 @@ const KeyFeatureSapImplementation: React.FC<BenefitsSapImplementationProps> = ({
               key={index}
               className="sm:basis-1 md:basis-1/2 lg:basis-1/3 px-2"
             >
-              <Card className="flex flex-col items-center justify-center rounded-xl bg-gray-100  py-6 h-80">
-                <CardContent className="flex flex-col items-center justify-between text-center h-full px-6">
+              <Card className="flex flex-col relative items-center justify-center rounded-xl bg-gray-100  py-6 h-80">
+              <div className="absolute inset-0 bg-[url('/vectors/4.jpg')] bg-cover bg-center opacity-10"></div>
+                <CardContent className="flex flex-col items-center justify-between text-center h-full px-6 z-10">
                   <Image
                     alt={item.name}
                     height={100}
@@ -68,8 +70,8 @@ const KeyFeatureSapImplementation: React.FC<BenefitsSapImplementationProps> = ({
         </CarouselContent>
 
         {/* Navigation Buttons */}
-        <CarouselPrevious className="absolute inset-y-1/2 -left-10 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full shadow-md hover:bg-gray-400 transition" />
-        <CarouselNext className="absolute inset-y-1/2 -right-10 transform -translate-y-1/2 bg-gray-300 p-2 rounded-full shadow-md hover:bg-gray-400 transition" />
+        <CarouselPrevious className="absolute inset-y-1/2 -left-10 transform -translate-y-1/2  text-black bg-gray-200 rounded-full p-2 shadow-md hover:scale-125 transition-transform duration-300 " />
+        <CarouselNext className="absolute inset-y-1/2 -right-10 transform -translate-y-1/2  text-black bg-gray-200 rounded-full p-2 shadow-md hover:scale-125 transition-transform duration-300 " />
 
         {/* Bullet Indicators */}
         <div className="flex items-center justify-center gap-2 mt-4">

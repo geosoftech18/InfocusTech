@@ -24,7 +24,7 @@ const IntegrationwithICICIBank = async() => {
   return (
     <div>
       {/* Why Choose Us Section */}
-      <WhyChooseUs whyChooseUsData={aboutPage1} />
+      <WhyChooseUs buttonText="Get 40% off on SAP Integration Setup & Other ICICI API Integration" isHomepage={true} whyChooseUsData={aboutPage1} />
     </div>
   );
 };

@@ -54,7 +54,7 @@ export default async function Home() {
       <AboutUs AboutUsData={aboutUsData} visionMissionQualityData={visionMissionQualityData}/>
       <WhyChooseUs isHomepage={true} whyChooseUsData={whyChooseUsData}/>
       <WhatWeOffer arrowRight={true} bookNowButton={true} Data={doorComponentData}/>
-      <IndustriesWeServe industriesWeServeData={IndustriesWeServeData}/>
+      <IndustriesWeServe isHomePage={true} industriesWeServeData={IndustriesWeServeData}/>
       <Testimonial TestimonialItems={ TestimonialsData}/>
       <Clients domesticClients={domesticClients} internationalClients={internationalClients} />
       <FAQs FAQData={faqsData} />

@@ -29,12 +29,12 @@ export interface ManagementTeamData {
     linkedinLink: string;
     youtubeLink?: string;
     twitterLink?: string;
-  }[]
+  }[];
 }
 
 interface ManagementTeamProps {
-  ManagementTeamData:ManagementTeamData
-  };
+  ManagementTeamData: ManagementTeamData;
+}
 
 const ManagementTeam: React.FC<ManagementTeamProps> = ({
   ManagementTeamData,
@@ -43,7 +43,7 @@ const ManagementTeam: React.FC<ManagementTeamProps> = ({
 
   return (
     <Carousel
-      className="bg-gray-400  grid grid-cols-1 md:grid-cols-3 md:h-[75vh] items-center justify-center px-10 md:px-40 gap-20 md:gap-56 lg:gap-20 py-5 lg:py-0"
+      className="relative  grid grid-cols-1 md:grid-cols-3 md:h-[75vh] items-center justify-center px-10 md:px-40 gap-20 md:gap-56 lg:gap-20 py-5 lg:py-0"
       opts={{
         align: "start",
         loop: true,
@@ -54,16 +54,21 @@ const ManagementTeam: React.FC<ManagementTeamProps> = ({
         }),
       ]}
     >
+      <Image
+        alt=""
+        src="/vectors/3.jpg"
+        layout="fill"
+        objectFit="cover"
+        className="absolute inset-0 opacity-50 -z-10"
+      />
       <div className="col-span-1 relative flex items-start gap-10 flex-col md:h-4/6">
-        <div className="rounded-full text-xl text-gray-300">
-          {ManagementTeamData.tag}
-        </div>
-        <div className="font-semibold text-gray-100 text-4xl">
+        <div className="rounded-full text-xl ">{ManagementTeamData.tag}</div>
+        <div className="font-semibold  text-4xl">
           {ManagementTeamData.title}
         </div>
         <div className="absolute -bottom-10 md:bottom-10 left-10 flex gap-2">
-          <CarouselPrevious className="absolute -left-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md " />
-          <CarouselNext className="absolute -right-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md " />
+          <CarouselPrevious className="absolute -left-10 top-1/2 transform -translate-y-1/2  text-black bg-gray-400 rounded-full p-2 hover:scale-125 transition-transform duration-300  " />
+          <CarouselNext className="absolute -right-10 top-1/2 transform -translate-y-1/2  text-black bg-gray-400 rounded-full p-2 hover:scale-125 transition-transform duration-300  " />
         </div>
       </div>
       <div className="col-span-1 md:col-span-2">
@@ -76,13 +81,13 @@ const ManagementTeam: React.FC<ManagementTeamProps> = ({
               <div className="relative h-full">
                 <Card className="rounded-lg">
                   <div className="p-3">
-                  <Image
-                    alt="People working"
-                    height={1000}
-                    width={1000}
-                    src={item.imagePath}
-                    className="-z-10 rounded-lg  aspect-[3/4] h-full w-full"
-                  />
+                    <Image
+                      alt="People working"
+                      height={1000}
+                      width={1000}
+                      src={item.imagePath}
+                      className="-z-10 rounded-lg  aspect-[3/4] h-full w-full"
+                    />
                   </div>
                   <CardContent className="flex items-center justify-between mt-2 overflow-hidden">
                     <div>

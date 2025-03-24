@@ -64,7 +64,7 @@ const SAPSuccessFactors = async () => {
       {/* Core HR - SAP Upgrade & Migration */}
       <WhySAPUpgradeandMigration Data={doorComponent11} />
 
-      <div className="h-10"></div>
+      <div className="h-32 lg:h-10"></div>
 
       {/* Key Capabilities */}
       <DoorComponent Data={doorComponent22} />

@@ -66,7 +66,7 @@ const Footer: React.FC<FooterProps> = ({ FooterData }) => {
     socials,
   } = FooterData;
   return (
-    <footer className="bg-gray-900 text-gray-300 px-4 py-8 mt-28">
+    <footer className="bg-gray-900 bg-[url('/vectors/gray-neural-network-illustration/78766-removebg-preview.png)] text-gray-300 px-4 py-8 mt-28">
       <div className="max-w-7xl mx-auto">
         {/* Top section: Locations + Columns + Accreditation */}
         <div className="grid grid-cols-2 lg:grid-cols-5 gap-8">
@@ -131,7 +131,7 @@ const Footer: React.FC<FooterProps> = ({ FooterData }) => {
             <p className="text-sm text-gray-400">
               {copyrightText
                 ? copyrightText
-                : `© ${new Date().getFullYear()} ${brandName}. All rights reserved.`}
+                : `© ${new Date().getFullYear()} ${brandName} All rights reserved.`}
             </p>
 
             <p className="text-xs text-gray-400">
@@ -202,16 +202,16 @@ const Socials: React.FC<FooterSocials> = (socials) => {
   return (
     <div className="flex items-center justify-between">
       <Link href={socials.Facebook}>
-        <Facebook className="h-5 w-5" />
+        <Facebook className="h-5 w-5 hover:scale-150 transition-transform duration-300 " />
       </Link>
       <Link href={socials.Linkedin}>
-        <Linkedin className="h-5 w-5" />
+        <Linkedin className="h-5 w-5 hover:scale-150 transition-transform duration-300" />
       </Link>
       <Link href={socials.Twitter}>
-        <Twitter className="h-5 w-5" />
+        <Twitter className="h-5 w-5 hover:scale-150 transition-transform duration-300" />
       </Link>
       <Link href={socials.google}>
-        <Search className="h-5 w-5" />
+        <Search className="h-5 w-5 hover:scale-150 transition-transform duration-300" />
       </Link>
     </div>
   );
