@@ -151,7 +151,7 @@ export async function getSolutionsGQL(id: string):Promise<getSolutionsGQLResult>
     { next: { revalidate: 3600 } }
   );
 
-  console.log(result)
+  // console.log(result)
   return result
 }
 

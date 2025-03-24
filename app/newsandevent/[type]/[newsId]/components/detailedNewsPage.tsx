@@ -1,8 +1,8 @@
 "use client";
-import { NewsCardProps } from "../../../components/newsCard";
+import { FilteredNewsItem } from "@/app/newsandevent/components/newsPage";
 import { motion } from "framer-motion";
 
-const DetailedNewsPage: React.FC<NewsCardProps> = ({
+const DetailedNewsPage: React.FC<FilteredNewsItem> = ({
   title,
   content,
   imageUrl,
@@ -14,7 +14,7 @@ const DetailedNewsPage: React.FC<NewsCardProps> = ({
         {/* Image Section */}
         <motion.img
           src={imageUrl || "/emp1.jpg"}
-          alt={title || "News Image"}
+          alt={ "News Image"}
           className="w-full h-64 md:h-80 object-cover"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -39,11 +39,7 @@ const DetailedNewsPage: React.FC<NewsCardProps> = ({
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.3 }}
             >
-              {new Date(date).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
+              {date}
             </motion.p>
           </div>
 

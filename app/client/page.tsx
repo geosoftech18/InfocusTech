@@ -1,22 +1,20 @@
-"use client";
-import { useEffect } from "react";
-
-// data
-
 import AccordionCard from "@/components/accordionCard";
 import data from "@/data/clients/data.json";
+import { getHomePageGQL } from "@/lib/graphql/extractHomepageGQL";
+import { HomePagePropsExpected } from "@/types/homepage";
 
-const Client = () => {
+const Client = async () => {
+  // const domesticClients = data.domesticClients;
 
-  useEffect(() => {
-   
+  // const internationalClients = data.internationalClients;
 
-    
-  }, []);
+  const homepage: HomePagePropsExpected | null = await getHomePageGQL();
 
-  const domesticClients = data.domesticClients;
+  if (!homepage) {
+    return <div>NADA</div>;
+  }
 
-  const internationalClients = data.internationalClients;
+  const { domesticClients, internationalClients } = homepage;
 
   return (
     <div className="mx-10 md:mx-40 flex flex-col items-center justify-center gap-10 my-20">

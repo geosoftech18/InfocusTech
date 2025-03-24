@@ -4,23 +4,17 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { FilteredNewsItem } from "./newsPage";
 
-export interface NewsCardProps {
-  date: string;
-  title: string;
-  content: string;
-  imageUrl: string;
-  imageId?: string;
-  id?: string;
-}
 
-const NewsCard: React.FC<NewsCardProps> = ({
+
+const NewsCard: React.FC<FilteredNewsItem> = ({
+  type,
   date,
   title,
   content,
   imageUrl,
-  id,
-  imageId,
+  id
 }) => {
   const [currentUrl, setCurrentUrl] = useState("");
 
@@ -28,26 +22,22 @@ const NewsCard: React.FC<NewsCardProps> = ({
     setCurrentUrl(window.location.href);
   }, []);
 
-  if (!id || !imageId) {
+  if (!id || !type ) {
     return <div>data not fetched properly, imageId and entryId not found</div>;
   }
   return (
-    <Link href={`${currentUrl}/${id}/${imageId}`}>
+    <Link href={`${currentUrl}/${type}/${id}`}>
       <Card className="max-w-md w-full p-4 shadow-lg rounded-2xl border border-gray-200 dark:border-gray-700">
         <Image
           src={imageUrl}
-          alt={title}
+          alt=""
           width={400}
           height={200}
           className="w-full h-48 object-contain rounded-lg"
         />
         <CardContent className="p-4 space-y-2">
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            {new Date(date).toLocaleDateString("en-US", {
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-            })}
+            {date}
           </p>
           <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
             {title}

@@ -1,26 +1,30 @@
 "use client"
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import NewsCard from "./newsCard";
+import { ItemText } from "@radix-ui/react-select";
 
 export interface FilteredNewsItem {
-    title: string;
-    content: string;
+    title: ReactNode;
+    content: ReactNode;
     date: string;
     imageUrl: string;
     id:string;
-    imageId:string
+    type?:'news'|'event';
   }
 
   
 interface NewsPageProps {
+    type:'news'|'event';
     NewsData:FilteredNewsItem[]
 }
-const NewsPage:React.FC<NewsPageProps> = ({NewsData}) => {
+const NewsPage:React.FC<NewsPageProps> = ({NewsData,type}) => {
+
     const [searchQuery, setSearchQuery] = useState("");
 
-    const filteredNews = NewsData?.filter((item) =>
-      item.title.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    const filteredNews = NewsData
+    // ?.filter((item) =>
+    //   item.title.toLowerCase().includes(searchQuery.toLowerCase())
+    // );
   
     return (
       <div className="mx-10 md:mx-40">
@@ -40,17 +44,17 @@ const NewsPage:React.FC<NewsPageProps> = ({NewsData}) => {
           {filteredNews && filteredNews.length > 0 ? (
             filteredNews.map((item, index) => (
               <NewsCard
+                type={type}
                 key={index}
                 title={item.title}
                 content={item.content}
                 date={item.date}
                 imageUrl={item.imageUrl}
-                imageId={item.imageId}
                 id={item.id}
               />
             ))
           ) : (
-            <p className="text-gray-500">No news found.</p>
+            <div className="text-gray-500">No news found.</div>
           )}
         </div>
       </div>
