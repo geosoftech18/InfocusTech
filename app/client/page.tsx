@@ -1,4 +1,5 @@
 import AccordionCard from "@/components/accordionCard";
+import FlipCard from "@/components/ui/flipCard";
 import data from "@/data/clients/data.json";
 import { getHomePageGQL } from "@/lib/graphql/extractHomepageGQL";
 import { HomePagePropsExpected } from "@/types/homepage";
@@ -23,14 +24,14 @@ const Client = async () => {
 
       <div className="grid grid-cols-2 md:grid-cols-4  gap-5">
         {domesticClients.map((item, index) => (
-          <AccordionCard
-            imagePath={item.imagePath}
-            title={item.title}
-            description={item.description}
-            name={item.name}
-            key={index}
-            index={index.toString()}
-          />
+           <FlipCard
+           imagePath={item.imagePath}
+           title={item.title}
+           description={item.description}
+           name={item.name}
+           key={index}
+           index={index.toString()}
+         />
         ))}
       </div>
 
@@ -38,14 +39,14 @@ const Client = async () => {
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
         {internationalClients.map((item, index) => (
-          <AccordionCard
-            imagePath={item.imagePath}
-            title={item.title}
-            description={item.description}
-            name={item.name}
-            key={index}
-            index={index.toString()}
-          />
+          // <AccordionCard
+          //   imagePath={item.imagePath}
+          //   title={item.title}
+          //   description={item.description}
+          //   name={item.name}
+          //   key={index}
+          //   index={index.toString()}
+          // />
           // <ClientCard
           //   isSmallScreen={isSmallScreen}
           //   key={index}
@@ -57,6 +58,14 @@ const Client = async () => {
           //   title={item.title}
           //   description={item.description}
           // />
+          <FlipCard
+            imagePath={item.imagePath}
+            title={item.title}
+            description={item.description}
+            name={item.name}
+            key={index}
+            index={index.toString()}
+          />
         ))}
       </div>
     </div>

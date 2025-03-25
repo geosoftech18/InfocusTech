@@ -50,22 +50,23 @@
             }
         },
         {
+            "name": "Products"
+        },
+        {
             "name": "Client"
         },
         {
             "name": "News and Event"
         },
         {
-            "name": "Carrers"
+            "name": "Careers"
         },
         {
             "name": "Contact Us"
         },
         {
             "name": "Investors"
-        },
-        {
-            "name": "Products"
         }
+        
     ]
 }

@@ -42,7 +42,7 @@ const ResourceConsulting = async() => {
       const doorComponent22 = extractDoorComponent(doorComponent2);
 
   return (
-    <div className="md:my-20">
+    <div>
       {/* About Staffing Consulting */}
       {/* <AboutSapImplementation
         // initialValue={0}

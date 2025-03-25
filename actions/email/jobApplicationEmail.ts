@@ -3,7 +3,7 @@
 import axios from "axios";
 import { z } from "zod";
 import { promises as fs } from "fs";
-import { JobApplicationSchema } from "@/app/carrers/components/jobApplicationSchema";
+import { JobApplicationSchema } from "@/app/careers/components/jobApplicationSchema";
 
 type EmailResponse = {
   success: boolean;

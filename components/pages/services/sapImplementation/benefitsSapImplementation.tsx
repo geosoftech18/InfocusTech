@@ -65,14 +65,14 @@ const BenefitsSapImplementation: React.FC<BenefitsSapImplementationProps> = ({
               key={index}
               className="mx-auto sm:basis-1 md:basis-1/2 lg:basis-1/4"
             >
-              <Card className="flex flex-col items-center justify-center rounded-lg rounded-b-[30px] py-5 h-80 shadow-md">
+              <Card className="flex flex-col group items-center justify-center rounded-lg rounded-b-[30px] py-5 h-80 shadow-md">
                 <CardContent className="flex flex-col items-center justify-between text-center font-semibold text-2xl h-full">
                   <Image
                     alt="People working"
                     height={100}
                     width={100}
                     src={item.imagePath}
-                    className="h-1/3 w-1/3"
+                    className="h-1/3 w-1/3 group-hover:scale-125 transition-transform duration-300"
                   />
                   <div className="flex flex-col items-center justify-between gap-4 py-2 h-5/6">
                     <div>{item.name}</div>

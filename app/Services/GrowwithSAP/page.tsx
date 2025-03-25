@@ -46,7 +46,7 @@ const GrowwithSAP = async() => {
           const benefits3 = getBenefitsComponent(benefitsComponent3);
 
   return (
-    <div className="md:my-20">
+    <div>
       {/* <AboutSapImplementation AboutSapImplementationData={aboutData} /> */}
       <WhyChooseUs whyChooseUsData={aboutPage1}/>
 

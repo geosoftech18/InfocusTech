@@ -46,7 +46,6 @@ const AWSConsultingServices = async () => {
 
   return (
     <div>
-      <div className="md:h-10"></div>
       {/* <AboutSapImplementation
         // initialValue={0}
         // finalValue={15}

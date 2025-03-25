@@ -11,7 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import DropdownCTA from "./ui/dropdownCTA";
-import { Menu, X } from "lucide-react";
+import { MapPin, Menu, Phone, X } from "lucide-react";
 
 import {
   Accordion,
@@ -20,6 +20,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { AnimatePresence, motion } from "framer-motion";
+import { Socials } from "./ui/socials";
+import FooterData from "@/data/footer.json";
+const FooterJSON = FooterData.FooterData;
 
 export interface DropDownCTAProps {
   heading: string;
@@ -46,11 +49,48 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
   return (
     <>
       <NavigationMenu
-        className={`${
-          fixed ? "fixed bg-white z-50 shadow-md" : "bg-transparent"
-        } py-4 transition-all duration-300 hidden md:flex`}
+        className={`flex flex-col
+          ${
+            fixed ? "fixed bg-white z-50 shadow-md" : "bg-transparent"
+          }  transition-all duration-300 hidden md:flex`}
       >
-        <NavigationMenuList className=" items-center gap-2 lg:gap-10">
+        <div
+          className={`w-full px-40  flex flex-wrap items-center justify-between gap-4 p-4  ${"text-white bg-gray-900 "}`}
+        >
+          {/* Address Section */}
+          <div className="flex items-center gap-3">
+            <MapPin
+              className={`w-6 h-6 ${
+                fixed ? "text-[#b00d07]" : "text-[#b00d07]"
+              }`}
+            />
+            <span className="text-sm font-medium">
+              {FooterJSON.locations[0].addressLines}
+            </span>
+          </div>
+
+          {/* Phone Section */}
+          <div className="flex items-center gap-3">
+            <Phone
+              className={`w-6 h-6 ${
+                fixed ? "text-[#b00d07]" : "text-[#b00d07]"
+              }`}
+            />
+            <span className="text-sm font-medium">
+              {FooterJSON.locations[0].phone}
+            </span>
+          </div>
+
+          {/* Social Media Links */}
+          <div className="flex items-center gap-4 w-1/4">
+            <Socials
+              socials={FooterData.FooterData.socials}
+              iconColour="text-[#B00D07]"
+            />
+          </div>
+        </div>
+
+        <NavigationMenuList className=" items-center gap-2 lg:gap-10 py-4">
           {/* Logo */}
           <NavigationMenuItem className="z-20">
             <div
@@ -76,6 +116,7 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
               {/* Normal Link */}
               {!link.dropdownList && (
                 <NavigationMenuLink asChild>
+                  
                   <Link
                     href={`/${link.name.toLowerCase().replace(/\s+/g, "")}`}
                     className={`block py-2  ${

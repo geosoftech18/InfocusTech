@@ -36,15 +36,15 @@ const NewsCard: React.FC<FilteredNewsItem> = ({
           className="w-full h-48 object-contain rounded-lg"
         />
         <CardContent className="p-4 space-y-2">
-          <p className="text-sm text-gray-500 dark:text-gray-400">
+          <div className="text-sm text-gray-500 dark:text-gray-400">
             {date}
-          </p>
+          </div>
           <h2 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
             {title}
           </h2>
-          <p className="text-sm text-gray-700 dark:text-gray-300 line-clamp-3">
+          <div className="text-sm text-gray-700 dark:text-gray-300 line-clamp-3">
             {content}
-          </p>
+          </div>
         </CardContent>
       </Card>
     </Link>

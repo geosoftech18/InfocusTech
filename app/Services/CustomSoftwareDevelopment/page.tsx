@@ -33,7 +33,7 @@ const CustomSoftwareDevelopment = async() => {
       
         const doorComponent11 = getToolsandTechnology(doorComponent1);
   return (
-    <div className="md:my-10">
+    <div>
       {/* About Custom Software Development */}
       {/* <AboutSapImplementation
         // initialValue={0}

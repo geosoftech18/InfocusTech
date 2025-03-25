@@ -6,6 +6,7 @@ import FooterData from "@/data/footer.json";
 import type { Metadata } from "next";
 import "./globals.css";
 import { getHomePageGQL } from "@/lib/graphql/extractHomepageGQL";
+import ScrollToTopButton from "@/components/ui/uptotop";
 
 
 
@@ -39,6 +40,7 @@ export default async function RootLayout({
           <Animation heroItems={heroData}/>
           {children}
           <Footer FooterData={FooterJSON}/>
+          <ScrollToTopButton/>
         </Container>
       </body>
     </html>

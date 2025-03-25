@@ -41,7 +41,7 @@ const SAPAuditingandTestingServices = async() => {
 
 
   return (
-    <div className="md:my-10">
+    <div>
       {/* About SAP Auditing & Testing Services */}
       {/* <AboutSapImplementation
         // initialValue={0}

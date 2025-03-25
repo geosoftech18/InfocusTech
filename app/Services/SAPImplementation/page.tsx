@@ -54,7 +54,6 @@ const SapImplementation = async() => {
   
   return (
     <div>
-       <div className="md:h-20"></div>
       {/* About SAP Implementation */}
       {/* <AboutSapImplementation AboutSapImplementationData={aboutPage1} /> */}
 

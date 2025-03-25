@@ -61,7 +61,6 @@ const SAPUpgradeandMigration = async() => {
   return (
     <div>
       {/* About SAP Upgrade & Migration */}
-      <div className="md:h-10"> </div>
       {/* <AboutSapImplementation AboutSapImplementationData={aboutSAPUpgradeandMigration} /> */}
       <WhyChooseUs whyChooseUsData={aboutPage1}/>
 

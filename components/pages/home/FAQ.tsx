@@ -10,6 +10,7 @@ import {
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import UnderlineAnimation from "@/components/ui/slidingUnderline";
 
 export interface FAQItem {
   title: string;
@@ -21,7 +22,7 @@ interface FAQsProps {
 }
 
 const FAQs: React.FC<FAQsProps> = ({ FAQData }) => {
-  const [openItem, setOpenItem] = useState<string | undefined>();
+  // const [openItem, setOpenItem] = useState<string | undefined>();
 
   return (
     <div className="my-20 mx-10 md:mx-40 flex flex-col justify-center gap-5">
@@ -38,7 +39,12 @@ const FAQs: React.FC<FAQsProps> = ({ FAQData }) => {
       </div>
 
       {/* FAQ Items */}
-      <Accordion type="single" collapsible value={openItem} className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 ">
+      {/* value={openItem} */}
+      <Accordion
+        type="single"
+        collapsible
+        className="w-full grid grid-cols-1 md:grid-cols-2 gap-5 "
+      >
         {FAQData.map((faq, index) => {
           const itemValue = `item-${index}`;
 
@@ -47,12 +53,14 @@ const FAQs: React.FC<FAQsProps> = ({ FAQData }) => {
               key={index}
               value={itemValue}
               className="data-[state=open]:border-b-none transition-all duration-1000 ease-in-out "
-              onMouseEnter={() => setOpenItem(itemValue)}
-              onMouseLeave={() => setOpenItem(undefined)}
+              // onMouseEnter={() => setOpenItem(itemValue)}
+              // onMouseLeave={() => setOpenItem(undefined)}
             >
-              <AccordionTrigger className="ml-3 hover:no-underline">
-                {faq.title}
-              </AccordionTrigger>
+              
+                <AccordionTrigger className="ml-3 hover:no-underline">
+                  <UnderlineAnimation>{faq.title}</UnderlineAnimation>
+                </AccordionTrigger>
+              
               <AccordionContent className="bg-gray-200 text-md p-4 text-gray-800 font-semibold  border-b-2 rounded-b-lg border-gray-900">
                 {faq.description}
               </AccordionContent>

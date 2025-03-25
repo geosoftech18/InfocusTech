@@ -1,6 +1,7 @@
-import { FetchCarrerData } from "@/actions/fetchCareer";
-import CareersHero, { CareersHeroProps } from "./components/carrerHero";
-import JobListings, { Job } from "./components/carrerTable";
+
+import { FetchCareerData } from "@/actions/fetchCareer";
+import CareersHero, { CareersHeroProps } from "./components/careerHero";
+import JobListings, { Job } from "./components/careerTable";
 
 // Sample Dynamic Data
 // const careersData = {
@@ -43,11 +44,11 @@ export default async function CareersPage() {
   const response: {
     success: boolean;
     data?: {
-      carrerHeroData: CareersHeroProps;
-      carrerTableData: Job[];
+      careerHeroData: CareersHeroProps;
+      careerTableData: Job[];
     } | null;
     error?: string;
-  } = await FetchCarrerData()
+  } = await FetchCareerData()
 
 
   if(!response.data){
@@ -59,13 +60,13 @@ export default async function CareersPage() {
   return(
     <main className="min-h-screen  dark:bg-gray-900  ">
       <CareersHero
-        imageUrl={response.data.carrerHeroData.imageUrl}
-        bullets={response.data.carrerHeroData.bullets}
-        company={response.data.carrerHeroData.company}
-        extraDescription={response.data.carrerHeroData.extraDescription}
-        description={response.data.carrerHeroData.description}
+        imageUrl={response.data.careerHeroData.imageUrl}
+        bullets={response.data.careerHeroData.bullets}
+        company={response.data.careerHeroData.company}
+        extraDescription={response.data.careerHeroData.extraDescription}
+        description={response.data.careerHeroData.description}
       />
-      <JobListings jobs={response.data.carrerTableData} />
+      <JobListings jobs={response.data.careerTableData} />
     </main>
   );
 }

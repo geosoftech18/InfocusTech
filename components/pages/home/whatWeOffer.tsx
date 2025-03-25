@@ -76,7 +76,7 @@ const DoorComponent: React.FC<DoorComponentProps> = ({
         src="/vectors/1.jpg"
         layout="fill"
         objectFit="cover"
-        className="absolute inset-0 opacity-50 -z-10"
+        className="absolute inset-0 opacity-50 -z-10  "
       />
       <div className="flex flex-col items-start xl:flex-row xl:items-center justify-between gap-10 pt-10 lg:pt-20">
         {/* top left heading */}
@@ -126,7 +126,7 @@ const DoorComponent: React.FC<DoorComponentProps> = ({
               key={index}
             >
               <Card
-                className="flex items-start h-80 px-10 gap-10  flex-col z-10 bg-gray-100 mt-12 mx-auto [perspective:4000px]"
+                className="flex items-start h-80 px-10 gap-10 group  flex-col z-10 bg-gray-100 mt-12 mx-auto [perspective:4000px]"
                 onMouseEnter={() => {
                   toggleDoor(index);
                 }}
@@ -155,7 +155,7 @@ const DoorComponent: React.FC<DoorComponentProps> = ({
                 <CardTitle className=" flex items-start justify-center flex-col">
                   <div className="  flex flex-col gap-2 text-gray-900">
                     <Image
-                      className="h-16 w-16"
+                      className="h-16 w-16 group-hover:scale-125 transition-transform duration-300"
                       src={item.imagePath || ""}
                       alt=""
                       height={1000}

@@ -54,6 +54,9 @@ import React from "react";
 import Image from "next/image"; // or regular <img> if not in Next.js
 import { Facebook, Linkedin, Search, Twitter } from "lucide-react";
 import Link from "next/link";
+import { Socials } from "./ui/socials";
+import CenteredLink from "./ui/slidingUnderline";
+import UnderlineAnimation from "./ui/slidingUnderline";
 
 const Footer: React.FC<FooterProps> = ({ FooterData }) => {
   const {
@@ -76,12 +79,7 @@ const Footer: React.FC<FooterProps> = ({ FooterData }) => {
               <LocationBlock key={i} location={loc} />
             ))}
             <div className="hidden md:block pr-10">
-            <Socials
-              google={socials.google}
-              Facebook={socials.Facebook}
-              Twitter={socials.Twitter}
-              Linkedin={socials.Linkedin}
-            />
+              <Socials socials={socials} iconColour={"text-[#FFFF]"} />
             </div>
           </div>
 
@@ -117,13 +115,8 @@ const Footer: React.FC<FooterProps> = ({ FooterData }) => {
           </div>
         </div>
         <div className="md:hidden block px-10 pt-10">
-            <Socials
-              google={socials.google}
-              Facebook={socials.Facebook}
-              Twitter={socials.Twitter}
-              Linkedin={socials.Linkedin}
-            />
-            </div>
+          <Socials socials={socials} iconColour={"text-[#FFFF]"} />
+        </div>
 
         {/* Bottom section: Copyright + Privacy Policy */}
         <div className="mt-8 pt-4 border-t border-gray-700 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -135,8 +128,14 @@ const Footer: React.FC<FooterProps> = ({ FooterData }) => {
             </p>
 
             <p className="text-xs text-gray-400">
-              {'Development by '}
-              <Link href={"https://www.geosoftech.com/"} className="hover:underline"> GEOSoftech.</Link>
+              {"Development by "}
+              <Link
+                href={"https://www.geosoftech.com/"}
+                className="hover:underline"
+              >
+                {" "}
+                GEOSoftech.
+              </Link>
             </p>
           </div>
           <a
@@ -183,36 +182,19 @@ const FooterColumnBlock: React.FC<{ column: FooterColumn }> = ({ column }) => {
     <div>
       <h3 className="text-lg font-semibold mb-2">{title}</h3>
       <ul className="space-y-1">
-        {links.map((link, i) => (
-          <li key={i}>
-            <a
-              href={link.href}
-              className="text-sm text-gray-400 hover:underline"
-            >
-              {link.label}
-            </a>
+        {links.map((link, index) => (
+          <li key={index}>
+            <UnderlineAnimation>
+              <Link
+                href={link.href}
+                className="text-sm text-gray-400"
+              >
+                {link.label}
+              </Link>
+            </UnderlineAnimation>
           </li>
         ))}
       </ul>
-    </div>
-  );
-};
-
-const Socials: React.FC<FooterSocials> = (socials) => {
-  return (
-    <div className="flex items-center justify-between">
-      <Link href={socials.Facebook}>
-        <Facebook className="h-5 w-5 hover:scale-150 transition-transform duration-300 " />
-      </Link>
-      <Link href={socials.Linkedin}>
-        <Linkedin className="h-5 w-5 hover:scale-150 transition-transform duration-300" />
-      </Link>
-      <Link href={socials.Twitter}>
-        <Twitter className="h-5 w-5 hover:scale-150 transition-transform duration-300" />
-      </Link>
-      <Link href={socials.google}>
-        <Search className="h-5 w-5 hover:scale-150 transition-transform duration-300" />
-      </Link>
     </div>
   );
 };

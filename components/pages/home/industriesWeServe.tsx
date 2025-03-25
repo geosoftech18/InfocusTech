@@ -95,7 +95,7 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
             >
               <div className="relative h-full">
                 <Card
-                  className="flex relative items-center h-full overflow-hidden flex-col z-10"
+                  className="flex relative items-center group h-full overflow-hidden flex-col z-10"
                   onMouseEnter={() => toggleDoor(index)}
                   onMouseLeave={() => toggleDoor(index)}
                 >
@@ -107,7 +107,7 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
                       height={1000}
                       width={1000}
                       src={item.imagePath || ""}
-                      className=" ml-2 mt-2 h-20 w-20 border-2 p-2 rounded-full border-[#E60000]" // Keeps the image behind the overlay
+                      className=" ml-2 mt-4 h-20 w-20 border-2 p-2 rounded-full border-[#E60000] group-hover:scale-125 transition-transform duration-300" // Keeps the image behind the overlay
                     />
 
                     {/* Sliding overlay */}

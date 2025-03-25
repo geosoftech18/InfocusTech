@@ -59,7 +59,7 @@ export async function fetchNewsById(newsId: string,type:'news'|'event') {
 }`,
     { next: { revalidate: 60 } }
   );
-  console.log(result);
+  // console.log(result);
 
   if(type==='news'){
     return result.data.news;

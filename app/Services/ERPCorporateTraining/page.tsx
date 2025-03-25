@@ -37,7 +37,7 @@ const ERPCorporateTraining = async() => {
         const doorComponent11 = getToolsandTechnology(doorComponent1);
 
   return (
-    <div className="md:my-20">
+    <div >
       {/* About ERP Corporate Training */}
       {/* <AboutSapImplementation
         // initialValue={0}

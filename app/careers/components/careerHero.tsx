@@ -8,7 +8,7 @@ export interface CareersHeroProps {
   description: string;
   bullets: string[];
   extraDescription: string;
-  imageUrl: string | null;
+  imageUrl: string;
 }
 
 export default function CareersHero({
@@ -19,15 +19,20 @@ export default function CareersHero({
   imageUrl,
 }: CareersHeroProps) {
   return (
-    <Card className="mx-auto bg-white dark:bg-gray-900 overflow-hidden rounded-lg">
+    <Card className="mx-auto bg-white overflow-hidden rounded-lg">
       {/* Hero Image */}
-      <div className="relative w-full h-56 md:h-72 bg-gray-50 overflow-hidden">
+      <div className="relative h-[40vh] w-full flex items-center justify-start ">
         <Image
+          className="absolute inset-0 w-full h-full object-cover opacity-30"
           src={imageUrl || careersImage}
-          alt="Careers at Infocus"
-          fill // This replaces layout="fill"
-          className="object-cover opacity-90"
+          alt="News and Events"
+          layout="fill"
+          priority
         />
+        <div className="relative  font-bold text-2xl  px-4 py-2 rounded-lg flex items-center justify-center">
+          <div className="text-[#b00d07] mr-2">{"Home "}</div>
+          <div>{" > Carrers"}</div>
+        </div>
       </div>
 
       {/* Content Section */}
@@ -53,11 +58,6 @@ export default function CareersHero({
                 </div>
               ))}
             </div>
-          </div>
-          <div className="mt-6 flex justify-center">
-            <button className="bg-[#b00d07] text-white px-6 py-3 rounded-md font-semibold text-lg  hover:bg-red-800 transition-all duration-300">
-              Explore Careers
-            </button>
           </div>
         </CardContent>
       </div>

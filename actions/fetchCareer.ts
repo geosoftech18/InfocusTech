@@ -5,12 +5,12 @@ const space_ID = process.env.SPACE_ID;
 const env_ID = process.env.ENVIRONMENT_ID;
 const cdn_access_token = process.env.ACCESS_TOKEN_CDN;
 
-import { CareersHeroProps } from "@/app/carrers/components/carrerHero";
-import { Job } from "@/app/carrers/components/carrerTable";
+import { CareersHeroProps } from "@/app/careers/components/careerHero";
+import { Job } from "@/app/careers/components/careerTable";
 import { Event } from "@/contentfulTypes";
 import * as contentful from "contentful";
 
-export async function FetchCarrerData() {
+export async function FetchCareerData() {
   if (!(space_ID && env_ID && cdn_access_token)) {
     return {
       success: false,
@@ -31,11 +31,11 @@ export async function FetchCarrerData() {
     if (!response) {
       return {
         success: false,
-        error: "Carrer response is null",
+        error: "Career response is null",
       };
     }
     // console.log(response);
-    const extractedResponse=extractCareerData(response)
+    const extractedResponse = extractCareerData(response)
     // console.log(extractedResponse)
     return { success: true, data: extractedResponse };
   } catch (error) {
@@ -48,8 +48,8 @@ export async function FetchCarrerData() {
 }
 
 function extractCareerData(data: ContentfulResponse): {
-  carrerHeroData: CareersHeroProps;
-  carrerTableData: Job[];
+  careerHeroData: CareersHeroProps;
+  careerTableData: Job[];
 } | null {
   if (!data?.items || data.items.length === 0) {
     return null;
@@ -58,18 +58,18 @@ function extractCareerData(data: ContentfulResponse): {
   const item = data.items[0];
   const content = item.fields?.content || {};
   const jobTable = item.fields?.jobTable?.jobs || [];
-  const imageAsset = item.fields?.carrerHeroImage?.fields?.file?.url || null;
+  const imageAsset = item.fields?.careerHeroImage?.fields?.file?.url || null;
 
   return {
-    carrerHeroData: {
+    careerHeroData: {
       company: content.company || "",
       description: content.description || "",
       bullets: content.bullets || [],
       extraDescription: content.extraDescription || "",
-      imageUrl: imageAsset ? `https:${imageAsset}` : null,
+      imageUrl: imageAsset ? `https:${imageAsset}` : "",
     },
 
-    carrerTableData: jobTable.map((job) => ({
+    careerTableData: jobTable.map((job) => ({
       competencyGroup: job.competencyGroup || "",
       jobDescription: job.jobDescription || "",
       yearsOfExperience: job.yearsOfExperience || "",
@@ -88,7 +88,7 @@ type ContentfulResponse = {
         bullets?: string[];
         extraDescription?: string;
       };
-      carrerHeroImage?: {
+      careerHeroImage?: {
         fields?: {
           file?: {
             url?: string;

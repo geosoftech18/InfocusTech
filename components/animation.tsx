@@ -42,31 +42,6 @@ const Animation = ({heroItems}:{heroItems:any}) => {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
   const navLinks = navLinksData.navLinks;
-  // const HeroItems = HeroData.HeroData;
-
-  // if (isMobile) {
-  
-  //   return <>
-  //     {isHomePage && (
-  //       <div className="relative h-screen bg-[#b00d07]">
-  //       <Lottie
-  //         animationData={animationDataWhite}
-  //         loop={true}
-  //         autoplay={true}
-  //         width={2908}
-  //         height={1600}
-  //         className="absolute object-contain z-0"
-  //       />
-
-  //       <NavbarMain fixed={false} NavbarProps={navLinks} />
-
-  //       <HeroCarousal HeroItems={HeroItems} />
-  //     </div>
-  //     )}
-
-  //     {!isHomePage}
-  //   </>
-  // }
 
   return (
     <>
@@ -87,7 +62,7 @@ const Animation = ({heroItems}:{heroItems:any}) => {
         </div>
       )}
       {!isHomePage  && (
-        <div className="pb-20 md:pb-[4.5rem]">
+        <div className="pb-20 md:pb-32">
           <NavbarMain fixed={true} NavbarProps={navLinks} />
         </div>
       )}

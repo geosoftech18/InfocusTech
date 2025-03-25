@@ -49,7 +49,7 @@ const KeyFeatureSapImplementation: React.FC<BenefitsSapImplementationProps> = ({
               key={index}
               className="sm:basis-1 md:basis-1/2 lg:basis-1/3 px-2"
             >
-              <Card className="flex flex-col relative items-center justify-center rounded-xl bg-gray-100  py-6 h-80">
+              <Card className="flex flex-col group relative items-center justify-center rounded-xl bg-gray-100  py-6 h-80">
               <div className="absolute inset-0 bg-[url('/vectors/4.jpg')] bg-cover bg-center opacity-10"></div>
                 <CardContent className="flex flex-col items-center justify-between text-center h-full px-6 z-10">
                   <Image
@@ -57,7 +57,7 @@ const KeyFeatureSapImplementation: React.FC<BenefitsSapImplementationProps> = ({
                     height={100}
                     width={100}
                     src={item.imagePath}
-                    className="h-24 w-24 object-contain pb-2"
+                    className="h-24 w-24 object-contain pb-2 group-hover:scale-125 transition-transform duration-300"
                   />
                   <h3 className="text-lg font-semibold">{item.name}</h3>
                   <p className="text-gray-600 text-sm text-center px-2 whitespace-pre-line">

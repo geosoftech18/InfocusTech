@@ -50,7 +50,6 @@ const SAPMaintainanceandSupport = async() => {
 
   return (
     <div>
-      <div className="md:my-20"></div>
       {/* About SAP Maintenance & Support */}
       {/* <AboutSapImplementation AboutSapImplementationData={aboutSAPMaintenanceAndSupportJSON} /> */}
       <WhyChooseUs whyChooseUsData={aboutPage1}/>
