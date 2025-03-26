@@ -1,6 +1,7 @@
 import AboutUs from "@/components/aboutUs";
 import Clients from "@/components/pages/home/clients";
 import FAQs from "@/components/pages/home/FAQ";
+import HeroCarousal from "@/components/pages/home/heroCarousal";
 import IndustriesWeServe from "@/components/pages/home/industriesWeServe";
 import Testimonial from "@/components/pages/home/testimonials";
 import WhatWeOffer from "@/components/pages/home/whatWeOffer";
@@ -50,7 +51,7 @@ export default async function Home() {
   
   return (
     <div>
-      {/* <HeroCarousal HeroItems={HeroItems}/> */}
+      {/* <HeroCarousal HeroItems={heroData}/> */}
       <AboutUs AboutUsData={aboutUsData} visionMissionQualityData={visionMissionQualityData}/>
       <WhyChooseUs isHomepage={true} whyChooseUsData={whyChooseUsData}/>
       <WhatWeOffer arrowRight={true} bookNowButton={true} Data={doorComponentData}/>

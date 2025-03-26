@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import UnderlineAnimation from "@/components/ui/slidingUnderline";
+import { AnimatedButton } from "@/components/ui/animatedButton";
 
 export interface FAQItem {
   title: string;
@@ -74,9 +75,9 @@ const FAQs: React.FC<FAQsProps> = ({ FAQData }) => {
         <h3 className="text-2xl font-semibold">Need More Information?</h3>
         <p className="text-gray-600">Contact us for additional questions.</p>
         <Link href={"/contactus"}>
-          <Button variant="default" size="lg">
+          <AnimatedButton variant="default" size="lg">
             Contact Us
-          </Button>
+          </AnimatedButton>
         </Link>
       </div>
     </div>

@@ -3,6 +3,8 @@ import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cva, type VariantProps } from "class-variance-authority";
 
+import { motion, AnimatePresence, useAnimation } from "framer-motion";
+
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
@@ -40,21 +42,47 @@ export interface ButtonProps
   asChild?: boolean;
 }
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
+const AnimatedButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, asChild = false, ...props }, ref) => {
     const [hovered, setHovered] = React.useState<boolean>(false);
     const Comp = asChild ? Slot : "button";
 
+    const controls = useAnimation();
     return (
+      <div className="relative overflow-hidden">
+        <motion.div
+          initial={{
+            y: "-100%",
+          }}
+          animate={controls}
+          // style={{ originY: 1 }}
+          className={cn(buttonVariants({ variant, size, className }), "absolute !bg-[#b00d07]")}
+          onMouseLeave={() =>
+            controls.start({
+              y: [0, "100%", "-100%"],
+
+              transition: { ease: "easeIn", times: [0, 1, 1], duration: 0.3 },
+            })
+          }
+        >
+          <button className="flex items-center justify-center gap-2 font-bold" {...props} />
+        </motion.div>
         <Comp
-          className={cn(buttonVariants({ variant, size, className }))}
+          onMouseEnter={() =>
+            controls.start({
+              y: 0,
+              transition: { ease: "easeOut", duration: 0.3 },
+            })
+          }
+          className={cn(buttonVariants({ variant, size, className }), "")}
           ref={ref}
           {...props}
         />
+      </div>
     );
   }
 );
 
-Button.displayName = "Button";
+AnimatedButton.displayName = "Button";
 
-export { Button, buttonVariants };
+export { AnimatedButton, buttonVariants };

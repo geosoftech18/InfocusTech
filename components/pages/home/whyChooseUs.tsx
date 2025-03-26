@@ -1,3 +1,4 @@
+import { AnimatedButton } from "@/components/ui/animatedButton";
 import { Button } from "@/components/ui/button";
 import { CheckBadgeIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
@@ -65,13 +66,13 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
             </div>
             {isHomepage && (
               <Link href={"/contactus"}>
-                <Button
+                <AnimatedButton
                   className="w-full flex items-center justify-center"
                   variant={"default"}
                   size={"lg"}
                 >
                   {buttonText || "Learn More"}
-                </Button>
+                </AnimatedButton>
               </Link>
             )}
           </div>
@@ -99,13 +100,13 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
             </div>
             {isHomepage && (
               <Link href={"/contactus"}>
-                <Button
+                <AnimatedButton
                   className="w-full flex items-center justify-center"
                   variant={"default"}
                   size={"lg"}
                 >
                    {buttonText || "Learn More"}
-                </Button>
+                </AnimatedButton>
               </Link>
             )}
           </div>

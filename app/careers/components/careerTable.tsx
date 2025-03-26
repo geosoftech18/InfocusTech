@@ -1,5 +1,6 @@
 "use client"
 
+import { AnimatedButton } from "@/components/ui/animatedButton";
 import { Button } from "@/components/ui/button";
 import {
   Table,
@@ -52,7 +53,7 @@ export default function JobListings({ jobs }: { jobs: Job[] }) {
                 <TableCell>{job.vacancies}</TableCell>
                 <TableCell>
                   <Link href={`${pathname}/${index}`}>
-                    <Button className="">Apply Now</Button>
+                    <AnimatedButton className="">Apply Now</AnimatedButton>
                   </Link>
                 </TableCell>
               </TableRow>

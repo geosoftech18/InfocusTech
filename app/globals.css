@@ -95,3 +95,69 @@
 body {
   overflow-x: hidden !important;
 }
+
+/* Ensure smooth transitions */
+.slicer-slider-container {
+  perspective: 1000px;
+}
+
+/* Fix for Next.js Image components */
+.slicer-slider-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.slicer-slide {
+  perspective: 1000px;
+}
+
+.slicer-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* For the text to stay visible during animation */
+.button-text {
+  position: relative;
+  z-index: 10;
+}
+
+/* Optional: Add this if you want the text color to change on hover */
+.group:hover .button-text {
+  color: #000; /* Change to your desired hover text color */
+}
+
+.mawai-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 12px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mawai-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.2);
+  transition: all 0.4s ease;
+}
+
+.mawai-button:hover::before {
+  left: 100%;
+}

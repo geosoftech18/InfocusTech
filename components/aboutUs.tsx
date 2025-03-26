@@ -8,6 +8,7 @@ import {
 import CountUp from "./ui/countUp";
 import Link from "next/link";
 import UnderlineAnimation from "./ui/slidingUnderline";
+import { AnimatedButton } from "./ui/animatedButton";
 
 export interface AccordionProps {
   title: string;
@@ -42,9 +43,9 @@ const AboutUs: React.FC<AboutUsProps> = ({
           {AboutUsData.description}
         </div>
         <Link href={"/contactus"}>
-          <Button className="w-2/4 lg:w-1/4 my-5" variant={"default"}>
+          <AnimatedButton className="w-2/4 lg:w-1/4 " variant={"default"}>
             Discover More
-          </Button>
+          </AnimatedButton>
         </Link>
         <div className="flex gap-2 items-start md:items-center mr-12 flex-row">
           <div className="flex items-start justify-center  flex-col  border-black">

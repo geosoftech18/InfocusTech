@@ -16,6 +16,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import CarousalBullets from "@/components/ui/carousalBullets";
+import { AnimatedButton } from "@/components/ui/animatedButton";
 
 export interface DoorComponentData {
   tag: string;
@@ -98,9 +99,9 @@ const DoorComponent: React.FC<DoorComponentProps> = ({
           </div>
           {bookNowButton && bookNowButton === true && (
             <Link href={"/contactus"}>
-              <Button variant={"default"} size={"lg"}>
+              <AnimatedButton variant={"default"} size={"lg"}>
                 Book Now <Repeat className="h-5 w-5" />
-              </Button>
+              </AnimatedButton>
             </Link>
           )}
         </div>

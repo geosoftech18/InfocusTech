@@ -3,6 +3,7 @@ import React from "react";
 import { DropDownCTAProps } from "../navbar";
 import { Button } from "./button";
 import Link from "next/link";
+import { AnimatedButton } from "./animatedButton";
 
 const DropdownCTA: React.FC<DropDownCTAProps> = ({
   heading,
@@ -26,9 +27,9 @@ const DropdownCTA: React.FC<DropDownCTAProps> = ({
         <h2 className="text-lg xl:text-xl font-bold mb-4">{heading}</h2>
         <p className="text-xs xl:text-sm mb-6 text-wrap">{description}</p>
         <Link href={"/contactus"}>
-        <Button variant={"default"} size={"lg"} className="w-full text-xs xl:text-sm">
+        <AnimatedButton variant={"default"} size={"lg"} className="w-full text-xs xl:text-sm">
           {buttonLabel}
-        </Button>
+        </AnimatedButton>
         </Link>
       </div>
     </div>
