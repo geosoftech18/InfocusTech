@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { DoorComponentData } from "../home/whatWeOffer";
+import AnimatedImage from "@/components/ui/imageAnimation";
 
 interface WhySAPUpgradeandMigrationProps {
   Data: DoorComponentData;
@@ -13,13 +14,15 @@ const WhySAPUpgradeandMigration: React.FC<WhySAPUpgradeandMigrationProps> = ({
     <div className="grid grid-cols-1 lg:grid-cols-12 mx-6 lg:mx-40 gap-8 lg:gap-16 my-10 lg:my-24">
       {/* Image Section */}
       <div className="col-span-1 lg:col-span-5 relative">
-        <Image
-          src="/whySAPUpgradationandMigration.jpg"
-          alt="SAP Upgrade"
-          width={1000}
-          height={1000}
-          className="w-full rounded-xl shadow-lg h-full"
-        />
+        <AnimatedImage>
+          <Image
+            src="/whySAPUpgradationandMigration.jpg"
+            alt="SAP Upgrade"
+            width={1000}
+            height={1000}
+            className="w-full rounded-xl shadow-lg h-full"
+          />
+        </AnimatedImage>
       </div>
 
       {/* Content Section */}
@@ -40,10 +43,7 @@ const WhySAPUpgradeandMigration: React.FC<WhySAPUpgradeandMigrationProps> = ({
         {/* Data List */}
         <div className="space-y-4">
           {Data.items.map((item, index) => (
-            <div
-              key={index}
-              className="flex items-start gap-6 border-b pb-4"
-            >
+            <div key={index} className="flex items-start gap-6 border-b pb-4">
               <div className="font-semibold text-md lg:text-lg w-1/4 text-gray-900">
                 {item.name}
               </div>

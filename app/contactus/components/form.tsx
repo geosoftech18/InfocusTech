@@ -27,6 +27,7 @@ import countries from "@/data/countries.json";
 
 import {toast,Toaster} from "react-hot-toast"
 import { sendContactEmail } from "@/actions/email/brevo";
+import { AnimatedButton } from "@/components/ui/animatedButton";
 
 const services = [
   "SAP Licensing",
@@ -49,7 +50,7 @@ export const FormSchema = z.object({
 });
 
 const ContactUsForm = () => {
-  const [step, setStep] = useState(1);
+  // const [step, setStep] = useState(1);
 
   const to = process.env.NEXT_PUBLIC_contactEmail
 
@@ -86,7 +87,7 @@ const ContactUsForm = () => {
   return (
     <Card className="col-span-1">
       <Toaster/>
-      <div className="flex items-center justify-center my-2 w-full">
+      {/* <div className="flex items-center justify-center my-2 w-full">
         <div
           className={`rounded-full w-10 h-10 flex items-center justify-center  border bg-[#e60000] text-gray-200  font-semibold`}
         >
@@ -105,11 +106,11 @@ const ContactUsForm = () => {
         >
           2
         </div>
-      </div>
+      </div> */}
       <CardContent className="p-6">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)}>
-            {step === 1 && (
+            {/* {step === 1 && ( */}
               <>
                 {/* name */}
                 <FormField
@@ -174,7 +175,7 @@ const ContactUsForm = () => {
                   )}
                 />
                 <div className="w-full flex items-end justify-end">
-                  <Button
+                  {/* <Button
                     onClick={() => {
                       setStep(2);
                     }}
@@ -183,12 +184,12 @@ const ContactUsForm = () => {
                   >
                     {" "}
                     Next Step
-                  </Button>
+                  </Button> */}
                 </div>
               </>
-            )}
+            {/* )} */}
 
-            {step === 2 && (
+            {/* {step === 2 && ( */}
               <>
                 {/* Mobile */}
 
@@ -288,8 +289,8 @@ const ContactUsForm = () => {
                   )}
                 />
 
-                <div className="w-full flex items-center   justify-between">
-                  <Button
+                <div className="w-full flex items-center my-5  justify-between">
+                  {/* <Button
                     onClick={() => {
                       setStep(1);
                     }}
@@ -297,14 +298,14 @@ const ContactUsForm = () => {
                   >
                     {" "}
                     Previous Step
-                  </Button>
+                  </Button> */}
 
-                  <Button type="submit" className="my-5">
+                  <AnimatedButton size={"lg"} type="submit" >
                     Submit
-                  </Button>
+                  </AnimatedButton >
                 </div>
               </>
-            )}
+            {/* )} */}
           </form>
         </Form>
       </CardContent>

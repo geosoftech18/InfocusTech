@@ -1,5 +1,6 @@
-"use client"
+"use client";
 import { Card } from "@/components/ui/card";
+import CarousalBullets from "@/components/ui/carousalBullets";
 import {
   Carousel,
   CarouselContent,
@@ -11,16 +12,18 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
+import AnimatedImage from "@/components/ui/imageAnimation";
 
-export interface TestimonialItem{
-  name:string,
-  comment:string,
-  role:string,
-  imageUrl:string
+export interface TestimonialItem {
+  name: string;
+  comment: string;
+  role: string;
+  imageUrl: string;
 }
 
-interface TestimonialProps{
-  TestimonialItems:TestimonialItem[]
+interface TestimonialProps {
+  TestimonialItems: TestimonialItem[];
 }
 
 // const TestimonialItems = [
@@ -40,9 +43,7 @@ interface TestimonialProps{
 //   },
 // ];
 
-const Testimonial:React.FC<TestimonialProps> = ({
-  TestimonialItems
-}) => {
+const Testimonial: React.FC<TestimonialProps> = ({ TestimonialItems }) => {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
 
@@ -80,24 +81,61 @@ const Testimonial:React.FC<TestimonialProps> = ({
             {TestimonialItems.map((item, index) => (
               <CarouselItem key={index}>
                 <Card className="shadow-lg border-0 bg-transparent flex flex-col md:flex-row gap-10 items-center justify-center">
-                  <Image
-                    alt=""
-                    src={item.imageUrl}
-                    width={1000}
-                    height={1000}
-                    className="rounded-lg "
-                  />
+                  <AnimatedImage>
+                    <Image
+                      alt=""
+                      src={item.imageUrl}
+                      width={1000}
+                      height={1000}
+                      className="rounded-lg "
+                    />
+                  </AnimatedImage>
                   <div className="flex items-center text-justify md:items-start flex-col justify-center">
-                    <div className="text-gray-600 md:text-gray-300">Our testimonials</div>
-                    <p className="text-center font-bold text-4xl text-[#E60000] lg:text-gray-200">
-                      {item.name}
-                    </p>
-                    <p className="mt-4 text-xl tracking-tighter text-gray-600 md:text-gray-300 font-semibold">
-                      {item.comment}
-                    </p>
-                    <p className="mt-4 text-xl text-white font-semibold">
-                      {item.role}
-                    </p>
+                    <div className="text-gray-600 md:text-gray-300">
+                      Our testimonials
+                    </div>
+                    <motion.div
+                      initial={{ opacity: 0, x: -100 }}
+                      animate={
+                        current === index + 1
+                          ? { opacity: 1, x: 0 }
+                          : { opacity: 0, x: -100 }
+                      }
+                      transition={{ duration: 0.5, delay: 0.4 }}
+                      className="w-full md:w-auto text-center md:text-left"
+                    >
+                      <p className="text-center font-bold text-4xl text-[#E60000] lg:text-gray-200">
+                        {item.name}
+                      </p>
+                    </motion.div>
+                    <motion.span
+                      className="text-sm lg:text-md 2xl:text-2xl 3xl:text-2xl text-black w-full"
+                      initial={{ opacity: 0, x: 100 }}
+                      animate={
+                        current === index + 1
+                          ? { opacity: 1, x: 0 }
+                          : { opacity: 0, x: 100 }
+                      }
+                      transition={{ duration: 0.5, delay: 0.2 }}
+                    >
+                      <p className="mt-4 text-xl tracking-tighter text-gray-600 md:text-gray-300 font-semibold">
+                        {item.comment}
+                      </p>
+                    </motion.span>
+                    <motion.div
+                      initial={{ opacity: 0, y: 100 }}
+                      animate={
+                        current === index + 1
+                          ? { opacity: 1, y: 0 }
+                          : { opacity: 0, y: 100 }
+                      }
+                      transition={{ duration: 0.5, delay: 0.4 }}
+                      className="w-full md:w-auto"
+                    >
+                      <p className="mt-4 text-xl text-white font-semibold">
+                        {item.role}
+                      </p>
+                    </motion.div>
                   </div>
                 </Card>
               </CarouselItem>
@@ -109,14 +147,7 @@ const Testimonial:React.FC<TestimonialProps> = ({
           </div>
           <div className="flex items-center justify-center gap-2 m-2 mt-10">
             {TestimonialItems.map((_, index) => (
-              <div
-                key={index}
-                className={`${
-                  current === index + 1
-                    ? "bg-black scale-125 transition-all duration-200"
-                    : "bg-gray-400"
-                } rounded-full h-2 w-2`}
-              ></div>
+              <CarousalBullets key={index} current={current} index={index} />
             ))}
           </div>
         </Carousel>

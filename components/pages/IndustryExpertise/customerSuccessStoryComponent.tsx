@@ -58,14 +58,14 @@ const HeadingComponent: React.FC<HeadingComponentProps> = ({
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
       {/* left part */}
-      <div className="flex items-start justify-start gap-10 flex-col">
+      <div className="flex items-center md:items-start md:justify-start gap-10 flex-col">
         {/* tag */}
         <div>{tag}</div>
         {/* title */}
         <div className="text-4xl font-semibold md:w-9/12">{title}</div>
       </div>
       {/* right part */}
-      <div className="text-gray-600 text-md text-justify h-full flex items-start pr-10 justify-center">
+      <div className="text-gray-600 text-md text-justify h-full flex items-start md:pr-10 justify-center">
         {description}
       </div>
     </div>

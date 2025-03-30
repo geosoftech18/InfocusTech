@@ -56,7 +56,18 @@
             "name": "Client"
         },
         {
-            "name": "News and Event"
+            "name": "News and Event",
+            "dropdownList":[
+                "News",
+                "Events"
+            ],
+            "dropdownCTA": {
+                "heading": "Get Latest Updates",
+                "description": "Our News and Events sections.",
+                "buttonLabel": "Checkout",
+                "buttonLink": "/NewsandEvent/News",
+                "bgImagePath": "/peopleworking.png"
+            }
         },
         {
             "name": "Careers"

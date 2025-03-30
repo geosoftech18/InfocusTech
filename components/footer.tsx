@@ -184,10 +184,10 @@ const FooterColumnBlock: React.FC<{ column: FooterColumn }> = ({ column }) => {
       <ul className="space-y-1">
         {links.map((link, index) => (
           <li key={index}>
-            <UnderlineAnimation>
+            <UnderlineAnimation colour="white">
               <Link
                 href={link.href}
-                className="text-sm text-gray-400"
+                className="text-sm text-gray-400 hover:font-bold hover:text-white"
               >
                 {link.label}
               </Link>

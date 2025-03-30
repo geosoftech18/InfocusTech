@@ -30,7 +30,7 @@ const FlipCard: React.FC<FlipCardProps> = ({
       onClick={() => setIsFlipped(!isFlipped)}
       className="p-4 relative shadow-lg rounded-xl transition-transform duration-300 ease-in-out"
     >
-      <div className="absolute inset-0 bg-[url('/vectors/5.png')] bg-cover bg-center opacity-10"></div>
+      <div className="absolute inset-0 bg-[url('/vectors/5.png')] bg-cover bg-center opacity-[5%]"></div>
       <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
         {/* FRONT SIDE */}
         <div className="flex flex-col items-center justify-center text-center space-y-3">

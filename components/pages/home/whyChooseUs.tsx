@@ -1,5 +1,6 @@
 import { AnimatedButton } from "@/components/ui/animatedButton";
 import { Button } from "@/components/ui/button";
+import AnimatedImage from "@/components/ui/imageAnimation";
 import { CheckBadgeIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
 import Link from "next/link";
@@ -17,19 +18,18 @@ export interface whyChooseUsData {
         title: string;
       }[];
   imagePath?: string;
-  
 }
 interface WhyChooseUsProps {
   basis?: "textLeft" | "textRight";
   isHomepage?: boolean;
   whyChooseUsData: whyChooseUsData;
-  buttonText?:string
+  buttonText?: string;
 }
 const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
   whyChooseUsData,
   basis,
   isHomepage,
-  buttonText
+  buttonText,
 }) => {
   return (
     <div className="grid  lg:grid-cols-2  lg:px-40 mb-20 p-10 gap-10">
@@ -38,13 +38,15 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
       ></div> */}
       {(basis === "textLeft" || basis === undefined) && (
         <>
-          <Image
-            src={whyChooseUsData.imagePath || "/WhyChooseUs.jpg"}
-            alt=""
-            height={1000}
-            width={1000}
-            className="col-span-1 rounded-lg h-full"
-          />
+          <AnimatedImage>
+            <Image
+              src={whyChooseUsData.imagePath || "/WhyChooseUs.jpg"}
+              alt=""
+              height={1000}
+              width={1000}
+              className="col-span-1 rounded-lg h-full"
+            />
+          </AnimatedImage>
 
           <div className="flex items-start justify-center flex-col gap-4 col-span-1">
             {/* <div className="font-bold">Why Choose Us</div> */}
@@ -105,18 +107,20 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({
                   variant={"default"}
                   size={"lg"}
                 >
-                   {buttonText || "Learn More"}
+                  {buttonText || "Learn More"}
                 </AnimatedButton>
               </Link>
             )}
           </div>
-          <Image
-            src={whyChooseUsData.imagePath || "/WhyChooseUs.jpg"}
-            alt=""
-            height={1000}
-            width={1000}
-            className="col-span-1 rounded-lg h-full"
-          />
+          <AnimatedImage>
+            <Image
+              src={whyChooseUsData.imagePath || "/WhyChooseUs.jpg"}
+              alt=""
+              height={1000}
+              width={1000}
+              className="col-span-1 rounded-lg h-full"
+            />
+          </AnimatedImage>
         </>
       )}
     </div>

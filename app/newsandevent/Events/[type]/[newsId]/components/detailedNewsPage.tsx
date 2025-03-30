@@ -1,5 +1,5 @@
 "use client";
-import { FilteredNewsItem } from "@/app/newsandevent/components/newsPage";
+import { FilteredNewsItem } from "@/app/NewsandEvent/components/newsPage";
 import { motion } from "framer-motion";
 
 const DetailedNewsPage: React.FC<FilteredNewsItem> = ({

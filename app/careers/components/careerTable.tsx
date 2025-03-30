@@ -52,8 +52,8 @@ export default function JobListings({ jobs }: { jobs: Job[] }) {
                 <TableCell>{job.location}</TableCell>
                 <TableCell>{job.vacancies}</TableCell>
                 <TableCell>
-                  <Link href={`${pathname}/${index}`}>
-                    <AnimatedButton className="">Apply Now</AnimatedButton>
+                  <Link  href={`${pathname}/${index}`}>
+                    <AnimatedButton className="w-full">Apply Now</AnimatedButton>
                   </Link>
                 </TableCell>
               </TableRow>

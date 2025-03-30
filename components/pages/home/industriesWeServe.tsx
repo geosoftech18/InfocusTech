@@ -15,6 +15,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { DoorComponentData } from "./whatWeOffer";
+import CarousalBullets from "@/components/ui/carousalBullets";
 
 // export interface  industriesWeServeData {
 //   tag:string,
@@ -76,7 +77,7 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
       </div>
       <Carousel
         setApi={setApi}
-        className="relative top-20 mx-auto w-full"
+        className="relative top-16 mx-auto w-full"
         opts={{
           align: "start",
           loop: true,
@@ -107,7 +108,7 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
                       height={1000}
                       width={1000}
                       src={item.imagePath || ""}
-                      className=" ml-2 mt-4 h-20 w-20 border-2 p-2 rounded-full border-[#E60000] group-hover:scale-125 transition-transform duration-300" // Keeps the image behind the overlay
+                      className=" ml-2 mt-4 h-20 w-20 border-2  rounded-full border-[#E60000] group-hover:scale-125 transition-transform duration-300" // Keeps the image behind the overlay
                     />
 
                     {/* Sliding overlay */}
@@ -120,32 +121,20 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
 
                   <CardTitle className="text-2xl z-20 flex items-center justify-center flex-col">
                     <div className="font-semibold text-center flex flex-col gap-10 text-gray-900">
-                      {/* Trash Icon */}
-                      {/* <div
-                        className={`top-1 right-1 absolute p-5 rounded-lg transition-colors duration-1000 ${
-                          openCards[index] ? "bg-black" : "bg-[#E60000]"
-                        }`}
-                      >
-                        <Trash
-                          className={`h-10 transition-colors duration-1000 ${
-                            openCards[index] ? "text-gray-200" : "text-gray-200"
-                          }`}
-                        />
-                      </div> */}
-                      <div className="h-16 flex items-center justify-center mt-5">
+                      <div className="h-16 flex items-center justify-center ">
                         {item.name}
                       </div>
                     </div>
                   </CardTitle>
-                  <CardContent className="flex tracking-tighter z-20 items-center justify-between gap-5 h-full flex-col">
-                    <span className="text-md text-gray-600 text-center max-w-2xl pb-10">
+                  <CardContent className="flex tracking-tighter z-20 items-center justify-between gap-2 p-2 h-full flex-col">
+                    <span className="text-md text-gray-600 text-center max-w-2xl ">
                       {item.description}
                     </span>
                     {isHomePage && (
-                      <Link href={item.link || ""}>
+                      <Link href={item.link || ""} className="flex justify-end w-full">
                         <Button
                           variant={"default"}
-                          className={`rounded-full z-50 p-6 absolute bottom-2 right-2 shadow-lg ${
+                          className={`rounded-full z-50 p-6 shadow-lg ${
                             openCards[index]
                               ? "bg-black text-white"
                               : "bg-transparent border border-1 text-black "
@@ -164,16 +153,9 @@ const IndustriesWeServe: React.FC<IndustriesWeServeProps> = ({
         </CarouselContent>
         <CarouselPrevious className="absolute -left-10 top-1/2 transform -translate-y-1/2  text-black bg-gray-200 rounded-full p-2 shadow-md hover:scale-125 transition-transform duration-300 " />
         <CarouselNext className="absolute -right-10 top-1/2 transform -translate-y-1/2  text-black bg-gray-200 rounded-full p-2 shadow-md hover:scale-125 transition-transform duration-300 " />
-        <div className="flex items-center justify-center gap-2 m-2">
+        <div className="flex items-center justify-center gap-2 mt-10">
           {industriesWeServeData.items.map((_, index) => (
-            <div
-              key={index}
-              className={`${
-                current === index + 1
-                  ? "bg-black scale-125 transition-all duration-200"
-                  : "bg-gray-400"
-              } rounded-full h-2 w-2`}
-            ></div>
+            <CarousalBullets key={index} current={current} index={index} />
           ))}
         </div>
       </Carousel>

@@ -19,12 +19,12 @@ interface CorePointsInterface {
 const CorePoints: React.FC<CorePointsInterface> = ({ CorePointsData }) => {
   return (
     <div
-      className="relative px-10 md:px-40 mt-20 py-10 text-white"
+      className="relative px-10 md:px-40 mt-20 py-10 text-white bg-cover"
       style={{
         backgroundColor: "#b00d07",
-        backgroundImage: "url('/vectors/gray-neural-network-illustration/78766-removebg-preview.png')",
-        backgroundRepeat: "repeat",
-        backgroundSize: "600px 600px", // Adjust size as needed
+        backgroundImage: "url('/vectors/3.jpg')",
+        // backgroundRepeat: "repeat",
+        // backgroundSize: "600px 600px", 
         backgroundBlendMode: "overlay",
       }}
     >

@@ -44,12 +44,12 @@ const BenefitsSapImplementation: React.FC<BenefitsSapImplementationProps> = ({
   }, [api]);
 
   return (
-    <div className="h-[40vh] lg:h-[40vh] my-32 relative bg-[#b00d07] px-10 xl:px-28">
+    <div className="h-[40vh] lg:h-[40vh] my-32 mb-48  lg:my-32 relative bg-[#b00d07] px-10 xl:px-28">
       {/* Background Image Layer */}
       <div className="absolute inset-0 bg-[url('/vectors/1withoutbg.png')] bg-cover bg-center opacity-40 z-0"></div>
 
       {/* Content Layer */}
-      <div className="relative z-10 flex flex-col items-center justify-center text-gray-100 pt-10 text-3xl font-semibold">
+      <div className="relative z-10 flex flex-col items-center justify-center text-gray-100 pt-10 text-xl lg:text-3xl font-semibold">
         {Data.tag}
       </div>
 

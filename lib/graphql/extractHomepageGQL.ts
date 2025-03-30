@@ -10,7 +10,10 @@ export async function getHomePageGQL() {
         title,
         boldTitle,
         description
-        ctabuttontext,
+        ctabuttontext,,
+        heroImage{
+          url
+        }
       }
     },
     whyChooseUs{
@@ -108,7 +111,7 @@ export async function getHomePageGQL() {
     }
   }
 }`,
-    { next: { revalidate: 120 } }
+    { next: { revalidate: 1 } }
   );
   // console.log(result);
 
@@ -183,6 +186,7 @@ function extractHeroItems(heroItems: any) {
     boldTitle: item.boldTitle,
     description: item.description,
     cta_button_text: item.ctabuttontext,
+    heroImage:item.heroImage.url
   }));
 }
 

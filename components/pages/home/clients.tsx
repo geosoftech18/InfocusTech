@@ -1,5 +1,6 @@
 "use client";
 import { Card, CardContent } from "@/components/ui/card";
+import CarousalBullets from "@/components/ui/carousalBullets";
 import {
   Carousel,
   CarouselApi,
@@ -87,16 +88,9 @@ const Clients: React.FC<ClientsProps> = ({
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="flex items-center justify-center gap-2 m-2">
-          {Array.from({ length: 10 }).map((_, index) => (
-            <div
-              key={index}
-              className={`${
-                current === index + 1
-                  ? "bg-black scale-125 transition-all duration-200"
-                  : "bg-gray-400"
-              } rounded-full h-2 w-2`}
-            ></div>
+        <div className="flex items-center justify-center gap-2 mt-10">
+          {clientsCombined.map((_, index) => (
+            <CarousalBullets key={index} index={index} current={current} />
           ))}
         </div>
       </Carousel>

@@ -54,7 +54,7 @@ const TextArea: React.FC<ToolsTechnologiesWeUseProps> = ({
   ToolsAndTechnologiesWeUseData,
 }) => {
   return (
-    <div className="col-span-1 md:sticky md:top-20 h-[75vh] flex flex-col items-start justify-center md:justify-around gap-4 lg:gap-0">
+    <div className="col-span-1 md:sticky md:top-1/4 h-[75vh] flex flex-col items-start justify-center md:justify-around gap-4 lg:gap-0">
       <div className="text-[#b00d07] text-xl font-semibold">
         {ToolsAndTechnologiesWeUseData.Tag}
       </div>
@@ -91,7 +91,7 @@ const ImagesArea: React.FC<ToolsTechnologiesWeUseProps> = ({
           key={index}
         >
           <div className="absolute inset-0 bg-[url('/vectors/3.jpg')] bg-cover bg-center opacity-90"></div>
-          <Image className="z-10 group-hover:scale-105 transition-transform duration-300" alt="" src={item.imagePath || ""} height={100} width={100} />
+          <Image className="z-10 group-hover:scale-125 h-20 w-20 transition-transform duration-300" alt="" src={item.imagePath || ""} height={100} width={100} />
           <div className="flex flex-col items-center justify-center gap-4 h-3/4 z-10">
             <div className="text-xl font-medium">{item.name}</div>
             <div className="text-gray-600 text-sm">{item.description}</div>

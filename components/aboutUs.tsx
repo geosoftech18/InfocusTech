@@ -9,6 +9,8 @@ import CountUp from "./ui/countUp";
 import Link from "next/link";
 import UnderlineAnimation from "./ui/slidingUnderline";
 import { AnimatedButton } from "./ui/animatedButton";
+import AnimatedImage from "./ui/imageAnimation";
+import Image from "next/image";
 
 export interface AccordionProps {
   title: string;
@@ -36,7 +38,7 @@ const AboutUs: React.FC<AboutUsProps> = ({
 }) => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:px-40 p-10">
-      <div className="col-span-1 lg:col-span-6 flex flex-col gap-2">
+      <div className="col-span-1 lg:col-span-6 flex flex-col gap-4">
         <div className="font-bold">{AboutUsData.tag}</div>
         <div className="text-3xl font-semibold ">{AboutUsData.heading}</div>
         <div className="text-justify text-gray-600 font-semibold w-11/12">
@@ -74,15 +76,23 @@ const AboutUs: React.FC<AboutUsProps> = ({
             />
             <div>successfully created projects</div>
           </div>
-          {/* <div className="bg-gray-400 rounded-xl border border-r h-3/4 w-1 "></div> */}
         </div>
       </div>
-      <div className="col-span-1 lg:col-span-6 grid grid-rows-12">
-        <div
-          className={`bg-[url('/wokringEmp.jpg')] rounded-lg bg-cover row-span-7 text-gray-200 font-semibold flex flex-col justify-end p-5`}
-        >
-          {/* <div>Your goals are our top priority</div>
-          <div>Luke Bider - CEO</div> */}
+      <div className="col-span-1 lg:col-span-6 grid grid-rows-12 gap-4">
+        {/* Image Section */}
+        <div className="row-span-7 relative rounded-lg overflow-hidden h-full w-full">
+          <AnimatedImage>
+            {/* <Image
+              src={AboutUsData.imageUrl}
+              alt="About Us"
+              width={1000}
+              height={1000}
+              className="object-cover "
+            /> */}
+            <div
+              className={`bg-[url('/wokringEmp.jpg')] h-full rounded-lg bg-cover  text-gray-200 font-semibold flex flex-col justify-end p-5`}
+            ></div>
+          </AnimatedImage>
         </div>
 
         {/* Accordion Section */}

@@ -12,6 +12,7 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import AnimatedImage from "@/components/ui/imageAnimation";
 import { DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
 import Autoplay from "embla-carousel-autoplay";
 import { Linkedin, Share2 } from "lucide-react";
@@ -81,13 +82,15 @@ const ManagementTeam: React.FC<ManagementTeamProps> = ({
               <div className="relative h-full">
                 <Card className="rounded-lg">
                   <div className="p-3">
-                    <Image
-                      alt="People working"
-                      height={1000}
-                      width={1000}
-                      src={item.imagePath}
-                      className="-z-10 rounded-lg  aspect-[3/4] h-full w-full"
-                    />
+                    <AnimatedImage>
+                      <Image
+                        alt="People working"
+                        height={1000}
+                        width={1000}
+                        src={item.imagePath}
+                        className="-z-10 rounded-lg  aspect-[3/4] h-full w-full"
+                      />
+                    </AnimatedImage>
                   </div>
                   <CardContent className="flex items-center justify-between mt-2 overflow-hidden">
                     <div>

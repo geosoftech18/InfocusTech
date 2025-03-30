@@ -16,6 +16,7 @@ interface HeroItem {
   boldTitle: string;
   description: string;
   ctabuttontext: string;
+  heroImage: string
 }
 
 // Interface for Hero Items Collection

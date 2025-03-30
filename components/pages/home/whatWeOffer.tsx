@@ -17,6 +17,7 @@ import Image from "next/image";
 import Link from "next/link";
 import CarousalBullets from "@/components/ui/carousalBullets";
 import { AnimatedButton } from "@/components/ui/animatedButton";
+import AnimatedImage from "@/components/ui/imageAnimation";
 
 export interface DoorComponentData {
   tag: string;
@@ -72,12 +73,13 @@ const DoorComponent: React.FC<DoorComponentProps> = ({
 
   return (
     <div className=" px-10 lg:px-40 mb-40 lg:mb-20 relative">
+      
       <Image
         alt=""
-        src="/vectors/1.jpg"
+        src="/vectors/1-1.jpg"
         layout="fill"
         objectFit="cover"
-        className="absolute inset-0 opacity-50 -z-10  "
+        className="absolute opacity-[100%] -z-10"
       />
       <div className="flex flex-col items-start xl:flex-row xl:items-center justify-between gap-10 pt-10 lg:pt-20">
         {/* top left heading */}

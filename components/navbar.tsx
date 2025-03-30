@@ -6,6 +6,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
+  NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
 import Image from "next/image";
 import Link from "next/link";
@@ -32,13 +33,13 @@ export interface DropDownCTAProps {
   bgImagePath: string;
 }
 
-interface NavLinkItemInterface {
+export interface NavLinkItemInterface {
   name: string;
   dropdownList?: string[];
   dropdownCTA?: DropDownCTAProps;
 }
 
-interface NavbarProps {
+export interface NavbarProps {
   fixed?: boolean;
   NavbarProps: NavLinkItemInterface[];
 }
@@ -49,10 +50,10 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
   return (
     <>
       <NavigationMenu
-        className={`flex flex-col
+        className={`flex flex-col fixed shadow-lg
           ${
-            fixed ? "fixed bg-white z-50 shadow-md" : "bg-transparent"
-          }  transition-all duration-300 hidden md:flex`}
+            fixed ? " bg-white z-50 shadow-md" : "backdrop-blur-sm"
+          }  transition-all duration-300 hidden md:flex `}
       >
         <div
           className={`w-full px-40  flex flex-wrap items-center justify-between gap-4 p-4  ${"text-white bg-gray-900 "}`}
@@ -60,11 +61,9 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
           {/* Address Section */}
           <div className="flex items-center gap-3">
             <MapPin
-              className={`w-6 h-6 ${
-                fixed ? "text-[#b00d07]" : "text-[#b00d07]"
-              }`}
+              className={`h-5 w-5 hover:text-[#B00D07] hover:scale-150 transition-transform duration-300 `}
             />
-            <span className="text-sm font-medium">
+            <span className="text-xs font-medium">
               {FooterJSON.locations[0].addressLines}
             </span>
           </div>
@@ -72,32 +71,30 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
           {/* Phone Section */}
           <div className="flex items-center gap-3">
             <Phone
-              className={`w-6 h-6 ${
-                fixed ? "text-[#b00d07]" : "text-[#b00d07]"
-              }`}
+              className={`h-5 w-5 hover:text-[#B00D07] hover:scale-150 transition-transform duration-300 `}
             />
-            <span className="text-sm font-medium">
+            <span className="text-xs font-medium">
               {FooterJSON.locations[0].phone}
             </span>
           </div>
 
           {/* Social Media Links */}
-          <div className="flex items-center gap-4 w-1/4">
+          <div className="flex items-center gap-4 w-[20%]">
             <Socials
               socials={FooterData.FooterData.socials}
-              iconColour="text-[#B00D07]"
+              iconColour="text-white"
             />
           </div>
         </div>
 
-        <NavigationMenuList className=" items-center gap-2 lg:gap-10 py-4">
+        <NavigationMenuList className=" items-center gap-2 md:gap-4 lg:gap-10 py-6">
           {/* Logo */}
           <NavigationMenuItem className="z-20">
-            <div
+            {/* <div
               className={`text-black  font-extrabold text-2xl ${
                 fixed ? "" : "bg-white p-2 rounded-md"
               }`}
-            >
+            > */}
               <Link href={"/"}>
                 <Image
                   src={"/logo.png"}
@@ -107,7 +104,7 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
                   className="h-5 xl:h-10 w-20 xl:w-40 "
                 />
               </Link>
-            </div>
+            {/* </div> */}
           </NavigationMenuItem>
 
           {/* Navigation Links */}
@@ -120,7 +117,7 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
                   <Link
                     href={`/${link.name.toLowerCase().replace(/\s+/g, "")}`}
                     className={`block py-2  ${
-                      fixed ? "text-black" : "text-white"
+                      fixed ? "text-black" : "text-black"
                     } text-xs xl:text-sm font-semibold hover:text-red-600 transition`}
                   >
                     {link.name}
@@ -133,7 +130,7 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
                 <>
                   <NavigationMenuTrigger
                     className={`font-semibold ${
-                      fixed ? "text-black" : "text-white"
+                      fixed ? "text-black" : "text-black"
                     } text-xs xl:text-sm bg-transparent px-1 hover:text-red-600 hover:bg-transparent transition duration-300`}
                   >
                     {link.name}
@@ -160,8 +157,8 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
                         {link.dropdownList.map((label, idx) => (
                           <Link
                             key={idx}
-                            href={`/${link.name}/${label.replace(/\s+/g, "")}`}
-                            className="col-span-1 flex justify-center items-center p-2 shadow-md hover:scale-105 transition-all duration-500 w-full"
+                            href={`/${link.name.replace(/\s+/g, "")}/${label.replace(/\s+/g, "")}`}
+                            className="col-span-1 flex justify-center items-center p-2 shadow-md border-2 max-h-10 hover:scale-105 hover:bg-gray-200 transition-all duration-500 w-full"
                           >
                             <span className="text-xs xl:text-sm  w-full font-semibold">
                               {label}
@@ -171,6 +168,7 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
                       </div>
                     </div>
                   </NavigationMenuContent>
+                  
                 </>
               )}
             </NavigationMenuItem>
@@ -184,11 +182,11 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
         }  text-gray-300 py-4`}
       >
         <div className="flex items-center justify-between px-2 w-full">
-          <div
+          {/* <div
             className={`text-black  ${
               fixed ? "" : "bg-white p-2 rounded-md"
             } font-extrabold text-2xl mx-2 rounded-md left-0 top-0`}
-          >
+          > */}
             <Link href={"/"}>
               <Image
                 src={"/logo.png"}
@@ -198,7 +196,7 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
                 className={`h-7 xl:h-10 w-28 xl:w-40 `}
               />
             </Link>
-          </div>
+          {/* </div> */}
 
           <button
             className="md:hidden  z-30 text-black "

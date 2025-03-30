@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import NavbarMain from "./navbar";
+import { FilterXIcon } from "lucide-react";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
@@ -46,19 +47,18 @@ const Animation = ({heroItems}:{heroItems:any}) => {
   return (
     <>
       {isHomePage  && (
-        <div className="relative h-[75vh] md:h-screen bg-[#b00d07] w-full">
-          <Lottie
+        <div className="relative h-screen w-full mb-20">
+          {/* <Lottie
             animationData={animationDataWhite}
             loop={true}
             autoplay={true}
             width={2908}
             height={1600}
             className="absolute object-contain z-0"
-          />
+          /> */}
 
-          <NavbarMain fixed={isSticky} NavbarProps={navLinks} />
-
-          <HeroCarousal HeroItems={heroItems} />
+         
+          <HeroCarousal fixed={isSticky} navLinks={navLinks} HeroItems={heroItems} />
         </div>
       )}
       {!isHomePage  && (

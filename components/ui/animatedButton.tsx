@@ -56,7 +56,7 @@ const AnimatedButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
           }}
           animate={controls}
           // style={{ originY: 1 }}
-          className={cn(buttonVariants({ variant, size, className }), "absolute !bg-[#b00d07]")}
+          className={cn(buttonVariants({ variant, size, className }), "absolute inset-0 !bg-[#b00d07]")}
           onMouseLeave={() =>
             controls.start({
               y: [0, "100%", "-100%"],
@@ -65,7 +65,7 @@ const AnimatedButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
             })
           }
         >
-          <button className="flex items-center justify-center gap-2 font-bold" {...props} />
+          <button className="flex items-center justify-center gap-2 font-bold " {...props} />
         </motion.div>
         <Comp
           onMouseEnter={() =>
