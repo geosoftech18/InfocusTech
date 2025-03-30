@@ -1,7 +1,7 @@
 import { fetchEvents, fetchNews } from "@/actions/email/fetchNews";
 import { getFilteredNewsData } from "@/lib/filterEvents";
 import Image from "next/image";
-import NewsPage from "../components/newsPage";
+import NewsPage from "../../../components/pages/newsPage/newsPage";
 // import SlicerSlider from "@/components/ui/sliderslider";
 
 const NewsAndEvents = async () => {

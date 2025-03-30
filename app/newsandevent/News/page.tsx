@@ -1,5 +1,5 @@
 import { fetchEvents, fetchNews } from "@/actions/email/fetchNews";
-import NewsPage from "../components/newsPage";
+import NewsPage from "../../../components/pages/newsPage/newsPage";
 import { getFilteredNewsData } from "@/lib/filterEvents";
 import Image from "next/image";
 // import SlicerSlider from "@/components/ui/sliderslider";

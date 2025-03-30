@@ -1,4 +1,4 @@
-import { FilteredNewsItem } from "@/app/NewsandEvent/components/newsPage";
+import { FilteredNewsItem } from "@/components/pages/newsPage/newsPage";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 export const getFilteredNewsData = (newsData: {
