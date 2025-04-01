@@ -56,7 +56,7 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
           }  transition-all duration-300 hidden md:flex `}
       >
         <div
-          className={`w-full px-40  flex flex-wrap items-center justify-between gap-4 p-4  ${"text-white bg-gray-900 "}`}
+          className={`w-full px-40  flex  items-center justify-between gap-4 p-4  ${"text-white bg-gray-900 "}`}
         >
           {/* Address Section */}
           <div className="flex items-center gap-3">
@@ -68,22 +68,22 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
             </span>
           </div>
 
-          {/* Phone Section */}
-          <div className="flex items-center gap-3">
-            <Phone
-              className={`h-5 w-5 hover:text-[#B00D07] hover:scale-150 transition-transform duration-300 `}
-            />
-            <span className="text-xs font-medium">
-              {FooterJSON.locations[0].phone}
-            </span>
-          </div>
-
           {/* Social Media Links */}
-          <div className="flex items-center gap-4 w-[20%]">
-            <Socials
-              socials={FooterData.FooterData.socials}
-              iconColour="text-white"
-            />
+          <div className="flex items-between justify-end gap-10  w-1/2">
+            <div className="flex items-center gap-3 ">
+              <Phone
+                className={`h-5 w-5 hover:text-[#B00D07] hover:scale-150 transition-transform duration-300 `}
+              />
+              <span className="text-xs font-medium">
+                {FooterJSON.locations[0].phone}
+              </span>
+            </div>
+            <div className="w-1/3">
+              <Socials
+                socials={FooterData.FooterData.socials}
+                iconColour="text-white"
+              />
+            </div>
           </div>
         </div>
 
@@ -95,15 +95,15 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
                 fixed ? "" : "bg-white p-2 rounded-md"
               }`}
             > */}
-              <Link href={"/"}>
-                <Image
-                  src={"/logo.png"}
-                  alt="Logo"
-                  height={1000}
-                  width={1000}
-                  className="h-5 xl:h-10 w-20 xl:w-40 "
-                />
-              </Link>
+            <Link href={"/"}>
+              <Image
+                src={"/logo.png"}
+                alt="Logo"
+                height={1000}
+                width={1000}
+                className="h-5 xl:h-10 w-20 xl:w-40 "
+              />
+            </Link>
             {/* </div> */}
           </NavigationMenuItem>
 
@@ -113,11 +113,10 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
               {/* Normal Link */}
               {!link.dropdownList && (
                 <NavigationMenuLink asChild>
-                  
                   <Link
                     href={`/${link.name.toLowerCase().replace(/\s+/g, "")}`}
                     className={`block py-2  ${
-                      fixed ? "text-black" : "text-black"
+                      fixed ? "text-black" : "text-white"
                     } text-xs xl:text-sm font-semibold hover:text-red-600 transition`}
                   >
                     {link.name}
@@ -130,7 +129,7 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
                 <>
                   <NavigationMenuTrigger
                     className={`font-semibold ${
-                      fixed ? "text-black" : "text-black"
+                      fixed ? "text-black" : "text-white"
                     } text-xs xl:text-sm bg-transparent px-1 hover:text-red-600 hover:bg-transparent transition duration-300`}
                   >
                     {link.name}
@@ -157,7 +156,10 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
                         {link.dropdownList.map((label, idx) => (
                           <Link
                             key={idx}
-                            href={`/${link.name.replace(/\s+/g, "")}/${label.replace(/\s+/g, "")}`}
+                            href={`/${link.name.replace(
+                              /\s+/g,
+                              ""
+                            )}/${label.replace(/\s+/g, "")}`}
                             className="col-span-1 flex justify-center items-center p-2 shadow-md border-2 max-h-10 hover:scale-105 hover:bg-gray-200 transition-all duration-500 w-full"
                           >
                             <span className="text-xs xl:text-sm  w-full font-semibold">
@@ -168,7 +170,6 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
                       </div>
                     </div>
                   </NavigationMenuContent>
-                  
                 </>
               )}
             </NavigationMenuItem>
@@ -187,15 +188,15 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
               fixed ? "" : "bg-white p-2 rounded-md"
             } font-extrabold text-2xl mx-2 rounded-md left-0 top-0`}
           > */}
-            <Link href={"/"}>
-              <Image
-                src={"/logo.png"}
-                alt="Logo"
-                height={1000}
-                width={1000}
-                className={`h-7 xl:h-10 w-28 xl:w-40 `}
-              />
-            </Link>
+          <Link href={"/"}>
+            <Image
+              src={"/logo.png"}
+              alt="Logo"
+              height={1000}
+              width={1000}
+              className={`h-7 xl:h-10 w-28 xl:w-40 `}
+            />
+          </Link>
           {/* </div> */}
 
           <button

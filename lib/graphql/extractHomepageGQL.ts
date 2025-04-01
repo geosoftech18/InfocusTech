@@ -111,7 +111,7 @@ export async function getHomePageGQL() {
     }
   }
 }`,
-    { next: { revalidate: 1 } }
+    { next: { revalidate: 0 } }
   );
   // console.log(result);
 

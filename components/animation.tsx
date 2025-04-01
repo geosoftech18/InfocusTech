@@ -47,7 +47,7 @@ const Animation = ({heroItems}:{heroItems:any}) => {
   return (
     <>
       {isHomePage  && (
-        <div className="relative h-screen w-full mb-20">
+        <div className="relative h-[80vh] md:h-screen w-full mb-20">
           {/* <Lottie
             animationData={animationDataWhite}
             loop={true}

@@ -77,6 +77,7 @@ const HeroCarousal: React.FC<HeroCarousalProps> = ({
         {HeroItems.map((item, index) => (
           <CarouselItem
             key={index}
+            className=""
             // className="flex justify-center items-center h-full" // Fixed height
           >
             <div className="w-full h-screen relative">
@@ -92,10 +93,11 @@ const HeroCarousal: React.FC<HeroCarousalProps> = ({
                 <Image
                   alt=""
                   src={item.heroImage}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover filter blur-sm"
                   width={10000}
                   height={10000}
                 ></Image>
+                <div className="absolute inset-0 bg-black bg-opacity-50"></div>
               </SlicerSlider>
               <AnimatedCard trigger={current === index + 1} item={item}/>
             </div>

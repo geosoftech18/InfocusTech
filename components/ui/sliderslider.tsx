@@ -93,7 +93,7 @@ const SlicerSlider: React.FC<SlicerSliderProps> = ({
   };
 
   return (
-    <div ref={containerRef} className="relative w-full h-full overflow-hidden">
+    <div ref={containerRef} className="relative w-full h-full overflow-hidden ">
       <div ref={ref} className="absolute inset-0" />
       
       <AnimatePresence>

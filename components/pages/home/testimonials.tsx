@@ -14,6 +14,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import AnimatedImage from "@/components/ui/imageAnimation";
+import NavButtons from "@/components/ui/navButtons";
 
 export interface TestimonialItem {
   name: string;
@@ -141,11 +142,10 @@ const Testimonial: React.FC<TestimonialProps> = ({ TestimonialItems }) => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="absolute left-1/2 lg:left-full lg:bottom-2 lg:right-2 flex gap-2">
-            <CarouselPrevious className="absolute -left-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md hover:bg-gray-700" />
-            <CarouselNext className="absolute -right-10 top-1/2 transform -translate-y-1/2 text-black bg-gray-200 rounded-full p-2 shadow-md hover:bg-gray-700" />
+          <div className="absolute left-1/2 -bottom-10 lg:left-full lg:bottom-2 lg:right-2 flex gap-2">
+            <NavButtons />
           </div>
-          <div className="flex items-center justify-center gap-2 m-2 mt-10">
+          <div className="flex items-center justify-center gap-2 m-2 mt-10 md:mt-10 ">
             {TestimonialItems.map((_, index) => (
               <CarousalBullets key={index} current={current} index={index} />
             ))}
