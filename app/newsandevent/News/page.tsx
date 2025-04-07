@@ -1,3 +1,4 @@
+
 import { fetchEvents, fetchNews } from "@/actions/email/fetchNews";
 import NewsPage from "../../../components/pages/newsPage/newsPage";
 import { getFilteredNewsData } from "@/lib/filterEvents";
@@ -6,14 +7,10 @@ import Image from "next/image";
 
 const NewsAndEvents = async () => {
   const newsData = await fetchNews();
-  //@ts-ignore
-  const eventData = await fetchEvents();
 
-  if (!newsData || !eventData) {
+  if (!newsData ) {
     return <div className="text-gray-500 text-center mt-10">No data found.</div>;
   }
-
-  // const filteredEvents = getFilteredNewsData(eventData);
   const filteredNews = getFilteredNewsData(newsData);
 
   if (!filteredNews?.length ) {

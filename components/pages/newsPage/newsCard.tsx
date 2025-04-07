@@ -35,7 +35,7 @@ const NewsCard: React.FC<FilteredNewsItem> = ({
       className="relative overflow-hidden h-full shadow-2xl border rounded-2xl"
     >
       <Link
-        href={`${currentUrl}/${type}/${id}`}
+        href={`${currentUrl}/${id}`}
         className=""
       >
         {/* White shadow animation - Fixed version */}

@@ -37,11 +37,11 @@ export async function fetchNews() {
   return result.data.newsCollection;
 }
 
-export async function fetchNewsById(newsId: string,type:'news'|'event') {
+export async function fetchNewsById(newsId: string) {
 
   const result = await fetchGraphQL(
     `query{
-  ${type}(id:"${newsId}"){
+  news(id:"${newsId}"){
    sys{
         id
       }
@@ -59,13 +59,33 @@ export async function fetchNewsById(newsId: string,type:'news'|'event') {
 }`,
     { next: { revalidate: 60 } }
   );
-  // console.log(result);
-
-  if(type==='news'){
     return result.data.news;
-  }else{
+  
+}
+
+export async function fetchEventById(eventId: string) {
+
+  const result = await fetchGraphQL(
+    `query{
+  event(id:"${eventId}"){
+   sys{
+        id
+      }
+      title{
+        json
+      },
+      content{
+        json
+      }
+      date,
+      image{
+        url
+      }
+    }
+}`,
+    { next: { revalidate: 60 } }
+  );
     return result.data.event;
-  }
   
 }
 

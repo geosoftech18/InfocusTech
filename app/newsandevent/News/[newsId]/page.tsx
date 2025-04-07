@@ -4,11 +4,10 @@ import { getFilteredNewsData } from "@/lib/filterEvents";
 
 export type Params = Promise<{
   newsId: string;
-  type: string;
 }>;
 
 const DetailedPage = async ({ params }: { params: Params }) => {
-  const { newsId, type } = await params;
+  const { newsId } = await params;
 
   // console.log(type)
 
@@ -18,7 +17,7 @@ const DetailedPage = async ({ params }: { params: Params }) => {
     );
   }
   //@ts-ignore
-  const newsData = await fetchNewsById(newsId, type); //"32oXOR10xpXOykZo8GPOGp"
+  const newsData = await fetchNewsById(newsId); //"32oXOR10xpXOykZo8GPOGp"
 
   //   console.log(newsData)
 

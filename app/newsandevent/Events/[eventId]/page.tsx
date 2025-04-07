@@ -1,24 +1,22 @@
-import { fetchNewsById } from "@/actions/email/fetchNews";
+import { fetchEventById, fetchNewsById } from "@/actions/email/fetchNews";
 import DetailedNewsPage from "./components/detailedNewsPage";
 import { getFilteredNewsData } from "@/lib/filterEvents";
 
 export type Params = Promise<{
-  newsId: string;
-  type: string;
+  eventId: string;
 }>;
 
 const DetailedPage = async ({ params }: { params: Params }) => {
-  const { newsId, type } = await params;
+  const { eventId } = await params;
 
   // console.log(type)
 
-  if (!newsId) {
+  if (!eventId) {
     return (
-      <div>data not fetched properly, newsId or imageId not available</div>
+      <div>data not fetched properly, eventId or imageId not available</div>
     );
   }
-  //@ts-ignore
-  const newsData = await fetchNewsById(newsId, type); //"32oXOR10xpXOykZo8GPOGp"
+  const newsData = await fetchEventById(eventId); //"32oXOR10xpXOykZo8GPOGp"
 
   //   console.log(newsData)
 
