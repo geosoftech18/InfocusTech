@@ -40,6 +40,9 @@ export async function getSolutionsGQL(id: string):Promise<getSolutionsGQLResult>
       heading,
       subheading,
       description,
+      doorComponentBg{
+        url
+      }
       itemsCollection{
         items{
           name,
@@ -56,6 +59,9 @@ export async function getSolutionsGQL(id: string):Promise<getSolutionsGQLResult>
       heading,
       subheading,
       description,
+      doorComponentBg{
+        url
+      },
       itemsCollection{
         items{
           name,
@@ -72,6 +78,9 @@ export async function getSolutionsGQL(id: string):Promise<getSolutionsGQLResult>
       heading,
       subheading,
       description,
+      doorComponentBg{
+        url
+      },
       itemsCollection{
         items{
           name,

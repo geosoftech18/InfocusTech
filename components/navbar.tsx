@@ -56,33 +56,44 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
           }  transition-all duration-300 hidden md:flex `}
       >
         <div
-          className={`w-full px-40  flex  items-center justify-between gap-4 p-4  ${"text-white bg-gray-900 "}`}
+          className={`w-full px-36 flex items-center justify-between gap-4 p-4 text-white bg-gray-900`}
         >
           {/* Address Section */}
-          <div className="flex items-center gap-3">
-            <MapPin
-              className={`h-5 w-5 hover:text-[#B00D07] hover:scale-150 transition-transform duration-300 `}
-            />
-            <span className="text-xs font-medium">
-              {FooterJSON.locations[0].addressLines}
-            </span>
+          <div className="flex items-center justify-start  gap-2 mb-2 w-1/2">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="p-2  bg-white text-red-500 rounded-md shadow-sm hover:bg-red-500 hover:text-white"
+            >
+              <MapPin className="w-5 h-5" />
+            </motion.div>
+            <div className="w-full">
+              {FooterJSON.locations[0].addressLines.map((line, idx) => (
+              <p key={idx} className="text-sm w-full inline text-gray-200">
+                  {line}
+                </p>
+              ))}
+            </div>
           </div>
 
           {/* Social Media Links */}
-          <div className="flex items-between justify-end gap-10  w-1/2">
-            <div className="flex items-center gap-3 ">
-              <Phone
-                className={`h-5 w-5 hover:text-[#B00D07] hover:scale-150 transition-transform duration-300 `}
-              />
-              <span className="text-xs font-medium">
-                {FooterJSON.locations[0].phone}
-              </span>
+          <div className="flex items-center justify-around gap-4 w-1/2">
+            {/* Phone Section */}
+            <div className="flex items-center justify-center gap-2 w-1/2">
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                className="p-2 bg-white rounded-md shadow-sm text-blue-500 hover:bg-blue-500 hover:text-white"
+              >
+                <Phone className="w-5 h-5" />
+              </motion.div>
+              <p className="text-sm w-40 ">
+                  {FooterJSON.locations[0].phone}
+               
+              </p>
             </div>
-            <div className="w-1/3">
-              <Socials
-                socials={FooterData.FooterData.socials}
-                iconColour="text-white"
-              />
+
+            {/* Socials Section */}
+            <div className="w-1/2">
+              <Socials socials={FooterData.FooterData.socials} />
             </div>
           </div>
         </div>

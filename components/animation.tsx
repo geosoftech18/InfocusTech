@@ -62,7 +62,7 @@ const Animation = ({heroItems}:{heroItems:any}) => {
         </div>
       )}
       {!isHomePage  && (
-        <div className="pb-20 md:pb-32">
+        <div className="pb-20 md:pb-40">
           <NavbarMain fixed={true} NavbarProps={navLinks} />
         </div>
       )}

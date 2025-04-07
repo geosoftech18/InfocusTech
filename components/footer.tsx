@@ -79,7 +79,7 @@ const Footer: React.FC<FooterProps> = ({ FooterData }) => {
               <LocationBlock key={i} location={loc} />
             ))}
             <div className="hidden md:block pr-10">
-              <Socials socials={socials} iconColour={"text-[#FFFF]"} />
+              <Socials socials={socials} />
             </div>
           </div>
 
@@ -115,7 +115,7 @@ const Footer: React.FC<FooterProps> = ({ FooterData }) => {
           </div>
         </div>
         <div className="md:hidden block px-10 pt-10">
-          <Socials socials={socials} iconColour={"text-[#FFFF]"} />
+          <Socials socials={socials}  />
         </div>
 
         {/* Bottom section: Copyright + Privacy Policy */}
@@ -127,7 +127,7 @@ const Footer: React.FC<FooterProps> = ({ FooterData }) => {
                 : `© ${new Date().getFullYear()} ${brandName} All rights reserved.`}
             </p>
 
-            <p className="text-xs text-gray-400">
+            {/* <p className="text-xs text-gray-400">
               {"Development by "}
               <Link
                 href={"https://www.geosoftech.com/"}
@@ -136,7 +136,7 @@ const Footer: React.FC<FooterProps> = ({ FooterData }) => {
                 {" "}
                 GEOSoftech.
               </Link>
-            </p>
+            </p> */}
           </div>
           <a
             href={privacyPolicyLink}

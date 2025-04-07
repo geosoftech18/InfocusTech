@@ -66,14 +66,14 @@ const Clients: React.FC<ClientsProps> = ({
             <NavButtons />
           </div>
         </div>
-        <CarouselContent>
+        <CarouselContent className="py-20 ">
           {clientsCombined.map((item, index) => (
             <CarouselItem
               key={index}
               className="basis-1/2 md:basis-1/4 lg:basis-1/6"
             >
               <div className="p-1">
-                <Card className="shadow-lg">
+                <Card className="shadow-2xl">
                   <CardContent className="flex aspect-video items-center justify-center p-2">
                     <Image
                       src={item.imagePath}

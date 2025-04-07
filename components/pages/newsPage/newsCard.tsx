@@ -12,9 +12,11 @@ const NewsCard: React.FC<FilteredNewsItem> = ({
   title,
   content,
   imageUrl,
-  id
+  id,
 }) => {
-  const [currentUrl] = useState(typeof window !== 'undefined' ? window.location.href : "");
+  const [currentUrl] = useState(
+    typeof window !== "undefined" ? window.location.href : ""
+  );
   const [isHovered, setIsHovered] = useState(false);
 
   if (!id || !type) {
@@ -22,45 +24,48 @@ const NewsCard: React.FC<FilteredNewsItem> = ({
   }
 
   return (
-    <Link href={`${currentUrl}/${type}/${id}`}>
-      <motion.div
-        initial={false}
-        animate={{
-          scale: isHovered ? 1.05 : 1,
-        }}
-        transition={{ duration: 0.3 }}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        className="relative overflow-hidden"
+    <motion.div
+      initial={false}
+      animate={{
+        scale: isHovered ? 1.05 : 1,
+      }}
+      transition={{ duration: 0.3 }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className="relative overflow-hidden h-full shadow-2xl border rounded-2xl"
+    >
+      <Link
+        href={`${currentUrl}/${type}/${id}`}
+        className=""
       >
         {/* White shadow animation - Fixed version */}
         <motion.div
           initial={{ opacity: 0, left: "50%", right: "50%" }}
           animate={
-            isHovered 
-              ? { 
-                  opacity: 1, 
-                  left: "-100%", 
+            isHovered
+              ? {
+                  opacity: 1,
+                  left: "-100%",
                   right: "-100%",
-                  transition: { 
+                  transition: {
                     duration: 0.6,
-                    ease: "easeInOut"
-                  }
+                    ease: "easeInOut",
+                  },
                 }
-              : { 
-                  opacity: 0, 
-                  left: "100%", 
+              : {
+                  opacity: 0,
+                  left: "100%",
                   right: "100%",
-                  transition: { 
+                  transition: {
                     duration: 0.6,
-                    ease: "easeInOut"
-                  }
+                    ease: "easeInOut",
+                  },
                 }
           }
           className="absolute top-0 h-full bg-gradient-to-r from-white/30 via-transparent to-white/30 pointer-events-none"
         />
-        
-        <Card className="max-w-md w-full p-4 shadow-lg rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
+
+        <Card className="max-w-md w-full p-4  h-full border-none rounded-2xl bg-white dark:bg-gray-800">
           <Image
             src={imageUrl}
             alt=""
@@ -80,8 +85,8 @@ const NewsCard: React.FC<FilteredNewsItem> = ({
             </div>
           </CardContent>
         </Card>
-      </motion.div>
-    </Link>
+      </Link>
+    </motion.div>
   );
 };
 

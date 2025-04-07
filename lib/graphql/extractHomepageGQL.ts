@@ -46,7 +46,10 @@ export async function getHomePageGQL() {
       tag,
       heading,
       subheading,
-      description
+      description,
+      doorComponentBg{
+        url
+      }
       itemsCollection{
         items{
           name,
@@ -161,7 +164,7 @@ function extractHomePage(
     !domesticClients ||
     !internationalClients ||
     !faqsData ||
-    ! heroData
+    !heroData
   ) {
     return null;
   }
@@ -186,7 +189,7 @@ function extractHeroItems(heroItems: any) {
     boldTitle: item.boldTitle,
     description: item.description,
     cta_button_text: item.ctabuttontext,
-    heroImage:item.heroImage.url
+    heroImage: item.heroImage.url,
   }));
 }
 
@@ -206,6 +209,7 @@ export function extractDoorComponent(fields: any) {
     heading: fields.heading as string,
     Subheading: fields.subheading as string,
     description: fields.description as string,
+    doorBG: fields.doorComponentBg.url,
     items: fields.itemsCollection.items.map((item: any) => ({
       name: item.name,
       imagePath: item.image?.url,
@@ -220,14 +224,12 @@ function extractIndustryExpertise(fields: HomePageProps) {
     tag: fields.industryExpertiseTag,
     heading: fields.industryExpertiseTitle,
     description: fields.industryExpertiseDescription,
-    items: fields.itemsCollection.items.map(
-      (item: any) => ({
-        name: item.name,
-        description: item.description,
-        link: item.link,
-        imagePath: item.image.url,
-      })
-    ),
+    items: fields.itemsCollection.items.map((item: any) => ({
+      name: item.name,
+      description: item.description,
+      link: item.link,
+      imagePath: item.image.url,
+    })),
   };
 }
 

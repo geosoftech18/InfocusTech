@@ -27,9 +27,9 @@ const NewsPage:React.FC<NewsPageProps> = ({NewsData,type}) => {
     // );
   
     return (
-      <div className="mx-10 md:mx-40">
+      <div className="mx-10 md:mx-28">
         {/* Search Bar */}
-        <div className="my-4">
+        {/* <div className="my-4">
           <input
             type="text"
             placeholder="Search..."
@@ -37,7 +37,7 @@ const NewsPage:React.FC<NewsPageProps> = ({NewsData,type}) => {
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
-        </div>
+        </div> */}
   
         {/* News Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

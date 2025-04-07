@@ -24,7 +24,7 @@ export interface DoorComponentData {
   heading: string;
   subheading?: string;
   description: string;
-
+  doorBG?: string;
   items: {
     name: string;
     imagePath?: string;
@@ -76,7 +76,7 @@ const DoorComponent: React.FC<DoorComponentProps> = ({
       
       <Image
         alt=""
-        src="/vectors/1-1.jpg"
+        src={Data.doorBG || ""}
         layout="fill"
         objectFit="cover"
         className="absolute opacity-[100%] -z-10"

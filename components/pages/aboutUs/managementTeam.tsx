@@ -19,6 +19,8 @@ import { Linkedin, Share2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import FooterData from "@/data/footer.json";
+const FooterJSON = FooterData.FooterData;
 
 export interface ManagementTeamData {
   tag: string;
@@ -88,7 +90,7 @@ const ManagementTeam: React.FC<ManagementTeamProps> = ({
                         height={1000}
                         width={1000}
                         src={item.imagePath}
-                        className="-z-10 rounded-lg  aspect-[3/4] h-full w-full"
+                        className="-z-10 rounded-lg  aspect-square h-full w-full"
                       />
                     </AnimatedImage>
                   </div>
@@ -128,7 +130,14 @@ const ManagementTeam: React.FC<ManagementTeamProps> = ({
                                 href={item.linkedinLink}
                                 className="h-full w-full"
                               >
-                                <Linkedin className="w-5" />
+                                <div
+                                  key={index}
+                                  className={`p-2 rounded-full bg-white shadow-sm border text-blue-600 hover:bg-blue-600 hover:text-white transition-colors`}
+                                >
+                                  <Link href={`${FooterJSON.socials.Linkedin}`}>
+                                    <Linkedin className="h-5 w-5" />
+                                  </Link>
+                                </div>
                               </Link>
                             </DropdownMenuItem>
                           )}

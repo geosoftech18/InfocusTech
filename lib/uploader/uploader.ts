@@ -201,3 +201,71 @@ export async function bulletPointsUploader({
     };
   }
 }
+
+
+export async function formFieldUploader({
+  name,
+  label,
+  placeholder,
+  type,
+}: {
+  name: string;
+  label: string;
+  placeholder: string;
+  type: string;
+}) {
+  if (!(space_ID && env_ID && accessToken)) {
+    return {
+      success: false,
+      error: "Environment variables not defined",
+    };
+  }
+
+  console.log("Uploading formField");
+
+  try {
+    const client = createClient({
+      accessToken: accessToken,
+    });
+
+    const space = await client.getSpace(space_ID);
+    const environment = await space.getEnvironment(env_ID);
+
+    const newEntry: CreateEntryProps = {
+      fields: {
+        name: {
+          "en-US": name,
+        },
+        label: {
+          "en-US": label,
+        },
+        placeholder: {
+          "en-US": placeholder,
+        },
+        type: {
+          "en-US": type,
+        },
+      },
+    };
+
+    const entry = await environment.createEntry("formField", newEntry);
+    await entry.publish();
+    console.log(entry);
+
+    return {
+      success: true,
+      entryId: entry.sys.id,
+    };
+  } catch (error: unknown) {
+    let errorMessage = "An unknown error occurred";
+    if (error instanceof Error) {
+      errorMessage = error.message;
+    }
+    console.log(errorMessage);
+
+    return {
+      success: false,
+      error: errorMessage,
+    };
+  }
+}
