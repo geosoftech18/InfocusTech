@@ -24,27 +24,17 @@ const AccordionCard: React.FC<AccordionCardProps> = ({
   index,
 }) => {
   return (
-    <Card className="overflow-hidden">
+    <Card className="overflow-hidden w-full">
       <Accordion type="single" collapsible>
         <AccordionItem value={`item-${index}`} className="border-b-0">
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full">
             {/* Card Header (always visible) */}
-            <CardHeader className="p-2">
-              {/* {imagePath && (
-                <Image
-                  src={imagePath}
-                  alt={"card image"}
-                  height={100}
-                  width={100}
-                  className="w-full aspect-video object-cover rounded-t-lg"
-                />
-              )} */}
-              <AccordionTrigger className="">
+            <CardHeader className="p-2 w-[80vw]">
+              <AccordionTrigger className="w-full">
                 <div className="flex flex-col items-center justify-center w-full">
-                 
-                  <p className="text-xs md:text-sm text-gray-600 font-medium text-center">
+                  <div className="text-xs md:text-sm text-gray-600 font-medium w-full text-center">
                     {title}
-                  </p>
+                  </div>
                 </div>
               </AccordionTrigger>
             </CardHeader>

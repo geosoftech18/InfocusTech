@@ -157,7 +157,7 @@ export async function getSolutionsGQL(id: string):Promise<getSolutionsGQLResult>
     }
   }
     }`,
-    { next: { revalidate: 3600 } }
+    { next: { revalidate: 0 } }
   );
 
   // console.log(result)

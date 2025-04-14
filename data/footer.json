@@ -154,20 +154,21 @@
                 "imageUrl": "/Company-Certifications/sap-partner.jpg"
             },
             {
+                "label": "ICICI partner",
+                "imageUrl": "/Company-Certifications/icici-partner.jpg"
+            },
+            {
+                "label": "ISO9001",
+                "imageUrl": "/Company-Certifications/ISO9001.jpg"
+            },
+            
+            {
                 "label": "NSR-partner",
                 "imageUrl": "/Company-Certifications/nsr-partner.gif"
             },
             {
                 "label": "NASSCOM-partner",
                 "imageUrl": "/Company-Certifications/nasscom-partner.jpg"
-            },
-            {
-                "label": "ISO9001",
-                "imageUrl": "/Company-Certifications/ISO9001.jpg"
-            },
-            {
-                "label": "ICICI partner",
-                "imageUrl": "/Company-Certifications/icici-partner.jpg"
             },
             {
                 "label": "CMMI-Level3",

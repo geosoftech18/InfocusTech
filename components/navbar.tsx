@@ -55,6 +55,7 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
             fixed ? " bg-white z-50 shadow-md" : "backdrop-blur-sm"
           }  transition-all duration-300 hidden md:flex `}
       >
+        {/* upper ribbon */}
         <div
           className={`w-full px-36 flex items-center justify-between gap-4 p-4 text-white bg-gray-900`}
         >
@@ -98,7 +99,7 @@ const NavbarMain: React.FC<NavbarProps> = ({ fixed, NavbarProps }) => {
           </div>
         </div>
 
-        <NavigationMenuList className=" items-center gap-2 md:gap-4 lg:gap-10 py-6">
+        <NavigationMenuList className=" items-center gap-2 md:gap-4 lg:gap-16 py-6">
           {/* Logo */}
           <NavigationMenuItem className="z-20">
             {/* <div

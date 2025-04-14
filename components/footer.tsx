@@ -93,21 +93,21 @@ const Footer: React.FC<FooterProps> = ({ FooterData }) => {
             <h3 className="text-lg font-semibold mb-2 flex items-center justify-center">
               Accreditation
             </h3>
-            <div className=" grid grid-cols-2 gap-2">
+            <div className=" grid grid-cols-2 gap-2 items-around">
               {accreditation.map((acc, idx) => (
                 <a
                   key={idx}
                   href={acc.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start justify-center gap-2 col-span-1"
+                  className="flex items-baseline justify-center col-span-1"
                 >
                   <Image
                     src={acc.imageUrl}
                     alt={acc.label}
                     width={120}
                     height={40}
-                    className="object-contain rounded-lg"
+                    className="object-contain p-0 rounded-lg"
                   />
                 </a>
               ))}

@@ -113,7 +113,8 @@ const SelectComponent: React.FC<SelectComponentProps> = ({ items }) => {
             >
               <CheckCircle className="h-5 w-5 bg-[#b00d07] text-white rounded-full" />
 
-              <div className="w-10/12 md:w-11/12 text-xs md:text-base font-semibold">{item.point} </div>
+              <div className="w-10/12 md:w-11/12 text-xs md:text-base font-semibold">
+              {item.point} </div>
             </div>
           ))
         ) : null}

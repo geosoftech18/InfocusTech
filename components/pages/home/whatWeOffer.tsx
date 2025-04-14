@@ -23,7 +23,7 @@ export interface DoorComponentData {
   tag: string;
   heading: string;
   subheading?: string;
-  description: string;
+  description?: string;
   doorBG?: string;
   items: {
     name: string;
@@ -73,7 +73,6 @@ const DoorComponent: React.FC<DoorComponentProps> = ({
 
   return (
     <div className=" px-10 lg:px-40 mb-40 lg:mb-20 relative">
-      
       <Image
         alt=""
         src={Data.doorBG || ""}
@@ -157,41 +156,45 @@ const DoorComponent: React.FC<DoorComponentProps> = ({
                 )}
                 <CardTitle className=" flex items-start justify-center flex-col">
                   <div className="  flex flex-col gap-2 text-gray-900">
-                    <Image
-                      className="h-16 w-16 group-hover:scale-125 transition-transform duration-300"
-                      src={item.imagePath || ""}
-                      alt=""
-                      height={1000}
-                      width={1000}
-                    />
+                    {item.imagePath && (
+                      <Image
+                        className="h-16 w-16 group-hover:scale-125 transition-transform duration-300"
+                        src={item.imagePath || ""}
+                        alt=""
+                        height={1000}
+                        width={1000}
+                      />
+                    )}
                     <div className="text-xl font-semibold">{item.name}</div>
                   </div>
                 </CardTitle>
-                <CardContent className="text-sm text-gray-600 overflow-y-scroll no-scrollbar mb-2 w-full px-0">
-                  {item.description.length < 150 ? (
-                    item.description
-                  ) : expandedDescriptions[index] ? (
-                    <>
-                      {item.description}
-                      <button
-                        onClick={() => toggleReadMore(index)}
-                        className="ml-1 text-black hover:text-blue-500 hover:underline"
-                      >
-                        Read less
-                      </button>
-                    </>
-                  ) : (
-                    <>
-                      {item.description.slice(0, 150)}...
-                      <button
-                        onClick={() => toggleReadMore(index)}
-                        className="ml-1 text-black hover:text-blue-500 hover:underline"
-                      >
-                        Read more
-                      </button>
-                    </>
-                  )}
-                </CardContent>
+                {item.description && (
+                  <CardContent className="text-sm text-gray-600 overflow-y-scroll no-scrollbar mb-2 w-full px-0">
+                    {item.description && item.description.length < 150 ? (
+                      item.description
+                    ) : expandedDescriptions[index] ? (
+                      <>
+                        {item.description}
+                        <button
+                          onClick={() => toggleReadMore(index)}
+                          className="ml-1 text-black hover:text-blue-500 hover:underline"
+                        >
+                          Read less
+                        </button>
+                      </>
+                    ) : (
+                      <>
+                        {item.description && item.description.slice(0, 150)}...
+                        <button
+                          onClick={() => toggleReadMore(index)}
+                          className="ml-1 text-black hover:text-blue-500 hover:underline"
+                        >
+                          Read more
+                        </button>
+                      </>
+                    )}
+                  </CardContent>
+                )}
                 {/* Door */}
                 <div
                   className={`absolute -z-10 rounded-lg top-0 left-0 opacity-80 w-full h-full bg-gray-400 transform origin-left transition-all duration-1000 ease-in-out ${
